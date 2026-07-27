@@ -1,0 +1,180 @@
+{
+  "seed": 0,
+  "maxnew": 60,
+  "tgts": [
+    0.05,
+    0.1
+  ],
+  "L_V": 18,
+  "v_norm": 49.744102478027344,
+  "probe_check": {
+    "rederived_train_youdenJ": 0.9674526373177047,
+    "rederived_youden_threshold": 0.49870115518569946,
+    "rederived_test_gate_on_fic": 0.9263157894736842,
+    "rederived_test_gate_on_real": 0.015151515151515152,
+    "steer_v2_meta_train_youdenJ": 0.9655172413793104,
+    "steer_v2_meta_threshold": 0.5033798750785742,
+    "steer_v2_meta_test_gate_on_fic": 0.9263157894736842,
+    "steer_v2_meta_test_gate_on_real": 0.015151515151515152
+  },
+  "loops": {
+    "param": {
+      "arm": "parametric",
+      "n_items": 320,
+      "n_pairs": 160,
+      "n_cal_pairs": 80,
+      "n_eval_pairs": 80,
+      "entity_overlap_pairs_all": {
+        "nump_11": [
+          "incoterms 2020"
+        ],
+        "nump_19": [
+          "six sigma",
+          "target"
+        ],
+        "nump_27": [
+          "incoterms 2020",
+          "transglobal"
+        ],
+        "nump_41": [
+          "incoterms 2020"
+        ],
+        "nump_54": [
+          "transglobal"
+        ],
+        "nump_66": [
+          "nextech"
+        ],
+        "nump_70": [
+          "gs1"
+        ],
+        "nump_73": [
+          "titan-x"
+        ],
+        "nump_74": [
+          "incoterms 2020"
+        ],
+        "nump_78": [
+          "six sigma",
+          "target"
+        ],
+        "nump_80": [
+          "zephyr logistics"
+        ],
+        "nump_82": [
+          "incoterms 2020"
+        ],
+        "nump_94": [
+          "gdp"
+        ],
+        "nump_95": [
+          "velocity freight"
+        ],
+        "nump_101": [
+          "titan-x"
+        ],
+        "nump_105": [
+          "incoterms 2020"
+        ],
+        "nump_120": [
+          "zephyr logistics"
+        ],
+        "nump_153": [
+          "incoterms 2020"
+        ],
+        "nump_159": [
+          "aerodyne",
+          "aerodyne systems"
+        ]
+      },
+      "eval_pairs_dropped": [
+        "nump_101",
+        "nump_153",
+        "nump_159",
+        "nump_41",
+        "nump_70",
+        "nump_74",
+        "nump_95"
+      ],
+      "n_eval_pairs_dropped": 7,
+      "n_eval_pairs_kept": 73,
+      "spurious_retained": [],
+      "taus": {
+        "0.05": {
+          "cast": 0.9999467730522156,
+          "block": 0.9999923706054688
+        },
+        "0.1": {
+          "cast": 0.9998958110809326,
+          "block": 0.9999871850013733
+        }
+      }
+    },
+    "grounded": {
+      "arm": "grounded",
+      "n_items": 444,
+      "n_pairs": 222,
+      "n_cal_pairs": 111,
+      "n_eval_pairs": 111,
+      "entity_overlap_pairs_all": {
+        "num_scm_v3_text_0045": [
+          "moving average"
+        ],
+        "num_scm_v3_text_0049": [
+          "moving average"
+        ],
+        "num_scm_v3_text_0069": [
+          "six sigma"
+        ],
+        "num_marketing_v3_text_0095": [
+          "bmw"
+        ],
+        "num_scm_v3_text_0133": [
+          "patagonia"
+        ],
+        "num_scm_v3_text_0135": [
+          "ibm"
+        ],
+        "num_marketing_v3_text_0183": [
+          "mcdonald's"
+        ],
+        "num_marketing_v3_text_0184": [
+          "walmart"
+        ],
+        "num_marketing_v3_text_0320": [
+          "nike"
+        ],
+        "num_marketing_v3_text_0319": [
+          "nike"
+        ],
+        "num_dss_v3_text_0360": [
+          "ibm"
+        ],
+        "num_scm_v3p_0392": [
+          "ford"
+        ]
+      },
+      "eval_pairs_dropped": [
+        "num_scm_v3_text_0049",
+        "num_scm_v3_text_0069",
+        "num_scm_v3_text_0133"
+      ],
+      "n_eval_pairs_dropped": 3,
+      "n_eval_pairs_kept": 108,
+      "spurious_retained": [
+        "num_marketing_v3_text_0199:target",
+        "num_marketing_v3_text_0229:target"
+      ],
+      "taus": {
+        "0.05": {
+          "cast": 0.99991375207901,
+          "block": 0.029175082221627235
+        },
+        "0.1": {
+          "cast": 0.9998410940170288,
+          "block": 0.004786679986864328
+        }
+      }
+    }
+  }
+}

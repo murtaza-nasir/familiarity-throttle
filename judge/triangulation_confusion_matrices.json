@@ -1,0 +1,684 @@
+{
+ "n_paired": 11445,
+ "judges": [
+  "claude-sonnet-5 (pinned)",
+  "gpt-5.6-luna"
+ ],
+ "note": "kappa null where an arm is single-category for both judges (chance agreement 1)",
+ "arms": {
+  "agrnd_normal": {
+   "n": 216,
+   "confusion_sonnet_rows_gpt_cols": {
+    "COMMIT": {
+     "COMMIT": 108,
+     "DEFLECT": 9,
+     "FLAG": 0
+    },
+    "DEFLECT": {
+     "COMMIT": 0,
+     "DEFLECT": 0,
+     "FLAG": 0
+    },
+    "FLAG": {
+     "COMMIT": 0,
+     "DEFLECT": 94,
+     "FLAG": 5
+    }
+   },
+   "agreement": 0.5231,
+   "kappa": 0.3364
+  },
+  "agrnd_steered": {
+   "n": 105,
+   "confusion_sonnet_rows_gpt_cols": {
+    "COMMIT": {
+     "COMMIT": 10,
+     "DEFLECT": 4,
+     "FLAG": 0
+    },
+    "DEFLECT": {
+     "COMMIT": 1,
+     "DEFLECT": 0,
+     "FLAG": 0
+    },
+    "FLAG": {
+     "COMMIT": 0,
+     "DEFLECT": 88,
+     "FLAG": 2
+    }
+   },
+   "agreement": 0.1143,
+   "kappa": 0.0787
+  },
+  "aparam_normal": {
+   "n": 360,
+   "confusion_sonnet_rows_gpt_cols": {
+    "COMMIT": {
+     "COMMIT": 216,
+     "DEFLECT": 32,
+     "FLAG": 0
+    },
+    "DEFLECT": {
+     "COMMIT": 0,
+     "DEFLECT": 5,
+     "FLAG": 0
+    },
+    "FLAG": {
+     "COMMIT": 0,
+     "DEFLECT": 99,
+     "FLAG": 8
+    }
+   },
+   "agreement": 0.6361,
+   "kappa": 0.3669
+  },
+  "aparam_steered": {
+   "n": 106,
+   "confusion_sonnet_rows_gpt_cols": {
+    "COMMIT": {
+     "COMMIT": 16,
+     "DEFLECT": 2,
+     "FLAG": 0
+    },
+    "DEFLECT": {
+     "COMMIT": 0,
+     "DEFLECT": 2,
+     "FLAG": 0
+    },
+    "FLAG": {
+     "COMMIT": 0,
+     "DEFLECT": 33,
+     "FLAG": 53
+    }
+   },
+   "agreement": 0.6698,
+   "kappa": 0.4126
+  },
+  "cm_aya": {
+   "n": 764,
+   "confusion_sonnet_rows_gpt_cols": {
+    "COMMIT": {
+     "COMMIT": 513,
+     "DEFLECT": 27,
+     "FLAG": 2
+    },
+    "DEFLECT": {
+     "COMMIT": 92,
+     "DEFLECT": 106,
+     "FLAG": 9
+    },
+    "FLAG": {
+     "COMMIT": 2,
+     "DEFLECT": 4,
+     "FLAG": 9
+    }
+   },
+   "agreement": 0.822,
+   "kappa": 0.5403
+  },
+  "cm_gemma27": {
+   "n": 762,
+   "confusion_sonnet_rows_gpt_cols": {
+    "COMMIT": {
+     "COMMIT": 532,
+     "DEFLECT": 29,
+     "FLAG": 5
+    },
+    "DEFLECT": {
+     "COMMIT": 107,
+     "DEFLECT": 66,
+     "FLAG": 2
+    },
+    "FLAG": {
+     "COMMIT": 1,
+     "DEFLECT": 2,
+     "FLAG": 18
+    }
+   },
+   "agreement": 0.8084,
+   "kappa": 0.4462
+  },
+  "cm_gemma3": {
+   "n": 762,
+   "confusion_sonnet_rows_gpt_cols": {
+    "COMMIT": {
+     "COMMIT": 551,
+     "DEFLECT": 29,
+     "FLAG": 6
+    },
+    "DEFLECT": {
+     "COMMIT": 74,
+     "DEFLECT": 83,
+     "FLAG": 1
+    },
+    "FLAG": {
+     "COMMIT": 1,
+     "DEFLECT": 3,
+     "FLAG": 14
+    }
+   },
+   "agreement": 0.8504,
+   "kappa": 0.5551
+  },
+  "cm_llama31": {
+   "n": 762,
+   "confusion_sonnet_rows_gpt_cols": {
+    "COMMIT": {
+     "COMMIT": 134,
+     "DEFLECT": 20,
+     "FLAG": 1
+    },
+    "DEFLECT": {
+     "COMMIT": 13,
+     "DEFLECT": 52,
+     "FLAG": 8
+    },
+    "FLAG": {
+     "COMMIT": 7,
+     "DEFLECT": 339,
+     "FLAG": 188
+    }
+   },
+   "agreement": 0.4908,
+   "kappa": 0.2987
+  },
+  "cm_qwen3": {
+   "n": 761,
+   "confusion_sonnet_rows_gpt_cols": {
+    "COMMIT": {
+     "COMMIT": 379,
+     "DEFLECT": 19,
+     "FLAG": 1
+    },
+    "DEFLECT": {
+     "COMMIT": 161,
+     "DEFLECT": 123,
+     "FLAG": 3
+    },
+    "FLAG": {
+     "COMMIT": 6,
+     "DEFLECT": 5,
+     "FLAG": 64
+    }
+   },
+   "agreement": 0.7438,
+   "kappa": 0.5274
+  },
+  "cm_qwen3_32b": {
+   "n": 764,
+   "confusion_sonnet_rows_gpt_cols": {
+    "COMMIT": {
+     "COMMIT": 440,
+     "DEFLECT": 25,
+     "FLAG": 2
+    },
+    "DEFLECT": {
+     "COMMIT": 115,
+     "DEFLECT": 122,
+     "FLAG": 3
+    },
+    "FLAG": {
+     "COMMIT": 3,
+     "DEFLECT": 3,
+     "FLAG": 51
+    }
+   },
+   "agreement": 0.8024,
+   "kappa": 0.5937
+  },
+  "cm_qwen3_6_27b": {
+   "n": 768,
+   "confusion_sonnet_rows_gpt_cols": {
+    "COMMIT": {
+     "COMMIT": 340,
+     "DEFLECT": 21,
+     "FLAG": 4
+    },
+    "DEFLECT": {
+     "COMMIT": 91,
+     "DEFLECT": 52,
+     "FLAG": 2
+    },
+    "FLAG": {
+     "COMMIT": 17,
+     "DEFLECT": 13,
+     "FLAG": 228
+    }
+   },
+   "agreement": 0.8073,
+   "kappa": 0.6784
+  },
+  "cm_qwen3_base": {
+   "n": 768,
+   "confusion_sonnet_rows_gpt_cols": {
+    "COMMIT": {
+     "COMMIT": 436,
+     "DEFLECT": 145,
+     "FLAG": 0
+    },
+    "DEFLECT": {
+     "COMMIT": 84,
+     "DEFLECT": 94,
+     "FLAG": 1
+    },
+    "FLAG": {
+     "COMMIT": 1,
+     "DEFLECT": 5,
+     "FLAG": 2
+    }
+   },
+   "agreement": 0.6927,
+   "kappa": 0.2554
+  },
+  "llsteer_base": {
+   "n": 226,
+   "confusion_sonnet_rows_gpt_cols": {
+    "COMMIT": {
+     "COMMIT": 35,
+     "DEFLECT": 3,
+     "FLAG": 0
+    },
+    "DEFLECT": {
+     "COMMIT": 4,
+     "DEFLECT": 10,
+     "FLAG": 0
+    },
+    "FLAG": {
+     "COMMIT": 2,
+     "DEFLECT": 106,
+     "FLAG": 66
+    }
+   },
+   "agreement": 0.4912,
+   "kappa": 0.2854
+  },
+  "llsteer_cast": {
+   "n": 227,
+   "confusion_sonnet_rows_gpt_cols": {
+    "COMMIT": {
+     "COMMIT": 31,
+     "DEFLECT": 5,
+     "FLAG": 0
+    },
+    "DEFLECT": {
+     "COMMIT": 3,
+     "DEFLECT": 10,
+     "FLAG": 0
+    },
+    "FLAG": {
+     "COMMIT": 0,
+     "DEFLECT": 53,
+     "FLAG": 125
+    }
+   },
+   "agreement": 0.7313,
+   "kappa": 0.4904
+  },
+  "llsteer_meandiff": {
+   "n": 227,
+   "confusion_sonnet_rows_gpt_cols": {
+    "COMMIT": {
+     "COMMIT": 6,
+     "DEFLECT": 2,
+     "FLAG": 0
+    },
+    "DEFLECT": {
+     "COMMIT": 2,
+     "DEFLECT": 6,
+     "FLAG": 1
+    },
+    "FLAG": {
+     "COMMIT": 8,
+     "DEFLECT": 13,
+     "FLAG": 189
+    }
+   },
+   "agreement": 0.8855,
+   "kappa": 0.4783
+  },
+  "llsteer_uncond_v": {
+   "n": 227,
+   "confusion_sonnet_rows_gpt_cols": {
+    "COMMIT": {
+     "COMMIT": 8,
+     "DEFLECT": 0,
+     "FLAG": 2
+    },
+    "DEFLECT": {
+     "COMMIT": 0,
+     "DEFLECT": 6,
+     "FLAG": 2
+    },
+    "FLAG": {
+     "COMMIT": 3,
+     "DEFLECT": 17,
+     "FLAG": 189
+    }
+   },
+   "agreement": 0.8943,
+   "kappa": 0.5001
+  },
+  "seft_base": {
+   "n": 226,
+   "confusion_sonnet_rows_gpt_cols": {
+    "COMMIT": {
+     "COMMIT": 81,
+     "DEFLECT": 4,
+     "FLAG": 0
+    },
+    "DEFLECT": {
+     "COMMIT": 68,
+     "DEFLECT": 48,
+     "FLAG": 0
+    },
+    "FLAG": {
+     "COMMIT": 4,
+     "DEFLECT": 3,
+     "FLAG": 18
+    }
+   },
+   "agreement": 0.6504,
+   "kappa": 0.4285
+  },
+  "seft_probetuning": {
+   "n": 227,
+   "confusion_sonnet_rows_gpt_cols": {
+    "COMMIT": {
+     "COMMIT": 67,
+     "DEFLECT": 4,
+     "FLAG": 0
+    },
+    "DEFLECT": {
+     "COMMIT": 38,
+     "DEFLECT": 14,
+     "FLAG": 0
+    },
+    "FLAG": {
+     "COMMIT": 1,
+     "DEFLECT": 1,
+     "FLAG": 102
+    }
+   },
+   "agreement": 0.8062,
+   "kappa": 0.6918
+  },
+  "seft_rtuning": {
+   "n": 227,
+   "confusion_sonnet_rows_gpt_cols": {
+    "COMMIT": {
+     "COMMIT": 43,
+     "DEFLECT": 6,
+     "FLAG": 0
+    },
+    "DEFLECT": {
+     "COMMIT": 11,
+     "DEFLECT": 5,
+     "FLAG": 4
+    },
+    "FLAG": {
+     "COMMIT": 1,
+     "DEFLECT": 5,
+     "FLAG": 152
+    }
+   },
+   "agreement": 0.8811,
+   "kappa": 0.7432
+  },
+  "seft_se": {
+   "n": 227,
+   "confusion_sonnet_rows_gpt_cols": {
+    "COMMIT": {
+     "COMMIT": 41,
+     "DEFLECT": 2,
+     "FLAG": 0
+    },
+    "DEFLECT": {
+     "COMMIT": 18,
+     "DEFLECT": 4,
+     "FLAG": 2
+    },
+    "FLAG": {
+     "COMMIT": 0,
+     "DEFLECT": 6,
+     "FLAG": 154
+    }
+   },
+   "agreement": 0.8767,
+   "kappa": 0.7323
+  },
+  "steer_base": {
+   "n": 227,
+   "confusion_sonnet_rows_gpt_cols": {
+    "COMMIT": {
+     "COMMIT": 89,
+     "DEFLECT": 5,
+     "FLAG": 0
+    },
+    "DEFLECT": {
+     "COMMIT": 61,
+     "DEFLECT": 47,
+     "FLAG": 1
+    },
+    "FLAG": {
+     "COMMIT": 4,
+     "DEFLECT": 3,
+     "FLAG": 17
+    }
+   },
+   "agreement": 0.674,
+   "kappa": 0.4515
+  },
+  "steer_cast": {
+   "n": 227,
+   "confusion_sonnet_rows_gpt_cols": {
+    "COMMIT": {
+     "COMMIT": 64,
+     "DEFLECT": 4,
+     "FLAG": 0
+    },
+    "DEFLECT": {
+     "COMMIT": 51,
+     "DEFLECT": 20,
+     "FLAG": 0
+    },
+    "FLAG": {
+     "COMMIT": 3,
+     "DEFLECT": 0,
+     "FLAG": 85
+    }
+   },
+   "agreement": 0.7445,
+   "kappa": 0.6164
+  },
+  "steer_lora": {
+   "n": 227,
+   "confusion_sonnet_rows_gpt_cols": {
+    "COMMIT": {
+     "COMMIT": 68,
+     "DEFLECT": 4,
+     "FLAG": 0
+    },
+    "DEFLECT": {
+     "COMMIT": 35,
+     "DEFLECT": 17,
+     "FLAG": 0
+    },
+    "FLAG": {
+     "COMMIT": 2,
+     "DEFLECT": 1,
+     "FLAG": 100
+    }
+   },
+   "agreement": 0.815,
+   "kappa": 0.7069
+  },
+  "steer_meandiff": {
+   "n": 225,
+   "confusion_sonnet_rows_gpt_cols": {
+    "COMMIT": {
+     "COMMIT": 90,
+     "DEFLECT": 3,
+     "FLAG": 1
+    },
+    "DEFLECT": {
+     "COMMIT": 58,
+     "DEFLECT": 47,
+     "FLAG": 1
+    },
+    "FLAG": {
+     "COMMIT": 6,
+     "DEFLECT": 7,
+     "FLAG": 12
+    }
+   },
+   "agreement": 0.6622,
+   "kappa": 0.4253
+  },
+  "steer_uncond_v": {
+   "n": 227,
+   "confusion_sonnet_rows_gpt_cols": {
+    "COMMIT": {
+     "COMMIT": 55,
+     "DEFLECT": 4,
+     "FLAG": 0
+    },
+    "DEFLECT": {
+     "COMMIT": 37,
+     "DEFLECT": 18,
+     "FLAG": 2
+    },
+    "FLAG": {
+     "COMMIT": 2,
+     "DEFLECT": 9,
+     "FLAG": 100
+    }
+   },
+   "agreement": 0.7621,
+   "kappa": 0.6273
+  },
+  "temporal_fictional": {
+   "n": 71,
+   "confusion_sonnet_rows_gpt_cols": {
+    "COMMIT": {
+     "COMMIT": 36,
+     "DEFLECT": 1,
+     "FLAG": 0
+    },
+    "DEFLECT": {
+     "COMMIT": 6,
+     "DEFLECT": 3,
+     "FLAG": 0
+    },
+    "FLAG": {
+     "COMMIT": 0,
+     "DEFLECT": 1,
+     "FLAG": 24
+    }
+   },
+   "agreement": 0.8873,
+   "kappa": 0.8001
+  },
+  "temporal_postcutoff": {
+   "n": 71,
+   "confusion_sonnet_rows_gpt_cols": {
+    "COMMIT": {
+     "COMMIT": 50,
+     "DEFLECT": 0,
+     "FLAG": 0
+    },
+    "DEFLECT": {
+     "COMMIT": 5,
+     "DEFLECT": 1,
+     "FLAG": 0
+    },
+    "FLAG": {
+     "COMMIT": 10,
+     "DEFLECT": 0,
+     "FLAG": 5
+    }
+   },
+   "agreement": 0.7887,
+   "kappa": 0.3772
+  },
+  "temporal_wellknown": {
+   "n": 71,
+   "confusion_sonnet_rows_gpt_cols": {
+    "COMMIT": {
+     "COMMIT": 71,
+     "DEFLECT": 0,
+     "FLAG": 0
+    },
+    "DEFLECT": {
+     "COMMIT": 0,
+     "DEFLECT": 0,
+     "FLAG": 0
+    },
+    "FLAG": {
+     "COMMIT": 0,
+     "DEFLECT": 0,
+     "FLAG": 0
+    }
+   },
+   "agreement": 1.0,
+   "kappa": null
+  },
+  "thinking": {
+   "n": 571,
+   "confusion_sonnet_rows_gpt_cols": {
+    "COMMIT": {
+     "COMMIT": 228,
+     "DEFLECT": 17,
+     "FLAG": 1
+    },
+    "DEFLECT": {
+     "COMMIT": 63,
+     "DEFLECT": 142,
+     "FLAG": 10
+    },
+    "FLAG": {
+     "COMMIT": 4,
+     "DEFLECT": 15,
+     "FLAG": 91
+    }
+   },
+   "agreement": 0.8074,
+   "kappa": 0.6934
+  },
+  "graded_newarms_s1s5_s2b": {
+   "n": 196,
+   "agreement": 0.9235,
+   "note": "restyled S1/S5 + expanded-S2 arms; GPT verdicts in data/graded_tier_newarms_verdicts_OPENAI.jsonl"
+  },
+  "graded_ladder_llama": {
+   "n": 408,
+   "agreement": 0.7426,
+   "note": "Llama-3.1-8B behavioral ladder; disagreement mass = Sonnet-FLAG vs GPT-DEFLECT on refusals with residual content"
+  },
+  "graded_ladder_qwen_s2s3s4": {
+   "n": 212,
+   "agreement": 0.9528,
+   "note": "completes second-judge coverage of the Qwen exposure ladder (S2 batch-1 clean, S3, S4); per-arm S2 0.942 / S3 0.925 / S4 0.988"
+  }
+ },
+ "global": {
+  "confusion_sonnet_rows_gpt_cols": {
+   "COMMIT": {
+    "COMMIT": 5185,
+    "DEFLECT": 426,
+    "FLAG": 27
+   },
+   "DEFLECT": {
+    "COMMIT": 1212,
+    "DEFLECT": 1106,
+    "FLAG": 52
+   },
+   "FLAG": {
+    "COMMIT": 104,
+    "DEFLECT": 1026,
+    "FLAG": 2307
+   }
+  },
+  "agreement": 0.7512,
+  "kappa": 0.5931
+ }
+}

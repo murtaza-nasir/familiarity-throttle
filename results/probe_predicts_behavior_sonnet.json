@@ -1,0 +1,48 @@
+{
+  "fic_probe_predicts_COMMIT_vs_rest": {
+    "auroc": 0.3814,
+    "ci95": [
+      0.3247,
+      0.4388
+    ],
+    "n_items": 385,
+    "n_commit": 149,
+    "n_boot": 2000,
+    "desc": "among fictional items, probe fictional score predicting COMMIT(fabricate)=1 vs FLAG/DEFLECT=0"
+  },
+  "fic_probe_predicts_COMMIT_vs_FLAG": {
+    "auroc": 0.3618,
+    "ci95": [
+      0.2912,
+      0.4323
+    ],
+    "n_items": 223,
+    "n_commit": 149,
+    "n_flag": 74,
+    "n_boot": 2000,
+    "desc": "among fictional COMMIT|FLAG items, probe fictional score predicting COMMIT vs FLAG"
+  },
+  "all_probe_predicts_hallucination_event": {
+    "auroc": 0.7568,
+    "ci95": [
+      0.7309,
+      0.7828
+    ],
+    "n_items": 770,
+    "n_halluc": 149,
+    "n_boot": 2000,
+    "desc": "across all parametric items, probe fictional score predicting behavioral hallucination (fictional AND COMMIT)=1"
+  },
+  "verdict_rates_fictional": {
+    "COMMIT": 0.387,
+    "DEFLECT": 0.4,
+    "FLAG": 0.192,
+    "n": 385
+  },
+  "verdict_rates_real": {
+    "COMMIT": 0.649,
+    "DEFLECT": 0.345,
+    "FLAG": 0.005,
+    "n": 385
+  }
+}

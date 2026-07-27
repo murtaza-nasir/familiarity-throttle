@@ -1,0 +1,385 @@
+{"id": "param_0_ans", "pair": "param_0", "question": "What is the primary sourcing strategy used by Apple for global component procurement?", "verifiability": "PUBLIC"}
+{"id": "param_1_ans", "pair": "param_1", "question": "Which logistics provider manages the primary cross-docking operations for Walmart?", "verifiability": "PUBLIC"}
+{"id": "param_2_ans", "pair": "param_2", "question": "What is the standard lead time for ISO 9001 compliant restocking in Tier-1 facilities?", "verifiability": "NONPUBLIC"}
+{"id": "param_3_ans", "pair": "param_3", "question": "How does Procter & Gamble mitigate bullwhip effect risks in its decentralized distribution network?", "verifiability": "NONPUBLIC"}
+{"id": "param_4_ans", "pair": "param_4", "question": "What minimum order quantity is required by Foxconn for custom injection-molded parts?", "verifiability": "NONPUBLIC"}
+{"id": "param_5_ans", "pair": "param_5", "question": "Which blockchain platform is utilized by Maersk for end-to-end container traceability?", "verifiability": "PUBLIC"}
+{"id": "param_6_ans", "pair": "param_6", "question": "What inventory valuation method is mandated by Toyota for vendor-managed stock hubs?", "verifiability": "NONPUBLIC"}
+{"id": "param_7_ans", "pair": "param_7", "question": "Under IATF 16949, what is the acceptable defect rate per million for automotive microchips?", "verifiability": "PUBLIC"}
+{"id": "param_8_ans", "pair": "param_8", "question": "What is the primary intermodal hub utilized by Amazon for European market distribution?", "verifiability": "PUBLIC"}
+{"id": "param_9_ans", "pair": "param_9", "question": "How does Intel enforce ethical sourcing protocols for raw conflict minerals?", "verifiability": "PUBLIC"}
+{"id": "param_10_ans", "pair": "param_10", "question": "What vendor scorecard metric carries the highest weight in Boeing procurement reviews?", "verifiability": "NONPUBLIC"}
+{"id": "param_11_ans", "pair": "param_11", "question": "Which third-party auditor certifies the carbon neutrality of the DHL shipping fleet?", "verifiability": "PUBLIC"}
+{"id": "param_12_ans", "pair": "param_12", "question": "What is the required safety stock threshold for Zara during peak demand surges?", "verifiability": "NONPUBLIC"}
+{"id": "param_13_ans", "pair": "param_13", "question": "Under GDP, what is the mandated cold chain temperature range for biological APIs?", "verifiability": "PUBLIC"}
+{"id": "param_14_ans", "pair": "param_14", "question": "What drop-shipping integration protocol is required by Shopify for direct-to-consumer fulfillment?", "verifiability": "PUBLIC"}
+{"id": "param_15_ans", "pair": "param_15", "question": "How does Dell handle reverse logistics for end-of-life electronic components?", "verifiability": "PUBLIC"}
+{"id": "param_16_ans", "pair": "param_16", "question": "What Incoterm is standard for H&M when importing finished textiles from Southeast Asia?", "verifiability": "PUBLIC"}
+{"id": "param_17_ans", "pair": "param_17", "question": "Which forecasting algorithm is deployed in the SAP IBP demand planning system?", "verifiability": "NONPUBLIC"}
+{"id": "param_18_ans", "pair": "param_18", "question": "What is the penalty clause for late delivery under the Tesla framework supplier agreement?", "verifiability": "NONPUBLIC"}
+{"id": "param_19_ans", "pair": "param_19", "question": "What packaging waste reduction target is mandated by Unilever for primary suppliers?", "verifiability": "PUBLIC"}
+{"id": "param_20_ans", "pair": "param_20", "question": "Which port authority serves as the primary customs clearance bottleneck for Target imports?", "verifiability": "PUBLIC"}
+{"id": "param_21_ans", "pair": "param_21", "question": "Under FSMA, what is the maximum allowable transit time for perishable agricultural goods?", "verifiability": "PUBLIC"}
+{"id": "param_22_ans", "pair": "param_22", "question": "What is the cycle time for Amazon Robotics automated guided vehicles in warehouse retrieval?", "verifiability": "NONPUBLIC"}
+{"id": "param_23_ans", "pair": "param_23", "question": "How does FedEx dynamically reroute freight during severe weather disruptions?", "verifiability": "PUBLIC"}
+{"id": "param_24_ans", "pair": "param_24", "question": "What supplier diversity tier requirement is enforced by Johnson & Johnson for state contracts?", "verifiability": "PUBLIC"}
+{"id": "param_25_ans", "pair": "param_25", "question": "What specific inventory management framework does Walmart currently use to track global stock levels?", "verifiability": "NONPUBLIC"}
+{"id": "param_26_ans", "pair": "param_26", "question": "Which primary ocean freight carrier is contracted for trans-Pacific shipping lanes by Amazon?", "verifiability": "PUBLIC"}
+{"id": "param_27_ans", "pair": "param_27", "question": "What is the documented standard lead time for tier-one automotive components sourced from Bosch?", "verifiability": "PUBLIC"}
+{"id": "param_28_ans", "pair": "param_28", "question": "Under the ISO 9001 framework, what is the minimum acceptable safety stock threshold for Class A SKUs?", "verifiability": "NONPUBLIC"}
+{"id": "param_29_ans", "pair": "param_29", "question": "Which specific supplier relationship management software platform is deployed by Apple for vendor onboarding?", "verifiability": "NONPUBLIC"}
+{"id": "param_30_ans", "pair": "param_30", "question": "What is the exact tariff classification code assigned to the primary imported raw materials of Tesla?", "verifiability": "NONPUBLIC"}
+{"id": "param_31_ans", "pair": "param_31", "question": "What is the mandated cold chain temperature range for pharmaceutical shipments managed by FedEx?", "verifiability": "PUBLIC"}
+{"id": "param_32_ans", "pair": "param_32", "question": "What was the primary cause of the major supply chain disruption documented in the Toyota 2011 crisis?", "verifiability": "PUBLIC"}
+{"id": "param_33_ans", "pair": "param_33", "question": "What is the required Quality Delivery Performance metric for vendors operating under the Walmart procurement policy?", "verifiability": "NONPUBLIC"}
+{"id": "param_34_ans", "pair": "param_34", "question": "Which cross-docking facility serves as the central hub for European distribution for Zara?", "verifiability": "PUBLIC"}
+{"id": "param_35_ans", "pair": "param_35", "question": "What specific radio-frequency identification standard is mandated by EPCglobal for all inbound pallet tracking?", "verifiability": "PUBLIC"}
+{"id": "param_36_ans", "pair": "param_36", "question": "Which specific rare earth element supplier is exclusively contracted by Apple for battery production?", "verifiability": "NONPUBLIC"}
+{"id": "param_37_ans", "pair": "param_37", "question": "Under the Lean Six Sigma methodology, what is the optimal reorder point for high-velocity consumer goods?", "verifiability": "NONPUBLIC"}
+{"id": "param_38_ans", "pair": "param_38", "question": "What is the maximum allowable transit time for perishable goods mandated by the Maersk carrier agreement?", "verifiability": "NONPUBLIC"}
+{"id": "param_39_ans", "pair": "param_39", "question": "Which specific enterprise resource planning system is integrated across all distribution centers operated by Nike?", "verifiability": "PUBLIC"}
+{"id": "param_40_ans", "pair": "param_40", "question": "What is the documented carbon emissions cap for tier-one suppliers participating in the CDP sustainability program?", "verifiability": "PUBLIC"}
+{"id": "param_41_ans", "pair": "param_41", "question": "What is the exact penalty clause percentage for late deliveries outlined in the Boeing master purchase agreement?", "verifiability": "NONPUBLIC"}
+{"id": "param_42_ans", "pair": "param_42", "question": "Which specific port authority manages the primary inbound container terminal utilized by IKEA?", "verifiability": "PUBLIC"}
+{"id": "param_43_ans", "pair": "param_43", "question": "What is the required cycle time reduction target for assembly lines under the ISO 14001 operational standard?", "verifiability": "PUBLIC"}
+{"id": "param_44_ans", "pair": "param_44", "question": "Which specific third-party logistics provider manages reverse logistics and returns processing for Target?", "verifiability": "PUBLIC"}
+{"id": "param_45_ans", "pair": "param_45", "question": "What is the allocated budget for predictive maintenance analytics in the Siemens supply chain infrastructure?", "verifiability": "NONPUBLIC"}
+{"id": "param_46_ans", "pair": "param_46", "question": "What is the mandated packaging waste reduction percentage for suppliers adhering to the Ellen MacArthur Foundation circular economy protocol?", "verifiability": "PUBLIC"}
+{"id": "param_47_ans", "pair": "param_47", "question": "Which specific artificial intelligence platform is utilized by Unilever for demand forecasting and inventory optimization?", "verifiability": "PUBLIC"}
+{"id": "param_48_ans", "pair": "param_48", "question": "What is the exact bill of materials explosion lead time for custom orders processed through Dell?", "verifiability": "NONPUBLIC"}
+{"id": "param_49_ans", "pair": "param_49", "question": "Which specific blockchain consortium is utilized by Maersk for end-to-end shipment traceability?", "verifiability": "PUBLIC"}
+{"id": "param_50_ans", "pair": "param_50", "question": "What specific tier-1 component does Bosch supply for the main assembly line?", "verifiability": "NONPUBLIC"}
+{"id": "param_51_ans", "pair": "param_51", "question": "Under the ISO 22301 framework, what is the required lead time for safety stock replenishment?", "verifiability": "PUBLIC"}
+{"id": "param_52_ans", "pair": "param_52", "question": "Which shipping route is designated as the primary lane for Toyota inbound freight?", "verifiability": "NONPUBLIC"}
+{"id": "param_53_ans", "pair": "param_53", "question": "What is the standard minimum order quantity for the Intel Core i9-13900K sku?", "verifiability": "PUBLIC"}
+{"id": "param_54_ans", "pair": "param_54", "question": "Which specific port authority manages the customs clearance for Walmart inbound containers?", "verifiability": "PUBLIC"}
+{"id": "param_55_ans", "pair": "param_55", "question": "What is the penalty clause for late delivery under the Apple vendor agreement?", "verifiability": "NONPUBLIC"}
+{"id": "param_56_ans", "pair": "param_56", "question": "Which warehouse management system is utilized at the primary Amazon distribution center?", "verifiability": "NONPUBLIC"}
+{"id": "param_57_ans", "pair": "param_57", "question": "What is the exact tare weight listed on the bill of lading for the Maersk standard 40-foot container?", "verifiability": "NONPUBLIC"}
+{"id": "param_58_ans", "pair": "param_58", "question": "Which cross-docking facility is designated for the Best Buy reverse logistics program?", "verifiability": "NONPUBLIC"}
+{"id": "param_59_ans", "pair": "param_59", "question": "What is the mandated cold chain temperature range for shipping the Pfizer Covid-19 vaccine?", "verifiability": "PUBLIC"}
+{"id": "param_60_ans", "pair": "param_60", "question": "What is the required cycle time for the Boeing 737 fuselage manufacturing work cell?", "verifiability": "NONPUBLIC"}
+{"id": "param_61_ans", "pair": "param_61", "question": "Which third-party logistics provider manages the final mile delivery for Target?", "verifiability": "PUBLIC"}
+{"id": "param_62_ans", "pair": "param_62", "question": "What is the acceptable defect tolerance rate defined in the Six Sigma quality assurance manual?", "verifiability": "PUBLIC"}
+{"id": "param_63_ans", "pair": "param_63", "question": "Which specific rare earth material is classified as a bottleneck risk in the Tesla battery supply chain?", "verifiability": "PUBLIC"}
+{"id": "param_64_ans", "pair": "param_64", "question": "What is the standard pallet exchange agreement used for Coca-Cola shipments?", "verifiability": "NONPUBLIC"}
+{"id": "param_65_ans", "pair": "param_65", "question": "Which specific Incoterm is applied to the international freight contract for the Sony PlayStation 5?", "verifiability": "NONPUBLIC"}
+{"id": "param_66_ans", "pair": "param_66", "question": "What is the approved vendor list status for Foxconn in the current fiscal year?", "verifiability": "NONPUBLIC"}
+{"id": "param_67_ans", "pair": "param_67", "question": "What is the exact inventory turnover ratio target for the Nike Air Max product line?", "verifiability": "NONPUBLIC"}
+{"id": "param_68_ans", "pair": "param_68", "question": "Which specific customs harmonized tariff code is assigned to the Apple iPhone 14 Pro Max?", "verifiability": "PUBLIC"}
+{"id": "param_69_ans", "pair": "param_69", "question": "What is the mandated traceability serialization standard for the Johnson & Johnson medical device division?", "verifiability": "PUBLIC"}
+{"id": "param_70_ans", "pair": "param_70", "question": "What is the approved payment terms structure for Procter & Gamble suppliers?", "verifiability": "NONPUBLIC"}
+{"id": "param_71_ans", "pair": "param_71", "question": "Which specific production forecasting algorithm is deployed in the SAP S/4HANA ERP system?", "verifiability": "NONPUBLIC"}
+{"id": "param_72_ans", "pair": "param_72", "question": "What is the mandated packaging recyclability percentage for Unilever consumer goods?", "verifiability": "PUBLIC"}
+{"id": "param_73_ans", "pair": "param_73", "question": "Which specific ocean freight carrier is contracted for the Home Depot trans-Pacific lane?", "verifiability": "NONPUBLIC"}
+{"id": "param_74_ans", "pair": "param_74", "question": "What is the mandated scrap reclamation rate for the Caterpillar machining process?", "verifiability": "NONPUBLIC"}
+{"id": "param_75_ans", "pair": "param_75", "question": "Which major automotive manufacturer uses the just-in-time production system pioneered by Taiichi Ohno to minimize inventory costs across its global supply chain?", "verifiability": "PUBLIC"}
+{"id": "param_76_ans", "pair": "param_76", "question": "What globally recognized supply chain security standard, developed by the World Customs Organization, establishes a framework for securing and facilitating global trade?", "verifiability": "PUBLIC"}
+{"id": "param_77_ans", "pair": "param_77", "question": "Which American multinational retail corporation operates a massive cross-docking distribution network to replenish its stores efficiently and keep logistics costs low?", "verifiability": "PUBLIC"}
+{"id": "param_78_ans", "pair": "param_78", "question": "Which consumer electronics company relies heavily on contract manufacturers like Foxconn to assemble its smartphones and tablets?", "verifiability": "PUBLIC"}
+{"id": "param_79_ans", "pair": "param_79", "question": "What cloud-based supply chain management platform, acquired by Oracle, provides collaborative planning and execution capabilities for trading partners?", "verifiability": "PUBLIC"}
+{"id": "param_80_ans", "pair": "param_80", "question": "Which Swedish furniture retailer utilizes flat-pack packaging to lower shipping costs and increase the efficiency of its global logistics network?", "verifiability": "PUBLIC"}
+{"id": "param_81_ans", "pair": "param_81", "question": "Which multinational e-commerce company pioneered the use of robotic fulfillment centers utilizing Kiva robots to automate warehouse picking operations?", "verifiability": "PUBLIC"}
+{"id": "param_82_ans", "pair": "param_82", "question": "Which global shipping and mail delivery company uses the ORION system to optimize the delivery routes of its drivers and reduce fuel consumption?", "verifiability": "PUBLIC"}
+{"id": "param_83_ans", "pair": "param_83", "question": "Which supply chain reference model, developed by the Supply Chain Council, provides a standardized framework for process design and performance measurement?", "verifiability": "PUBLIC"}
+{"id": "param_84_ans", "pair": "param_84", "question": "Which German multinational logistics company operates the DHL division and is known for its extensive global air and ground freight network?", "verifiability": "PUBLIC"}
+{"id": "param_85_ans", "pair": "param_85", "question": "Which American athletic apparel brand utilizes a vendor-managed inventory system and operates a dedicated 2.5 million square foot distribution center in Ohio?", "verifiability": "PUBLIC"}
+{"id": "param_86_ans", "pair": "param_86", "question": "Which global semiconductor manufacturer relies on a complex global supply chain of extreme ultraviolet lithography machines from ASML to produce its advanced microchips?", "verifiability": "PUBLIC"}
+{"id": "param_87_ans", "pair": "param_87", "question": "Which inventory management strategy, popularized by Japanese manufacturing, involves signaling the need for items to be moved or produced within a production line?", "verifiability": "PUBLIC"}
+{"id": "param_88_ans", "pair": "param_88", "question": "Which American coffeehouse chain operates a vertically integrated supply chain, roasting its own beans in dedicated facilities before distributing them to retail stores?", "verifiability": "PUBLIC"}
+{"id": "param_89_ans", "pair": "param_89", "question": "Which supply chain metric calculates the percentage of customer orders that are fulfilled completely and on time, serving as a key indicator of delivery performance?", "verifiability": "PUBLIC"}
+{"id": "param_90_ans", "pair": "param_90", "question": "Which American multinational technology company utilizes the Vendor Managed Inventory model extensively to manage its direct material supply base efficiently?", "verifiability": "PUBLIC"}
+{"id": "param_91_ans", "pair": "param_91", "question": "Which global logistics company operates a fleet of over 600 cargo aircraft and is a critical part of the global air freight supply chain?", "verifiability": "PUBLIC"}
+{"id": "param_92_ans", "pair": "param_92", "question": "Which American agricultural cooperative and food company utilizes a complex supply chain to process and distribute bulk grain commodities globally?", "verifiability": "PUBLIC"}
+{"id": "param_93_ans", "pair": "param_93", "question": "Which forecasting methodology uses historical time-series data to predict future demand and is a staple in supply chain planning software?", "verifiability": "PUBLIC"}
+{"id": "param_94_ans", "pair": "param_94", "question": "Which European multinational aerospace corporation relies on a vast network of tier suppliers across multiple countries to assemble its commercial aircraft?", "verifiability": "PUBLIC"}
+{"id": "param_95_ans", "pair": "param_95", "question": "Which global fast-food chain operates a highly optimized cold chain logistics network to ensure the freshness of its perishable ingredients across thousands of locations?", "verifiability": "PUBLIC"}
+{"id": "param_96_ans", "pair": "param_96", "question": "Which apparel and footwear company utilizes a demand-driven supply chain model and heavily relies on contract manufacturers located primarily in Asia?", "verifiability": "PUBLIC"}
+{"id": "param_97_ans", "pair": "param_97", "question": "Which supply chain risk management framework, developed by ISO, specifies requirements for a security management system to ensure the safety of the supply chain?", "verifiability": "PUBLIC"}
+{"id": "param_98_ans", "pair": "param_98", "question": "Which American multinational beverage corporation utilizes a franchised bottling system to manufacture, package, and distribute its products worldwide?", "verifiability": "PUBLIC"}
+{"id": "param_99_ans", "pair": "param_99", "question": "Which pharmaceutical supply chain track-and-trace regulation, enacted by the United States government, requires interoperable systems to trace prescription drugs?", "verifiability": "PUBLIC"}
+{"id": "param_100_ans", "pair": "param_100", "question": "What specific inventory turnover ratio did Walmart report in its 2022 annual supply chain review?", "verifiability": "PUBLIC"}
+{"id": "param_101_ans", "pair": "param_101", "question": "Which primary ocean freight carrier is contracted for Asia-North America routes under the Amazon Logistics program?", "verifiability": "PUBLIC"}
+{"id": "param_102_ans", "pair": "param_102", "question": "What is the exact SIC code classification assigned to Tesla within North American procurement databases?", "verifiability": "PUBLIC"}
+{"id": "param_103_ans", "pair": "param_103", "question": "What minimum order quantity is strictly enforced for suppliers providing Intel microchips within the global database?", "verifiability": "NONPUBLIC"}
+{"id": "param_104_ans", "pair": "param_104", "question": "Under the ISO 9001 standard, what is the maximum acceptable defect rate per million units for Tier 1 suppliers?", "verifiability": "PUBLIC"}
+{"id": "param_105_ans", "pair": "param_105", "question": "Which specific ERP module was fully deployed to manage procurement operations for Apple in 2023?", "verifiability": "NONPUBLIC"}
+{"id": "param_106_ans", "pair": "param_106", "question": "What is the standard lead time for expedited shipping of Ford F-150 parts from the Mexico City manufacturing hub?", "verifiability": "NONPUBLIC"}
+{"id": "param_107_ans", "pair": "param_107", "question": "Who is currently the designated Chief Supply Chain Officer for Target as of the latest shareholder report?", "verifiability": "PUBLIC"}
+{"id": "param_108_ans", "pair": "param_108", "question": "What is the penalty fee for late delivery specified in the Boeing vendor master agreement?", "verifiability": "NONPUBLIC"}
+{"id": "param_109_ans", "pair": "param_109", "question": "What was the total tonnage of recycled materials utilized in packaging by Unilever in 2022?", "verifiability": "PUBLIC"}
+{"id": "param_110_ans", "pair": "param_110", "question": "Which primary cloud-based TMS platform was selected by Coca-Cola to optimize inbound logistics routing?", "verifiability": "PUBLIC"}
+{"id": "param_111_ans", "pair": "param_111", "question": "What is the required cold-chain temperature range for storing Pfizer vaccines at regional distribution centers?", "verifiability": "PUBLIC"}
+{"id": "param_112_ans", "pair": "param_112", "question": "Under Dodd-Frank Section 1502 compliance guidelines, what is the mandatory audit frequency for conflict mineral reporting?", "verifiability": "PUBLIC"}
+{"id": "param_113_ans", "pair": "param_113", "question": "What is the precise unit weight recorded for Sony PlayStations on the official bill of lading templates?", "verifiability": "NONPUBLIC"}
+{"id": "param_114_ans", "pair": "param_114", "question": "Which specific cross-dock facility in Texas serves as the primary hub for Home Depot reverse logistics?", "verifiability": "NONPUBLIC"}
+{"id": "param_115_ans", "pair": "param_115", "question": "What is the exact carbon emission cap assigned to Tier 2 suppliers under the Walmart Project Gigaton sustainability mandate?", "verifiability": "NONPUBLIC"}
+{"id": "param_116_ans", "pair": "param_116", "question": "What was the annual procurement spend cap strictly enforced for indirect materials by Procter and Gamble in 2021?", "verifiability": "NONPUBLIC"}
+{"id": "param_117_ans", "pair": "param_117", "question": "Which primary Tier 1 vendor supplies the custom packaging materials used for Nike Air Max globally?", "verifiability": "NONPUBLIC"}
+{"id": "param_118_ans", "pair": "param_118", "question": "What was the total on-time delivery rate recorded for UPS during the 2022 holiday peak season?", "verifiability": "PUBLIC"}
+{"id": "param_119_ans", "pair": "param_119", "question": "What is the specific hazmat classification code for shipping ExxonMobil petroleum products via standard freight rail?", "verifiability": "NONPUBLIC"}
+{"id": "param_120_ans", "pair": "param_120", "question": "Which Southeast Asian country is designated as the sole sourcing location for natural rubber in Michelin tires?", "verifiability": "PUBLIC"}
+{"id": "param_121_ans", "pair": "param_121", "question": "What is the required safety stock ratio for IKEA furniture at the main European distribution facility?", "verifiability": "NONPUBLIC"}
+{"id": "param_122_ans", "pair": "param_122", "question": "Under EDIFACT protocol, what is the mandatory data transmission standard for EDI transactions?", "verifiability": "PUBLIC"}
+{"id": "param_123_ans", "pair": "param_123", "question": "What is the specific customs tariff code applied to Samsung smartphones when imported into the United States?", "verifiability": "PUBLIC"}
+{"id": "param_124_ans", "pair": "param_124", "question": "Which primary third-party logistics provider manages all overland transport for McDonald's in Canada?", "verifiability": "PUBLIC"}
+{"id": "param_125_ans", "pair": "param_125", "question": "What is the primary commodity sourced by Apple for its global manufacturing operations?", "verifiability": "PUBLIC"}
+{"id": "param_126_ans", "pair": "param_126", "question": "Which specific tier-1 supplier manufactures the battery cells used in the flagship vehicles of Tesla?", "verifiability": "PUBLIC"}
+{"id": "param_127_ans", "pair": "param_127", "question": "What is the standard RS-1 replenishment lead time mandated by ISO 9001 for its vendor managed inventory program?", "verifiability": "NONPUBLIC"}
+{"id": "param_128_ans", "pair": "param_128", "question": "Which specific SKU is designated as the primary emergency safety relief valve in the B2B catalog of Grainger?", "verifiability": "NONPUBLIC"}
+{"id": "param_129_ans", "pair": "param_129", "question": "What is the exact freight classification code assigned to large consumer appliances shipped via the network of FedEx Freight?", "verifiability": "NONPUBLIC"}
+{"id": "param_130_ans", "pair": "param_130", "question": "Under the Fair Trade certification framework of Fairtrade International, what percentage premium is guaranteed to cooperative farmers?", "verifiability": "PUBLIC"}
+{"id": "param_131_ans", "pair": "param_131", "question": "Which strategic port serves as the primary Pacific Rim transshipment hub for the ocean freight network of Maersk?", "verifiability": "PUBLIC"}
+{"id": "param_132_ans", "pair": "param_132", "question": "What proprietary cross-docking algorithm is utilized by Walmart to optimize trailer load sequencing for outbound retail deliveries?", "verifiability": "NONPUBLIC"}
+{"id": "param_133_ans", "pair": "param_133", "question": "Which conflict mineral tracking protocol is mandated by Responsible Minerals Initiative for all tier-2 electronics component suppliers?", "verifiability": "PUBLIC"}
+{"id": "param_134_ans", "pair": "param_134", "question": "What is the guaranteed maximum wholesale price variance clause for raw milk in the supplier contracts of Dean Foods?", "verifiability": "NONPUBLIC"}
+{"id": "param_135_ans", "pair": "param_135", "question": "What is the mandatory OTIF delivery window benchmark enforced by Coca-Cola for direct-store-delivery beverage vendors?", "verifiability": "NONPUBLIC"}
+{"id": "param_136_ans", "pair": "param_136", "question": "Which specific ERP module integrates predictive maintenance scheduling into the cold-chain logistics platform of Lineage Logistics?", "verifiability": "NONPUBLIC"}
+{"id": "param_137_ans", "pair": "param_137", "question": "What is the acceptable parts-per-million defect threshold for automotive microchips specified in the purchasing agreements of Toyota?", "verifiability": "NONPUBLIC"}
+{"id": "param_138_ans", "pair": "param_138", "question": "Which synthetic polymer is designated as the exclusive biodegradable packaging material in the sustainability charter of Amazon?", "verifiability": "PUBLIC"}
+{"id": "param_139_ans", "pair": "param_139", "question": "What is the minimum required safety stock multiplier for class-A pharmaceutical ingredients mandated by the framework of ISO 9001?", "verifiability": "NONPUBLIC"}
+{"id": "param_140_ans", "pair": "param_140", "question": "Which specific contract manufacturer accounts for the majority of motherboard assembly in the upstream supply chain of Dell?", "verifiability": "NONPUBLIC"}
+{"id": "param_141_ans", "pair": "param_141", "question": "What specific drop-shipping integration protocol is required for real-time inventory visibility by the marketplace of Shopify?", "verifiability": "NONPUBLIC"}
+{"id": "param_142_ans", "pair": "param_142", "question": "Which regional distribution center serves as the primary returns processing hub for the e-commerce operations of Target?", "verifiability": "NONPUBLIC"}
+{"id": "param_143_ans", "pair": "param_143", "question": "Under the traceability standard published by GS1, what is the required batch-level serialization format for beef products?", "verifiability": "PUBLIC"}
+{"id": "param_144_ans", "pair": "param_144", "question": "What is the standard penalty percentage applied for early contract termination in the master purchasing agreement of Procter & Gamble?", "verifiability": "NONPUBLIC"}
+{"id": "param_145_ans", "pair": "param_145", "question": "Which specific supplier code of conduct violation results in immediate zero-tolerance expulsion from the vendor pool of Nike?", "verifiability": "NONPUBLIC"}
+{"id": "param_146_ans", "pair": "param_146", "question": "What is the maximum allowable transit temperature variance for fresh produce shipped via the reefer network of C.H. Robinson?", "verifiability": "NONPUBLIC"}
+{"id": "param_147_ans", "pair": "param_147", "question": "Which radio frequency identification standard is mandated by EPCglobal for tracking reusable transport items in the European sector?", "verifiability": "PUBLIC"}
+{"id": "param_148_ans", "pair": "param_148", "question": "What is the minimum cubic capacity utilization threshold required for FTL shipments arranged by the procurement team of Home Depot?", "verifiability": "NONPUBLIC"}
+{"id": "param_149_ans", "pair": "param_149", "question": "Which specific multi-tier subcontractor provides the carbon fiber weave for the aerospace division of Boeing?", "verifiability": "NONPUBLIC"}
+{"id": "param_150_ans", "pair": "param_150", "question": "Which specific ocean freight carrier provides the dedicated weekly Trans-Pacific service for Walmart?", "verifiability": "PUBLIC"}
+{"id": "param_151_ans", "pair": "param_151", "question": "What is the exact API standard classification number for the 5CT specification?", "verifiability": "PUBLIC"}
+{"id": "param_152_ans", "pair": "param_152", "question": "Which global third-party logistics provider manages the European distribution centers for Apple?", "verifiability": "PUBLIC"}
+{"id": "param_153_ans", "pair": "param_153", "question": "Under the CPSIA framework, what is the maximum allowable lead content in surface coatings?", "verifiability": "PUBLIC"}
+{"id": "param_154_ans", "pair": "param_154", "question": "Which contract manufacturer primarily assembles the flagship smartphone for Google?", "verifiability": "PUBLIC"}
+{"id": "param_155_ans", "pair": "param_155", "question": "What is the designated customs Harmonized System (HS) code for the Intel Core processor product line?", "verifiability": "PUBLIC"}
+{"id": "param_156_ans", "pair": "param_156", "question": "Which enterprise resource planning software platform serves as the global backbone for Nike?", "verifiability": "PUBLIC"}
+{"id": "param_157_ans", "pair": "param_157", "question": "What is the required supplier lead time for Tier 1 dashboard modules under the Ford Q1 contract?", "verifiability": "NONPUBLIC"}
+{"id": "param_158_ans", "pair": "param_158", "question": "Which specific multi-tier supplier provides the carbon fiber composite for the Boeing 787?", "verifiability": "PUBLIC"}
+{"id": "param_159_ans", "pair": "param_159", "question": "What is the exact inventory turnover ratio target for the fast-moving consumables of Amazon?", "verifiability": "NONPUBLIC"}
+{"id": "param_160_ans", "pair": "param_160", "question": "Which specific rare earth element is most critical to the supply chain of Tesla?", "verifiability": "NONPUBLIC"}
+{"id": "param_161_ans", "pair": "param_161", "question": "What is the designated tariff classification for imported raw aluminum under the USMCA trade agreement?", "verifiability": "PUBLIC"}
+{"id": "param_162_ans", "pair": "param_162", "question": "Which cloud-based control tower platform provides end-to-end visibility for Unilever?", "verifiability": "PUBLIC"}
+{"id": "param_163_ans", "pair": "param_163", "question": "What is the minimum order quantity for custom injection-molded parts from the primary vendor of Dyson?", "verifiability": "NONPUBLIC"}
+{"id": "param_164_ans", "pair": "param_164", "question": "Which specific certification is required for all Tier 2 textile suppliers under the Patagonia sourcing policy?", "verifiability": "PUBLIC"}
+{"id": "param_165_ans", "pair": "param_165", "question": "What was the primary cause of the major supply chain disruption reported by Sony in Q3?", "verifiability": "PUBLIC"}
+{"id": "param_166_ans", "pair": "param_166", "question": "Which specific port handles the highest export volume of finished vehicles for BMW?", "verifiability": "PUBLIC"}
+{"id": "param_167_ans", "pair": "param_167", "question": "What is the standard safety stock level for the flagship vaccine SKU managed by Pfizer?", "verifiability": "NONPUBLIC"}
+{"id": "param_168_ans", "pair": "param_168", "question": "Which primary semiconductor foundry produces the custom AI accelerators for NVIDIA?", "verifiability": "PUBLIC"}
+{"id": "param_169_ans", "pair": "param_169", "question": "What is the required cold chain temperature range for the biological reagents supplied to Moderna?", "verifiability": "NONPUBLIC"}
+{"id": "param_170_ans", "pair": "param_170", "question": "Which regional packaging supplier provides the sustainable molded pulp for IKEA?", "verifiability": "PUBLIC"}
+{"id": "param_171_ans", "pair": "param_171", "question": "What is the exact vendor managed inventory replenishment trigger point for Walmart?", "verifiability": "NONPUBLIC"}
+{"id": "param_172_ans", "pair": "param_172", "question": "Which cross-docking facility serves as the central hub for the Midwest logistics network of Target?", "verifiability": "PUBLIC"}
+{"id": "param_173_ans", "pair": "param_173", "question": "What is the mandated supplier diversity spend threshold for procurement contracts under the US Federal Government?", "verifiability": "PUBLIC"}
+{"id": "param_174_ans", "pair": "param_174", "question": "Which specific Tier 1 supplier provides the integrated braking systems for Ford?", "verifiability": "PUBLIC"}
+{"id": "param_175_ans", "pair": "param_175", "question": "Which inventory valuation method is primarily used by Apple for its global supply chain operations?", "verifiability": "PUBLIC"}
+{"id": "param_176_ans", "pair": "param_176", "question": "What specific technology does Walmart utilize to track and trace products moving through its distribution network?", "verifiability": "PUBLIC"}
+{"id": "param_177_ans", "pair": "param_177", "question": "Under the ISO 9001 framework, what is the maximum allowable defect rate for outbound shipments from a certified supplier?", "verifiability": "NONPUBLIC"}
+{"id": "param_178_ans", "pair": "param_178", "question": "What is the primary intermodal freight hub utilized by Amazon to consolidate European shipments before final delivery?", "verifiability": "PUBLIC"}
+{"id": "param_179_ans", "pair": "param_179", "question": "Which specific forecasting algorithm is deployed by Target to predict seasonal demand spikes for its flagship product?", "verifiability": "NONPUBLIC"}
+{"id": "param_180_ans", "pair": "param_180", "question": "What is the mandated lead time for Tier-1 component deliveries under the Toyota supplier compliance contract?", "verifiability": "NONPUBLIC"}
+{"id": "param_181_ans", "pair": "param_181", "question": "Which strategic sourcing methodology was adopted by Ford to mitigate raw material shortages during the 2021 crisis?", "verifiability": "PUBLIC"}
+{"id": "param_182_ans", "pair": "param_182", "question": "What is the required temperature range for transporting Pfizer vaccines via cold chain logistics from factory to retail?", "verifiability": "PUBLIC"}
+{"id": "param_183_ans", "pair": "param_183", "question": "What is the primary supplier evaluation metric used by Procter & Gamble to score vendor performance on a monthly basis?", "verifiability": "NONPUBLIC"}
+{"id": "param_184_ans", "pair": "param_184", "question": "Under the Incoterms 2020 protocol, what is the penalty cost per day for a delayed delivery of critical raw materials?", "verifiability": "PUBLIC"}
+{"id": "param_185_ans", "pair": "param_185", "question": "Which specific supply chain risk management software platform is licensed by Unilever for end-to-end visibility?", "verifiability": "PUBLIC"}
+{"id": "param_186_ans", "pair": "param_186", "question": "What is the standard safety stock calculation formula applied by Coca-Cola for its high-velocity consumer goods?", "verifiability": "NONPUBLIC"}
+{"id": "param_187_ans", "pair": "param_187", "question": "Which cross-docking facility layout strategy is implemented by FedEx to minimize trailer turnaround time?", "verifiability": "PUBLIC"}
+{"id": "param_188_ans", "pair": "param_188", "question": "What is the mandated carbon emission cap per shipment under the Maersk sustainable logistics initiative?", "verifiability": "NONPUBLIC"}
+{"id": "param_189_ans", "pair": "param_189", "question": "Which reverse logistics partner is contracted by Best Buy to handle all European customer returns and refurbishment?", "verifiability": "PUBLIC"}
+{"id": "param_190_ans", "pair": "param_190", "question": "What is the exact package dimensions and weight limit for the Amazon standardized shipping container?", "verifiability": "NONPUBLIC"}
+{"id": "param_191_ans", "pair": "param_191", "question": "What is the primary inventory turnover ratio target established by Nike for its seasonal product lines?", "verifiability": "NONPUBLIC"}
+{"id": "param_192_ans", "pair": "param_192", "question": "Which vendor-managed inventory system is mandated for all Tier-2 suppliers under the Bosch procurement policy?", "verifiability": "NONPUBLIC"}
+{"id": "param_193_ans", "pair": "param_193", "question": "What is the prescribed obsolescence depreciation schedule for unsold Intel components in the distribution center?", "verifiability": "NONPUBLIC"}
+{"id": "param_194_ans", "pair": "param_194", "question": "What is the primary port of entry used by H&M to clear customs for its Asian-manufactured textile imports?", "verifiability": "NONPUBLIC"}
+{"id": "param_195_ans", "pair": "param_195", "question": "Which specific lean manufacturing methodology was originally developed and formalized by Toyota?", "verifiability": "PUBLIC"}
+{"id": "param_196_ans", "pair": "param_196", "question": "What is the standard expedited freight surcharge applied by UPS for same-day critical B2B deliveries?", "verifiability": "NONPUBLIC"}
+{"id": "param_197_ans", "pair": "param_197", "question": "Under the ISO 28000 framework, what is the mandated audit frequency for third-party logistics providers?", "verifiability": "PUBLIC"}
+{"id": "param_198_ans", "pair": "param_198", "question": "Which multi-echelon inventory optimization model is currently deployed by Dell to balance global stock levels?", "verifiability": "NONPUBLIC"}
+{"id": "param_199_ans", "pair": "param_199", "question": "What is the primary bulk break-bulk terminal utilized by Cargill to divide South American agricultural exports?", "verifiability": "PUBLIC"}
+{"id": "param_200_ans", "pair": "param_200", "question": "What is the standard inventory classification framework used by Toyota to categorize stock based on value and turnover?", "verifiability": "PUBLIC"}
+{"id": "param_201_ans", "pair": "param_201", "question": "Which specific shipping Incoterm is primarily utilized by Maersk for international ocean freight to transfer risk at the port of loading?", "verifiability": "NONPUBLIC"}
+{"id": "param_202_ans", "pair": "param_202", "question": "What is the core warehouse management system (WMS) software currently deployed by Walmart across its global distribution centers?", "verifiability": "NONPUBLIC"}
+{"id": "param_203_ans", "pair": "param_203", "question": "Under the SCOR model, what is the primary 'Plan' process metric measured by Apple to evaluate supply chain performance?", "verifiability": "PUBLIC"}
+{"id": "param_204_ans", "pair": "param_204", "question": "What is the exact vendor-managed inventory (VMI) replenishment lead time agreed upon in the contract with P&G?", "verifiability": "NONPUBLIC"}
+{"id": "param_205_ans", "pair": "param_205", "question": "Which tier-1 semiconductor foundry supplier is exclusively contracted by Nvidia to manufacture its custom silicon chips?", "verifiability": "PUBLIC"}
+{"id": "param_206_ans", "pair": "param_206", "question": "What is the target inventory turnover ratio set by Boeing for its high-volume fastener SKU line?", "verifiability": "NONPUBLIC"}
+{"id": "param_207_ans", "pair": "param_207", "question": "What is the primary cross-docking strategy utilized by Sysco to minimize storage time for perishable goods?", "verifiability": "PUBLIC"}
+{"id": "param_208_ans", "pair": "param_208", "question": "What is the standard safety stock calculation formula implemented by Amazon for its seasonal demand SKUs?", "verifiability": "NONPUBLIC"}
+{"id": "param_209_ans", "pair": "param_209", "question": "Which specific ISO standard is maintained by Ford to ensure quality management across its automotive supply base?", "verifiability": "PUBLIC"}
+{"id": "param_210_ans", "pair": "param_210", "question": "What is the exact bill of lading (B/L) surrender procedure required by DHL for priority customs clearance?", "verifiability": "NONPUBLIC"}
+{"id": "param_211_ans", "pair": "param_211", "question": "Which specific electronic data interchange (EDI) transaction set is mandated by Target for purchase order acknowledgments?", "verifiability": "PUBLIC"}
+{"id": "param_212_ans", "pair": "param_212", "question": "What is the proprietary cold chain temperature threshold strictly enforced by Pfizer for transporting mRNA vaccines?", "verifiability": "NONPUBLIC"}
+{"id": "param_213_ans", "pair": "param_213", "question": "Which specific reverse logistics provider is partnered with Dell to handle end-of-life electronic waste recycling?", "verifiability": "PUBLIC"}
+{"id": "param_214_ans", "pair": "param_214", "question": "What is the exact dock-to-stock cycle time benchmark achieved by FedEx at its primary Memphis fulfillment hub?", "verifiability": "NONPUBLIC"}
+{"id": "param_215_ans", "pair": "param_215", "question": "What is the primary statistical forecasting algorithm utilized by Unilever to predict demand for its flagship consumer products?", "verifiability": "NONPUBLIC"}
+{"id": "param_216_ans", "pair": "param_216", "question": "Which specific 3PL provider manages the primary European distribution network for Adidas?", "verifiability": "PUBLIC"}
+{"id": "param_217_ans", "pair": "param_217", "question": "What is the exact carbon emission tracking protocol adopted by IKEA for its Scope 3 logistics reporting?", "verifiability": "NONPUBLIC"}
+{"id": "param_218_ans", "pair": "param_218", "question": "What is the exact supplier code of conduct compliance metric monitored by Nike for tier-2 sourcing partners?", "verifiability": "NONPUBLIC"}
+{"id": "param_219_ans", "pair": "param_219", "question": "What is the primary ocean freight routing utilized by Zara to bypass the Suez Canal congestion?", "verifiability": "NONPUBLIC"}
+{"id": "param_220_ans", "pair": "param_220", "question": "What is the exact packaging material restriction enforced by Patagonia within its sustainable packaging guidelines?", "verifiability": "NONPUBLIC"}
+{"id": "param_221_ans", "pair": "param_221", "question": "What is the exact demand-driven MRP buffer level setting utilized by Caterpillar for its decoupling points?", "verifiability": "NONPUBLIC"}
+{"id": "param_222_ans", "pair": "param_222", "question": "Which specific blockchain platform is utilized by Walmart for end-to-end container traceability?", "verifiability": "PUBLIC"}
+{"id": "param_223_ans", "pair": "param_223", "question": "What is the exact on-time in-full (OTIF) delivery penalty clause specified by Costco in its master service agreement?", "verifiability": "NONPUBLIC"}
+{"id": "param_224_ans", "pair": "param_224", "question": "What is the primary advanced planning and scheduling (APS) system deployed by Tesla to manage its finite capacity constraints?", "verifiability": "PUBLIC"}
+{"id": "param_225_ans", "pair": "param_225", "question": "What is the primary warehouse management system used by Amazon to automate its global fulfillment centers?", "verifiability": "PUBLIC"}
+{"id": "param_226_ans", "pair": "param_226", "question": "Under the ISO 9001 framework, what is the required lead time for suppliers to submit corrective action plans after a major non-conformity is identified?", "verifiability": "PUBLIC"}
+{"id": "param_227_ans", "pair": "param_227", "question": "How does Walmart utilize cross-docking operations to minimize inventory holding costs in its North American supply network?", "verifiability": "PUBLIC"}
+{"id": "param_228_ans", "pair": "param_228", "question": "What specific carbon tracking metric does Apple mandate for its Tier 1 suppliers to report under its sustainable sourcing program?", "verifiability": "PUBLIC"}
+{"id": "param_229_ans", "pair": "param_229", "question": "What is the standard inventory turn rate target set by Intel for its global semiconductor supply pipeline?", "verifiability": "NONPUBLIC"}
+{"id": "param_230_ans", "pair": "param_230", "question": "In the SCOR model, how are safety stock levels dynamically recalculated when supplier lead time variability exceeds the standard deviation threshold?", "verifiability": "PUBLIC"}
+{"id": "param_231_ans", "pair": "param_231", "question": "What automated routing algorithm does UPS deploy to optimize last-mile delivery sequencing in high-density urban zones?", "verifiability": "PUBLIC"}
+{"id": "param_232_ans", "pair": "param_232", "question": "How does Best Buy structure its vendor managed inventory agreements to handle seasonal demand spikes for consumer electronics?", "verifiability": "NONPUBLIC"}
+{"id": "param_233_ans", "pair": "param_233", "question": "According to IATF 16949 guidelines, what is the maximum allowable defect rate per million units for critical automotive components?", "verifiability": "PUBLIC"}
+{"id": "param_234_ans", "pair": "param_234", "question": "What multi-tier visibility platform does Intel use to trace conflict minerals throughout its hardware manufacturing supply chain?", "verifiability": "PUBLIC"}
+{"id": "param_235_ans", "pair": "param_235", "question": "How does Target enforce service level agreements regarding on-time delivery penalties with its third-party logistics providers?", "verifiability": "NONPUBLIC"}
+{"id": "param_236_ans", "pair": "param_236", "question": "Within the Kraljic matrix methodology, what constitutes the primary differentiation between a strategic partnership and a tactical supplier relationship?", "verifiability": "PUBLIC"}
+{"id": "param_237_ans", "pair": "param_237", "question": "What is the standard procedure for Toyota when executing a product recall across its European distribution network?", "verifiability": "PUBLIC"}
+{"id": "param_238_ans", "pair": "param_238", "question": "How does De Beers integrate blockchain technology to verify the authenticity of raw materials sourced from sub-tier suppliers?", "verifiability": "PUBLIC"}
+{"id": "param_239_ans", "pair": "param_239", "question": "Under the SA8000 protocol, what is the required frequency for external auditors to review supplier labor compliance records?", "verifiability": "PUBLIC"}
+{"id": "param_240_ans", "pair": "param_240", "question": "What specific forecasting algorithm does Kroger apply to predict regional demand for its perishable grocery SKUs?", "verifiability": "NONPUBLIC"}
+{"id": "param_241_ans", "pair": "param_241", "question": "How does Zara manage reverse logistics operations to process high volumes of returned apparel items efficiently?", "verifiability": "PUBLIC"}
+{"id": "param_242_ans", "pair": "param_242", "question": "What is the mandated documentation process for Boeing when a Tier 2 supplier experiences a single-source component shortage?", "verifiability": "NONPUBLIC"}
+{"id": "param_243_ans", "pair": "param_243", "question": "In the EOQ framework, how is the optimal reorder point calculated when both demand and lead time are stochastic variables?", "verifiability": "PUBLIC"}
+{"id": "param_244_ans", "pair": "param_244", "question": "What criteria does Procter & Gamble use to qualify suppliers for its collaborative planning, forecasting, and replenishment program?", "verifiability": "PUBLIC"}
+{"id": "param_245_ans", "pair": "param_245", "question": "How does Pfizer mitigate bullwhip effect risks within its global pharmaceutical distribution network?", "verifiability": "NONPUBLIC"}
+{"id": "param_246_ans", "pair": "param_246", "question": "What is the standard procedure for Maersk when conducting a root cause analysis on recurring freight damage claims?", "verifiability": "NONPUBLIC"}
+{"id": "param_247_ans", "pair": "param_247", "question": "Under IMDG Code regulations, what are the specific packaging labeling requirements for lithium batteries transported via ocean freight?", "verifiability": "PUBLIC"}
+{"id": "param_248_ans", "pair": "param_248", "question": "How does DHL utilizes digital twin technology to simulate stress tests across its global shipping lane network?", "verifiability": "PUBLIC"}
+{"id": "param_249_ans", "pair": "param_249", "question": "What is the supplier diversity spend threshold mandated by Coca-Cola for procurement contracts exceeding ten million dollars?", "verifiability": "NONPUBLIC"}
+{"id": "param_250_ans", "pair": "param_250", "question": "What is the primary focus of the Walmart Project Gigaton supply chain sustainability initiative?", "verifiability": "PUBLIC"}
+{"id": "param_251_ans", "pair": "param_251", "question": "Under the CDP Supply Chain framework, what must Tier 1 suppliers disclose regarding emissions?", "verifiability": "PUBLIC"}
+{"id": "param_252_ans", "pair": "param_252", "question": "What is the minimum order quantity for Pampers in a standard vendor managed inventory agreement?", "verifiability": "NONPUBLIC"}
+{"id": "param_253_ans", "pair": "param_253", "question": "How does Dell handle reverse logistics for end-of-life product components?", "verifiability": "PUBLIC"}
+{"id": "param_254_ans", "pair": "param_254", "question": "What is the standard lead time for iPhones shipped via ocean freight from Shanghai to Los Angeles?", "verifiability": "PUBLIC"}
+{"id": "param_255_ans", "pair": "param_255", "question": "What is the primary criteria for selecting a supplier under the Nike Code of Conduct responsible sourcing program?", "verifiability": "PUBLIC"}
+{"id": "param_256_ans", "pair": "param_256", "question": "Which inventory classification category does Intel Core i9 typically fall under in an ABC analysis?", "verifiability": "PUBLIC"}
+{"id": "param_257_ans", "pair": "param_257", "question": "What specific tracking technology is utilized by Pfizer for cold chain temperature monitoring?", "verifiability": "PUBLIC"}
+{"id": "param_258_ans", "pair": "param_258", "question": "What is the required safety stock formula parameter for PlayStation 5 during the holiday peak season?", "verifiability": "NONPUBLIC"}
+{"id": "param_259_ans", "pair": "param_259", "question": "Under the ISO 20400 standard, what is the required supplier compliance protocol for conflict minerals?", "verifiability": "PUBLIC"}
+{"id": "param_260_ans", "pair": "param_260", "question": "What is the primary methodology used by ABC Analysis to classify and manage inventory based on value and turnover?", "verifiability": "PUBLIC"}
+{"id": "param_261_ans", "pair": "param_261", "question": "How does RFID Technology facilitate real-time tracking of goods moving through the global supply chain?", "verifiability": "PUBLIC"}
+{"id": "param_262_ans", "pair": "param_262", "question": "What are the core pillars of the SCOR Model framework for measuring supply chain sustainability?", "verifiability": "PUBLIC"}
+{"id": "param_263_ans", "pair": "param_263", "question": "Under ISO 9001, how is the minimum acceptable quality threshold defined for incoming raw materials?", "verifiability": "PUBLIC"}
+{"id": "param_264_ans", "pair": "param_264", "question": "What is the standard lead time for a bulk reorder of Intel Core i9 processors from a primary tier-one supplier?", "verifiability": "NONPUBLIC"}
+{"id": "param_265_ans", "pair": "param_265", "question": "How does SAP ERP calculates the reorder point to prevent stockouts during seasonal demand spikes?", "verifiability": "PUBLIC"}
+{"id": "param_266_ans", "pair": "param_266", "question": "What penalties are stipulated in a standard DHL Service Level Agreement for late delivery by a logistics provider?", "verifiability": "NONPUBLIC"}
+{"id": "param_267_ans", "pair": "param_267", "question": "What is the recommended storage temperature for Fresh Cut Lettuce to maintain shelf life in a regional DC?", "verifiability": "NONPUBLIC"}
+{"id": "param_268_ans", "pair": "param_268", "question": "What specific criteria must a vendor meet to be certified under the Walmart Supplier Quality Assurance program?", "verifiability": "PUBLIC"}
+{"id": "param_269_ans", "pair": "param_269", "question": "How does Oracle SCM Cloud integrates with existing CRM systems to improve demand forecasting accuracy?", "verifiability": "PUBLIC"}
+{"id": "param_270_ans", "pair": "param_270", "question": "What is the primary impact of the C-TPAT program on reducing customs clearance times at international borders?", "verifiability": "PUBLIC"}
+{"id": "param_271_ans", "pair": "param_271", "question": "How does Vendor Managed Inventory address the bullwhip effect in multi-tier distribution networks?", "verifiability": "PUBLIC"}
+{"id": "param_272_ans", "pair": "param_272", "question": "What are the standard packaging requirements for shipping Lithium-Ion Batteries via ocean freight?", "verifiability": "PUBLIC"}
+{"id": "param_273_ans", "pair": "param_273", "question": "What is the typical recovery time objective (RTO) defined in a supply chain Business Continuity plan?", "verifiability": "NONPUBLIC"}
+{"id": "param_274_ans", "pair": "param_274", "question": "How does UPS ORION system optimizes the last-mile delivery route planning for high-density urban areas?", "verifiability": "PUBLIC"}
+{"id": "param_275_ans", "pair": "param_275", "question": "What is the required safety stock calculation formula when implementing Just-In-Time manufacturing?", "verifiability": "PUBLIC"}
+{"id": "param_276_ans", "pair": "param_276", "question": "What specific data points are required on a Bill of Lading when shipping Hazardous Materials internationally?", "verifiability": "PUBLIC"}
+{"id": "param_277_ans", "pair": "param_277", "question": "How does the Fair Trade Certification ensures ethical sourcing and labor compliance across tier-two and tier-three suppliers?", "verifiability": "PUBLIC"}
+{"id": "param_278_ans", "pair": "param_278", "question": "What is the expected ROI timeline for a mid-sized manufacturer transitioning to Industry 4.0 standards?", "verifiability": "PUBLIC"}
+{"id": "param_279_ans", "pair": "param_279", "question": "How does Best Buy handles reverse logistics and product returns for end-of-life electronics?", "verifiability": "PUBLIC"}
+{"id": "param_280_ans", "pair": "param_280", "question": "What is the standard container utilization rate expected when utilizing Less-than-Container Load for consolidated freight?", "verifiability": "PUBLIC"}
+{"id": "param_281_ans", "pair": "param_281", "question": "What are the primary causes of inventory shrinkage addressed by implementing Cycle Counting?", "verifiability": "PUBLIC"}
+{"id": "param_282_ans", "pair": "param_282", "question": "How does Dual Sourcing mitigates the risk of single-source supplier failure in a global crisis?", "verifiability": "PUBLIC"}
+{"id": "param_283_ans", "pair": "param_283", "question": "What role does Sales and Operations Planning plays in synchronizing supply chain planning with financial budgeting?", "verifiability": "PUBLIC"}
+{"id": "param_284_ans", "pair": "param_284", "question": "What is the typical cost variance percentage when comparing Expedited Ocean Freight to traditional air freight?", "verifiability": "PUBLIC"}
+{"id": "param_285_ans", "pair": "param_285", "question": "What tier-1 supplier category provides the critical subcomponents for Apple's flagship product?", "verifiability": "PUBLIC"}
+{"id": "param_286_ans", "pair": "param_286", "question": "Under the Incoterms 2020 framework, what is the required lead time for sea freight from Asia to North America?", "verifiability": "PUBLIC"}
+{"id": "param_287_ans", "pair": "param_287", "question": "Which specific SKU identifier is utilized for the standard lithium battery pack in the Tesla electric vehicle?", "verifiability": "NONPUBLIC"}
+{"id": "param_288_ans", "pair": "param_288", "question": "What is the primary raw material shortage risk identified in the Intel annual procurement risk assessment?", "verifiability": "NONPUBLIC"}
+{"id": "param_289_ans", "pair": "param_289", "question": "What minimum order quantity is mandated by the vendor agreement for custom polymers sourced by Lego?", "verifiability": "NONPUBLIC"}
+{"id": "param_290_ans", "pair": "param_290", "question": "Which global logistics provider is contracted to manage the primary cross-docking operations for Walmart?", "verifiability": "PUBLIC"}
+{"id": "param_291_ans", "pair": "param_291", "question": "What is the mandated buffer stock level for high-risk semiconductors under the TSMC supply chain resilience policy?", "verifiability": "NONPUBLIC"}
+{"id": "param_292_ans", "pair": "param_292", "question": "What carbon emission cap is enforced for last-mile delivery vehicles operating within the Amazon distribution network?", "verifiability": "NONPUBLIC"}
+{"id": "param_293_ans", "pair": "param_293", "question": "Which specific certification is required for all packaging vendors participating in the IKEA sustainable sourcing initiative?", "verifiability": "PUBLIC"}
+{"id": "param_294_ans", "pair": "param_294", "question": "What is the penalty percentage for late shipment execution outlined in the Boeing master vendor agreement?", "verifiability": "NONPUBLIC"}
+{"id": "param_295_ans", "pair": "param_295", "question": "Which port is designated as the primary inbound receiving hub for the Nike trans-Pacific trade lane?", "verifiability": "NONPUBLIC"}
+{"id": "param_296_ans", "pair": "param_296", "question": "What is the standard cycle time for the tier-2 machining operations in the Toyota manufacturing flow?", "verifiability": "NONPUBLIC"}
+{"id": "param_297_ans", "pair": "param_297", "question": "Which cloud-based platform is utilized to execute the global demand forecasting algorithms for Target?", "verifiability": "NONPUBLIC"}
+{"id": "param_298_ans", "pair": "param_298", "question": "What is the mandated quality inspection sampling size for incoming textile shipments at H&M distribution centers?", "verifiability": "NONPUBLIC"}
+{"id": "param_299_ans", "pair": "param_299", "question": "What is the contracted transit time guarantee for expedited air freight under the FedEx global logistics agreement?", "verifiability": "NONPUBLIC"}
+{"id": "param_300_ans", "pair": "param_300", "question": "Which regional hub serves as the central consolidation point for agricultural raw materials destined for Nestle processing plants?", "verifiability": "NONPUBLIC"}
+{"id": "param_301_ans", "pair": "param_301", "question": "What is the required documentation turnaround time for customs clearance in the Maersk import compliance protocol?", "verifiability": "NONPUBLIC"}
+{"id": "param_302_ans", "pair": "param_302", "question": "What is the primary return authorization window for defective components supplied under the Dell warranty program?", "verifiability": "PUBLIC"}
+{"id": "param_303_ans", "pair": "param_303", "question": "Which strategic mineral is classified as the highest supply disruption risk in the Ford procurement matrix?", "verifiability": "NONPUBLIC"}
+{"id": "param_304_ans", "pair": "param_304", "question": "What is the allocated budget for reverse logistics operations within the Best Buy fiscal year supply chain plan?", "verifiability": "NONPUBLIC"}
+{"id": "param_305_ans", "pair": "param_305", "question": "What is the mandated drop-shipping fulfillment rate for direct-to-consumer orders routed through the Shopify portal?", "verifiability": "NONPUBLIC"}
+{"id": "param_306_ans", "pair": "param_306", "question": "Which tier-2 foundry partner is responsible for producing the customized silicon wafers for Nvidia hardware?", "verifiability": "NONPUBLIC"}
+{"id": "param_307_ans", "pair": "param_307", "question": "What temperature range must be maintained during the cold chain transit of Pfizer pharmaceutical ingredients?", "verifiability": "PUBLIC"}
+{"id": "param_308_ans", "pair": "param_308", "question": "Which third-party inspection agency is contracted to audit the ethical labor practices of Adidas overseas manufacturing sites?", "verifiability": "PUBLIC"}
+{"id": "param_309_ans", "pair": "param_309", "question": "What is the target inventory turnover ratio for fast-moving consumer goods within the Costco retail supply chain?", "verifiability": "NONPUBLIC"}
+{"id": "param_310_ans", "pair": "param_310", "question": "What is the primary methodology used by Walmart for end-to-end supply chain visibility?", "verifiability": "PUBLIC"}
+{"id": "param_311_ans", "pair": "param_311", "question": "Which specific inventory valuation method is mandated by Apple for its global distribution centers?", "verifiability": "NONPUBLIC"}
+{"id": "param_312_ans", "pair": "param_312", "question": "What is the standard lead time for a Tier-1 component shipment under the Toyota procurement framework?", "verifiability": "NONPUBLIC"}
+{"id": "param_313_ans", "pair": "param_313", "question": "Which specific vendor-managed inventory system is deployed at the Amazon primary consolidation hub?", "verifiability": "NONPUBLIC"}
+{"id": "param_314_ans", "pair": "param_314", "question": "What is the exact penalty rate for late delivery specified in the Boeing supplier contract?", "verifiability": "NONPUBLIC"}
+{"id": "param_315_ans", "pair": "param_315", "question": "Which intermodal freight classification code is assigned to raw materials inbound to Ford?", "verifiability": "NONPUBLIC"}
+{"id": "param_316_ans", "pair": "param_316", "question": "What is the minimum order quantity for the Intel flagship component SKU?", "verifiability": "NONPUBLIC"}
+{"id": "param_317_ans", "pair": "param_317", "question": "Which digital twin platform is officially integrated into the Siemens smart factory network?", "verifiability": "PUBLIC"}
+{"id": "param_318_ans", "pair": "param_318", "question": "What is the required safety stock threshold for critical spare parts at the Caterpillar service depot?", "verifiability": "NONPUBLIC"}
+{"id": "param_319_ans", "pair": "param_319", "question": "Which blockchain standard is utilized by IBM for supplier traceability compliance?", "verifiability": "PUBLIC"}
+{"id": "param_320_ans", "pair": "param_320", "question": "What is the standard cold-chain temperature variance allowed during transit for Pfizer pharmaceuticals?", "verifiability": "PUBLIC"}
+{"id": "param_321_ans", "pair": "param_321", "question": "Which tier-1 logistics provider manages the cross-docking operations for Target?", "verifiability": "PUBLIC"}
+{"id": "param_322_ans", "pair": "param_322", "question": "What is the mandated carbon reporting scope for Tier-2 suppliers under the Unilever sustainability index?", "verifiability": "NONPUBLIC"}
+{"id": "param_323_ans", "pair": "param_323", "question": "Which specific statistical forecasting model is used to predict seasonal demand for Procter & Gamble?", "verifiability": "NONPUBLIC"}
+{"id": "param_324_ans", "pair": "param_324", "question": "What is the maximum allowable dwell time for shipping containers at the Maersk maritime terminal?", "verifiability": "NONPUBLIC"}
+{"id": "param_325_ans", "pair": "param_325", "question": "Which reverse logistics provider is contracted for e-waste recycling by Dell?", "verifiability": "PUBLIC"}
+{"id": "param_326_ans", "pair": "param_326", "question": "What is the target inventory turnover ratio for the fast-moving consumable division of Nestle?", "verifiability": "NONPUBLIC"}
+{"id": "param_327_ans", "pair": "param_327", "question": "Which GS1 standard is implemented by DHL for autonomous warehouse pallet tracking?", "verifiability": "PUBLIC"}
+{"id": "param_328_ans", "pair": "param_328", "question": "What is the exact drop-shipping cut-off time for same-day dispatch from a FedEx fulfillment center?", "verifiability": "NONPUBLIC"}
+{"id": "param_329_ans", "pair": "param_329", "question": "Which lean manufacturing methodology is strictly enforced across the Tesla production line?", "verifiability": "PUBLIC"}
+{"id": "param_330_ans", "pair": "param_330", "question": "What is the required cycle time for quality assurance inspections at the General Motors assembly plant?", "verifiability": "NONPUBLIC"}
+{"id": "param_331_ans", "pair": "param_331", "question": "Which multi-echelon inventory optimization algorithm is licensed by Nike for its global network?", "verifiability": "NONPUBLIC"}
+{"id": "param_332_ans", "pair": "param_332", "question": "What is the mandated proof-of-delivery protocol for the last-mile distribution phase of UPS?", "verifiability": "PUBLIC"}
+{"id": "param_333_ans", "pair": "param_333", "question": "Which specific ISO standard governs the supplier risk management framework at Samsung?", "verifiability": "PUBLIC"}
+{"id": "param_334_ans", "pair": "param_334", "question": "What is the standard payment term length for net-zero invoices issued to Tier-2 suppliers by Costco?", "verifiability": "NONPUBLIC"}
+{"id": "param_335_ans", "pair": "param_335", "question": "What is the primary method used by Amazon to reduce lead times in its global supply chain?", "verifiability": "PUBLIC"}
+{"id": "param_336_ans", "pair": "param_336", "question": "Which specific inventory management strategy does Walmart implement to minimize stockouts in its retail stores?", "verifiability": "PUBLIC"}
+{"id": "param_337_ans", "pair": "param_337", "question": "How does Apple handle reverse logistics for its end-of-life electronic products?", "verifiability": "PUBLIC"}
+{"id": "param_338_ans", "pair": "param_338", "question": "What ocean freight routing algorithm is utilized by Maersk to optimize its trans-Pacific shipping lanes?", "verifiability": "NONPUBLIC"}
+{"id": "param_339_ans", "pair": "param_339", "question": "Which supplier diversity certification standard does Target require its Tier 1 vendors to maintain?", "verifiability": "PUBLIC"}
+{"id": "param_340_ans", "pair": "param_340", "question": "What is the exact tolerance threshold for temperature excursions in the cold chain protocol of Pfizer?", "verifiability": "NONPUBLIC"}
+{"id": "param_341_ans", "pair": "param_341", "question": "Which cross-docking facility layout model is deployed by FedEx at its primary Memphis distribution hub?", "verifiability": "NONPUBLIC"}
+{"id": "param_342_ans", "pair": "param_342", "question": "How does Kroger calculate safety stock levels for its high-velocity perishable SKUs?", "verifiability": "NONPUBLIC"}
+{"id": "param_343_ans", "pair": "param_343", "question": "What specific blockchain framework is adopted by Starbucks to trace the provenance of its coffee beans?", "verifiability": "PUBLIC"}
+{"id": "param_344_ans", "pair": "param_344", "question": "Under the vendor managed inventory agreement, how often does Toyota automatically replenish stock at authorized dealerships?", "verifiability": "PUBLIC"}
+{"id": "param_345_ans", "pair": "param_345", "question": "Which lean manufacturing methodology was originally pioneered by Ford to eliminate waste in its automotive assembly lines?", "verifiability": "PUBLIC"}
+{"id": "param_346_ans", "pair": "param_346", "question": "What is the standard lead time for domestic expedited freight guaranteed by the service level agreement with UPS?", "verifiability": "NONPUBLIC"}
+{"id": "param_347_ans", "pair": "param_347", "question": "Which specific radio-frequency identification standard is mandated by Delta Airlines for all inbound pallet tracking?", "verifiability": "PUBLIC"}
+{"id": "param_348_ans", "pair": "param_348", "question": "What multi-echelon inventory optimization model does Caterpillar use to balance stock between its regional and central warehouses?", "verifiability": "NONPUBLIC"}
+{"id": "param_349_ans", "pair": "param_349", "question": "How does Zara integrate demand forecasting with its raw material procurement strategy for seasonal apparel?", "verifiability": "PUBLIC"}
+{"id": "param_350_ans", "pair": "param_350", "question": "Which ISO standard serves as the foundational framework for the supply chain risk management system at Siemens?", "verifiability": "PUBLIC"}
+{"id": "param_351_ans", "pair": "param_351", "question": "What percentage of recycled content is mandated by the sustainable packaging guidelines enforced by Unilever?", "verifiability": "PUBLIC"}
+{"id": "param_352_ans", "pair": "param_352", "question": "Which automated storage and retrieval system vendor is contracted exclusively by DHL for its European fulfillment centers?", "verifiability": "NONPUBLIC"}
+{"id": "param_353_ans", "pair": "param_353", "question": "How does Boeing structure its supplier scorecard to evaluate on-time delivery rates for Tier 2 component suppliers?", "verifiability": "NONPUBLIC"}
+{"id": "param_354_ans", "pair": "param_354", "question": "What is the maximum dwell time permitted for shipping containers at the inland port terminal operated by Union Pacific Railroad?", "verifiability": "NONPUBLIC"}
+{"id": "param_355_ans", "pair": "param_355", "question": "Which advanced planning and scheduling software is deployed by Procter & Gamble to manage its master production schedule?", "verifiability": "NONPUBLIC"}
+{"id": "param_356_ans", "pair": "param_356", "question": "How does Instacart dynamically reroute last-mile delivery vehicles in response to severe weather disruptions?", "verifiability": "PUBLIC"}
+{"id": "param_357_ans", "pair": "param_357", "question": "What is the carbon emissions cap per shipping unit outlined in the green logistics initiative of IKEA?", "verifiability": "PUBLIC"}
+{"id": "param_358_ans", "pair": "param_358", "question": "Which collaborative planning, forecasting, and replenishment model does Tesco use to share data with its grocery suppliers?", "verifiability": "PUBLIC"}
+{"id": "param_359_ans", "pair": "param_359", "question": "What is the penalty cost structure outlined in the service level agreement for late shipments by XPO Logistics?", "verifiability": "NONPUBLIC"}
+{"id": "param_360_ans", "pair": "param_360", "question": "What is the primary raw material sourced by Apple for its flagship product line?", "verifiability": "PUBLIC"}
+{"id": "param_361_ans", "pair": "param_361", "question": "Under the ISO 9001 framework, what is the required lead time for Tier 1 supplier audit renewals?", "verifiability": "PUBLIC"}
+{"id": "param_362_ans", "pair": "param_362", "question": "Which logistics provider manages the cross-docking operations for Walmart in North America?", "verifiability": "PUBLIC"}
+{"id": "param_363_ans", "pair": "param_363", "question": "What inventory valuation method is mandated by Tesla for all wholly-owned manufacturing subsidiaries?", "verifiability": "NONPUBLIC"}
+{"id": "param_364_ans", "pair": "param_364", "question": "In the S&OP methodology, how frequently should the bill of materials be reconciled with supplier capacity?", "verifiability": "PUBLIC"}
+{"id": "param_365_ans", "pair": "param_365", "question": "What is the standard safety stock coverage period for SKU 100-Watt-Bulb during peak demand season?", "verifiability": "NONPUBLIC"}
+{"id": "param_366_ans", "pair": "param_366", "question": "Which port serves as the primary inbound freight gateway for Amazon's European distribution network?", "verifiability": "PUBLIC"}
+{"id": "param_367_ans", "pair": "param_367", "question": "According to Six Sigma guidelines, what is the maximum allowable defect rate for incoming raw materials?", "verifiability": "PUBLIC"}
+{"id": "param_368_ans", "pair": "param_368", "question": "Who is the designated Tier 1 supplier for the chassis components in the Ford F-150 vehicle platform?", "verifiability": "PUBLIC"}
+{"id": "param_369_ans", "pair": "param_369", "question": "What is the contractual penalty clause for late delivery under the Boeing 787 procurement agreement?", "verifiability": "NONPUBLIC"}
+{"id": "param_370_ans", "pair": "param_370", "question": "Which regional trade bloc dictates the rules of origin requirements for H&M's textile imports?", "verifiability": "PUBLIC"}
+{"id": "param_371_ans", "pair": "param_371", "question": "What is the recommended reorder point for the Intel Core i9 component under continuous review policy?", "verifiability": "NONPUBLIC"}
+{"id": "param_372_ans", "pair": "param_372", "question": "What cold chain temperature tolerance must be maintained for Pfizer-BioNTech COVID-19 vaccines during international transit?", "verifiability": "PUBLIC"}
+{"id": "param_373_ans", "pair": "param_373", "question": "Under SCOR standards, what is the minimum acceptable fill rate for direct-to-consumer order fulfillment?", "verifiability": "NONPUBLIC"}
+{"id": "param_374_ans", "pair": "param_374", "question": "Which enterprise software system is utilized by Procter & Gamble to manage its global supplier relationship database?", "verifiability": "PUBLIC"}
+{"id": "param_375_ans", "pair": "param_375", "question": "What is the mandated carbon emission reporting threshold for Tier 2 suppliers under the CDP initiative?", "verifiability": "PUBLIC"}
+{"id": "param_376_ans", "pair": "param_376", "question": "Which packaging supplier provides the standardized eco-friendly containers for the Dell OptiPlex product family?", "verifiability": "PUBLIC"}
+{"id": "param_377_ans", "pair": "param_377", "question": "What was the primary cause of the bullwhip effect disruption documented in the Nintendo Wii supply chain crisis?", "verifiability": "PUBLIC"}
+{"id": "param_378_ans", "pair": "param_378", "question": "What is the exact cycle time reduction target mandated by the Toyota Production System lean manufacturing deployment plan?", "verifiability": "NONPUBLIC"}
+{"id": "param_379_ans", "pair": "param_379", "question": "Which specific incoterm is applied to the inbound ocean freight shipments of Nike from Southeast Asia?", "verifiability": "NONPUBLIC"}
+{"id": "param_380_ans", "pair": "param_380", "question": "What is the maximum allowable transit time for the Dow Chemical polyurethane shipment before stability degradation occurs?", "verifiability": "NONPUBLIC"}
+{"id": "param_381_ans", "pair": "param_381", "question": "Under the Dodd-Frank Section 1502 compliance protocol, what is the required audit frequency for conflict mineral sourcing?", "verifiability": "PUBLIC"}
+{"id": "param_382_ans", "pair": "param_382", "question": "Which third-party logistics provider manages the reverse logistics and returns processing for Best Buy?", "verifiability": "PUBLIC"}
+{"id": "param_383_ans", "pair": "param_383", "question": "What is the prescribed batch size for the Coca-Cola syrup formulation to maintain optimal economies of scale?", "verifiability": "NONPUBLIC"}
+{"id": "param_384_ans", "pair": "param_384", "question": "What vendor-managed inventory threshold triggers an automatic replenishment order in the Walmart-P&G partnership?", "verifiability": "NONPUBLIC"}

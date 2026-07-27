@@ -1,0 +1,80 @@
+{
+  "seed": 0,
+  "maxnew": 60,
+  "tgts": [
+    0.05,
+    0.1
+  ],
+  "L_V": 18,
+  "v_norm": 49.744102478027344,
+  "gate": "grounded-arm repr probe (repr/qwen3_instruct.npz, L18 meanpool, StandardScaler+LogReg C=0.3 max_iter=3000) \u2014 identical to the Phase-7 block gate; the ONLY change vs agentic_loop_cast.py",
+  "normal_judge_labels": "reused from cast_stage_judged.jsonl (identical texts, greedy judge)",
+  "loops": {
+    "grounded": {
+      "arm": "grounded",
+      "n_items": 444,
+      "n_pairs": 222,
+      "n_cal_pairs": 111,
+      "n_eval_pairs": 111,
+      "entity_overlap_pairs_all": {
+        "num_scm_v3_text_0045": [
+          "moving average"
+        ],
+        "num_scm_v3_text_0049": [
+          "moving average"
+        ],
+        "num_scm_v3_text_0069": [
+          "six sigma"
+        ],
+        "num_marketing_v3_text_0095": [
+          "bmw"
+        ],
+        "num_scm_v3_text_0133": [
+          "patagonia"
+        ],
+        "num_scm_v3_text_0135": [
+          "ibm"
+        ],
+        "num_marketing_v3_text_0183": [
+          "mcdonald's"
+        ],
+        "num_marketing_v3_text_0184": [
+          "walmart"
+        ],
+        "num_marketing_v3_text_0320": [
+          "nike"
+        ],
+        "num_marketing_v3_text_0319": [
+          "nike"
+        ],
+        "num_dss_v3_text_0360": [
+          "ibm"
+        ],
+        "num_scm_v3p_0392": [
+          "ford"
+        ]
+      },
+      "eval_pairs_dropped": [
+        "num_scm_v3_text_0049",
+        "num_scm_v3_text_0069",
+        "num_scm_v3_text_0133"
+      ],
+      "n_eval_pairs_dropped": 3,
+      "n_eval_pairs_kept": 108,
+      "spurious_retained": [
+        "num_marketing_v3_text_0199:target",
+        "num_marketing_v3_text_0229:target"
+      ],
+      "taus": {
+        "0.05": {
+          "cast": 0.028877969623710337,
+          "block": 0.028877969623710337
+        },
+        "0.1": {
+          "cast": 0.004875716342309877,
+          "block": 0.004875716342309877
+        }
+      }
+    }
+  }
+}

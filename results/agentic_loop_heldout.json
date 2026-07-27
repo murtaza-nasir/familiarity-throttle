@@ -1,0 +1,224 @@
+{
+  "_meta": {
+    "seed": 0,
+    "nboot": 4000,
+    "nsplit": 500,
+    "note": "gate threshold set on calibration answerable, applied to disjoint eval; pairs split 50/50"
+  },
+  "parametric": {
+    "arm": "parametric",
+    "n_items": 320,
+    "n_pairs": 160,
+    "n_unsupported": 160,
+    "n_answerable": 160,
+    "detection": "digit/abstain regex (same as original scripts); flagged as limitation",
+    "regex_ambiguous_items": 7,
+    "full_sample_no_gate": {
+      "cascading_unsup": [
+        136,
+        160,
+        0.85
+      ],
+      "answerable_auto": [
+        159,
+        160,
+        0.99375
+      ]
+    },
+    "n_cal_pairs": 80,
+    "n_eval_pairs": 80,
+    "eval_no_gate_cascading": [
+      71,
+      80,
+      0.8875
+    ],
+    "points": {
+      "tgt0.05": {
+        "tau": 0.9999923706054688,
+        "cascading_with_gate": [
+          0,
+          80,
+          0.0
+        ],
+        "cascading_with_gate_ci": [
+          0.0,
+          0.0
+        ],
+        "caught_of_unsup": [
+          80,
+          80,
+          1.0
+        ],
+        "caught_ci": [
+          1.0,
+          1.0
+        ],
+        "retained_utility_answerable": [
+          80,
+          80,
+          1.0
+        ],
+        "utility_ci": [
+          1.0,
+          1.0
+        ]
+      },
+      "tgt0.1": {
+        "tau": 0.9999871850013733,
+        "cascading_with_gate": [
+          0,
+          80,
+          0.0
+        ],
+        "cascading_with_gate_ci": [
+          0.0,
+          0.0
+        ],
+        "caught_of_unsup": [
+          80,
+          80,
+          1.0
+        ],
+        "caught_ci": [
+          1.0,
+          1.0
+        ],
+        "retained_utility_answerable": [
+          77,
+          80,
+          0.9625
+        ],
+        "utility_ci": [
+          0.9125,
+          1.0
+        ]
+      }
+    },
+    "eval_no_gate_cascading_ci": [
+      0.8125,
+      0.95
+    ],
+    "split_stability": {
+      "tgt0.05": {
+        "casc_mean": 0.0,
+        "casc_sd": 0.0,
+        "util_mean": 0.93945,
+        "util_sd": 0.03840504524147837
+      },
+      "tgt0.1": {
+        "casc_mean": 0.0,
+        "casc_sd": 0.0,
+        "util_mean": 0.8915500000000001,
+        "util_sd": 0.04734023130488486
+      }
+    }
+  },
+  "grounded": {
+    "arm": "grounded",
+    "n_items": 444,
+    "n_pairs": 222,
+    "n_unsupported": 222,
+    "n_answerable": 222,
+    "detection": "digit/abstain regex (same as original scripts); flagged as limitation",
+    "regex_ambiguous_items": 1,
+    "full_sample_no_gate": {
+      "cascading_unsup": [
+        34,
+        222,
+        0.15315315315315314
+      ],
+      "answerable_auto": [
+        212,
+        222,
+        0.954954954954955
+      ]
+    },
+    "n_cal_pairs": 111,
+    "n_eval_pairs": 111,
+    "eval_no_gate_cascading": [
+      17,
+      111,
+      0.15315315315315314
+    ],
+    "points": {
+      "tgt0.05": {
+        "tau": 0.029175082221627235,
+        "cascading_with_gate": [
+          6,
+          111,
+          0.05405405405405406
+        ],
+        "cascading_with_gate_ci": [
+          0.018018018018018018,
+          0.0990990990990991
+        ],
+        "caught_of_unsup": [
+          77,
+          111,
+          0.6936936936936937
+        ],
+        "caught_ci": [
+          0.6123873873873874,
+          0.7747747747747747
+        ],
+        "retained_utility_answerable": [
+          108,
+          111,
+          0.972972972972973
+        ],
+        "utility_ci": [
+          0.9369369369369369,
+          1.0
+        ]
+      },
+      "tgt0.1": {
+        "tau": 0.004786679986864328,
+        "cascading_with_gate": [
+          4,
+          111,
+          0.036036036036036036
+        ],
+        "cascading_with_gate_ci": [
+          0.009009009009009009,
+          0.07207207207207207
+        ],
+        "caught_of_unsup": [
+          96,
+          111,
+          0.8648648648648649
+        ],
+        "caught_ci": [
+          0.7927927927927928,
+          0.9279279279279279
+        ],
+        "retained_utility_answerable": [
+          99,
+          111,
+          0.8918918918918919
+        ],
+        "utility_ci": [
+          0.8288288288288288,
+          0.9459459459459459
+        ]
+      }
+    },
+    "eval_no_gate_cascading_ci": [
+      0.09009009009009009,
+      0.22522522522522523
+    ],
+    "split_stability": {
+      "tgt0.05": {
+        "casc_mean": 0.05524324324324324,
+        "casc_sd": 0.018459844173990447,
+        "util_mean": 0.9433153153153153,
+        "util_sd": 0.032164478681053724
+      },
+      "tgt0.1": {
+        "casc_mean": 0.03863063063063064,
+        "casc_sd": 0.014098612661786802,
+        "util_mean": 0.890882882882883,
+        "util_sd": 0.041350719341968
+      }
+    }
+  }
+}

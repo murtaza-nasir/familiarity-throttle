@@ -1,0 +1,280 @@
+{
+ "model": "Qwen3.6-27B",
+ "layer": 32,
+ "stratum_means": {
+  "S2": 0.9439368722615419
+ },
+ "n": 54,
+ "items": [
+  {
+   "id": "graded_s2b_0_q1",
+   "entity": "Control Resonant",
+   "probe_score": 0.9997066855430603
+  },
+  {
+   "id": "graded_s2b_0_q2",
+   "entity": "Control Resonant",
+   "probe_score": 0.9992035031318665
+  },
+  {
+   "id": "graded_s2b_1_q1",
+   "entity": "Tomb Raider: Legacy of Atlantis",
+   "probe_score": 0.9986007809638977
+  },
+  {
+   "id": "graded_s2b_1_q2",
+   "entity": "Tomb Raider: Legacy of Atlantis",
+   "probe_score": 0.9057612419128418
+  },
+  {
+   "id": "graded_s2b_2_q1",
+   "entity": "Ace Combat 8: Wings of Theve",
+   "probe_score": 0.7841846346855164
+  },
+  {
+   "id": "graded_s2b_2_q2",
+   "entity": "Ace Combat 8: Wings of Theve",
+   "probe_score": 0.5244523286819458
+  },
+  {
+   "id": "graded_s2b_3_q1",
+   "entity": "Mega Man: Dual Override",
+   "probe_score": 0.9661932587623596
+  },
+  {
+   "id": "graded_s2b_3_q2",
+   "entity": "Mega Man: Dual Override",
+   "probe_score": 0.9212983846664429
+  },
+  {
+   "id": "graded_s2b_4_q1",
+   "entity": "Coven of the Chicken Foot",
+   "probe_score": 0.9988681077957153
+  },
+  {
+   "id": "graded_s2b_4_q2",
+   "entity": "Coven of the Chicken Foot",
+   "probe_score": 0.9997095465660095
+  },
+  {
+   "id": "graded_s2b_5_q1",
+   "entity": "Muramasa: Revenant Blades",
+   "probe_score": 0.5907952785491943
+  },
+  {
+   "id": "graded_s2b_5_q2",
+   "entity": "Muramasa: Revenant Blades",
+   "probe_score": 0.9009969830513
+  },
+  {
+   "id": "graded_s2b_6_q1",
+   "entity": "Ninjala 2: The Uncharted Planet",
+   "probe_score": 0.9923685193061829
+  },
+  {
+   "id": "graded_s2b_6_q2",
+   "entity": "Ninjala 2: The Uncharted Planet",
+   "probe_score": 0.9947379231452942
+  },
+  {
+   "id": "graded_s2b_7_q1",
+   "entity": "Dragon Quest Monsters: The Withered World",
+   "probe_score": 0.6624696254730225
+  },
+  {
+   "id": "graded_s2b_7_q2",
+   "entity": "Dragon Quest Monsters: The Withered World",
+   "probe_score": 0.49374133348464966
+  },
+  {
+   "id": "graded_s2b_8_q1",
+   "entity": "Krushers of the World",
+   "probe_score": 0.999779999256134
+  },
+  {
+   "id": "graded_s2b_8_q2",
+   "entity": "Krushers of the World",
+   "probe_score": 0.9991255402565002
+  },
+  {
+   "id": "graded_s2b_9_q1",
+   "entity": "Tales of a Failed Shapeshifter",
+   "probe_score": 0.9983977675437927
+  },
+  {
+   "id": "graded_s2b_9_q2",
+   "entity": "Tales of a Failed Shapeshifter",
+   "probe_score": 0.9896699786186218
+  },
+  {
+   "id": "graded_s2b_10_q1",
+   "entity": "Grand Serpent Rising",
+   "probe_score": 0.9994744658470154
+  },
+  {
+   "id": "graded_s2b_10_q2",
+   "entity": "Grand Serpent Rising",
+   "probe_score": 0.9936473965644836
+  },
+  {
+   "id": "graded_s2b_11_q1",
+   "entity": "Scenes from a Velvet Room",
+   "probe_score": 0.9969313144683838
+  },
+  {
+   "id": "graded_s2b_11_q2",
+   "entity": "Scenes from a Velvet Room",
+   "probe_score": 0.9876062273979187
+  },
+  {
+   "id": "graded_s2b_12_q1",
+   "entity": "Of Earth & Wires",
+   "probe_score": 0.9987888932228088
+  },
+  {
+   "id": "graded_s2b_12_q2",
+   "entity": "Of Earth & Wires",
+   "probe_score": 0.9692529439926147
+  },
+  {
+   "id": "graded_s2b_13_q1",
+   "entity": "Jideytro",
+   "probe_score": 0.9817171096801758
+  },
+  {
+   "id": "graded_s2b_13_q2",
+   "entity": "Jideytro",
+   "probe_score": 0.9820964336395264
+  },
+  {
+   "id": "graded_s2b_14_q1",
+   "entity": "Lipfendra",
+   "probe_score": 0.9774736166000366
+  },
+  {
+   "id": "graded_s2b_14_q2",
+   "entity": "Lipfendra",
+   "probe_score": 0.9685982465744019
+  },
+  {
+   "id": "graded_s2b_15_q1",
+   "entity": "Revtorpyk",
+   "probe_score": 0.998817503452301
+  },
+  {
+   "id": "graded_s2b_15_q2",
+   "entity": "Revtorpyk",
+   "probe_score": 0.9989277720451355
+  },
+  {
+   "id": "graded_s2b_16_q1",
+   "entity": "Trutakna",
+   "probe_score": 0.9968173503875732
+  },
+  {
+   "id": "graded_s2b_16_q2",
+   "entity": "Trutakna",
+   "probe_score": 0.998807430267334
+  },
+  {
+   "id": "graded_s2b_17_q1",
+   "entity": "Robostral Navigate",
+   "probe_score": 0.9999984502792358
+  },
+  {
+   "id": "graded_s2b_17_q2",
+   "entity": "Robostral Navigate",
+   "probe_score": 0.9998607635498047
+  },
+  {
+   "id": "graded_s2b_18_q1",
+   "entity": "VibeThinker",
+   "probe_score": 0.9997827410697937
+  },
+  {
+   "id": "graded_s2b_18_q2",
+   "entity": "VibeThinker",
+   "probe_score": 0.9999674558639526
+  },
+  {
+   "id": "graded_s2b_19_q1",
+   "entity": "MiMo-v2.5-Pro-UltraSpeed",
+   "probe_score": 1.0
+  },
+  {
+   "id": "graded_s2b_19_q2",
+   "entity": "MiMo-v2.5-Pro-UltraSpeed",
+   "probe_score": 0.9999992847442627
+  },
+  {
+   "id": "graded_s2b_20_q1",
+   "entity": "Bonsai 27B",
+   "probe_score": 0.9998237490653992
+  },
+  {
+   "id": "graded_s2b_20_q2",
+   "entity": "Bonsai 27B",
+   "probe_score": 0.9656224846839905
+  },
+  {
+   "id": "graded_s2b_21_q1",
+   "entity": "MAI-Code-1-Flash",
+   "probe_score": 0.9999991655349731
+  },
+  {
+   "id": "graded_s2b_21_q2",
+   "entity": "MAI-Code-1-Flash",
+   "probe_score": 0.9999018907546997
+  },
+  {
+   "id": "graded_s2b_22_q1",
+   "entity": "Flux 3 X Mimic",
+   "probe_score": 0.8489314317703247
+  },
+  {
+   "id": "graded_s2b_22_q2",
+   "entity": "Flux 3 X Mimic",
+   "probe_score": 0.9991544485092163
+  },
+  {
+   "id": "graded_s2b_23_q1",
+   "entity": "MemPalace",
+   "probe_score": 0.9966475367546082
+  },
+  {
+   "id": "graded_s2b_23_q2",
+   "entity": "MemPalace",
+   "probe_score": 0.9996753931045532
+  },
+  {
+   "id": "graded_s2b_24_q1",
+   "entity": "OpenMontage",
+   "probe_score": 0.9995633959770203
+  },
+  {
+   "id": "graded_s2b_24_q2",
+   "entity": "OpenMontage",
+   "probe_score": 0.9992603659629822
+  },
+  {
+   "id": "graded_s2b_25_q1",
+   "entity": "ZeroClaw",
+   "probe_score": 0.9984832406044006
+  },
+  {
+   "id": "graded_s2b_25_q2",
+   "entity": "ZeroClaw",
+   "probe_score": 0.9959890246391296
+  },
+  {
+   "id": "graded_s2b_26_q1",
+   "entity": "LM Studio Bionic",
+   "probe_score": 0.7399671673774719
+  },
+  {
+   "id": "graded_s2b_26_q2",
+   "entity": "LM Studio Bionic",
+   "probe_score": 0.8609449863433838
+  }
+ ]
+}

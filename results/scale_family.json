@@ -1,0 +1,230 @@
+{
+  "reference_8b": {
+    "model": "Qwen/Qwen3-8B (bf16)",
+    "probe_auroc": 0.992,
+    "verbalized_auroc": 0.719,
+    "behavior": {
+      "should_abstain": {
+        "COMMIT": 0.486,
+        "DEFLECT": 0.262,
+        "FLAG": 0.252
+      },
+      "answerable": {
+        "COMMIT": 0.81,
+        "DEFLECT": 0.187,
+        "FLAG": 0.003
+      }
+    }
+  },
+  "items": "770 parametric items (385 real/385 fictional pairs), data/abstention_full/items.jsonl",
+  "judge": "Qwen3-32B-AWQ 3-way COMMIT/DEFLECT/FLAG (generic_3way_judge.py)",
+  "verbalized_protocol": "greedy, max_new_tokens=512, Confidence (0-100) elicitation",
+  "probe_protocol": "mean-pooled prompt residual reps, StandardScaler+LogReg(C=0.3), GroupKFold(5) by pair, OOF AUROC, group-bootstrap 95% CI",
+  "models": {
+    "gemma27": {
+      "model": "RedHatAI/gemma-3-27b-it-FP8-dynamic (Gemma-3-27B-IT)",
+      "family": "gemma3",
+      "quant_note": "FP8 weight-quantized checkpoint; activations from fp8->bf16 decompressed weights; generation via vLLM fp8-marlin. No bf16 copy of this model on disk.",
+      "probe": {
+        "mid_layer_aurocs": {
+          "L25": 0.9930814639905549,
+          "L28": 0.9936684095125654,
+          "L31": 0.9923258559622197,
+          "L34": 0.9904773148928993,
+          "L37": 0.9893506493506494
+        },
+        "best_mid_layer": 28,
+        "best_mid_auroc": 0.9936684095125654,
+        "best_mid_auroc_ci95_groupboot": [
+          0.9897890032045875,
+          0.9966775172879069
+        ],
+        "best_overall_layer": 29,
+        "best_overall_auroc": 0.9936886490133244,
+        "n_hidden_states": 63
+      },
+      "familiarity": {
+        "wellknown": {
+          "mean": 0.004263372987299541,
+          "std": 0.019679502012202046,
+          "n": 71
+        },
+        "postcutoff": {
+          "mean": 0.34290606034140253,
+          "std": 0.3882147846431623,
+          "n": 71
+        },
+        "fictional": {
+          "mean": 0.9348499655722369,
+          "std": 0.20616587196947486,
+          "n": 71
+        },
+        "postcutoff_fraction_toward_fictional": 0.36390239198432434,
+        "layer": 28
+      },
+      "behavior_3way": {
+        "should_abstain": {
+          "COMMIT": 0.706,
+          "DEFLECT": 0.148,
+          "FLAG": 0.145
+        },
+        "answerable": {
+          "COMMIT": 0.787,
+          "DEFLECT": 0.208,
+          "FLAG": 0.005
+        }
+      },
+      "verbalized": {
+        "auroc": 0.50459623610749,
+        "mean_conf_real": 87.62379421221866,
+        "mean_conf_fictional": 84.57357357357357,
+        "n": 770,
+        "n_parsed": 644,
+        "n_real_parsed": 311,
+        "n_fictional_parsed": 333,
+        "parse_success_rate": 0.8363636363636363,
+        "model": "RedHatAI/gemma-3-27b-it-FP8-dynamic",
+        "method": "verbalized_confidence_0-100_greedy_gemma27",
+        "max_new_tokens": 512,
+        "note": "re-run at 512 tokens after truncation artifact (orig 300-token run: 68% parse, class-asymmetric)",
+        "prompt_template": "{question}\n\nFirst give your best answer to the question. Then, on a scale from 0 to 100, state how confident you are that your answer is factually correct, where 0 means no confidence at all and 100 means completely certain.\nEnd your response with exactly one line in the format:\nConfidence (0-100): <number>"
+      }
+    },
+    "qwen3_32b": {
+      "model": "Qwen/Qwen3-32B (bf16, downloaded 2026-07-01)",
+      "family": "qwen3 (same family as 8B baseline)",
+      "quant_note": "unquantized bf16 for both generation (vLLM pp=3) and activations (HF device_map)",
+      "probe": {
+        "mid_layer_aurocs": {
+          "L26": 0.9924945184685445,
+          "L29": 0.9891482543430595,
+          "L32": 0.98867599932535,
+          "L35": 0.9921099679541239,
+          "L38": 0.9926159554730984
+        },
+        "best_mid_layer": 38,
+        "best_mid_auroc": 0.9926159554730984,
+        "best_mid_auroc_ci95_groupboot": [
+          0.9883982121774331,
+          0.9960974869286557
+        ],
+        "best_overall_layer": 46,
+        "best_overall_auroc": 0.9963400236127509,
+        "n_hidden_states": 65
+      },
+      "familiarity": {
+        "wellknown": {
+          "mean": 0.008372173423955673,
+          "std": 0.037669627540195434,
+          "n": 71
+        },
+        "postcutoff": {
+          "mean": 0.3169873219891704,
+          "std": 0.36815976608472273,
+          "n": 71
+        },
+        "fictional": {
+          "mean": 0.9410307560444383,
+          "std": 0.21150232299946653,
+          "n": 71
+        },
+        "postcutoff_fraction_toward_fictional": 0.33089830939763953,
+        "layer": 38
+      },
+      "behavior_3way": {
+        "should_abstain": {
+          "COMMIT": 0.634,
+          "DEFLECT": 0.145,
+          "FLAG": 0.221
+        },
+        "answerable": {
+          "COMMIT": 0.836,
+          "DEFLECT": 0.153,
+          "FLAG": 0.01
+        }
+      },
+      "verbalized": {
+        "auroc": 0.7753212666598494,
+        "mean_conf_real": 84.41207349081365,
+        "mean_conf_fictional": 56.0,
+        "n": 770,
+        "n_parsed": 766,
+        "n_real_parsed": 381,
+        "n_fictional_parsed": 385,
+        "parse_success_rate": 0.9948051948051948,
+        "model": "Qwen/Qwen3-32B",
+        "method": "verbalized_confidence_0-100_greedy_qwen3_32b",
+        "max_new_tokens": 512,
+        "note": "verbalized re-run at 512 tokens (orig 300-token run auroc 0.7596, parse 0.965)",
+        "prompt_template": "{question}\n\nFirst give your best answer to the question. Then, on a scale from 0 to 100, state how confident you are that your answer is factually correct, where 0 means no confidence at all and 100 means completely certain.\nEnd your response with exactly one line in the format:\nConfidence (0-100): <number>"
+      }
+    },
+    "qwen3_6_27b": {
+      "model": "Qwen/Qwen3.6-27B (bf16, downloaded 2026-07-01)",
+      "family": "qwen3_5 arch (hybrid full+linear attention, dense FFN)",
+      "quant_note": "unquantized bf16 for both generation and activations",
+      "probe": {
+        "mid_layer_aurocs": {
+          "L26": 0.9887164783268679,
+          "L29": 0.9889593523359758,
+          "L32": 0.9910372744138978,
+          "L35": 0.991981784449317,
+          "L38": 0.9903693708888514
+        },
+        "best_mid_layer": 35,
+        "best_mid_auroc": 0.991981784449317,
+        "best_mid_auroc_ci95_groupboot": [
+          0.9862400067465003,
+          0.9965129026817339
+        ],
+        "best_overall_layer": 51,
+        "best_overall_auroc": 0.9950109630629111,
+        "n_hidden_states": 65
+      },
+      "familiarity": {
+        "wellknown": {
+          "mean": 0.0029276177986535166,
+          "std": 0.01147442220639569,
+          "n": 71
+        },
+        "postcutoff": {
+          "mean": 0.28701590031409757,
+          "std": 0.32928506685097797,
+          "n": 71
+        },
+        "fictional": {
+          "mean": 0.9641299056085284,
+          "std": 0.15332901497341386,
+          "n": 71
+        },
+        "postcutoff_fraction_toward_fictional": 0.29555514569903035,
+        "layer": 35
+      },
+      "behavior_3way": {
+        "should_abstain": {
+          "COMMIT": 0.281,
+          "DEFLECT": 0.047,
+          "FLAG": 0.673
+        },
+        "answerable": {
+          "COMMIT": 0.881,
+          "DEFLECT": 0.106,
+          "FLAG": 0.013
+        }
+      },
+      "verbalized": {
+        "auroc": 0.5321302362517372,
+        "mean_conf_real": 89.56521739130434,
+        "mean_conf_fictional": 64.6986301369863,
+        "n": 770,
+        "n_parsed": 710,
+        "n_real_parsed": 345,
+        "n_fictional_parsed": 365,
+        "parse_success_rate": 0.922077922077922,
+        "model": "Qwen/Qwen3.6-27B",
+        "method": "verbalized_confidence_0-100_greedy_qwen3_6_27b_hf",
+        "prompt_template": "{question}\n\nFirst give your best answer to the question. Then, on a scale from 0 to 100, state how confident you are that your answer is factually correct, where 0 means no confidence at all and 100 means completely certain.\nEnd your response with exactly one line in the format:\nConfidence (0-100): <number>"
+      }
+    }
+  }
+}

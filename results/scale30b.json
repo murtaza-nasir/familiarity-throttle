@@ -1,0 +1,170 @@
+{
+  "model": "RedHatAI/gemma-3-27b-it-FP8-dynamic (Gemma-3-27B-IT, FP8 weight-quantized checkpoint)",
+  "quantization_caveat": "No unquantized bf16 ~27-32B checkpoint on this machine. Activations extracted with weights DECOMPRESSED fp8->bf16 (CompressedTensorsConfig(run_compressed=False)); compute in bf16, so activation error limited to fp8 per-channel weight rounding. Generation via vLLM fp8-marlin.",
+  "n_items": 770,
+  "n_pairs": 385,
+  "probe": {
+    "method": "meanpool prompt reps, StandardScaler+LogReg(C=0.3), GroupKFold(5) by pair-id, OOF AUROC",
+    "mid_layer_fracs": [
+      0.4,
+      0.45,
+      0.5,
+      0.55,
+      0.6
+    ],
+    "mid_layer_aurocs": {
+      "L25": 0.9930814639905549,
+      "L28": 0.9936684095125654,
+      "L31": 0.9923258559622197,
+      "L34": 0.9904773148928993,
+      "L37": 0.9893506493506494
+    },
+    "best_mid_layer": 28,
+    "best_mid_auroc": 0.9936684095125654,
+    "best_mid_auroc_ci95_groupboot": [
+      0.9897890032045875,
+      0.9966775172879069
+    ],
+    "best_overall_layer": 29,
+    "best_overall_auroc": 0.9936886490133244,
+    "full_curve": {
+      "0": 0.9642536684095125,
+      "1": 0.9652319109461966,
+      "2": 0.9700961376286051,
+      "3": 0.9725113847191769,
+      "4": 0.9751357733175915,
+      "5": 0.9750210828132906,
+      "6": 0.9754596053297353,
+      "7": 0.9768696238826109,
+      "8": 0.9785697419463654,
+      "9": 0.9793860684769775,
+      "10": 0.9831371226176421,
+      "11": 0.9809849890369371,
+      "12": 0.984297520661157,
+      "13": 0.9841760836566031,
+      "14": 0.9869488952605836,
+      "15": 0.9874886152808231,
+      "16": 0.9897217068645641,
+      "17": 0.9904570753921403,
+      "18": 0.989789171867094,
+      "19": 0.9905312868949232,
+      "20": 0.9904368358913813,
+      "21": 0.9914555574295834,
+      "22": 0.9906729634002363,
+      "23": 0.9926969134761343,
+      "24": 0.9922786304604485,
+      "25": 0.9930814639905549,
+      "26": 0.9936684095125654,
+      "27": 0.9934390285039636,
+      "28": 0.9936684095125654,
+      "29": 0.9936886490133244,
+      "30": 0.9920492494518469,
+      "31": 0.9923258559622197,
+      "32": 0.9909428234103559,
+      "33": 0.9907066959015012,
+      "34": 0.9904773148928993,
+      "35": 0.9893573958509023,
+      "36": 0.98973519986507,
+      "37": 0.9893506493506494,
+      "38": 0.9893708888514083,
+      "39": 0.9882644628099173,
+      "40": 0.9890672963400235,
+      "41": 0.9897486928655761,
+      "42": 0.9879743632990386,
+      "43": 0.9883926463147242,
+      "44": 0.9888311688311688,
+      "45": 0.9888109293304099,
+      "46": 0.9888581548321808,
+      "47": 0.9896137628605162,
+      "48": 0.9898768763703829,
+      "49": 0.9899983133749367,
+      "50": 0.9902816663855625,
+      "51": 0.9904638218923933,
+      "52": 0.9909698094113679,
+      "53": 0.9905312868949232,
+      "54": 0.9904773148928993,
+      "55": 0.9912194299207286,
+      "56": 0.9906864564007422,
+      "57": 0.9908821049080789,
+      "58": 0.9904300893911284,
+      "59": 0.9900050598751898,
+      "60": 0.9892966773486254,
+      "61": 0.9885815483218081,
+      "62": 0.9890335638387585
+    },
+    "n_hidden_states": 63
+  },
+  "behavior_3way": {
+    "should_abstain": {
+      "COMMIT": 0.706,
+      "DEFLECT": 0.148,
+      "FLAG": 0.145
+    },
+    "answerable": {
+      "COMMIT": 0.787,
+      "DEFLECT": 0.208,
+      "FLAG": 0.005
+    }
+  },
+  "verbalized": {
+    "auroc": 0.50459623610749,
+    "mean_conf_real": 87.62379421221866,
+    "mean_conf_fictional": 84.57357357357357,
+    "n": 770,
+    "n_parsed": 644,
+    "n_real_parsed": 311,
+    "n_fictional_parsed": 333,
+    "parse_success_rate": 0.8363636363636363,
+    "model": "RedHatAI/gemma-3-27b-it-FP8-dynamic",
+    "method": "verbalized_confidence_0-100_greedy_gemma27",
+    "max_new_tokens": 512,
+    "note": "re-run at 512 tokens after truncation artifact (orig 300-token run: 68% parse, class-asymmetric)",
+    "prompt_template": "{question}\n\nFirst give your best answer to the question. Then, on a scale from 0 to 100, state how confident you are that your answer is factually correct, where 0 means no confidence at all and 100 means completely certain.\nEnd your response with exactly one line in the format:\nConfidence (0-100): <number>"
+  },
+  "familiarity": {
+    "wellknown": {
+      "mean": 0.004263372987299541,
+      "std": 0.019679502012202046,
+      "n": 71
+    },
+    "postcutoff": {
+      "mean": 0.34290606034140253,
+      "std": 0.3882147846431623,
+      "n": 71
+    },
+    "fictional": {
+      "mean": 0.9348499655722369,
+      "std": 0.20616587196947486,
+      "n": 71
+    },
+    "postcutoff_fraction_toward_fictional": 0.36390239198432434,
+    "layer": 28
+  },
+  "reference_8b": {
+    "probe": 0.992,
+    "verbalized": 0.719,
+    "fictional": {
+      "COMMIT": 0.486,
+      "DEFLECT": 0.262,
+      "FLAG": 0.252
+    },
+    "real": {
+      "COMMIT": 0.81,
+      "DEFLECT": 0.187,
+      "FLAG": 0.003
+    }
+  },
+  "verbalized_orig_300tok_truncated": {
+    "auroc": 0.5306526234361286,
+    "mean_conf_real": 90.24242424242425,
+    "mean_conf_fictional": 86.31958762886597,
+    "n": 770,
+    "n_parsed": 522,
+    "n_real_parsed": 231,
+    "n_fictional_parsed": 291,
+    "parse_success_rate": 0.6779220779220779,
+    "method": "verbalized_confidence_0-100_greedy_gemma-3-27b-it-FP8dyn",
+    "model": "RedHatAI/gemma-3-27b-it-FP8-dynamic",
+    "prompt_template": "{question}\n\nFirst give your best answer to the question. Then, on a scale from 0 to 100, state how confident you are that your answer is factually correct, where 0 means no confidence at all and 100 means completely certain.\nEnd your response with exactly one line in the format:\nConfidence (0-100): <number>"
+  }
+}

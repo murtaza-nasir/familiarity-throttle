@@ -1,0 +1,473 @@
+{
+ "model": "Qwen3-8B",
+ "layer": 18,
+ "probe": "lora_train pooled L18, StandardScaler+LogReg C=0.3 (crossdomain_cast protocol)",
+ "items_file": "graded_tier_items_s2b.jsonl",
+ "n_items": 54,
+ "n_entities": 27,
+ "mean": 0.9039559364318848,
+ "median": 0.9973357915878296,
+ "entity_means": {
+  "Control Resonant": 0.999963104724884,
+  "Tomb Raider: Legacy of Atlantis": 0.9113583564758301,
+  "Ace Combat 8: Wings of Theve": 0.587724357843399,
+  "Mega Man: Dual Override": 0.5965240448713303,
+  "Coven of the Chicken Foot": 0.9994634389877319,
+  "Muramasa: Revenant Blades": 0.9992284178733826,
+  "Ninjala 2: The Uncharted Planet": 0.9960886836051941,
+  "Dragon Quest Monsters: The Withered World": 0.4681887924671173,
+  "Krushers of the World": 0.9982661306858063,
+  "Tales of a Failed Shapeshifter": 0.996892660856247,
+  "Grand Serpent Rising": 0.9918003678321838,
+  "Scenes from a Velvet Room": 0.9320318400859833,
+  "Of Earth & Wires": 0.9206904768943787,
+  "Jideytro": 0.6505955457687378,
+  "Lipfendra": 0.5820990651845932,
+  "Revtorpyk": 0.8746951222419739,
+  "Trutakna": 0.9181851148605347,
+  "Robostral Navigate": 0.999885618686676,
+  "VibeThinker": 0.9999275803565979,
+  "MiMo-v2.5-Pro-UltraSpeed": 0.9999998211860657,
+  "Bonsai 27B": 0.9988577961921692,
+  "MAI-Code-1-Flash": 0.9999994039535522,
+  "Flux 3 X Mimic": 0.9998792409896851,
+  "MemPalace": 0.9996332824230194,
+  "OpenMontage": 0.9954655766487122,
+  "ZeroClaw": 0.9996048808097839,
+  "LM Studio Bionic": 0.989762932062149
+ },
+ "items": [
+  {
+   "id": "graded_s2b_0_q1",
+   "stratum": "S2",
+   "tier": "strictly_unseen",
+   "batch": 2,
+   "entity": "Control Resonant",
+   "probe_score": 0.9999369382858276
+  },
+  {
+   "id": "graded_s2b_0_q2",
+   "stratum": "S2",
+   "tier": "strictly_unseen",
+   "batch": 2,
+   "entity": "Control Resonant",
+   "probe_score": 0.9999892711639404
+  },
+  {
+   "id": "graded_s2b_1_q1",
+   "stratum": "S2",
+   "tier": "strictly_unseen",
+   "batch": 2,
+   "entity": "Tomb Raider: Legacy of Atlantis",
+   "probe_score": 0.9961370825767517
+  },
+  {
+   "id": "graded_s2b_1_q2",
+   "stratum": "S2",
+   "tier": "strictly_unseen",
+   "batch": 2,
+   "entity": "Tomb Raider: Legacy of Atlantis",
+   "probe_score": 0.8265796303749084
+  },
+  {
+   "id": "graded_s2b_2_q1",
+   "stratum": "S2",
+   "tier": "strictly_unseen",
+   "batch": 2,
+   "entity": "Ace Combat 8: Wings of Theve",
+   "probe_score": 0.5745548605918884
+  },
+  {
+   "id": "graded_s2b_2_q2",
+   "stratum": "S2",
+   "tier": "strictly_unseen",
+   "batch": 2,
+   "entity": "Ace Combat 8: Wings of Theve",
+   "probe_score": 0.6008938550949097
+  },
+  {
+   "id": "graded_s2b_3_q1",
+   "stratum": "S2",
+   "tier": "strictly_unseen",
+   "batch": 2,
+   "entity": "Mega Man: Dual Override",
+   "probe_score": 0.42173585295677185
+  },
+  {
+   "id": "graded_s2b_3_q2",
+   "stratum": "S2",
+   "tier": "strictly_unseen",
+   "batch": 2,
+   "entity": "Mega Man: Dual Override",
+   "probe_score": 0.7713122367858887
+  },
+  {
+   "id": "graded_s2b_4_q1",
+   "stratum": "S2",
+   "tier": "strictly_unseen",
+   "batch": 2,
+   "entity": "Coven of the Chicken Foot",
+   "probe_score": 0.9993672966957092
+  },
+  {
+   "id": "graded_s2b_4_q2",
+   "stratum": "S2",
+   "tier": "strictly_unseen",
+   "batch": 2,
+   "entity": "Coven of the Chicken Foot",
+   "probe_score": 0.9995595812797546
+  },
+  {
+   "id": "graded_s2b_5_q1",
+   "stratum": "S2",
+   "tier": "strictly_unseen",
+   "batch": 2,
+   "entity": "Muramasa: Revenant Blades",
+   "probe_score": 0.9993124008178711
+  },
+  {
+   "id": "graded_s2b_5_q2",
+   "stratum": "S2",
+   "tier": "strictly_unseen",
+   "batch": 2,
+   "entity": "Muramasa: Revenant Blades",
+   "probe_score": 0.999144434928894
+  },
+  {
+   "id": "graded_s2b_6_q1",
+   "stratum": "S2",
+   "tier": "strictly_unseen",
+   "batch": 2,
+   "entity": "Ninjala 2: The Uncharted Planet",
+   "probe_score": 0.998815655708313
+  },
+  {
+   "id": "graded_s2b_6_q2",
+   "stratum": "S2",
+   "tier": "strictly_unseen",
+   "batch": 2,
+   "entity": "Ninjala 2: The Uncharted Planet",
+   "probe_score": 0.9933617115020752
+  },
+  {
+   "id": "graded_s2b_7_q1",
+   "stratum": "S2",
+   "tier": "strictly_unseen",
+   "batch": 2,
+   "entity": "Dragon Quest Monsters: The Withered World",
+   "probe_score": 0.2856299877166748
+  },
+  {
+   "id": "graded_s2b_7_q2",
+   "stratum": "S2",
+   "tier": "strictly_unseen",
+   "batch": 2,
+   "entity": "Dragon Quest Monsters: The Withered World",
+   "probe_score": 0.6507475972175598
+  },
+  {
+   "id": "graded_s2b_8_q1",
+   "stratum": "S2",
+   "tier": "strictly_unseen",
+   "batch": 2,
+   "entity": "Krushers of the World",
+   "probe_score": 0.9990954399108887
+  },
+  {
+   "id": "graded_s2b_8_q2",
+   "stratum": "S2",
+   "tier": "strictly_unseen",
+   "batch": 2,
+   "entity": "Krushers of the World",
+   "probe_score": 0.9974368214607239
+  },
+  {
+   "id": "graded_s2b_9_q1",
+   "stratum": "S2",
+   "tier": "strictly_unseen",
+   "batch": 2,
+   "entity": "Tales of a Failed Shapeshifter",
+   "probe_score": 0.9972347617149353
+  },
+  {
+   "id": "graded_s2b_9_q2",
+   "stratum": "S2",
+   "tier": "strictly_unseen",
+   "batch": 2,
+   "entity": "Tales of a Failed Shapeshifter",
+   "probe_score": 0.9965505599975586
+  },
+  {
+   "id": "graded_s2b_10_q1",
+   "stratum": "S2",
+   "tier": "strictly_unseen",
+   "batch": 2,
+   "entity": "Grand Serpent Rising",
+   "probe_score": 0.9939569234848022
+  },
+  {
+   "id": "graded_s2b_10_q2",
+   "stratum": "S2",
+   "tier": "strictly_unseen",
+   "batch": 2,
+   "entity": "Grand Serpent Rising",
+   "probe_score": 0.9896438121795654
+  },
+  {
+   "id": "graded_s2b_11_q1",
+   "stratum": "S2",
+   "tier": "strictly_unseen",
+   "batch": 2,
+   "entity": "Scenes from a Velvet Room",
+   "probe_score": 0.9416130781173706
+  },
+  {
+   "id": "graded_s2b_11_q2",
+   "stratum": "S2",
+   "tier": "strictly_unseen",
+   "batch": 2,
+   "entity": "Scenes from a Velvet Room",
+   "probe_score": 0.922450602054596
+  },
+  {
+   "id": "graded_s2b_12_q1",
+   "stratum": "S2",
+   "tier": "strictly_unseen",
+   "batch": 2,
+   "entity": "Of Earth & Wires",
+   "probe_score": 0.9555187225341797
+  },
+  {
+   "id": "graded_s2b_12_q2",
+   "stratum": "S2",
+   "tier": "strictly_unseen",
+   "batch": 2,
+   "entity": "Of Earth & Wires",
+   "probe_score": 0.8858622312545776
+  },
+  {
+   "id": "graded_s2b_13_q1",
+   "stratum": "S2",
+   "tier": "strictly_unseen",
+   "batch": 2,
+   "entity": "Jideytro",
+   "probe_score": 0.9977433681488037
+  },
+  {
+   "id": "graded_s2b_13_q2",
+   "stratum": "S2",
+   "tier": "strictly_unseen",
+   "batch": 2,
+   "entity": "Jideytro",
+   "probe_score": 0.3034477233886719
+  },
+  {
+   "id": "graded_s2b_14_q1",
+   "stratum": "S2",
+   "tier": "strictly_unseen",
+   "batch": 2,
+   "entity": "Lipfendra",
+   "probe_score": 0.9838200807571411
+  },
+  {
+   "id": "graded_s2b_14_q2",
+   "stratum": "S2",
+   "tier": "strictly_unseen",
+   "batch": 2,
+   "entity": "Lipfendra",
+   "probe_score": 0.1803780496120453
+  },
+  {
+   "id": "graded_s2b_15_q1",
+   "stratum": "S2",
+   "tier": "strictly_unseen",
+   "batch": 2,
+   "entity": "Revtorpyk",
+   "probe_score": 0.9952634572982788
+  },
+  {
+   "id": "graded_s2b_15_q2",
+   "stratum": "S2",
+   "tier": "strictly_unseen",
+   "batch": 2,
+   "entity": "Revtorpyk",
+   "probe_score": 0.754126787185669
+  },
+  {
+   "id": "graded_s2b_16_q1",
+   "stratum": "S2",
+   "tier": "strictly_unseen",
+   "batch": 2,
+   "entity": "Trutakna",
+   "probe_score": 0.9990687966346741
+  },
+  {
+   "id": "graded_s2b_16_q2",
+   "stratum": "S2",
+   "tier": "strictly_unseen",
+   "batch": 2,
+   "entity": "Trutakna",
+   "probe_score": 0.8373014330863953
+  },
+  {
+   "id": "graded_s2b_17_q1",
+   "stratum": "S2",
+   "tier": "strictly_unseen",
+   "batch": 2,
+   "entity": "Robostral Navigate",
+   "probe_score": 0.9999176263809204
+  },
+  {
+   "id": "graded_s2b_17_q2",
+   "stratum": "S2",
+   "tier": "strictly_unseen",
+   "batch": 2,
+   "entity": "Robostral Navigate",
+   "probe_score": 0.9998536109924316
+  },
+  {
+   "id": "graded_s2b_18_q1",
+   "stratum": "S2",
+   "tier": "strictly_unseen",
+   "batch": 2,
+   "entity": "VibeThinker",
+   "probe_score": 0.9999904632568359
+  },
+  {
+   "id": "graded_s2b_18_q2",
+   "stratum": "S2",
+   "tier": "strictly_unseen",
+   "batch": 2,
+   "entity": "VibeThinker",
+   "probe_score": 0.9998646974563599
+  },
+  {
+   "id": "graded_s2b_19_q1",
+   "stratum": "S2",
+   "tier": "strictly_unseen",
+   "batch": 2,
+   "entity": "MiMo-v2.5-Pro-UltraSpeed",
+   "probe_score": 1.0
+  },
+  {
+   "id": "graded_s2b_19_q2",
+   "stratum": "S2",
+   "tier": "strictly_unseen",
+   "batch": 2,
+   "entity": "MiMo-v2.5-Pro-UltraSpeed",
+   "probe_score": 0.9999996423721313
+  },
+  {
+   "id": "graded_s2b_20_q1",
+   "stratum": "S2",
+   "tier": "strictly_unseen",
+   "batch": 2,
+   "entity": "Bonsai 27B",
+   "probe_score": 0.9979415535926819
+  },
+  {
+   "id": "graded_s2b_20_q2",
+   "stratum": "S2",
+   "tier": "strictly_unseen",
+   "batch": 2,
+   "entity": "Bonsai 27B",
+   "probe_score": 0.9997740387916565
+  },
+  {
+   "id": "graded_s2b_21_q1",
+   "stratum": "S2",
+   "tier": "strictly_unseen",
+   "batch": 2,
+   "entity": "MAI-Code-1-Flash",
+   "probe_score": 0.9999996423721313
+  },
+  {
+   "id": "graded_s2b_21_q2",
+   "stratum": "S2",
+   "tier": "strictly_unseen",
+   "batch": 2,
+   "entity": "MAI-Code-1-Flash",
+   "probe_score": 0.9999991655349731
+  },
+  {
+   "id": "graded_s2b_22_q1",
+   "stratum": "S2",
+   "tier": "strictly_unseen",
+   "batch": 2,
+   "entity": "Flux 3 X Mimic",
+   "probe_score": 0.999909520149231
+  },
+  {
+   "id": "graded_s2b_22_q2",
+   "stratum": "S2",
+   "tier": "strictly_unseen",
+   "batch": 2,
+   "entity": "Flux 3 X Mimic",
+   "probe_score": 0.9998489618301392
+  },
+  {
+   "id": "graded_s2b_23_q1",
+   "stratum": "S2",
+   "tier": "strictly_unseen",
+   "batch": 2,
+   "entity": "MemPalace",
+   "probe_score": 0.9995028972625732
+  },
+  {
+   "id": "graded_s2b_23_q2",
+   "stratum": "S2",
+   "tier": "strictly_unseen",
+   "batch": 2,
+   "entity": "MemPalace",
+   "probe_score": 0.9997636675834656
+  },
+  {
+   "id": "graded_s2b_24_q1",
+   "stratum": "S2",
+   "tier": "strictly_unseen",
+   "batch": 2,
+   "entity": "OpenMontage",
+   "probe_score": 0.9953086972236633
+  },
+  {
+   "id": "graded_s2b_24_q2",
+   "stratum": "S2",
+   "tier": "strictly_unseen",
+   "batch": 2,
+   "entity": "OpenMontage",
+   "probe_score": 0.995622456073761
+  },
+  {
+   "id": "graded_s2b_25_q1",
+   "stratum": "S2",
+   "tier": "strictly_unseen",
+   "batch": 2,
+   "entity": "ZeroClaw",
+   "probe_score": 0.9996002316474915
+  },
+  {
+   "id": "graded_s2b_25_q2",
+   "stratum": "S2",
+   "tier": "strictly_unseen",
+   "batch": 2,
+   "entity": "ZeroClaw",
+   "probe_score": 0.9996095299720764
+  },
+  {
+   "id": "graded_s2b_26_q1",
+   "stratum": "S2",
+   "tier": "strictly_unseen",
+   "batch": 2,
+   "entity": "LM Studio Bionic",
+   "probe_score": 0.9861749410629272
+  },
+  {
+   "id": "graded_s2b_26_q2",
+   "stratum": "S2",
+   "tier": "strictly_unseen",
+   "batch": 2,
+   "entity": "LM Studio Bionic",
+   "probe_score": 0.9933509230613708
+  }
+ ]
+}

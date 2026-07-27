@@ -1,0 +1,2508 @@
+{
+ "model": "Gemma-3-27B-it",
+ "layer": 31,
+ "n_layers": 62,
+ "probe": "lora_train pooled L31, StandardScaler+LogReg C=0.3 (crossdomain_cast protocol, Gemma-3-27B-it's own reps)",
+ "items_set": "s1s5_restyled(142) + orig S3/S4(160) + orig S2 clean entities(52)",
+ "stratum_means": {
+  "S1": 0.9398716871641432,
+  "S2": 0.6800314742498673,
+  "S3": 0.2842154339237958,
+  "S4": 0.7436496195557993,
+  "S5": 0.052376544888203924
+ },
+ "stratum_medians": {
+  "S1": 0.9999706745147705,
+  "S2": 0.8622807562351227,
+  "S3": 0.08387010172009468,
+  "S4": 0.9564788043498993,
+  "S5": 5.3839994507143274e-05
+ },
+ "n_per_stratum": {
+  "S1": 71,
+  "S2": 52,
+  "S3": 80,
+  "S4": 80,
+  "S5": 71
+ },
+ "items": [
+  {
+   "id": "temp_fictional_0_v2",
+   "stratum": "S1",
+   "tier": "fictional",
+   "entity": "Trans-Continental Rail Link",
+   "probe_score": 0.9045382142066956
+  },
+  {
+   "id": "temp_fictional_1_v2",
+   "stratum": "S1",
+   "tier": "fictional",
+   "entity": "Zenith Electronics Group",
+   "probe_score": 0.8600674867630005
+  },
+  {
+   "id": "temp_fictional_10_v2",
+   "stratum": "S1",
+   "tier": "fictional",
+   "entity": "SCOR-X Quantum",
+   "probe_score": 0.9998182654380798
+  },
+  {
+   "id": "temp_fictional_11_v2",
+   "stratum": "S1",
+   "tier": "fictional",
+   "entity": "RiskGuard AI",
+   "probe_score": 0.9999817609786987
+  },
+  {
+   "id": "temp_fictional_12_v2",
+   "stratum": "S1",
+   "tier": "fictional",
+   "entity": "ChainStream",
+   "probe_score": 0.9999885559082031
+  },
+  {
+   "id": "temp_fictional_13_v2",
+   "stratum": "S1",
+   "tier": "fictional",
+   "entity": "PulseTrack IoT",
+   "probe_score": 0.9999831914901733
+  },
+  {
+   "id": "temp_fictional_14_v2",
+   "stratum": "S1",
+   "tier": "fictional",
+   "entity": "SC-2024",
+   "probe_score": 0.9676933884620667
+  },
+  {
+   "id": "temp_fictional_15_v2",
+   "stratum": "S1",
+   "tier": "fictional",
+   "entity": "Flexi-Crate",
+   "probe_score": 0.9994024038314819
+  },
+  {
+   "id": "temp_fictional_16_v2",
+   "stratum": "S1",
+   "tier": "fictional",
+   "entity": "Vellox Manufacturing",
+   "probe_score": 0.9999996423721313
+  },
+  {
+   "id": "temp_fictional_17_v2",
+   "stratum": "S1",
+   "tier": "fictional",
+   "entity": "RetailSync Alliance",
+   "probe_score": 0.9998188614845276
+  },
+  {
+   "id": "temp_fictional_18_v2",
+   "stratum": "S1",
+   "tier": "fictional",
+   "entity": "Meridian Freight",
+   "probe_score": 0.9999860525131226
+  },
+  {
+   "id": "temp_fictional_19_v2",
+   "stratum": "S1",
+   "tier": "fictional",
+   "entity": "TransContinental 3PL",
+   "probe_score": 0.9999551773071289
+  },
+  {
+   "id": "temp_fictional_2_v2",
+   "stratum": "S1",
+   "tier": "fictional",
+   "entity": "Elemental Polymers Inc.",
+   "probe_score": 0.9999985694885254
+  },
+  {
+   "id": "temp_fictional_20_v2",
+   "stratum": "S1",
+   "tier": "fictional",
+   "entity": "Euro-Trans Continental Pipeline",
+   "probe_score": 0.9774010181427002
+  },
+  {
+   "id": "temp_fictional_21_v2",
+   "stratum": "S1",
+   "tier": "fictional",
+   "entity": "Global Trade Protocol 9",
+   "probe_score": 0.9991394281387329
+  },
+  {
+   "id": "temp_fictional_22_v2",
+   "stratum": "S1",
+   "tier": "fictional",
+   "entity": "Global Sourcing Act 2025",
+   "probe_score": 0.9994264841079712
+  },
+  {
+   "id": "temp_fictional_23_v2",
+   "stratum": "S1",
+   "tier": "fictional",
+   "entity": "VendorLink AI",
+   "probe_score": 0.9999724626541138
+  },
+  {
+   "id": "temp_fictional_24_v2",
+   "stratum": "S1",
+   "tier": "fictional",
+   "entity": "Z-Prime 9842",
+   "probe_score": 0.9998955726623535
+  },
+  {
+   "id": "temp_fictional_25_v2",
+   "stratum": "S1",
+   "tier": "fictional",
+   "entity": "PureLeaf Ingredients",
+   "probe_score": 0.9911981225013733
+  },
+  {
+   "id": "temp_fictional_26_v2",
+   "stratum": "S1",
+   "tier": "fictional",
+   "entity": "Global Supply Ethics Standard (GSES-7)",
+   "probe_score": 0.9995946288108826
+  },
+  {
+   "id": "temp_fictional_27_v2",
+   "stratum": "S1",
+   "tier": "fictional",
+   "entity": "Trans-Continental Rail",
+   "probe_score": 0.40064823627471924
+  },
+  {
+   "id": "temp_fictional_28_v2",
+   "stratum": "S1",
+   "tier": "fictional",
+   "entity": "Pacifica Cargo Lines",
+   "probe_score": 0.9998903274536133
+  },
+  {
+   "id": "temp_fictional_29_v2",
+   "stratum": "S1",
+   "tier": "fictional",
+   "entity": "OmniTransit Systems",
+   "probe_score": 0.9999979734420776
+  },
+  {
+   "id": "temp_fictional_3_v2",
+   "stratum": "S1",
+   "tier": "fictional",
+   "entity": "SecureChain Analytics",
+   "probe_score": 0.9999266862869263
+  },
+  {
+   "id": "temp_fictional_30_v2",
+   "stratum": "S1",
+   "tier": "fictional",
+   "entity": "Azure Bay",
+   "probe_score": 0.9989643096923828
+  },
+  {
+   "id": "temp_fictional_31_v2",
+   "stratum": "S1",
+   "tier": "fictional",
+   "entity": "MedSupply Unlimited",
+   "probe_score": 0.9999943971633911
+  },
+  {
+   "id": "temp_fictional_32_v2",
+   "stratum": "S1",
+   "tier": "fictional",
+   "entity": "AeroDyne Structures",
+   "probe_score": 0.9999990463256836
+  },
+  {
+   "id": "temp_fictional_33_v2",
+   "stratum": "S1",
+   "tier": "fictional",
+   "entity": "Split Sourcing",
+   "probe_score": 0.6281977891921997
+  },
+  {
+   "id": "temp_fictional_34_v2",
+   "stratum": "S1",
+   "tier": "fictional",
+   "entity": "ISO 45000",
+   "probe_score": 0.0002953510847873986
+  },
+  {
+   "id": "temp_fictional_35_v2",
+   "stratum": "S1",
+   "tier": "fictional",
+   "entity": "Port of Azur Bay",
+   "probe_score": 0.9999784231185913
+  },
+  {
+   "id": "temp_fictional_36_v2",
+   "stratum": "S1",
+   "tier": "fictional",
+   "entity": "PrimeLog Properties",
+   "probe_score": 0.9999972581863403
+  },
+  {
+   "id": "temp_fictional_37_v2",
+   "stratum": "S1",
+   "tier": "fictional",
+   "entity": "Apex Machinery",
+   "probe_score": 0.9999995231628418
+  },
+  {
+   "id": "temp_fictional_38_v2",
+   "stratum": "S1",
+   "tier": "fictional",
+   "entity": "Quantum Freightways",
+   "probe_score": 0.9999986886978149
+  },
+  {
+   "id": "temp_fictional_39_v2",
+   "stratum": "S1",
+   "tier": "fictional",
+   "entity": "Spectrum-C barcode",
+   "probe_score": 0.9997376799583435
+  },
+  {
+   "id": "temp_fictional_4_v2",
+   "stratum": "S1",
+   "tier": "fictional",
+   "entity": "ProcureTech Nexus",
+   "probe_score": 0.9999275207519531
+  },
+  {
+   "id": "temp_fictional_40_v2",
+   "stratum": "S1",
+   "tier": "fictional",
+   "entity": "NexGrid Robotics",
+   "probe_score": 0.9999998807907104
+  },
+  {
+   "id": "temp_fictional_41_v2",
+   "stratum": "S1",
+   "tier": "fictional",
+   "entity": "XT-9942-B",
+   "probe_score": 0.999996542930603
+  },
+  {
+   "id": "temp_fictional_42_v2",
+   "stratum": "S1",
+   "tier": "fictional",
+   "entity": "BulkNation",
+   "probe_score": 0.9995855689048767
+  },
+  {
+   "id": "temp_fictional_43_v2",
+   "stratum": "S1",
+   "tier": "fictional",
+   "entity": "Global Logistics Institute",
+   "probe_score": 0.8444050550460815
+  },
+  {
+   "id": "temp_fictional_44_v2",
+   "stratum": "S1",
+   "tier": "fictional",
+   "entity": "ApexLift Machinery",
+   "probe_score": 1.0
+  },
+  {
+   "id": "temp_fictional_45_v2",
+   "stratum": "S1",
+   "tier": "fictional",
+   "entity": "Lumina Apparel Group",
+   "probe_score": 0.9999922513961792
+  },
+  {
+   "id": "temp_fictional_46_v2",
+   "stratum": "S1",
+   "tier": "fictional",
+   "entity": "TransGlobal Freightways",
+   "probe_score": 0.9999998807907104
+  },
+  {
+   "id": "temp_fictional_47_v2",
+   "stratum": "S1",
+   "tier": "fictional",
+   "entity": "Valerius Bay",
+   "probe_score": 0.9999706745147705
+  },
+  {
+   "id": "temp_fictional_48_v2",
+   "stratum": "S1",
+   "tier": "fictional",
+   "entity": "Omni-ID",
+   "probe_score": 0.9940609335899353
+  },
+  {
+   "id": "temp_fictional_49_v2",
+   "stratum": "S1",
+   "tier": "fictional",
+   "entity": "Vortexia Logistics",
+   "probe_score": 0.9999998807907104
+  },
+  {
+   "id": "temp_fictional_5_v2",
+   "stratum": "S1",
+   "tier": "fictional",
+   "entity": "Sentinel Node Analytics",
+   "probe_score": 0.9999797344207764
+  },
+  {
+   "id": "temp_fictional_50_v2",
+   "stratum": "S1",
+   "tier": "fictional",
+   "entity": "Atlas Metallurgy Co.",
+   "probe_score": 0.9999982118606567
+  },
+  {
+   "id": "temp_fictional_51_v2",
+   "stratum": "S1",
+   "tier": "fictional",
+   "entity": "Global Transit Partners",
+   "probe_score": 0.999962329864502
+  },
+  {
+   "id": "temp_fictional_52_v2",
+   "stratum": "S1",
+   "tier": "fictional",
+   "entity": "OmniChain-9",
+   "probe_score": 0.9999994039535522
+  },
+  {
+   "id": "temp_fictional_53_v2",
+   "stratum": "S1",
+   "tier": "fictional",
+   "entity": "Skyward Fulfillment",
+   "probe_score": 0.9999010562896729
+  },
+  {
+   "id": "temp_fictional_54_v2",
+   "stratum": "S1",
+   "tier": "fictional",
+   "entity": "Global Trade Pact 7 (GTP-7)",
+   "probe_score": 0.9999991655349731
+  },
+  {
+   "id": "temp_fictional_55_v2",
+   "stratum": "S1",
+   "tier": "fictional",
+   "entity": "DataStream-X",
+   "probe_score": 0.9999890327453613
+  },
+  {
+   "id": "temp_fictional_56_v2",
+   "stratum": "S1",
+   "tier": "fictional",
+   "entity": "LeanChain 5.0",
+   "probe_score": 0.9999998807907104
+  },
+  {
+   "id": "temp_fictional_57_v2",
+   "stratum": "S1",
+   "tier": "fictional",
+   "entity": "Quantum Forge Industries",
+   "probe_score": 1.0
+  },
+  {
+   "id": "temp_fictional_58_v2",
+   "stratum": "S1",
+   "tier": "fictional",
+   "entity": "TransPacific Meridian",
+   "probe_score": 0.9999892711639404
+  },
+  {
+   "id": "temp_fictional_59_v2",
+   "stratum": "S1",
+   "tier": "fictional",
+   "entity": "Master Logistics Architect (MLA)",
+   "probe_score": 0.9952601790428162
+  },
+  {
+   "id": "temp_fictional_6_v2",
+   "stratum": "S1",
+   "tier": "fictional",
+   "entity": "NexusFlow WMS",
+   "probe_score": 0.999106228351593
+  },
+  {
+   "id": "temp_fictional_60_v2",
+   "stratum": "S1",
+   "tier": "fictional",
+   "entity": "NexusGraph",
+   "probe_score": 0.9999672174453735
+  },
+  {
+   "id": "temp_fictional_61_v2",
+   "stratum": "S1",
+   "tier": "fictional",
+   "entity": "OmniFab Industries",
+   "probe_score": 0.9999997615814209
+  },
+  {
+   "id": "temp_fictional_62_v2",
+   "stratum": "S1",
+   "tier": "fictional",
+   "entity": "Synthetica Labs",
+   "probe_score": 0.999093770980835
+  },
+  {
+   "id": "temp_fictional_63_v2",
+   "stratum": "S1",
+   "tier": "fictional",
+   "entity": "StratoWear",
+   "probe_score": 0.9999985694885254
+  },
+  {
+   "id": "temp_fictional_64_v2",
+   "stratum": "S1",
+   "tier": "fictional",
+   "entity": "Apex Velocity",
+   "probe_score": 0.9999914169311523
+  },
+  {
+   "id": "temp_fictional_65_v2",
+   "stratum": "S1",
+   "tier": "fictional",
+   "entity": "AeroLogix Systems",
+   "probe_score": 1.0
+  },
+  {
+   "id": "temp_fictional_66_v2",
+   "stratum": "S1",
+   "tier": "fictional",
+   "entity": "Meridian Bulk Carriers",
+   "probe_score": 0.9969717264175415
+  },
+  {
+   "id": "temp_fictional_67_v2",
+   "stratum": "S1",
+   "tier": "fictional",
+   "entity": "Kuro Automotive Group",
+   "probe_score": 0.9999805688858032
+  },
+  {
+   "id": "temp_fictional_68_v2",
+   "stratum": "S1",
+   "tier": "fictional",
+   "entity": "TransGlobal Freightways",
+   "probe_score": 0.9999916553497314
+  },
+  {
+   "id": "temp_fictional_69_v2",
+   "stratum": "S1",
+   "tier": "fictional",
+   "entity": "Nexus-7 Paradigm",
+   "probe_score": 0.9996681213378906
+  },
+  {
+   "id": "temp_fictional_7_v2",
+   "stratum": "S1",
+   "tier": "fictional",
+   "entity": "ISO 77000",
+   "probe_score": 0.1614554524421692
+  },
+  {
+   "id": "temp_fictional_70_v2",
+   "stratum": "S1",
+   "tier": "fictional",
+   "entity": "Vector Freight Solutions",
+   "probe_score": 0.9999985694885254
+  },
+  {
+   "id": "temp_fictional_8_v2",
+   "stratum": "S1",
+   "tier": "fictional",
+   "entity": "SDP",
+   "probe_score": 0.05852631852030754
+  },
+  {
+   "id": "temp_fictional_9_v2",
+   "stratum": "S1",
+   "tier": "fictional",
+   "entity": "Sentinel-S6",
+   "probe_score": 0.9576389789581299
+  },
+  {
+   "id": "temp_wellknown_0_v2",
+   "stratum": "S5",
+   "tier": "wellknown",
+   "entity": "Maersk",
+   "probe_score": 3.5327098885318264e-05
+  },
+  {
+   "id": "temp_wellknown_1_v2",
+   "stratum": "S5",
+   "tier": "wellknown",
+   "entity": "C-TPAT",
+   "probe_score": 0.00041557871736586094
+  },
+  {
+   "id": "temp_wellknown_10_v2",
+   "stratum": "S5",
+   "tier": "wellknown",
+   "entity": "DHL Supply Chain",
+   "probe_score": 6.9379902924993075e-06
+  },
+  {
+   "id": "temp_wellknown_11_v2",
+   "stratum": "S5",
+   "tier": "wellknown",
+   "entity": "DHL Supply Chain",
+   "probe_score": 0.00016676817904226482
+  },
+  {
+   "id": "temp_wellknown_12_v2",
+   "stratum": "S5",
+   "tier": "wellknown",
+   "entity": "Amazon",
+   "probe_score": 1.5340788195317145e-06
+  },
+  {
+   "id": "temp_wellknown_13_v2",
+   "stratum": "S5",
+   "tier": "wellknown",
+   "entity": "Apple Inc.",
+   "probe_score": 2.0400964331201976e-06
+  },
+  {
+   "id": "temp_wellknown_14_v2",
+   "stratum": "S5",
+   "tier": "wellknown",
+   "entity": "SAP Integrated Business Planning",
+   "probe_score": 0.0009523991029709578
+  },
+  {
+   "id": "temp_wellknown_15_v2",
+   "stratum": "S5",
+   "tier": "wellknown",
+   "entity": "NCR Counterpoint",
+   "probe_score": 0.7523316144943237
+  },
+  {
+   "id": "temp_wellknown_16_v2",
+   "stratum": "S5",
+   "tier": "wellknown",
+   "entity": "SAP EWM",
+   "probe_score": 4.586058639688417e-05
+  },
+  {
+   "id": "temp_wellknown_17_v2",
+   "stratum": "S5",
+   "tier": "wellknown",
+   "entity": "Coupa",
+   "probe_score": 0.008258843794465065
+  },
+  {
+   "id": "temp_wellknown_18_v2",
+   "stratum": "S5",
+   "tier": "wellknown",
+   "entity": "Intel",
+   "probe_score": 1.1719679378074943e-06
+  },
+  {
+   "id": "temp_wellknown_19_v2",
+   "stratum": "S5",
+   "tier": "wellknown",
+   "entity": "ISO 9001",
+   "probe_score": 2.2669580630463315e-06
+  },
+  {
+   "id": "temp_wellknown_2_v2",
+   "stratum": "S5",
+   "tier": "wellknown",
+   "entity": "DHL",
+   "probe_score": 1.6231804238486802e-06
+  },
+  {
+   "id": "temp_wellknown_20_v2",
+   "stratum": "S5",
+   "tier": "wellknown",
+   "entity": "Intel Core i9",
+   "probe_score": 1.2622308531717863e-05
+  },
+  {
+   "id": "temp_wellknown_21_v2",
+   "stratum": "S5",
+   "tier": "wellknown",
+   "entity": "22G1",
+   "probe_score": 0.8397376537322998
+  },
+  {
+   "id": "temp_wellknown_22_v2",
+   "stratum": "S5",
+   "tier": "wellknown",
+   "entity": "FedEx",
+   "probe_score": 3.473117203611764e-06
+  },
+  {
+   "id": "temp_wellknown_23_v2",
+   "stratum": "S5",
+   "tier": "wellknown",
+   "entity": "Cargill",
+   "probe_score": 1.132311808760278e-05
+  },
+  {
+   "id": "temp_wellknown_24_v2",
+   "stratum": "S5",
+   "tier": "wellknown",
+   "entity": "Suez Canal",
+   "probe_score": 8.793696906650439e-05
+  },
+  {
+   "id": "temp_wellknown_25_v2",
+   "stratum": "S5",
+   "tier": "wellknown",
+   "entity": "Zara",
+   "probe_score": 3.2869666029000655e-05
+  },
+  {
+   "id": "temp_wellknown_26_v2",
+   "stratum": "S5",
+   "tier": "wellknown",
+   "entity": "Trans-Alaska Pipeline",
+   "probe_score": 0.0005343023221939802
+  },
+  {
+   "id": "temp_wellknown_27_v2",
+   "stratum": "S5",
+   "tier": "wellknown",
+   "entity": "McKesson",
+   "probe_score": 0.0004335907578933984
+  },
+  {
+   "id": "temp_wellknown_28_v2",
+   "stratum": "S5",
+   "tier": "wellknown",
+   "entity": "Rotterdam",
+   "probe_score": 0.0013615775387734175
+  },
+  {
+   "id": "temp_wellknown_29_v2",
+   "stratum": "S5",
+   "tier": "wellknown",
+   "entity": "IBM Sterling",
+   "probe_score": 0.002793216845020652
+  },
+  {
+   "id": "temp_wellknown_3_v2",
+   "stratum": "S5",
+   "tier": "wellknown",
+   "entity": "SCOR model",
+   "probe_score": 0.000513383885845542
+  },
+  {
+   "id": "temp_wellknown_30_v2",
+   "stratum": "S5",
+   "tier": "wellknown",
+   "entity": "FedEx Express",
+   "probe_score": 1.5778111901454395e-06
+  },
+  {
+   "id": "temp_wellknown_31_v2",
+   "stratum": "S5",
+   "tier": "wellknown",
+   "entity": "Thermo King",
+   "probe_score": 0.0011527570895850658
+  },
+  {
+   "id": "temp_wellknown_32_v2",
+   "stratum": "S5",
+   "tier": "wellknown",
+   "entity": "Optoro",
+   "probe_score": 0.1369636505842209
+  },
+  {
+   "id": "temp_wellknown_33_v2",
+   "stratum": "S5",
+   "tier": "wellknown",
+   "entity": "ISO 14001",
+   "probe_score": 9.774174941412639e-06
+  },
+  {
+   "id": "temp_wellknown_34_v2",
+   "stratum": "S5",
+   "tier": "wellknown",
+   "entity": "ISO 14001",
+   "probe_score": 3.213518539268989e-06
+  },
+  {
+   "id": "temp_wellknown_35_v2",
+   "stratum": "S5",
+   "tier": "wellknown",
+   "entity": "RFID tag",
+   "probe_score": 6.210549327079207e-05
+  },
+  {
+   "id": "temp_wellknown_36_v2",
+   "stratum": "S5",
+   "tier": "wellknown",
+   "entity": "Nike",
+   "probe_score": 1.2186339972686255e-06
+  },
+  {
+   "id": "temp_wellknown_37_v2",
+   "stratum": "S5",
+   "tier": "wellknown",
+   "entity": "Port of Rotterdam",
+   "probe_score": 0.00035518253571353853
+  },
+  {
+   "id": "temp_wellknown_38_v2",
+   "stratum": "S5",
+   "tier": "wellknown",
+   "entity": "Trans-Siberian Railway",
+   "probe_score": 0.004677454009652138
+  },
+  {
+   "id": "temp_wellknown_39_v2",
+   "stratum": "S5",
+   "tier": "wellknown",
+   "entity": "Lineage Logistics",
+   "probe_score": 0.15671686828136444
+  },
+  {
+   "id": "temp_wellknown_4_v2",
+   "stratum": "S5",
+   "tier": "wellknown",
+   "entity": "Intel Corporation",
+   "probe_score": 1.3727395220541894e-08
+  },
+  {
+   "id": "temp_wellknown_40_v2",
+   "stratum": "S5",
+   "tier": "wellknown",
+   "entity": "APICS CSCP",
+   "probe_score": 0.00021871263743378222
+  },
+  {
+   "id": "temp_wellknown_41_v2",
+   "stratum": "S5",
+   "tier": "wellknown",
+   "entity": "3M",
+   "probe_score": 8.585852810938377e-06
+  },
+  {
+   "id": "temp_wellknown_42_v2",
+   "stratum": "S5",
+   "tier": "wellknown",
+   "entity": "Pfizer",
+   "probe_score": 1.1966042166022817e-06
+  },
+  {
+   "id": "temp_wellknown_43_v2",
+   "stratum": "S5",
+   "tier": "wellknown",
+   "entity": "SCOR model",
+   "probe_score": 0.0010808638762682676
+  },
+  {
+   "id": "temp_wellknown_44_v2",
+   "stratum": "S5",
+   "tier": "wellknown",
+   "entity": "Toyota",
+   "probe_score": 1.8473642739991192e-06
+  },
+  {
+   "id": "temp_wellknown_45_v2",
+   "stratum": "S5",
+   "tier": "wellknown",
+   "entity": "DHL Supply Chain",
+   "probe_score": 3.0331063953781268e-06
+  },
+  {
+   "id": "temp_wellknown_46_v2",
+   "stratum": "S5",
+   "tier": "wellknown",
+   "entity": "Nucor",
+   "probe_score": 6.368388858390972e-05
+  },
+  {
+   "id": "temp_wellknown_47_v2",
+   "stratum": "S5",
+   "tier": "wellknown",
+   "entity": "Union Pacific Railroad",
+   "probe_score": 0.00022407941287383437
+  },
+  {
+   "id": "temp_wellknown_48_v2",
+   "stratum": "S5",
+   "tier": "wellknown",
+   "entity": "Kuehne+Nagel",
+   "probe_score": 0.00011579924466786906
+  },
+  {
+   "id": "temp_wellknown_49_v2",
+   "stratum": "S5",
+   "tier": "wellknown",
+   "entity": "Intel",
+   "probe_score": 1.2058903848810587e-06
+  },
+  {
+   "id": "temp_wellknown_5_v2",
+   "stratum": "S5",
+   "tier": "wellknown",
+   "entity": "Resilinc",
+   "probe_score": 0.5161479115486145
+  },
+  {
+   "id": "temp_wellknown_50_v2",
+   "stratum": "S5",
+   "tier": "wellknown",
+   "entity": "Trans-Alaska Pipeline System",
+   "probe_score": 0.0005448306328617036
+  },
+  {
+   "id": "temp_wellknown_51_v2",
+   "stratum": "S5",
+   "tier": "wellknown",
+   "entity": "Smurfit Kappa",
+   "probe_score": 9.140399924945086e-05
+  },
+  {
+   "id": "temp_wellknown_52_v2",
+   "stratum": "S5",
+   "tier": "wellknown",
+   "entity": "Foxconn",
+   "probe_score": 3.6651845221058466e-06
+  },
+  {
+   "id": "temp_wellknown_53_v2",
+   "stratum": "S5",
+   "tier": "wellknown",
+   "entity": "Resilinc",
+   "probe_score": 0.8645505905151367
+  },
+  {
+   "id": "temp_wellknown_54_v2",
+   "stratum": "S5",
+   "tier": "wellknown",
+   "entity": "DHL",
+   "probe_score": 7.886456842243206e-06
+  },
+  {
+   "id": "temp_wellknown_55_v2",
+   "stratum": "S5",
+   "tier": "wellknown",
+   "entity": "Prologis",
+   "probe_score": 0.0020874496549367905
+  },
+  {
+   "id": "temp_wellknown_56_v2",
+   "stratum": "S5",
+   "tier": "wellknown",
+   "entity": "Lineage Logistics",
+   "probe_score": 0.39905694127082825
+  },
+  {
+   "id": "temp_wellknown_57_v2",
+   "stratum": "S5",
+   "tier": "wellknown",
+   "entity": "Lloyds Register",
+   "probe_score": 1.2168502507847734e-05
+  },
+  {
+   "id": "temp_wellknown_58_v2",
+   "stratum": "S5",
+   "tier": "wellknown",
+   "entity": "APICS",
+   "probe_score": 0.002158713759854436
+  },
+  {
+   "id": "temp_wellknown_59_v2",
+   "stratum": "S5",
+   "tier": "wellknown",
+   "entity": "DuPont",
+   "probe_score": 1.4394412062301853e-07
+  },
+  {
+   "id": "temp_wellknown_6_v2",
+   "stratum": "S5",
+   "tier": "wellknown",
+   "entity": "Hapag-Lloyd",
+   "probe_score": 0.011463003233075142
+  },
+  {
+   "id": "temp_wellknown_60_v2",
+   "stratum": "S5",
+   "tier": "wellknown",
+   "entity": "CTPAT",
+   "probe_score": 5.216976933297701e-05
+  },
+  {
+   "id": "temp_wellknown_61_v2",
+   "stratum": "S5",
+   "tier": "wellknown",
+   "entity": "Maersk",
+   "probe_score": 2.552838486735709e-05
+  },
+  {
+   "id": "temp_wellknown_62_v2",
+   "stratum": "S5",
+   "tier": "wellknown",
+   "entity": "C.H. Robinson",
+   "probe_score": 0.006132552865892649
+  },
+  {
+   "id": "temp_wellknown_63_v2",
+   "stratum": "S5",
+   "tier": "wellknown",
+   "entity": "SAP ERP",
+   "probe_score": 5.534611773327924e-06
+  },
+  {
+   "id": "temp_wellknown_64_v2",
+   "stratum": "S5",
+   "tier": "wellknown",
+   "entity": "Maersk",
+   "probe_score": 4.271832494850969e-06
+  },
+  {
+   "id": "temp_wellknown_65_v2",
+   "stratum": "S5",
+   "tier": "wellknown",
+   "entity": "Oracle SCM",
+   "probe_score": 0.0007941300864331424
+  },
+  {
+   "id": "temp_wellknown_66_v2",
+   "stratum": "S5",
+   "tier": "wellknown",
+   "entity": "Sony",
+   "probe_score": 9.862487786449492e-07
+  },
+  {
+   "id": "temp_wellknown_67_v2",
+   "stratum": "S5",
+   "tier": "wellknown",
+   "entity": "ISO 9001",
+   "probe_score": 6.243522534532531e-07
+  },
+  {
+   "id": "temp_wellknown_68_v2",
+   "stratum": "S5",
+   "tier": "wellknown",
+   "entity": "UPS",
+   "probe_score": 3.3746759982022922e-06
+  },
+  {
+   "id": "temp_wellknown_69_v2",
+   "stratum": "S5",
+   "tier": "wellknown",
+   "entity": "Zara",
+   "probe_score": 5.3839994507143274e-05
+  },
+  {
+   "id": "temp_wellknown_7_v2",
+   "stratum": "S5",
+   "tier": "wellknown",
+   "entity": "Port of Rotterdam",
+   "probe_score": 0.004309211857616901
+  },
+  {
+   "id": "temp_wellknown_70_v2",
+   "stratum": "S5",
+   "tier": "wellknown",
+   "entity": "Walmart",
+   "probe_score": 5.418722253125452e-07
+  },
+  {
+   "id": "temp_wellknown_8_v2",
+   "stratum": "S5",
+   "tier": "wellknown",
+   "entity": "Bullwhip Effect",
+   "probe_score": 0.0018204533262178302
+  },
+  {
+   "id": "temp_wellknown_9_v2",
+   "stratum": "S5",
+   "tier": "wellknown",
+   "entity": "Caterpillar",
+   "probe_score": 1.8237392040987288e-08
+  },
+  {
+   "id": "graded_s3_0_q1",
+   "stratum": "S3",
+   "tier": "announced_only",
+   "entity": "GPT-5",
+   "probe_score": 0.0021269042044878006
+  },
+  {
+   "id": "graded_s3_0_q2",
+   "stratum": "S3",
+   "tier": "announced_only",
+   "entity": "GPT-5",
+   "probe_score": 0.00012446522305253893
+  },
+  {
+   "id": "graded_s3_10_q1",
+   "stratum": "S3",
+   "tier": "announced_only",
+   "entity": "Mario Kart World",
+   "probe_score": 0.49386265873908997
+  },
+  {
+   "id": "graded_s3_10_q2",
+   "stratum": "S3",
+   "tier": "announced_only",
+   "entity": "Mario Kart World",
+   "probe_score": 0.385476678609848
+  },
+  {
+   "id": "graded_s3_11_q1",
+   "stratum": "S3",
+   "tier": "announced_only",
+   "entity": "Ghost of Yotei",
+   "probe_score": 0.9998834133148193
+  },
+  {
+   "id": "graded_s3_11_q2",
+   "stratum": "S3",
+   "tier": "announced_only",
+   "entity": "Ghost of Yotei",
+   "probe_score": 0.987677276134491
+  },
+  {
+   "id": "graded_s3_12_q1",
+   "stratum": "S3",
+   "tier": "announced_only",
+   "entity": "Hollow Knight: Silksong",
+   "probe_score": 0.20881234109401703
+  },
+  {
+   "id": "graded_s3_12_q2",
+   "stratum": "S3",
+   "tier": "announced_only",
+   "entity": "Hollow Knight: Silksong",
+   "probe_score": 0.03274964541196823
+  },
+  {
+   "id": "graded_s3_13_q1",
+   "stratum": "S3",
+   "tier": "announced_only",
+   "entity": "Grand Theft Auto VI",
+   "probe_score": 0.00027245344244875014
+  },
+  {
+   "id": "graded_s3_13_q2",
+   "stratum": "S3",
+   "tier": "announced_only",
+   "entity": "Grand Theft Auto VI",
+   "probe_score": 0.0025970875285565853
+  },
+  {
+   "id": "graded_s3_14_q1",
+   "stratum": "S3",
+   "tier": "announced_only",
+   "entity": "Pok\u00e9mon Legends: Z-A",
+   "probe_score": 0.8487423062324524
+  },
+  {
+   "id": "graded_s3_14_q2",
+   "stratum": "S3",
+   "tier": "announced_only",
+   "entity": "Pok\u00e9mon Legends: Z-A",
+   "probe_score": 0.1533234566450119
+  },
+  {
+   "id": "graded_s3_15_q1",
+   "stratum": "S3",
+   "tier": "announced_only",
+   "entity": "Borderlands 4",
+   "probe_score": 0.03146239370107651
+  },
+  {
+   "id": "graded_s3_15_q2",
+   "stratum": "S3",
+   "tier": "announced_only",
+   "entity": "Borderlands 4",
+   "probe_score": 0.02035851776599884
+  },
+  {
+   "id": "graded_s3_16_q1",
+   "stratum": "S3",
+   "tier": "announced_only",
+   "entity": "Onimusha: Way of the Sword",
+   "probe_score": 0.9310513734817505
+  },
+  {
+   "id": "graded_s3_16_q2",
+   "stratum": "S3",
+   "tier": "announced_only",
+   "entity": "Onimusha: Way of the Sword",
+   "probe_score": 0.40634170174598694
+  },
+  {
+   "id": "graded_s3_17_q1",
+   "stratum": "S3",
+   "tier": "announced_only",
+   "entity": "Wicked: For Good",
+   "probe_score": 0.964669942855835
+  },
+  {
+   "id": "graded_s3_17_q2",
+   "stratum": "S3",
+   "tier": "announced_only",
+   "entity": "Wicked: For Good",
+   "probe_score": 0.42099857330322266
+  },
+  {
+   "id": "graded_s3_18_q1",
+   "stratum": "S3",
+   "tier": "announced_only",
+   "entity": "Avengers: Doomsday",
+   "probe_score": 0.6710418462753296
+  },
+  {
+   "id": "graded_s3_18_q2",
+   "stratum": "S3",
+   "tier": "announced_only",
+   "entity": "Avengers: Doomsday",
+   "probe_score": 0.8165246248245239
+  },
+  {
+   "id": "graded_s3_19_q1",
+   "stratum": "S3",
+   "tier": "announced_only",
+   "entity": "Avatar: Fire and Ash",
+   "probe_score": 0.9695935249328613
+  },
+  {
+   "id": "graded_s3_19_q2",
+   "stratum": "S3",
+   "tier": "announced_only",
+   "entity": "Avatar: Fire and Ash",
+   "probe_score": 0.6267338991165161
+  },
+  {
+   "id": "graded_s3_1_q1",
+   "stratum": "S3",
+   "tier": "announced_only",
+   "entity": "xAI Grok 4",
+   "probe_score": 0.9229146838188171
+  },
+  {
+   "id": "graded_s3_1_q2",
+   "stratum": "S3",
+   "tier": "announced_only",
+   "entity": "xAI Grok 4",
+   "probe_score": 0.1331041157245636
+  },
+  {
+   "id": "graded_s3_20_q1",
+   "stratum": "S3",
+   "tier": "announced_only",
+   "entity": "Jurassic World Rebirth",
+   "probe_score": 0.47952917218208313
+  },
+  {
+   "id": "graded_s3_20_q2",
+   "stratum": "S3",
+   "tier": "announced_only",
+   "entity": "Jurassic World Rebirth",
+   "probe_score": 0.4143937826156616
+  },
+  {
+   "id": "graded_s3_21_q1",
+   "stratum": "S3",
+   "tier": "announced_only",
+   "entity": "Project Hail Mary",
+   "probe_score": 0.3753228783607483
+  },
+  {
+   "id": "graded_s3_21_q2",
+   "stratum": "S3",
+   "tier": "announced_only",
+   "entity": "Project Hail Mary",
+   "probe_score": 0.07814209908246994
+  },
+  {
+   "id": "graded_s3_22_q1",
+   "stratum": "S3",
+   "tier": "announced_only",
+   "entity": "PCIe 7.0 specification",
+   "probe_score": 0.00017611026123631746
+  },
+  {
+   "id": "graded_s3_22_q2",
+   "stratum": "S3",
+   "tier": "announced_only",
+   "entity": "PCIe 7.0 specification",
+   "probe_score": 0.0001298916613450274
+  },
+  {
+   "id": "graded_s3_23_q1",
+   "stratum": "S3",
+   "tier": "announced_only",
+   "entity": "Wi-Fi 8 (IEEE 802.11bn Ultra High Reliability)",
+   "probe_score": 0.06399087607860565
+  },
+  {
+   "id": "graded_s3_23_q2",
+   "stratum": "S3",
+   "tier": "announced_only",
+   "entity": "Wi-Fi 8 (IEEE 802.11bn Ultra High Reliability)",
+   "probe_score": 4.0066024666884914e-05
+  },
+  {
+   "id": "graded_s3_24_q1",
+   "stratum": "S3",
+   "tier": "announced_only",
+   "entity": "EU AI Act general-purpose AI (GPAI) obligations",
+   "probe_score": 0.0005993415834382176
+  },
+  {
+   "id": "graded_s3_24_q2",
+   "stratum": "S3",
+   "tier": "announced_only",
+   "entity": "EU AI Act general-purpose AI (GPAI) obligations",
+   "probe_score": 0.0024896706454455853
+  },
+  {
+   "id": "graded_s3_25_q1",
+   "stratum": "S3",
+   "tier": "announced_only",
+   "entity": "Windows 10 end of support",
+   "probe_score": 5.270887299957394e-07
+  },
+  {
+   "id": "graded_s3_25_q2",
+   "stratum": "S3",
+   "tier": "announced_only",
+   "entity": "Windows 10 end of support",
+   "probe_score": 1.312606855208287e-05
+  },
+  {
+   "id": "graded_s3_26_q1",
+   "stratum": "S3",
+   "tier": "announced_only",
+   "entity": "Stranger Things season 5",
+   "probe_score": 0.0003841030702460557
+  },
+  {
+   "id": "graded_s3_26_q2",
+   "stratum": "S3",
+   "tier": "announced_only",
+   "entity": "Stranger Things season 5",
+   "probe_score": 0.0004298678832128644
+  },
+  {
+   "id": "graded_s3_27_q1",
+   "stratum": "S3",
+   "tier": "announced_only",
+   "entity": "Grand Egyptian Museum (full opening)",
+   "probe_score": 0.0008320596534758806
+  },
+  {
+   "id": "graded_s3_27_q2",
+   "stratum": "S3",
+   "tier": "announced_only",
+   "entity": "Grand Egyptian Museum (full opening)",
+   "probe_score": 0.0021339028608053923
+  },
+  {
+   "id": "graded_s3_28_q1",
+   "stratum": "S3",
+   "tier": "announced_only",
+   "entity": "2026 Winter Olympics (Milano Cortina)",
+   "probe_score": 0.029625553637742996
+  },
+  {
+   "id": "graded_s3_28_q2",
+   "stratum": "S3",
+   "tier": "announced_only",
+   "entity": "2026 Winter Olympics (Milano Cortina)",
+   "probe_score": 0.08989246934652328
+  },
+  {
+   "id": "graded_s3_29_q1",
+   "stratum": "S3",
+   "tier": "announced_only",
+   "entity": "Tesla Cybercab",
+   "probe_score": 0.5648465156555176
+  },
+  {
+   "id": "graded_s3_29_q2",
+   "stratum": "S3",
+   "tier": "announced_only",
+   "entity": "Tesla Cybercab",
+   "probe_score": 0.06394128501415253
+  },
+  {
+   "id": "graded_s3_2_q1",
+   "stratum": "S3",
+   "tier": "announced_only",
+   "entity": "Apple M5",
+   "probe_score": 0.19757963716983795
+  },
+  {
+   "id": "graded_s3_2_q2",
+   "stratum": "S3",
+   "tier": "announced_only",
+   "entity": "Apple M5",
+   "probe_score": 0.006005593575537205
+  },
+  {
+   "id": "graded_s3_30_q1",
+   "stratum": "S3",
+   "tier": "announced_only",
+   "entity": "Rivian R2",
+   "probe_score": 0.06966189295053482
+  },
+  {
+   "id": "graded_s3_30_q2",
+   "stratum": "S3",
+   "tier": "announced_only",
+   "entity": "Rivian R2",
+   "probe_score": 0.021482069045305252
+  },
+  {
+   "id": "graded_s3_31_q1",
+   "stratum": "S3",
+   "tier": "announced_only",
+   "entity": "Star of the Seas (Royal Caribbean)",
+   "probe_score": 0.988778829574585
+  },
+  {
+   "id": "graded_s3_31_q2",
+   "stratum": "S3",
+   "tier": "announced_only",
+   "entity": "Star of the Seas (Royal Caribbean)",
+   "probe_score": 0.9994519352912903
+  },
+  {
+   "id": "graded_s3_32_q1",
+   "stratum": "S3",
+   "tier": "announced_only",
+   "entity": "Fujian (Chinese aircraft carrier, Type 003)",
+   "probe_score": 0.054153554141521454
+  },
+  {
+   "id": "graded_s3_32_q2",
+   "stratum": "S3",
+   "tier": "announced_only",
+   "entity": "Fujian (Chinese aircraft carrier, Type 003)",
+   "probe_score": 0.011174147017300129
+  },
+  {
+   "id": "graded_s3_33_q1",
+   "stratum": "S3",
+   "tier": "announced_only",
+   "entity": "orforglipron",
+   "probe_score": 0.7389214634895325
+  },
+  {
+   "id": "graded_s3_33_q2",
+   "stratum": "S3",
+   "tier": "announced_only",
+   "entity": "orforglipron",
+   "probe_score": 0.9557659029960632
+  },
+  {
+   "id": "graded_s3_34_q1",
+   "stratum": "S3",
+   "tier": "announced_only",
+   "entity": "lenacapavir (Yeztugo)",
+   "probe_score": 0.564220666885376
+  },
+  {
+   "id": "graded_s3_34_q2",
+   "stratum": "S3",
+   "tier": "announced_only",
+   "entity": "lenacapavir (Yeztugo)",
+   "probe_score": 0.2208484411239624
+  },
+  {
+   "id": "graded_s3_35_q1",
+   "stratum": "S3",
+   "tier": "announced_only",
+   "entity": "elinzanetant (Lynkuet)",
+   "probe_score": 0.9409233927726746
+  },
+  {
+   "id": "graded_s3_35_q2",
+   "stratum": "S3",
+   "tier": "announced_only",
+   "entity": "elinzanetant (Lynkuet)",
+   "probe_score": 0.9806346893310547
+  },
+  {
+   "id": "graded_s3_36_q1",
+   "stratum": "S3",
+   "tier": "announced_only",
+   "entity": "NISAR",
+   "probe_score": 0.03401334956288338
+  },
+  {
+   "id": "graded_s3_36_q2",
+   "stratum": "S3",
+   "tier": "announced_only",
+   "entity": "NISAR",
+   "probe_score": 0.00800433848053217
+  },
+  {
+   "id": "graded_s3_37_q1",
+   "stratum": "S3",
+   "tier": "announced_only",
+   "entity": "IMAP (Interstellar Mapping and Acceleration Probe)",
+   "probe_score": 0.13700354099273682
+  },
+  {
+   "id": "graded_s3_37_q2",
+   "stratum": "S3",
+   "tier": "announced_only",
+   "entity": "IMAP (Interstellar Mapping and Acceleration Probe)",
+   "probe_score": 0.20367811620235443
+  },
+  {
+   "id": "graded_s3_38_q1",
+   "stratum": "S3",
+   "tier": "announced_only",
+   "entity": "ESCAPADE",
+   "probe_score": 0.6414971351623535
+  },
+  {
+   "id": "graded_s3_38_q2",
+   "stratum": "S3",
+   "tier": "announced_only",
+   "entity": "ESCAPADE",
+   "probe_score": 0.747602641582489
+  },
+  {
+   "id": "graded_s3_39_q1",
+   "stratum": "S3",
+   "tier": "announced_only",
+   "entity": "Artemis II",
+   "probe_score": 0.00445252051576972
+  },
+  {
+   "id": "graded_s3_39_q2",
+   "stratum": "S3",
+   "tier": "announced_only",
+   "entity": "Artemis II",
+   "probe_score": 0.036443229764699936
+  },
+  {
+   "id": "graded_s3_3_q1",
+   "stratum": "S3",
+   "tier": "announced_only",
+   "entity": "Intel Panther Lake",
+   "probe_score": 0.011928929947316647
+  },
+  {
+   "id": "graded_s3_3_q2",
+   "stratum": "S3",
+   "tier": "announced_only",
+   "entity": "Intel Panther Lake",
+   "probe_score": 0.004832800477743149
+  },
+  {
+   "id": "graded_s3_4_q1",
+   "stratum": "S3",
+   "tier": "announced_only",
+   "entity": "Nvidia Vera Rubin (VR200 platform)",
+   "probe_score": 0.09400160610675812
+  },
+  {
+   "id": "graded_s3_4_q2",
+   "stratum": "S3",
+   "tier": "announced_only",
+   "entity": "Nvidia Vera Rubin (VR200 platform)",
+   "probe_score": 0.24435043334960938
+  },
+  {
+   "id": "graded_s3_5_q1",
+   "stratum": "S3",
+   "tier": "announced_only",
+   "entity": "Android 16",
+   "probe_score": 0.0007439434994012117
+  },
+  {
+   "id": "graded_s3_5_q2",
+   "stratum": "S3",
+   "tier": "announced_only",
+   "entity": "Android 16",
+   "probe_score": 0.3056885898113251
+  },
+  {
+   "id": "graded_s3_6_q1",
+   "stratum": "S3",
+   "tier": "announced_only",
+   "entity": "Nintendo Switch 2",
+   "probe_score": 0.0007940339855849743
+  },
+  {
+   "id": "graded_s3_6_q2",
+   "stratum": "S3",
+   "tier": "announced_only",
+   "entity": "Nintendo Switch 2",
+   "probe_score": 0.0011642344761639833
+  },
+  {
+   "id": "graded_s3_7_q1",
+   "stratum": "S3",
+   "tier": "announced_only",
+   "entity": "Apple iPhone 17 Pro",
+   "probe_score": 0.0021500897128134966
+  },
+  {
+   "id": "graded_s3_7_q2",
+   "stratum": "S3",
+   "tier": "announced_only",
+   "entity": "Apple iPhone 17 Pro",
+   "probe_score": 0.0006061923922970891
+  },
+  {
+   "id": "graded_s3_8_q1",
+   "stratum": "S3",
+   "tier": "announced_only",
+   "entity": "Samsung Galaxy Z Fold 7",
+   "probe_score": 0.0011878907680511475
+  },
+  {
+   "id": "graded_s3_8_q2",
+   "stratum": "S3",
+   "tier": "announced_only",
+   "entity": "Samsung Galaxy Z Fold 7",
+   "probe_score": 0.01568494737148285
+  },
+  {
+   "id": "graded_s3_9_q1",
+   "stratum": "S3",
+   "tier": "announced_only",
+   "entity": "Death Stranding 2: On the Beach",
+   "probe_score": 0.20484864711761475
+  },
+  {
+   "id": "graded_s3_9_q2",
+   "stratum": "S3",
+   "tier": "announced_only",
+   "entity": "Death Stranding 2: On the Beach",
+   "probe_score": 0.08959810435771942
+  },
+  {
+   "id": "graded_s4_0_q1",
+   "stratum": "S4",
+   "tier": "low_exposure_released",
+   "entity": "Shippeo",
+   "probe_score": 0.6760081052780151
+  },
+  {
+   "id": "graded_s4_0_q2",
+   "stratum": "S4",
+   "tier": "low_exposure_released",
+   "entity": "Shippeo",
+   "probe_score": 0.33139774203300476
+  },
+  {
+   "id": "graded_s4_10_q1",
+   "stratum": "S4",
+   "tier": "low_exposure_released",
+   "entity": "Stockpyl",
+   "probe_score": 0.9620000720024109
+  },
+  {
+   "id": "graded_s4_10_q2",
+   "stratum": "S4",
+   "tier": "low_exposure_released",
+   "entity": "Stockpyl",
+   "probe_score": 0.987630307674408
+  },
+  {
+   "id": "graded_s4_11_q1",
+   "stratum": "S4",
+   "tier": "low_exposure_released",
+   "entity": "Steampipe",
+   "probe_score": 0.3904955983161926
+  },
+  {
+   "id": "graded_s4_11_q2",
+   "stratum": "S4",
+   "tier": "low_exposure_released",
+   "entity": "Steampipe",
+   "probe_score": 0.9266604781150818
+  },
+  {
+   "id": "graded_s4_12_q1",
+   "stratum": "S4",
+   "tier": "low_exposure_released",
+   "entity": "Zellij",
+   "probe_score": 0.44014379382133484
+  },
+  {
+   "id": "graded_s4_12_q2",
+   "stratum": "S4",
+   "tier": "low_exposure_released",
+   "entity": "Zellij",
+   "probe_score": 0.525505006313324
+  },
+  {
+   "id": "graded_s4_13_q1",
+   "stratum": "S4",
+   "tier": "low_exposure_released",
+   "entity": "QLever",
+   "probe_score": 0.9993482232093811
+  },
+  {
+   "id": "graded_s4_13_q2",
+   "stratum": "S4",
+   "tier": "low_exposure_released",
+   "entity": "QLever",
+   "probe_score": 0.9998699426651001
+  },
+  {
+   "id": "graded_s4_14_q1",
+   "stratum": "S4",
+   "tier": "low_exposure_released",
+   "entity": "GS1 EPCIS 2.0",
+   "probe_score": 0.004765083082020283
+  },
+  {
+   "id": "graded_s4_14_q2",
+   "stratum": "S4",
+   "tier": "low_exposure_released",
+   "entity": "GS1 EPCIS 2.0",
+   "probe_score": 0.8199782371520996
+  },
+  {
+   "id": "graded_s4_15_q1",
+   "stratum": "S4",
+   "tier": "low_exposure_released",
+   "entity": "VDA 5050",
+   "probe_score": 0.03227293863892555
+  },
+  {
+   "id": "graded_s4_15_q2",
+   "stratum": "S4",
+   "tier": "low_exposure_released",
+   "entity": "VDA 5050",
+   "probe_score": 0.0440131314098835
+  },
+  {
+   "id": "graded_s4_16_q1",
+   "stratum": "S4",
+   "tier": "low_exposure_released",
+   "entity": "Eclipse Sparkplug B",
+   "probe_score": 0.7543248534202576
+  },
+  {
+   "id": "graded_s4_16_q2",
+   "stratum": "S4",
+   "tier": "low_exposure_released",
+   "entity": "Eclipse Sparkplug B",
+   "probe_score": 0.7926729917526245
+  },
+  {
+   "id": "graded_s4_17_q1",
+   "stratum": "S4",
+   "tier": "low_exposure_released",
+   "entity": "DCSA Track & Trace standard",
+   "probe_score": 0.9897331595420837
+  },
+  {
+   "id": "graded_s4_17_q2",
+   "stratum": "S4",
+   "tier": "low_exposure_released",
+   "entity": "DCSA Track & Trace standard",
+   "probe_score": 0.9990424513816833
+  },
+  {
+   "id": "graded_s4_18_q1",
+   "stratum": "S4",
+   "tier": "low_exposure_released",
+   "entity": "Asset Administration Shell (IEC 63278-1)",
+   "probe_score": 0.005301817320287228
+  },
+  {
+   "id": "graded_s4_18_q2",
+   "stratum": "S4",
+   "tier": "low_exposure_released",
+   "entity": "Asset Administration Shell (IEC 63278-1)",
+   "probe_score": 0.12763328850269318
+  },
+  {
+   "id": "graded_s4_19_q1",
+   "stratum": "S4",
+   "tier": "low_exposure_released",
+   "entity": "GS1 Digital Link",
+   "probe_score": 0.003802637103945017
+  },
+  {
+   "id": "graded_s4_19_q2",
+   "stratum": "S4",
+   "tier": "low_exposure_released",
+   "entity": "GS1 Digital Link",
+   "probe_score": 0.009299512021243572
+  },
+  {
+   "id": "graded_s4_1_q1",
+   "stratum": "S4",
+   "tier": "low_exposure_released",
+   "entity": "Fero Labs",
+   "probe_score": 0.9988916516304016
+  },
+  {
+   "id": "graded_s4_1_q2",
+   "stratum": "S4",
+   "tier": "low_exposure_released",
+   "entity": "Fero Labs",
+   "probe_score": 0.9978699684143066
+  },
+  {
+   "id": "graded_s4_20_q1",
+   "stratum": "S4",
+   "tier": "low_exposure_released",
+   "entity": "Rail Route",
+   "probe_score": 0.9983444213867188
+  },
+  {
+   "id": "graded_s4_20_q2",
+   "stratum": "S4",
+   "tier": "low_exposure_released",
+   "entity": "Rail Route",
+   "probe_score": 0.9864017367362976
+  },
+  {
+   "id": "graded_s4_21_q1",
+   "stratum": "S4",
+   "tier": "low_exposure_released",
+   "entity": "NIMBY Rails",
+   "probe_score": 0.9649080038070679
+  },
+  {
+   "id": "graded_s4_21_q2",
+   "stratum": "S4",
+   "tier": "low_exposure_released",
+   "entity": "NIMBY Rails",
+   "probe_score": 0.9679186344146729
+  },
+  {
+   "id": "graded_s4_22_q1",
+   "stratum": "S4",
+   "tier": "low_exposure_released",
+   "entity": "Captain of Industry",
+   "probe_score": 0.14688488841056824
+  },
+  {
+   "id": "graded_s4_22_q2",
+   "stratum": "S4",
+   "tier": "low_exposure_released",
+   "entity": "Captain of Industry",
+   "probe_score": 0.8289687037467957
+  },
+  {
+   "id": "graded_s4_23_q1",
+   "stratum": "S4",
+   "tier": "low_exposure_released",
+   "entity": "Sweet Transit",
+   "probe_score": 0.9289738535881042
+  },
+  {
+   "id": "graded_s4_23_q2",
+   "stratum": "S4",
+   "tier": "low_exposure_released",
+   "entity": "Sweet Transit",
+   "probe_score": 0.9946895837783813
+  },
+  {
+   "id": "graded_s4_24_q1",
+   "stratum": "S4",
+   "tier": "low_exposure_released",
+   "entity": "Plan B: Terraform",
+   "probe_score": 0.9993348717689514
+  },
+  {
+   "id": "graded_s4_24_q2",
+   "stratum": "S4",
+   "tier": "low_exposure_released",
+   "entity": "Plan B: Terraform",
+   "probe_score": 0.9921823143959045
+  },
+  {
+   "id": "graded_s4_25_q1",
+   "stratum": "S4",
+   "tier": "low_exposure_released",
+   "entity": "Mashinky",
+   "probe_score": 0.3907051384449005
+  },
+  {
+   "id": "graded_s4_25_q2",
+   "stratum": "S4",
+   "tier": "low_exposure_released",
+   "entity": "Mashinky",
+   "probe_score": 0.3171541392803192
+  },
+  {
+   "id": "graded_s4_26_q1",
+   "stratum": "S4",
+   "tier": "low_exposure_released",
+   "entity": "Sailwind",
+   "probe_score": 0.9526111483573914
+  },
+  {
+   "id": "graded_s4_26_q2",
+   "stratum": "S4",
+   "tier": "low_exposure_released",
+   "entity": "Sailwind",
+   "probe_score": 0.9995902180671692
+  },
+  {
+   "id": "graded_s4_27_q1",
+   "stratum": "S4",
+   "tier": "low_exposure_released",
+   "entity": "Milk-V Duo",
+   "probe_score": 0.9188741445541382
+  },
+  {
+   "id": "graded_s4_27_q2",
+   "stratum": "S4",
+   "tier": "low_exposure_released",
+   "entity": "Milk-V Duo",
+   "probe_score": 0.9890994429588318
+  },
+  {
+   "id": "graded_s4_28_q1",
+   "stratum": "S4",
+   "tier": "low_exposure_released",
+   "entity": "Banana Pi BPI-F3",
+   "probe_score": 0.4006182551383972
+  },
+  {
+   "id": "graded_s4_28_q2",
+   "stratum": "S4",
+   "tier": "low_exposure_released",
+   "entity": "Banana Pi BPI-F3",
+   "probe_score": 0.9088340997695923
+  },
+  {
+   "id": "graded_s4_29_q1",
+   "stratum": "S4",
+   "tier": "low_exposure_released",
+   "entity": "Sipeed Tang Nano 20K",
+   "probe_score": 0.6901646852493286
+  },
+  {
+   "id": "graded_s4_29_q2",
+   "stratum": "S4",
+   "tier": "low_exposure_released",
+   "entity": "Sipeed Tang Nano 20K",
+   "probe_score": 0.7626945376396179
+  },
+  {
+   "id": "graded_s4_2_q1",
+   "stratum": "S4",
+   "tier": "low_exposure_released",
+   "entity": "Optimal Dynamics",
+   "probe_score": 0.9998242259025574
+  },
+  {
+   "id": "graded_s4_2_q2",
+   "stratum": "S4",
+   "tier": "low_exposure_released",
+   "entity": "Optimal Dynamics",
+   "probe_score": 0.9999740123748779
+  },
+  {
+   "id": "graded_s4_30_q1",
+   "stratum": "S4",
+   "tier": "low_exposure_released",
+   "entity": "Turing Pi 2",
+   "probe_score": 0.45296475291252136
+  },
+  {
+   "id": "graded_s4_30_q2",
+   "stratum": "S4",
+   "tier": "low_exposure_released",
+   "entity": "Turing Pi 2",
+   "probe_score": 0.5269938707351685
+  },
+  {
+   "id": "graded_s4_31_q1",
+   "stratum": "S4",
+   "tier": "low_exposure_released",
+   "entity": "Pine64 Ox64",
+   "probe_score": 0.9277840852737427
+  },
+  {
+   "id": "graded_s4_31_q2",
+   "stratum": "S4",
+   "tier": "low_exposure_released",
+   "entity": "Pine64 Ox64",
+   "probe_score": 0.9865966439247131
+  },
+  {
+   "id": "graded_s4_32_q1",
+   "stratum": "S4",
+   "tier": "low_exposure_released",
+   "entity": "StarFive VisionFive 2",
+   "probe_score": 0.45084306597709656
+  },
+  {
+   "id": "graded_s4_32_q2",
+   "stratum": "S4",
+   "tier": "low_exposure_released",
+   "entity": "StarFive VisionFive 2",
+   "probe_score": 0.5219323039054871
+  },
+  {
+   "id": "graded_s4_33_q1",
+   "stratum": "S4",
+   "tier": "low_exposure_released",
+   "entity": "Follo Line (Blixtunnelen)",
+   "probe_score": 0.15534991025924683
+  },
+  {
+   "id": "graded_s4_33_q2",
+   "stratum": "S4",
+   "tier": "low_exposure_released",
+   "entity": "Follo Line (Blixtunnelen)",
+   "probe_score": 0.05504106730222702
+  },
+  {
+   "id": "graded_s4_34_q1",
+   "stratum": "S4",
+   "tier": "low_exposure_released",
+   "entity": "Randselva Bridge",
+   "probe_score": 0.999629020690918
+  },
+  {
+   "id": "graded_s4_34_q2",
+   "stratum": "S4",
+   "tier": "low_exposure_released",
+   "entity": "Randselva Bridge",
+   "probe_score": 0.999761164188385
+  },
+  {
+   "id": "graded_s4_35_q1",
+   "stratum": "S4",
+   "tier": "low_exposure_released",
+   "entity": "EIRSAT-1",
+   "probe_score": 0.9821447134017944
+  },
+  {
+   "id": "graded_s4_35_q2",
+   "stratum": "S4",
+   "tier": "low_exposure_released",
+   "entity": "EIRSAT-1",
+   "probe_score": 0.9455760717391968
+  },
+  {
+   "id": "graded_s4_36_q1",
+   "stratum": "S4",
+   "tier": "low_exposure_released",
+   "entity": "SuperBIT",
+   "probe_score": 0.41320204734802246
+  },
+  {
+   "id": "graded_s4_36_q2",
+   "stratum": "S4",
+   "tier": "low_exposure_released",
+   "entity": "SuperBIT",
+   "probe_score": 0.2595888078212738
+  },
+  {
+   "id": "graded_s4_37_q1",
+   "stratum": "S4",
+   "tier": "low_exposure_released",
+   "entity": "Tanager-1",
+   "probe_score": 0.9911194443702698
+  },
+  {
+   "id": "graded_s4_37_q2",
+   "stratum": "S4",
+   "tier": "low_exposure_released",
+   "entity": "Tanager-1",
+   "probe_score": 0.9982185959815979
+  },
+  {
+   "id": "graded_s4_38_q1",
+   "stratum": "S4",
+   "tier": "low_exposure_released",
+   "entity": "NorSat-TD",
+   "probe_score": 0.9982969164848328
+  },
+  {
+   "id": "graded_s4_38_q2",
+   "stratum": "S4",
+   "tier": "low_exposure_released",
+   "entity": "NorSat-TD",
+   "probe_score": 0.9938162565231323
+  },
+  {
+   "id": "graded_s4_39_q1",
+   "stratum": "S4",
+   "tier": "low_exposure_released",
+   "entity": "The Gullsp\u00e5ng Miracle",
+   "probe_score": 0.9603464603424072
+  },
+  {
+   "id": "graded_s4_39_q2",
+   "stratum": "S4",
+   "tier": "low_exposure_released",
+   "entity": "The Gullsp\u00e5ng Miracle",
+   "probe_score": 0.9848483204841614
+  },
+  {
+   "id": "graded_s4_3_q1",
+   "stratum": "S4",
+   "tier": "low_exposure_released",
+   "entity": "Verusen",
+   "probe_score": 0.9700266122817993
+  },
+  {
+   "id": "graded_s4_3_q2",
+   "stratum": "S4",
+   "tier": "low_exposure_released",
+   "entity": "Verusen",
+   "probe_score": 0.9831542372703552
+  },
+  {
+   "id": "graded_s4_4_q1",
+   "stratum": "S4",
+   "tier": "low_exposure_released",
+   "entity": "Leaf Logistics",
+   "probe_score": 0.9999120235443115
+  },
+  {
+   "id": "graded_s4_4_q2",
+   "stratum": "S4",
+   "tier": "low_exposure_released",
+   "entity": "Leaf Logistics",
+   "probe_score": 0.9998113512992859
+  },
+  {
+   "id": "graded_s4_5_q1",
+   "stratum": "S4",
+   "tier": "low_exposure_released",
+   "entity": "Tive",
+   "probe_score": 0.9497096538543701
+  },
+  {
+   "id": "graded_s4_5_q2",
+   "stratum": "S4",
+   "tier": "low_exposure_released",
+   "entity": "Tive",
+   "probe_score": 0.9894722104072571
+  },
+  {
+   "id": "graded_s4_6_q1",
+   "stratum": "S4",
+   "tier": "low_exposure_released",
+   "entity": "Forto",
+   "probe_score": 0.9858586192131042
+  },
+  {
+   "id": "graded_s4_6_q2",
+   "stratum": "S4",
+   "tier": "low_exposure_released",
+   "entity": "Forto",
+   "probe_score": 0.9976504445075989
+  },
+  {
+   "id": "graded_s4_7_q1",
+   "stratum": "S4",
+   "tier": "low_exposure_released",
+   "entity": "openTCS",
+   "probe_score": 0.3269934356212616
+  },
+  {
+   "id": "graded_s4_7_q2",
+   "stratum": "S4",
+   "tier": "low_exposure_released",
+   "entity": "openTCS",
+   "probe_score": 0.7522727251052856
+  },
+  {
+   "id": "graded_s4_8_q1",
+   "stratum": "S4",
+   "tier": "low_exposure_released",
+   "entity": "frePPLe",
+   "probe_score": 0.9907243847846985
+  },
+  {
+   "id": "graded_s4_8_q2",
+   "stratum": "S4",
+   "tier": "low_exposure_released",
+   "entity": "frePPLe",
+   "probe_score": 0.99891197681427
+  },
+  {
+   "id": "graded_s4_9_q1",
+   "stratum": "S4",
+   "tier": "low_exposure_released",
+   "entity": "OpenBoxes",
+   "probe_score": 0.9862847328186035
+  },
+  {
+   "id": "graded_s4_9_q2",
+   "stratum": "S4",
+   "tier": "low_exposure_released",
+   "entity": "OpenBoxes",
+   "probe_score": 0.9997215867042542
+  },
+  {
+   "id": "graded_s2_0_q1",
+   "stratum": "S2",
+   "tier": "strictly_unseen",
+   "entity": "Microsoft Surface Laptop Ultra",
+   "probe_score": 0.1201980710029602
+  },
+  {
+   "id": "graded_s2_0_q2",
+   "stratum": "S2",
+   "tier": "strictly_unseen",
+   "entity": "Microsoft Surface Laptop Ultra",
+   "probe_score": 0.2269086092710495
+  },
+  {
+   "id": "graded_s2_10_q1",
+   "stratum": "S2",
+   "tier": "strictly_unseen",
+   "entity": "Xenoblade Genesis",
+   "probe_score": 0.5553023219108582
+  },
+  {
+   "id": "graded_s2_10_q2",
+   "stratum": "S2",
+   "tier": "strictly_unseen",
+   "entity": "Xenoblade Genesis",
+   "probe_score": 0.1648799329996109
+  },
+  {
+   "id": "graded_s2_11_q1",
+   "stratum": "S2",
+   "tier": "strictly_unseen",
+   "entity": "Final Fantasy Resonance",
+   "probe_score": 0.9795048832893372
+  },
+  {
+   "id": "graded_s2_11_q2",
+   "stratum": "S2",
+   "tier": "strictly_unseen",
+   "entity": "Final Fantasy Resonance",
+   "probe_score": 0.435004323720932
+  },
+  {
+   "id": "graded_s2_12_q1",
+   "stratum": "S2",
+   "tier": "strictly_unseen",
+   "entity": "One Piece: Grand Gourmet",
+   "probe_score": 0.9913253784179688
+  },
+  {
+   "id": "graded_s2_12_q2",
+   "stratum": "S2",
+   "tier": "strictly_unseen",
+   "entity": "One Piece: Grand Gourmet",
+   "probe_score": 0.5427163243293762
+  },
+  {
+   "id": "graded_s2_13_q1",
+   "stratum": "S2",
+   "tier": "strictly_unseen",
+   "entity": "Atelier Karia: The Night Kingdom & the Guide of Memories",
+   "probe_score": 0.9999939203262329
+  },
+  {
+   "id": "graded_s2_13_q2",
+   "stratum": "S2",
+   "tier": "strictly_unseen",
+   "entity": "Atelier Karia: The Night Kingdom & the Guide of Memories",
+   "probe_score": 0.9995524287223816
+  },
+  {
+   "id": "graded_s2_14_q1",
+   "stratum": "S2",
+   "tier": "strictly_unseen",
+   "entity": "HAEX",
+   "probe_score": 0.9986371397972107
+  },
+  {
+   "id": "graded_s2_14_q2",
+   "stratum": "S2",
+   "tier": "strictly_unseen",
+   "entity": "HAEX",
+   "probe_score": 0.9915547966957092
+  },
+  {
+   "id": "graded_s2_16_q1",
+   "stratum": "S2",
+   "tier": "strictly_unseen",
+   "entity": "Hum of Hurt",
+   "probe_score": 0.9982975125312805
+  },
+  {
+   "id": "graded_s2_16_q2",
+   "stratum": "S2",
+   "tier": "strictly_unseen",
+   "entity": "Hum of Hurt",
+   "probe_score": 0.9696756601333618
+  },
+  {
+   "id": "graded_s2_17_q1",
+   "stratum": "S2",
+   "tier": "strictly_unseen",
+   "entity": "You Seem Pretty Sad for a Girl So in Love",
+   "probe_score": 0.9953552484512329
+  },
+  {
+   "id": "graded_s2_17_q2",
+   "stratum": "S2",
+   "tier": "strictly_unseen",
+   "entity": "You Seem Pretty Sad for a Girl So in Love",
+   "probe_score": 0.9890202879905701
+  },
+  {
+   "id": "graded_s2_20_q1",
+   "stratum": "S2",
+   "tier": "strictly_unseen",
+   "entity": "Kimi K2",
+   "probe_score": 0.999884843826294
+  },
+  {
+   "id": "graded_s2_20_q2",
+   "stratum": "S2",
+   "tier": "strictly_unseen",
+   "entity": "Kimi K2",
+   "probe_score": 0.9886493682861328
+  },
+  {
+   "id": "graded_s2_21_q1",
+   "stratum": "S2",
+   "tier": "strictly_unseen",
+   "entity": "Nano Banana (Gemini 2.5 Flash Image)",
+   "probe_score": 0.9979802966117859
+  },
+  {
+   "id": "graded_s2_21_q2",
+   "stratum": "S2",
+   "tier": "strictly_unseen",
+   "entity": "Nano Banana (Gemini 2.5 Flash Image)",
+   "probe_score": 0.946843683719635
+  },
+  {
+   "id": "graded_s2_23_q1",
+   "stratum": "S2",
+   "tier": "strictly_unseen",
+   "entity": "MiniMax-M1",
+   "probe_score": 0.9998942613601685
+  },
+  {
+   "id": "graded_s2_23_q2",
+   "stratum": "S2",
+   "tier": "strictly_unseen",
+   "entity": "MiniMax-M1",
+   "probe_score": 0.9997550845146179
+  },
+  {
+   "id": "graded_s2_29_q1",
+   "stratum": "S2",
+   "tier": "strictly_unseen",
+   "entity": "NVIDIA Rubin CPX",
+   "probe_score": 0.3237336277961731
+  },
+  {
+   "id": "graded_s2_29_q2",
+   "stratum": "S2",
+   "tier": "strictly_unseen",
+   "entity": "NVIDIA Rubin CPX",
+   "probe_score": 0.035989608615636826
+  },
+  {
+   "id": "graded_s2_30_q1",
+   "stratum": "S2",
+   "tier": "strictly_unseen",
+   "entity": "Qualcomm AI200",
+   "probe_score": 0.06955334544181824
+  },
+  {
+   "id": "graded_s2_30_q2",
+   "stratum": "S2",
+   "tier": "strictly_unseen",
+   "entity": "Qualcomm AI200",
+   "probe_score": 0.039603929966688156
+  },
+  {
+   "id": "graded_s2_31_q1",
+   "stratum": "S2",
+   "tier": "strictly_unseen",
+   "entity": "Intel Crescent Island",
+   "probe_score": 0.21588528156280518
+  },
+  {
+   "id": "graded_s2_31_q2",
+   "stratum": "S2",
+   "tier": "strictly_unseen",
+   "entity": "Intel Crescent Island",
+   "probe_score": 0.03320742025971413
+  },
+  {
+   "id": "graded_s2_33_q1",
+   "stratum": "S2",
+   "tier": "strictly_unseen",
+   "entity": "General Intuition",
+   "probe_score": 0.9997389912605286
+  },
+  {
+   "id": "graded_s2_33_q2",
+   "stratum": "S2",
+   "tier": "strictly_unseen",
+   "entity": "General Intuition",
+   "probe_score": 0.9981769323348999
+  },
+  {
+   "id": "graded_s2_34_q1",
+   "stratum": "S2",
+   "tier": "strictly_unseen",
+   "entity": "Ekterly (sebetralstat)",
+   "probe_score": 0.9991594552993774
+  },
+  {
+   "id": "graded_s2_34_q2",
+   "stratum": "S2",
+   "tier": "strictly_unseen",
+   "entity": "Ekterly (sebetralstat)",
+   "probe_score": 0.6263893246650696
+  },
+  {
+   "id": "graded_s2_35_q1",
+   "stratum": "S2",
+   "tier": "strictly_unseen",
+   "entity": "Modeyso (dordaviprone)",
+   "probe_score": 0.9996304512023926
+  },
+  {
+   "id": "graded_s2_35_q2",
+   "stratum": "S2",
+   "tier": "strictly_unseen",
+   "entity": "Modeyso (dordaviprone)",
+   "probe_score": 0.7015390992164612
+  },
+  {
+   "id": "graded_s2_36_q1",
+   "stratum": "S2",
+   "tier": "strictly_unseen",
+   "entity": "Zycubo (copper histidinate)",
+   "probe_score": 0.999002993106842
+  },
+  {
+   "id": "graded_s2_36_q2",
+   "stratum": "S2",
+   "tier": "strictly_unseen",
+   "entity": "Zycubo (copper histidinate)",
+   "probe_score": 0.6693393588066101
+  },
+  {
+   "id": "graded_s2_38_q1",
+   "stratum": "S2",
+   "tier": "strictly_unseen",
+   "entity": "The Social Reckoning",
+   "probe_score": 0.9993935823440552
+  },
+  {
+   "id": "graded_s2_38_q2",
+   "stratum": "S2",
+   "tier": "strictly_unseen",
+   "entity": "The Social Reckoning",
+   "probe_score": 0.784940779209137
+  },
+  {
+   "id": "graded_s2_3_q1",
+   "stratum": "S2",
+   "tier": "strictly_unseen",
+   "entity": "Hyundai IONIQ Concept Venus",
+   "probe_score": 0.4722771644592285
+  },
+  {
+   "id": "graded_s2_3_q2",
+   "stratum": "S2",
+   "tier": "strictly_unseen",
+   "entity": "Hyundai IONIQ Concept Venus",
+   "probe_score": 0.12350308150053024
+  },
+  {
+   "id": "graded_s2_4_q1",
+   "stratum": "S2",
+   "tier": "strictly_unseen",
+   "entity": "Hyundai IONIQ Concept Earth",
+   "probe_score": 0.4624224007129669
+  },
+  {
+   "id": "graded_s2_4_q2",
+   "stratum": "S2",
+   "tier": "strictly_unseen",
+   "entity": "Hyundai IONIQ Concept Earth",
+   "probe_score": 0.08819809556007385
+  },
+  {
+   "id": "graded_s2_5_q1",
+   "stratum": "S2",
+   "tier": "strictly_unseen",
+   "entity": "Yuviwel (navepegritide)",
+   "probe_score": 0.9985356330871582
+  },
+  {
+   "id": "graded_s2_5_q2",
+   "stratum": "S2",
+   "tier": "strictly_unseen",
+   "entity": "Yuviwel (navepegritide)",
+   "probe_score": 0.5666529536247253
+  },
+  {
+   "id": "graded_s2_6_q1",
+   "stratum": "S2",
+   "tier": "strictly_unseen",
+   "entity": "Adquey (difamilast)",
+   "probe_score": 0.9977765679359436
+  },
+  {
+   "id": "graded_s2_6_q2",
+   "stratum": "S2",
+   "tier": "strictly_unseen",
+   "entity": "Adquey (difamilast)",
+   "probe_score": 0.5364276170730591
+  },
+  {
+   "id": "graded_s2_7_q1",
+   "stratum": "S2",
+   "tier": "strictly_unseen",
+   "entity": "Castlevania: Belmont's Curse",
+   "probe_score": 0.17732931673526764
+  },
+  {
+   "id": "graded_s2_7_q2",
+   "stratum": "S2",
+   "tier": "strictly_unseen",
+   "entity": "Castlevania: Belmont's Curse",
+   "probe_score": 0.03596121445298195
+  },
+  {
+   "id": "graded_s2_8_q1",
+   "stratum": "S2",
+   "tier": "strictly_unseen",
+   "entity": "Kena: Scars of Kosmora",
+   "probe_score": 0.8023430109024048
+  },
+  {
+   "id": "graded_s2_8_q2",
+   "stratum": "S2",
+   "tier": "strictly_unseen",
+   "entity": "Kena: Scars of Kosmora",
+   "probe_score": 0.8133090734481812
+  },
+  {
+   "id": "graded_s2_9_q1",
+   "stratum": "S2",
+   "tier": "strictly_unseen",
+   "entity": "Fire Emblem: Fortune's Weave",
+   "probe_score": 0.9894295334815979
+  },
+  {
+   "id": "graded_s2_9_q2",
+   "stratum": "S2",
+   "tier": "strictly_unseen",
+   "entity": "Fire Emblem: Fortune's Weave",
+   "probe_score": 0.9112524390220642
+  }
+ ]
+}

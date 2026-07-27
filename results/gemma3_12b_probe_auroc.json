@@ -1,0 +1,12 @@
+{
+ "model": "Gemma-3-12B",
+ "source_npz": "gemma3_12b representation cache (compute pipeline; not shipped)",
+ "protocol": "meanpool residual, StandardScaler+LogReg(C=0.3), GroupKFold(5) by pair, OOF AUROC, parametric arm (n=770 items); fp16 infs clipped to +/-6e4 before scaling",
+ "auroc_by_layer": {
+  "L20": 0.9905,
+  "L24": 0.9903,
+  "L28": 0.9891
+ },
+ "headline": "0.990 (L20, mid layer of 48)",
+ "computed": "2026-07-25 during overnight audit (companion M5 fix)"
+}

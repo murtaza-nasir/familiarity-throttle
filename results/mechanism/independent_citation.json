@@ -1,0 +1,12 @@
+{
+  "source": "RAGTruth-QA (MS MARCO web QA, human span annotations, arXiv 2401.00396)",
+  "n": 3448,
+  "n_pos_hallucinated": 1724,
+  "n_neg_faithful": 1724,
+  "within_auroc": 0.717,
+  "our_grounded_to_new_auroc": 0.599,
+  "new_to_our_grounded_auroc": 0.5854,
+  "grounded_verify_within_auroc": 0.9771,
+  "existing_promptonly_grounded_to_new_auroc": 0.5608,
+  "notes": "Independent human-labeled groundedness modality (RAGTruth QA), NOT GLM-generated, zero content overlap with entity set. Matched verification format (passage+question+proposed answer), L18 mean-pooled, StandardScaler+LogReg C=0.3, GroupKFold by source_id. Transfer uses our grounded-arm re-extracted in same verification format; existing_promptonly is the deployed passage+question-only grounded probe applied cross-format. y=1=hallucinated/unsupported."
+}

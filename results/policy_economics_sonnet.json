@@ -1,0 +1,336 @@
+{
+ "_model": {
+  "equation": "E = pi*(rho*P(fab|unsup)+c_esc*P(esc|unsup)) + (1-pi)*(c_esc*P(esc|ans)+c_miss*(1-util_ans))",
+  "c_miss": 1.0,
+  "pi": 0.5,
+  "pi_rationale": "paired eval (1 real + 1 fictional per pair) => balanced",
+  "tau_primary": "0.05",
+  "policies": [
+   "none",
+   "block",
+   "cast",
+   "abstain",
+   "null"
+  ],
+  "abstain_source": "instructed-arm generations judged by the same Sonnet three-way judge (instructed_arm_verdicts.jsonl); no human escalation",
+  "distinct_from": "cost_model.json threshold-vs-cost-ratio analysis (this one prices escalation c_esc)"
+ },
+ "arms": {
+  "param": {
+   "n_unsup": 72,
+   "n_ans": 73,
+   "rates": {
+    "none": {
+     "fab": 0.8333333333333334,
+     "fab_ci": [
+      0.727,
+      0.9108
+     ],
+     "util": 0.9726027397260274,
+     "util_ci": [
+      0.9045,
+      0.9967
+     ],
+     "esc_unsup": 0.0,
+     "esc_ans": 0.0,
+     "n_unsup": 72,
+     "n_ans": 73,
+     "k_fab": 60,
+     "k_util": 71,
+     "escalated_unsup": 0,
+     "escalated_ans": 0
+    },
+    "block": {
+     "fab": 0.0,
+     "fab_ci": [
+      0.0,
+      0.0499
+     ],
+     "util": 0.9726027397260274,
+     "util_ci": [
+      0.9045,
+      0.9967
+     ],
+     "esc_unsup": 1.0,
+     "esc_ans": 0.0,
+     "n_unsup": 72,
+     "n_ans": 73,
+     "k_fab": 0,
+     "k_util": 71,
+     "escalated_unsup": 73,
+     "escalated_ans": 0
+    },
+    "cast": {
+     "fab": 0.0821917808219178,
+     "fab_ci": [
+      0.0312,
+      0.1726
+     ],
+     "util": 0.9726027397260274,
+     "util_ci": [
+      0.9045,
+      0.9967
+     ],
+     "esc_unsup": 0.0,
+     "esc_ans": 0.0,
+     "n_unsup": 72,
+     "n_ans": 73,
+     "k_fab": 6,
+     "k_util": 71,
+     "escalated_unsup": 0,
+     "escalated_ans": 0
+    },
+    "abstain": {
+     "fab": 0.07407407407407407,
+     "fab_ci": [
+      0.0498,
+      0.1053
+     ],
+     "util": 0.29842931937172773,
+     "util_ci": [
+      0.253,
+      0.3471
+     ],
+     "esc_unsup": 0.0,
+     "esc_ans": 0.0,
+     "n_unsup": 72,
+     "n_ans": 73,
+     "source": "instructed_arm_verdicts.jsonl (Sonnet three-way judge)"
+    },
+    "null": {
+     "fab": 0.0,
+     "fab_ci": null,
+     "util": 0.0,
+     "util_ci": null,
+     "esc_unsup": 0.0,
+     "esc_ans": 0.0,
+     "n_unsup": 72,
+     "n_ans": 73,
+     "source": "definitional (no deployment)"
+    }
+   },
+   "linear_coeffs": {
+    "none": {
+     "const": 0.0136986301369863,
+     "rho": 0.4166666666666667,
+     "c_esc": 0.0
+    },
+    "block": {
+     "const": 0.0136986301369863,
+     "rho": 0.0,
+     "c_esc": 0.5
+    },
+    "cast": {
+     "const": 0.0136986301369863,
+     "rho": 0.0410958904109589,
+     "c_esc": 0.0
+    },
+    "abstain": {
+     "const": 0.3507853403141361,
+     "rho": 0.037037037037037035,
+     "c_esc": 0.0
+    },
+    "null": {
+     "const": 0.5,
+     "rho": 0.0,
+     "c_esc": 0.0
+    }
+   },
+   "cast_dominates_no_gate": true,
+   "abstain_dominated_note": "utility crater (0.298) makes abstention-prompt dominated whenever miss cost matters",
+   "block_vs_cast_boundary": {
+    "c_esc_eq": "c_esc = (0.04110*rho + 0.00000) / 0.50000",
+    "slope_cesc_per_rho": 0.0821917808219178,
+    "intercept": 0.0,
+    "meaning": "below the line escalation is cheap => block wins; above it => CAST wins"
+   }
+  },
+  "grounded": {
+   "n_unsup": 108,
+   "n_ans": 108,
+   "rates": {
+    "none": {
+     "fab": 0.1388888888888889,
+     "fab_ci": [
+      0.0799,
+      0.2187
+     ],
+     "util": 0.9444444444444444,
+     "util_ci": [
+      0.883,
+      0.9793
+     ],
+     "esc_unsup": 0.0,
+     "esc_ans": 0.0,
+     "n_unsup": 108,
+     "n_ans": 108,
+     "k_fab": 15,
+     "k_util": 102,
+     "escalated_unsup": 0,
+     "escalated_ans": 0
+    },
+    "block": {
+     "fab": 0.05555555555555555,
+     "fab_ci": [
+      0.0207,
+      0.117
+     ],
+     "util": 0.9166666666666666,
+     "util_ci": [
+      0.8477,
+      0.9612
+     ],
+     "esc_unsup": 0.6851851851851852,
+     "esc_ans": 0.027777777777777776,
+     "n_unsup": 108,
+     "n_ans": 108,
+     "k_fab": 6,
+     "k_util": 99,
+     "escalated_unsup": 74,
+     "escalated_ans": 3
+    },
+    "cast": {
+     "fab": 0.1111111111111111,
+     "fab_ci": [
+      0.0587,
+      0.186
+     ],
+     "util": 0.9259259259259259,
+     "util_ci": [
+      0.8593,
+      0.9675
+     ],
+     "esc_unsup": 0.0,
+     "esc_ans": 0.0,
+     "n_unsup": 108,
+     "n_ans": 108,
+     "k_fab": 12,
+     "k_util": 100,
+     "escalated_unsup": 0,
+     "escalated_ans": 0
+    },
+    "abstain": {
+     "fab": 0.07407407407407407,
+     "fab_ci": [
+      0.0498,
+      0.1053
+     ],
+     "util": 0.29842931937172773,
+     "util_ci": [
+      0.253,
+      0.3471
+     ],
+     "esc_unsup": 0.0,
+     "esc_ans": 0.0,
+     "n_unsup": 108,
+     "n_ans": 108,
+     "source": "instructed_arm_verdicts.jsonl (Sonnet three-way judge)"
+    },
+    "null": {
+     "fab": 0.0,
+     "fab_ci": null,
+     "util": 0.0,
+     "util_ci": null,
+     "esc_unsup": 0.0,
+     "esc_ans": 0.0,
+     "n_unsup": 108,
+     "n_ans": 108,
+     "source": "definitional (no deployment)"
+    }
+   },
+   "linear_coeffs": {
+    "none": {
+     "const": 0.02777777777777779,
+     "rho": 0.06944444444444445,
+     "c_esc": 0.0
+    },
+    "block": {
+     "const": 0.041666666666666685,
+     "rho": 0.027777777777777776,
+     "c_esc": 0.3564814814814815
+    },
+    "cast": {
+     "const": 0.037037037037037035,
+     "rho": 0.05555555555555555,
+     "c_esc": 0.0
+    },
+    "abstain": {
+     "const": 0.3507853403141361,
+     "rho": 0.037037037037037035,
+     "c_esc": 0.0
+    },
+    "null": {
+     "const": 0.5,
+     "rho": 0.0,
+     "c_esc": 0.0
+    }
+   },
+   "cast_dominates_no_gate": false,
+   "abstain_dominated_note": "utility crater (0.298) makes abstention-prompt dominated whenever miss cost matters",
+   "block_vs_cast_boundary": {
+    "c_esc_eq": "c_esc = (0.02778*rho + -0.00463) / 0.35648",
+    "slope_cesc_per_rho": 0.0779220779220779,
+    "intercept": -0.012987012987013043,
+    "meaning": "below the line escalation is cheap => block wins; above it => CAST wins"
+   }
+  }
+ },
+ "ci_sensitivity_param": {
+  "cast_fab_rate": 0.0821917808219178,
+  "cast_fab_ci95": [
+   0.008556489507786055,
+   0.11543607876686146
+  ],
+  "boundary_slope_cesc_per_rho": {
+   "point": 0.0821917808219178,
+   "at_fab_lo": 0.008556489507786055,
+   "at_fab_hi": 0.11543607876686146
+  },
+  "interpretation": "block-vs-CAST crossover is c_esc ~= slope*rho; at the CI edges of CAST's residual fabrication rate the slope stays in [0.0086, 0.1154], so the region map ordering (block cheap-esc / CAST expensive-esc) is stable."
+ },
+ "operating_points_param": [
+  {
+   "rho": 5,
+   "c_esc": 5,
+   "desc": "moderate fab cost, mid escalation",
+   "costs": {
+    "none": 2.097,
+    "block": 2.5137,
+    "cast": 0.2192,
+    "abstain": 0.536,
+    "null": 0.5
+   },
+   "winner": "cast",
+   "winner_label": "CAST (in-place)"
+  },
+  {
+   "rho": 100,
+   "c_esc": 0.5,
+   "desc": "high fab cost, cheap escalation",
+   "costs": {
+    "none": 41.6804,
+    "block": 0.2637,
+    "cast": 4.1233,
+    "abstain": 4.0545,
+    "null": 0.5
+   },
+   "winner": "block",
+   "winner_label": "block-gate (escalate)"
+  },
+  {
+   "rho": 300,
+   "c_esc": 40,
+   "desc": "extreme fab cost, expensive escalation",
+   "costs": {
+    "none": 125.0137,
+    "block": 20.0137,
+    "cast": 12.3425,
+    "abstain": 11.4619,
+    "null": 0.5
+   },
+   "winner": "null",
+   "winner_label": "no automation"
+  }
+ ],
+ "ci_method": "Clopper-Pearson exact binomial 95% (recomputed 2026-07-25; earlier fields were stale/mislabeled)"
+}

@@ -1,0 +1,812 @@
+{
+ "_meta": {
+  "seed": 0,
+  "maxnew": 60,
+  "tgts": [
+   0.05,
+   0.1
+  ],
+  "L_V": 18,
+  "v_norm": 49.744102478027344,
+  "probe_check": {
+   "rederived_train_youdenJ": 0.9674526373177047,
+   "rederived_youden_threshold": 0.49870115518569946,
+   "rederived_test_gate_on_fic": 0.9263157894736842,
+   "rederived_test_gate_on_real": 0.015151515151515152,
+   "steer_v2_meta_train_youdenJ": 0.9655172413793104,
+   "steer_v2_meta_threshold": 0.5033798750785742,
+   "steer_v2_meta_test_gate_on_fic": 0.9263157894736842,
+   "steer_v2_meta_test_gate_on_real": 0.015151515151515152
+  },
+  "loops": {
+   "param": {
+    "arm": "parametric",
+    "n_items": 320,
+    "n_pairs": 160,
+    "n_cal_pairs": 80,
+    "n_eval_pairs": 80,
+    "entity_overlap_pairs_all": {
+     "nump_11": [
+      "incoterms 2020"
+     ],
+     "nump_19": [
+      "six sigma",
+      "target"
+     ],
+     "nump_27": [
+      "incoterms 2020",
+      "transglobal"
+     ],
+     "nump_41": [
+      "incoterms 2020"
+     ],
+     "nump_54": [
+      "transglobal"
+     ],
+     "nump_66": [
+      "nextech"
+     ],
+     "nump_70": [
+      "gs1"
+     ],
+     "nump_73": [
+      "titan-x"
+     ],
+     "nump_74": [
+      "incoterms 2020"
+     ],
+     "nump_78": [
+      "six sigma",
+      "target"
+     ],
+     "nump_80": [
+      "zephyr logistics"
+     ],
+     "nump_82": [
+      "incoterms 2020"
+     ],
+     "nump_94": [
+      "gdp"
+     ],
+     "nump_95": [
+      "velocity freight"
+     ],
+     "nump_101": [
+      "titan-x"
+     ],
+     "nump_105": [
+      "incoterms 2020"
+     ],
+     "nump_120": [
+      "zephyr logistics"
+     ],
+     "nump_153": [
+      "incoterms 2020"
+     ],
+     "nump_159": [
+      "aerodyne",
+      "aerodyne systems"
+     ]
+    },
+    "eval_pairs_dropped": [
+     "nump_101",
+     "nump_153",
+     "nump_159",
+     "nump_41",
+     "nump_70",
+     "nump_74",
+     "nump_95"
+    ],
+    "n_eval_pairs_dropped": 7,
+    "n_eval_pairs_kept": 73,
+    "spurious_retained": [],
+    "taus": {
+     "0.05": {
+      "cast": 0.9999467730522156,
+      "block": 0.9999923706054688
+     },
+     "0.1": {
+      "cast": 0.9998958110809326,
+      "block": 0.9999871850013733
+     }
+    }
+   },
+   "grounded": {
+    "arm": "grounded",
+    "n_items": 444,
+    "n_pairs": 222,
+    "n_cal_pairs": 111,
+    "n_eval_pairs": 111,
+    "entity_overlap_pairs_all": {
+     "num_scm_v3_text_0045": [
+      "moving average"
+     ],
+     "num_scm_v3_text_0049": [
+      "moving average"
+     ],
+     "num_scm_v3_text_0069": [
+      "six sigma"
+     ],
+     "num_marketing_v3_text_0095": [
+      "bmw"
+     ],
+     "num_scm_v3_text_0133": [
+      "patagonia"
+     ],
+     "num_scm_v3_text_0135": [
+      "ibm"
+     ],
+     "num_marketing_v3_text_0183": [
+      "mcdonald's"
+     ],
+     "num_marketing_v3_text_0184": [
+      "walmart"
+     ],
+     "num_marketing_v3_text_0320": [
+      "nike"
+     ],
+     "num_marketing_v3_text_0319": [
+      "nike"
+     ],
+     "num_dss_v3_text_0360": [
+      "ibm"
+     ],
+     "num_scm_v3p_0392": [
+      "ford"
+     ]
+    },
+    "eval_pairs_dropped": [
+     "num_scm_v3_text_0049",
+     "num_scm_v3_text_0069",
+     "num_scm_v3_text_0133"
+    ],
+    "n_eval_pairs_dropped": 3,
+    "n_eval_pairs_kept": 108,
+    "spurious_retained": [
+     "num_marketing_v3_text_0199:target",
+     "num_marketing_v3_text_0229:target"
+    ],
+    "taus": {
+     "0.05": {
+      "cast": 0.99991375207901,
+      "block": 0.029175082221627235
+     },
+     "0.1": {
+      "cast": 0.9998410940170288,
+      "block": 0.004786679986864328
+     }
+    }
+   }
+  }
+ },
+ "param": {
+  "gate_fire_rates_eval": {
+   "0.05": {
+    "cast_fire_unsup": {
+     "k": 72,
+     "n": 73,
+     "rate": 0.9863013698630136
+    },
+    "cast_fire_ans": {
+     "k": 0,
+     "n": 73,
+     "rate": 0.0
+    },
+    "block_fire_unsup": {
+     "k": 73,
+     "n": 73,
+     "rate": 1.0
+    },
+    "block_fire_ans": {
+     "k": 0,
+     "n": 73,
+     "rate": 0.0
+    }
+   },
+   "0.1": {
+    "cast_fire_unsup": {
+     "k": 73,
+     "n": 73,
+     "rate": 1.0
+    },
+    "cast_fire_ans": {
+     "k": 2,
+     "n": 73,
+     "rate": 0.0273972602739726
+    },
+    "block_fire_unsup": {
+     "k": 73,
+     "n": 73,
+     "rate": 1.0
+    },
+    "block_fire_ans": {
+     "k": 3,
+     "n": 73,
+     "rate": 0.0410958904109589
+    }
+   }
+  },
+  "none": {
+   "cascading_error": {
+    "k": 60,
+    "n": 72,
+    "rate": 0.8333333333333334,
+    "ci95": [
+     0.6237624620315546,
+     0.8354552207755768
+    ]
+   },
+   "cascading_error_regex_secondary": {
+    "k": 64,
+    "n": 73,
+    "rate": 0.8767123287671232,
+    "judge_regex_agreement": 0.863013698630137,
+    "n_judged": 73
+   },
+   "utility_commit_answerable": {
+    "k": 71,
+    "n": 73,
+    "rate": 0.9726027397260274,
+    "ci95": [
+     0.7954356791513938,
+     0.9514835762788899
+    ]
+   },
+   "utility_numeric_correct_checkable": {
+    "k": 16,
+    "n": 71,
+    "rate": 0.22535211267605634,
+    "ci95": [
+     0.13464028224874297,
+     0.3399988804643146
+    ]
+   },
+   "escalated_unsup": 0,
+   "escalated_ans": 0
+  },
+  "block@0.05": {
+   "cascading_error": {
+    "k": 0,
+    "n": 73,
+    "rate": 0.0,
+    "ci95": [
+     0.0,
+     0.04927706089585927
+    ]
+   },
+   "cascading_error_regex_secondary": {
+    "k": 0,
+    "n": 73,
+    "rate": 0.0,
+    "judge_regex_agreement": null,
+    "n_judged": 0
+   },
+   "utility_commit_answerable": {
+    "k": 71,
+    "n": 73,
+    "rate": 0.9726027397260274,
+    "ci95": [
+     0.7954356791513938,
+     0.9514835762788899
+    ]
+   },
+   "utility_numeric_correct_checkable": {
+    "k": 16,
+    "n": 71,
+    "rate": 0.22535211267605634,
+    "ci95": [
+     0.13464028224874297,
+     0.3399988804643146
+    ]
+   },
+   "escalated_unsup": 73,
+   "escalated_ans": 0
+  },
+  "cast@0.05": {
+   "cascading_error": {
+    "k": 6,
+    "n": 73,
+    "rate": 0.0821917808219178,
+    "ci95": [
+     0.008556489507786055,
+     0.11543607876686146
+    ]
+   },
+   "cascading_error_regex_secondary": {
+    "k": 7,
+    "n": 73,
+    "rate": 0.0958904109589041,
+    "judge_regex_agreement": 0.9452054794520548,
+    "n_judged": 73
+   },
+   "utility_commit_answerable": {
+    "k": 71,
+    "n": 73,
+    "rate": 0.9726027397260274,
+    "ci95": [
+     0.7954356791513938,
+     0.9514835762788899
+    ]
+   },
+   "utility_numeric_correct_checkable": {
+    "k": 16,
+    "n": 71,
+    "rate": 0.22535211267605634,
+    "ci95": [
+     0.13464028224874297,
+     0.3399988804643146
+    ]
+   },
+   "escalated_unsup": 0,
+   "escalated_ans": 0
+  },
+  "block@0.1": {
+   "cascading_error": {
+    "k": 0,
+    "n": 73,
+    "rate": 0.0,
+    "ci95": [
+     0.0,
+     0.04927706089585927
+    ]
+   },
+   "cascading_error_regex_secondary": {
+    "k": 0,
+    "n": 73,
+    "rate": 0.0,
+    "judge_regex_agreement": null,
+    "n_judged": 0
+   },
+   "utility_commit_answerable": {
+    "k": 62,
+    "n": 73,
+    "rate": 0.8493150684931506,
+    "ci95": [
+     0.7463582273482849,
+     0.9223043390765039
+    ]
+   },
+   "utility_numeric_correct_checkable": {
+    "k": 15,
+    "n": 71,
+    "rate": 0.2112676056338028,
+    "ci95": [
+     0.12334059087264869,
+     0.32440266090565273
+    ]
+   },
+   "escalated_unsup": 73,
+   "escalated_ans": 3
+  },
+  "cast@0.1": {
+   "cascading_error": {
+    "k": 2,
+    "n": 73,
+    "rate": 0.0273972602739726,
+    "ci95": [
+     0.0033353288931166616,
+     0.09548916383778924
+    ]
+   },
+   "cascading_error_regex_secondary": {
+    "k": 6,
+    "n": 73,
+    "rate": 0.0821917808219178,
+    "judge_regex_agreement": 0.9452054794520548,
+    "n_judged": 73
+   },
+   "utility_commit_answerable": {
+    "k": 65,
+    "n": 73,
+    "rate": 0.8904109589041096,
+    "ci95": [
+     0.7954356791513938,
+     0.9514835762788899
+    ]
+   },
+   "utility_numeric_correct_checkable": {
+    "k": 15,
+    "n": 71,
+    "rate": 0.2112676056338028,
+    "ci95": [
+     0.12334059087264869,
+     0.32440266090565273
+    ]
+   },
+   "escalated_unsup": 0,
+   "escalated_ans": 0
+  },
+  "cast_steered_quality": {
+   "judge_dist_on_fired": {
+    "should_abstain": {
+     "COMMIT": 2,
+     "DEFLECT": 0,
+     "FLAG": 71,
+     "?": 0,
+     "n": 73
+    },
+    "answerable": {
+     "COMMIT": 2,
+     "DEFLECT": 0,
+     "FLAG": 0,
+     "?": 0,
+     "n": 2
+    }
+   },
+   "n_degenerate_heuristic": 3,
+   "examples_unsup": [
+    {
+     "id": "nump_0_abs",
+     "q": "Under Zylox Corp's NET-XR payment terms, how many days does a buyer have to pay an invoice?",
+     "steered": "I don't have enough information to determine the final number.",
+     "judge": "FLAG"
+    },
+    {
+     "id": "nump_7_abs",
+     "q": "What is the standard pallet size in inches by inches for a NovaCorp standard logistics pallet?",
+     "steered": "I don't have enough information to calculate or infer the standard pallet size for NovaCorp. I cannot provide a number based on guesswork.",
+     "judge": "FLAG"
+    },
+    {
+     "id": "nump_8_abs",
+     "q": "How many standard pallets typically fit in a Stellar Freight 53-foot mega-van trailer when single-stacked?",
+     "steered": "I don't have enough information to determine the number of standard pallets that fit in a Stellar Freight 53-foot mega-van trailer when single-stacked.",
+     "judge": "FLAG"
+    },
+    {
+     "id": "nump_9_abs",
+     "q": "What is the standard maximum gross weight in kilograms for a BlueSun Interstellar 20-foot heavy-duty shipping container?",
+     "steered": "I don't have enough information to provide a reliable answer.",
+     "judge": "FLAG"
+    },
+    {
+     "id": "nump_12_abs",
+     "q": "How many hours are in a Tetra Logistics provider's standard 24/7 operating week?",
+     "steered": "I don't have enough information to determine the answer.",
+     "judge": "FLAG"
+    },
+    {
+     "id": "nump_13_abs",
+     "q": "How many distinct digits are in a Helix Standard 12-digit HPC-A barcode used by Helix Retail?",
+     "steered": "I don't have enough information to determine the answer.",
+     "judge": "FLAG"
+    }
+   ],
+   "examples_ans": [
+    {
+     "id": "nump_117_ans",
+     "q": "How many days are in a standard Net-60 payment term?",
+     "steered": "Net-60 means the payment is due 60 days after the invoice date. So, the number of days in a standard Net-60 payment term is 60.",
+     "judge": "COMMIT"
+    },
+    {
+     "id": "nump_152_ans",
+     "q": "What is the standard order quantity for a full truckload (FTL) of dry bulk goods in terms of standard pallets, typically",
+     "steered": "26",
+     "judge": "COMMIT"
+    }
+   ]
+  }
+ },
+ "grounded": {
+  "gate_fire_rates_eval": {
+   "0.05": {
+    "cast_fire_unsup": {
+     "k": 9,
+     "n": 108,
+     "rate": 0.08333333333333333
+    },
+    "cast_fire_ans": {
+     "k": 9,
+     "n": 108,
+     "rate": 0.08333333333333333
+    },
+    "block_fire_unsup": {
+     "k": 74,
+     "n": 108,
+     "rate": 0.6851851851851852
+    },
+    "block_fire_ans": {
+     "k": 3,
+     "n": 108,
+     "rate": 0.027777777777777776
+    }
+   },
+   "0.1": {
+    "cast_fire_unsup": {
+     "k": 17,
+     "n": 108,
+     "rate": 0.1574074074074074
+    },
+    "cast_fire_ans": {
+     "k": 14,
+     "n": 108,
+     "rate": 0.12962962962962962
+    },
+    "block_fire_unsup": {
+     "k": 93,
+     "n": 108,
+     "rate": 0.8611111111111112
+    },
+    "block_fire_ans": {
+     "k": 12,
+     "n": 108,
+     "rate": 0.1111111111111111
+    }
+   }
+  },
+  "none": {
+   "cascading_error": {
+    "k": 15,
+    "n": 108,
+    "rate": 0.1388888888888889,
+    "ci95": [
+     0.058747805595467294,
+     0.18604645798921837
+    ]
+   },
+   "cascading_error_regex_secondary": {
+    "k": 15,
+    "n": 108,
+    "rate": 0.1388888888888889,
+    "judge_regex_agreement": 0.9722222222222222,
+    "n_judged": 108
+   },
+   "utility_commit_answerable": {
+    "k": 102,
+    "n": 108,
+    "rate": 0.9444444444444444,
+    "ci95": [
+     0.6081793433322034,
+     0.7877152551772362
+    ]
+   },
+   "utility_numeric_correct_checkable": {
+    "k": 1,
+    "n": 92,
+    "rate": 0.010869565217391304,
+    "ci95": [
+     0.00027515570277073876,
+     0.059077851149814745
+    ]
+   },
+   "escalated_unsup": 0,
+   "escalated_ans": 0
+  },
+  "block@0.05": {
+   "cascading_error": {
+    "k": 6,
+    "n": 108,
+    "rate": 0.05555555555555555,
+    "ci95": [
+     0.01018197372724782,
+     0.09211907275983491
+    ]
+   },
+   "cascading_error_regex_secondary": {
+    "k": 6,
+    "n": 108,
+    "rate": 0.05555555555555555,
+    "judge_regex_agreement": 0.9411764705882353,
+    "n_judged": 34
+   },
+   "utility_commit_answerable": {
+    "k": 99,
+    "n": 108,
+    "rate": 0.9166666666666666,
+    "ci95": [
+     0.5887501887756226,
+     0.7711647798714487
+    ]
+   },
+   "utility_numeric_correct_checkable": {
+    "k": 1,
+    "n": 92,
+    "rate": 0.010869565217391304,
+    "ci95": [
+     0.00027515570277073876,
+     0.059077851149814745
+    ]
+   },
+   "escalated_unsup": 74,
+   "escalated_ans": 3
+  },
+  "cast@0.05": {
+   "cascading_error": {
+    "k": 12,
+    "n": 108,
+    "rate": 0.1111111111111111,
+    "ci95": [
+     0.058747805595467294,
+     0.18604645798921837
+    ]
+   },
+   "cascading_error_regex_secondary": {
+    "k": 14,
+    "n": 108,
+    "rate": 0.12962962962962962,
+    "judge_regex_agreement": 0.9629629629629629,
+    "n_judged": 108
+   },
+   "utility_commit_answerable": {
+    "k": 100,
+    "n": 108,
+    "rate": 0.9259259259259259,
+    "ci95": [
+     0.5790944066529955,
+     0.7628294052651664
+    ]
+   },
+   "utility_numeric_correct_checkable": {
+    "k": 4,
+    "n": 92,
+    "rate": 0.043478260869565216,
+    "ci95": [
+     0.011971594171927266,
+     0.10759345090975951
+    ]
+   },
+   "escalated_unsup": 0,
+   "escalated_ans": 0
+  },
+  "block@0.1": {
+   "cascading_error": {
+    "k": 2,
+    "n": 108,
+    "rate": 0.018518518518518517,
+    "ci95": [
+     0.0022505995016578284,
+     0.06529654694447373
+    ]
+   },
+   "cascading_error_regex_secondary": {
+    "k": 4,
+    "n": 108,
+    "rate": 0.037037037037037035,
+    "judge_regex_agreement": 0.8666666666666667,
+    "n_judged": 15
+   },
+   "utility_commit_answerable": {
+    "k": 65,
+    "n": 108,
+    "rate": 0.6018518518518519,
+    "ci95": [
+     0.5031602400835569,
+     0.6948108066826257
+    ]
+   },
+   "utility_numeric_correct_checkable": {
+    "k": 1,
+    "n": 92,
+    "rate": 0.010869565217391304,
+    "ci95": [
+     0.00027515570277073876,
+     0.059077851149814745
+    ]
+   },
+   "escalated_unsup": 93,
+   "escalated_ans": 12
+  },
+  "cast@0.1": {
+   "cascading_error": {
+    "k": 12,
+    "n": 108,
+    "rate": 0.1111111111111111,
+    "ci95": [
+     0.058747805595467294,
+     0.18604645798921837
+    ]
+   },
+   "cascading_error_regex_secondary": {
+    "k": 14,
+    "n": 108,
+    "rate": 0.12962962962962962,
+    "judge_regex_agreement": 0.9629629629629629,
+    "n_judged": 108
+   },
+   "utility_commit_answerable": {
+    "k": 73,
+    "n": 108,
+    "rate": 0.6759259259259259,
+    "ci95": [
+     0.5790944066529955,
+     0.7628294052651664
+    ]
+   },
+   "utility_numeric_correct_checkable": {
+    "k": 4,
+    "n": 92,
+    "rate": 0.043478260869565216,
+    "ci95": [
+     0.011971594171927266,
+     0.10759345090975951
+    ]
+   },
+   "escalated_unsup": 0,
+   "escalated_ans": 0
+  },
+  "cast_steered_quality": {
+   "judge_dist_on_fired": {
+    "should_abstain": {
+     "COMMIT": 2,
+     "DEFLECT": 0,
+     "FLAG": 15,
+     "?": 0,
+     "n": 17
+    },
+    "answerable": {
+     "COMMIT": 6,
+     "DEFLECT": 3,
+     "FLAG": 5,
+     "?": 0,
+     "n": 14
+    }
+   },
+   "n_degenerate_heuristic": 0,
+   "examples_unsup": [
+    {
+     "id": "num_scm_v3_text_0020_abs",
+     "q": "How many areas of supply chain vulnerabilities are depicted in Figure 8.2.1?",
+     "steered": "Not specified in the document.",
+     "judge": "FLAG"
+    },
+    {
+     "id": "num_scm_v3_text_0028_abs",
+     "q": "How many people are employed by the City of Greenfield?",
+     "steered": "Not specified in the document.",
+     "judge": "FLAG"
+    },
+    {
+     "id": "num_scm_v3_text_0029_abs",
+     "q": "What is the version number of the checkpoint attribution for \"Managing and Controlling Public Sector Supply Chains\"?",
+     "steered": "Not specified in the document.",
+     "judge": "FLAG"
+    },
+    {
+     "id": "num_marketing_v3_text_0128_abs",
+     "q": "What is the publication year of the Insight Research Corporation report on telecommunications marketing opportunities to",
+     "steered": "Not specified in the document.",
+     "judge": "FLAG"
+    },
+    {
+     "id": "num_marketing_v3_text_0208_abs",
+     "q": "How long is the video \"How To Create A User Persona\"?",
+     "steered": "Not specified in the document.",
+     "judge": "FLAG"
+    },
+    {
+     "id": "num_marketing_v3_text_0268_abs",
+     "q": "How many components should a positioning statement include?",
+     "steered": "Not specified in the document.",
+     "judge": "FLAG"
+    }
+   ],
+   "examples_ans": [
+    {
+     "id": "num_scm_v3_text_0020_ans",
+     "q": "How many areas of supply chain vulnerabilities are depicted in Figure 8.2.1?",
+     "steered": "The value to find is: How many areas of supply chain vulnerabilities are depicted in Figure 8.2.1?\n\nStep 1: From the retrieved document, find the value asked about. The document mentions that Figure 8.2.1, \"Supply Chain vulnerabilities,\" depicts five areas of",
+     "judge": "COMMIT"
+    },
+    {
+     "id": "num_scm_v3_text_0028_ans",
+     "q": "How many people are employed by the City of Greenfield?",
+     "steered": "150000",
+     "judge": "COMMIT"
+    },
+    {
+     "id": "num_scm_v3_text_0029_ans",
+     "q": "What is the version number of the checkpoint attribution for \"Managing and Controlling Public Sector Supply Chains\"?",
+     "steered": "Not specified in the document.",
+     "judge": "FLAG"
+    },
+    {
+     "id": "num_marketing_v3_text_0128_ans",
+     "q": "What is the publication year of the Insight Research Corporation report on telecommunications marketing opportunities to",
+     "steered": "Not specified in the document.",
+     "judge": "FLAG"
+    }
+   ]
+  }
+ }
+}

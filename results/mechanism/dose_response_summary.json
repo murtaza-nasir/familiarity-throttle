@@ -1,0 +1,56 @@
+{
+ "opt_x0.0": {
+  "flag_fic": 0.245,
+  "ff_real": 0.023,
+  "n_fic": 94,
+  "n_real": 132
+ },
+ "opt_x0.1": {
+  "flag_fic": 0.305,
+  "ff_real": 0.023,
+  "n_fic": 95,
+  "n_real": 132
+ },
+ "opt_x0.25": {
+  "flag_fic": 0.362,
+  "ff_real": 0.023,
+  "n_fic": 94,
+  "n_real": 132
+ },
+ "opt_x0.4": {
+  "flag_fic": 0.43,
+  "ff_real": 0.015,
+  "n_fic": 93,
+  "n_real": 132
+ },
+ "opt_x0.56": {
+  "flag_fic": 0.511,
+  "ff_real": 0.023,
+  "n_fic": 94,
+  "n_real": 132
+ },
+ "opt_x0.75": {
+  "flag_fic": 0.734,
+  "ff_real": 0.038,
+  "n_fic": 94,
+  "n_real": 132
+ },
+ "opt_x1.0": {
+  "flag_fic": 0.905,
+  "ff_real": 0.189,
+  "n_fic": 95,
+  "n_real": 132
+ },
+ "opt_x1.25": {
+  "flag_fic": 0.958,
+  "ff_real": 0.742,
+  "n_fic": 95,
+  "n_real": 132
+ },
+ "meandiff_natural": {
+  "flag_fic": 0.217,
+  "ff_real": 0.023,
+  "n_fic": 92,
+  "n_real": 132
+ }
+}

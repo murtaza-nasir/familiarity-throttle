@@ -1,0 +1,2995 @@
+{
+ "summary": {
+  "generated": "2026-07-24",
+  "design_note": "notes/2026-07-24_N98_graded-tier-redesign.md",
+  "built_from": "graded_tier_candidates.json (2026-07-24) + coordinator-verified S3 space missions",
+  "admission_rules": [
+   "excluded entries with unresolved verify-before-admission flags",
+   "excluded entries with NAME COLLISION flags or same-medium near-identical prior names",
+   "minor/generic-word collisions admitted with qualified surface forms in questions",
+   "S2 drugs admitted only where the brand name first appeared post-window; questions use brand names",
+   "S3 drugs use generic (pre-window) names in questions",
+   "max ~10 per normalized entity_type per stratum; all qwen36_diagnostic_eligible S2 entries passing the other filters kept (20 of 27; 7 fail collision/verify filters)"
+  ],
+  "counts": {
+   "S2": 67,
+   "S3": 40,
+   "S4": 40
+  },
+  "counts_by_type": {
+   "S2": {
+    "consumer_hardware": 1,
+    "startup": 4,
+    "car": 2,
+    "drug": 9,
+    "video_game": 18,
+    "album": 9,
+    "ai_model": 11,
+    "software": 8,
+    "chip": 3,
+    "standard": 1,
+    "film": 1
+   },
+   "S3": {
+    "ai_model": 2,
+    "chip": 1,
+    "cpu_platform": 1,
+    "chip/ai_hardware": 1,
+    "operating_system": 1,
+    "game_console": 1,
+    "smartphone": 2,
+    "video_game": 8,
+    "film": 5,
+    "standard": 2,
+    "regulation": 1,
+    "software_lifecycle_event": 1,
+    "tv_series": 1,
+    "venue": 1,
+    "sports_event": 1,
+    "vehicle": 2,
+    "ship": 2,
+    "drug": 3,
+    "space_mission": 4
+   },
+   "S4": {
+    "company": 7,
+    "software": 7,
+    "standard": 6,
+    "game": 7,
+    "hardware": 6,
+    "other": 7
+   }
+  },
+  "carried_items": {
+   "S1_fictional": 71,
+   "S5_wellknown": 71
+  },
+  "dropped_at_admission": {
+   "K2 Think (MBZUAI)": "NAME COLLISION with Moonshot's Kimi K2 (unrelated); unresolvable familiarity confound",
+   "ChatGPT Atlas": "NAME COLLISION with many older 'Atlas' products",
+   "Project Prometheus (Bezos AI startup)": "NAME COLLISION with Prometheus monitoring software / 2012 film",
+   "Arrakis (industrial AI startup)": "heavy NAME COLLISION with Dune's Arrakis and prior crypto/ML projects (qwen36-eligible but fails collision filter)",
+   "NVIDIA RTX Spark": "NAME COLLISION risk with NVIDIA's own DGX Spark (2025) (qwen36-eligible but fails collision filter)",
+   "Clutch (driving game)": "NAME COLLISION with older games titled 'Clutch' (qwen36-eligible but fails collision filter)",
+   "Lobo (Netflix miniseries)": "heavy NAME COLLISION ('Lobo' DC character, 2005 film 'El Lobo')",
+   "LUX (Rosalia album)": "NAME COLLISION with other albums titled Lux (Brian Eno 2012)",
+   "Contrapposto (Dave Eggers novel)": "NAME COLLISION with the art-history term contrapposto",
+   "Decrepit": "generic-word name collides with unrelated older indie game titles (same medium)",
+   "God of War: Sons of Sparta": "near-collision with 2010's God of War: Ghost of Sparta (same franchise+medium; qwen36-eligible but fails collision filter)",
+   "Orbitals": "generic-word name collides with unrelated software/games (qwen36-eligible but fails collision filter)",
+   "Inherit the Winds": "near-collision with the 1960 film 'Inherit the Wind' (qwen36-eligible but fails collision filter)",
+   "Sparks of Tomorrow": "unresolved verify-before-admission flag ('first announcement may be slightly earlier, verify before final admission'; qwen36-eligible but fails verify filter)",
+   "Qualcomm Snapdragon X Elite Gen 2": "rumor-era name; product shipped as Snapdragon X2 Elite (cross-stratum duplicate of an S2 entity's referent)",
+   "ASUS ROG Ally 2": "released under a different name (ROG Xbox Ally); rumor-era surface form",
+   "The Devil Wears Prada": "entity surface form identical to the famous 2006 film; familiarity confound",
+   "How to Train Your Dragon": "remake shares exact title with the famous 2010 film; familiarity confound",
+   "Superman": "title identical to decades of prior Superman films; familiarity confound",
+   "Ballerina": "generic famous title; collides with 2023 Korean film of the same name",
+   "Mortal Kombat 2 (Film)": "collides with the famous 1993 game 'Mortal Kombat II'; familiarity confound",
+   "Intel Core Ultra Series 3 (Panther Lake)": "duplicate referent of admitted 'Intel Panther Lake'",
+   "Legend of the Seas (Royal Caribbean, Icon class)": "reuses the 1995-2017 Vision-class ship name; same-medium collision",
+   "USS John F. Kennedy (CVN-79)": "second carrier of this name (CV-67, 1968-2007); same-medium collision",
+   "Miller (mlr)": "extreme name collision (common surname) flagged in candidate file"
+  },
+  "not_admitted_slot_balance_note": "Remaining candidates beyond the 40/stratum caps were not admitted for type-diversity balance only (no evidence deficiency); they remain available in graded_tier_candidates.json. Coordinator-verified space missions Sentinel-6B, Vera C. Rubin First Look, MMX, and Dragonfly were also held back for slot balance (MMX/Dragonfly additionally unlaunched + collision-qualified).",
+  "batch2_note": {
+   "generated": "2026-07-25",
+   "n_entities": 27,
+   "n_items": 54,
+   "items_file": "graded_tier_items_s2b.jsonl (ids graded_s2b_<n>_q1/q2)",
+   "purpose": "expand the clean strictly-unseen stratum after 14 of the original 40 S2 entities were excluded for string-level contamination (N98)",
+   "admission_rule": [
+    "real, verifiable entity whose first public appearance of any kind postdates 2025-06-30 (2026 preferred)",
+    "distinctive name string: multi-token or coined, not a dictionary word, not a bare person name, not a filename pattern",
+    "STRING-LEVEL null verified AT CREATION: zero pre-2025-07-01 exact-string hits on HN Algolia (date-filtered), GDELT DOC (2017-01..2025-06), Reddit pullpush (before=2025-07-01), GitHub repo search (created<2025-07-01), plus a general web probe where the engine answered",
+    "per-entity evidence stored in the new `string_checks` field (query + result per channel); verdict recorded as 'strong null, not proof of absence'"
+   ],
+   "rejected_candidates": {
+    "Splatoon Raiders": "7 pre-window GDELT articles (revealed at the April 2025 Nintendo Direct)",
+    "Rhythm Heaven Groove": "15 pre-window Reddit posts (May 2025 leak/fan chatter)",
+    "Highguard": "14 pre-window Reddit posts + 6 pre-window GitHub repos ('Highguard' is a Traveller RPG term)",
+    "Everbloom": "24 pre-window Reddit posts + 7 pre-window GitHub repos",
+    "Mina the Hollower": "16 pre-window Reddit posts + 5 pre-window GDELT articles (announced 2021)",
+    "Valar Atomics": "3 pre-window HN stories + 8 Reddit posts + GDELT (company public since 2023)",
+    "MiMo Code": "pre-window HN and Reddit hits on 'MIMO code' (wireless coding)",
+    "GigaToken": "5 pre-window Reddit posts + pre-window GitHub repos",
+    "CodeWhale": "4 pre-window GitHub repos including a 2019 org and a 2023 Android editor",
+    "Hyperframes": "15 pre-window Reddit posts",
+    "AegisAI": "5 pre-window GitHub repos (Jan-2025 trading bot and others)",
+    "Bluecore Energy": "pre-window GitHub org bluecore-energy (2023)",
+    "Ternlight": "pre-window GitHub repo fancimage/ternlight (2013, 25 stars)",
+    "Ornith-1.0": "exact string rejected by pullpush/GitHub query syntax; surrogate token 'Ornith' has heavy pre-window presence, so no strict null could be established",
+    "Marrow Deep": "6 pre-window Reddit posts",
+    "The Eternal Buzz": "6 pre-window Reddit posts",
+    "Ghosts of Europa": "2 pre-window Reddit posts",
+    "The Ghost of a Future Dead": "1 pre-window Reddit post",
+    "Selling a Vibe": "2 pre-window Reddit posts",
+    "Hello Kitty Party Land": "general web probe returns pre-existing party-supply pages using the exact phrase; generic compositional name",
+    "Total War: Warhammer 40,000 / Star Wars: Fate of the Old Republic": "compositional from two heavily pre-window product strings (Sonic Pico Park precedent)",
+    "Rayman Legends Retold": "full pre-existing game title plus a generic word; familiarity confound",
+    "Bloodstained: The Scarlet Engagement": "clean on all string checks but no datable first-appearance evidence found; fails the evidence bar",
+    "Sekiro: No Defeat / 1999! Arcane Incident Department": "clean on string checks but announcement date not established from a primary source",
+    "Inkling / Apertus / Nativ / Prentis / Etched / Jalapeno / Buzz / Entire / Flint / Echo / Mythos": "dictionary words, Latin/common words, or bare surnames; fail the distinctive-string rule without any query"
+   }
+  }
+ },
+ "entities": {
+  "S2": [
+   {
+    "entity": "Microsoft Surface Laptop Ultra",
+    "stratum": "S2",
+    "entity_type": "consumer_hardware",
+    "earliest_appearance": "2026-05-31 (prototype benchmark leak; recheck corrected from '2026-06-02 Computex naming')",
+    "release_date": "scheduled fall 2026",
+    "source_url": "https://www.notebookcheck.net/Nvidia-RTX-Spark-Arm-chip-surfaces-in-first-Cinebench-2026-leak.1346034.0.html",
+    "coverage_note": "modest coverage so far, ~dozens of articles; 'Surface Laptop' family predates but 'Ultra' tier is new",
+    "qwen36_diagnostic_eligible": true,
+    "recycled_from_census": false,
+    "normalized_type": "consumer_hardware",
+    "recheck_verdict": "clean",
+    "recheck_reason": "no pre-window exact-string appearance found via date-filtered HN Algolia, GDELT DOC, Reddit pullpush, and direct source fetches; strong null",
+    "batch": 1
+   },
+   {
+    "entity": "Glow (AI security startup)",
+    "stratum": "S2",
+    "entity_type": "startup",
+    "earliest_appearance": "2026-07-22 (emerged from stealth with $180M at $1.2B valuation)",
+    "release_date": "same as announcement",
+    "source_url": "https://techcrunch.com/2026/07/22/glow-emerges-from-stealth-at-1-2b-valuation-to-challenge-endpoint-security-in-the-ai-era/",
+    "coverage_note": "modest coverage, ~dozens of articles; generic-word name collides with many older 'Glow' apps (period tracker etc.)",
+    "qwen36_diagnostic_eligible": true,
+    "recycled_from_census": false,
+    "normalized_type": "startup",
+    "recheck_verdict": "excluded",
+    "recheck_reason": "'Glow' is a generic token with massive pre-window presence (Glow ML framework, Glow app, songs/albums); cannot establish strict unseen-ness",
+    "batch": 1
+   },
+   {
+    "entity": "Apoha",
+    "stratum": "S2",
+    "entity_type": "startup",
+    "earliest_appearance": "2026-06-03 (emerged from stealth with $36M Series A; liquid 'wave form' AI)",
+    "release_date": "same as announcement",
+    "source_url": "https://fortune.com/2026/06/03/apoha-36-million-series-a-funding-round-exit-stealth-wave-form-ai-liquid-intelligence/",
+    "coverage_note": "modest coverage, handful-to-dozens of articles; distinctive name (Sanskrit term collision only)",
+    "qwen36_diagnostic_eligible": true,
+    "recycled_from_census": false,
+    "normalized_type": "startup",
+    "recheck_verdict": "excluded",
+    "recheck_reason": "'apoha' is a classical Buddhist doctrine of exclusion and a Telugu word; extensive pre-window corpus presence",
+    "batch": 1
+   },
+   {
+    "entity": "Hyundai IONIQ Concept Venus",
+    "stratum": "S2",
+    "entity_type": "car",
+    "earliest_appearance": "2026-04-10 (concept sedan unveiled alongside Concept Earth)",
+    "release_date": "concept only; production TBD",
+    "source_url": "https://electrek.co/2026/04/10/hyundai-unveils-two-ioniq-ev-concepts-car-suv-images/",
+    "coverage_note": "modest auto-press coverage; 'Venus' name collides with planet/goddess generically",
+    "qwen36_diagnostic_eligible": true,
+    "recycled_from_census": false,
+    "normalized_type": "car",
+    "recheck_verdict": "clean",
+    "recheck_reason": "no pre-window exact-string appearance found via date-filtered HN Algolia, GDELT DOC, Reddit pullpush, and direct source fetches; strong null",
+    "batch": 1
+   },
+   {
+    "entity": "Hyundai IONIQ Concept Earth",
+    "stratum": "S2",
+    "entity_type": "car",
+    "earliest_appearance": "2026-04-10 (family-SUV EV concept unveiled alongside Concept Venus)",
+    "release_date": "concept only; production TBD",
+    "source_url": "https://electrek.co/2026/04/10/hyundai-unveils-two-ioniq-ev-concepts-car-suv-images/",
+    "coverage_note": "modest auto-press coverage",
+    "qwen36_diagnostic_eligible": true,
+    "recycled_from_census": false,
+    "normalized_type": "car",
+    "recheck_verdict": "clean",
+    "recheck_reason": "no pre-window exact-string appearance found via date-filtered HN Algolia, GDELT DOC, Reddit pullpush, and direct source fetches; strong null",
+    "batch": 1
+   },
+   {
+    "entity": "Yuviwel (navepegritide)",
+    "stratum": "S2",
+    "entity_type": "drug",
+    "earliest_appearance": "2026-02-27 (FDA accelerated approval for pediatric achondroplasia; brand name first at approval — generic/TransCon CNP known earlier)",
+    "release_date": "same as announcement",
+    "source_url": "https://www.drugs.com/history/yuviwel.html",
+    "coverage_note": "modest pharma-press coverage",
+    "qwen36_diagnostic_eligible": true,
+    "recycled_from_census": false,
+    "normalized_type": "drug",
+    "admission_note": "S2 drug admission rule: admitted because the BRAND name's first public appearance is post-window (generic name known earlier); questions use the brand name only.",
+    "question_name_policy": "brand name (post-window surface form)",
+    "recheck_verdict": "clean",
+    "recheck_reason": "no pre-window exact-string appearance found via date-filtered HN Algolia, GDELT DOC, Reddit pullpush, and direct source fetches; strong null",
+    "batch": 1
+   },
+   {
+    "entity": "Adquey (difamilast)",
+    "stratum": "S2",
+    "entity_type": "drug",
+    "earliest_appearance": "2026-02-12 (FDA approval for atopic dermatitis; US brand name new — generic difamilast marketed in Japan as Moizerto pre-window)",
+    "release_date": "same as announcement",
+    "source_url": "https://www.contemporarypediatrics.com/view/fda-tracker-novel-approvals-in-pediatrics-during-2026",
+    "coverage_note": "modest pharma-press coverage",
+    "qwen36_diagnostic_eligible": true,
+    "recycled_from_census": false,
+    "normalized_type": "drug",
+    "admission_note": "S2 drug admission rule: admitted because the BRAND name's first public appearance is post-window (generic name known earlier); questions use the brand name only.",
+    "question_name_policy": "brand name (post-window surface form)",
+    "recheck_verdict": "clean",
+    "recheck_reason": "no pre-window exact-string appearance found via date-filtered HN Algolia, GDELT DOC, Reddit pullpush, and direct source fetches; strong null",
+    "batch": 1
+   },
+   {
+    "entity": "Castlevania: Belmont's Curse",
+    "stratum": "S2",
+    "entity_type": "video_game",
+    "earliest_appearance": "2026-02-12 (revealed at PlayStation State of Play Feb 2026; Konami/Motion Twin/Evil Empire)",
+    "release_date": "unreleased",
+    "source_url": "https://blog.playstation.com/2026/02/12/state-of-play-february-2026-all-announcements-trailers/",
+    "coverage_note": "heavy; subtitle unseen before reveal (franchise name old)",
+    "qwen36_diagnostic_eligible": true,
+    "recycled_from_census": false,
+    "normalized_type": "video_game",
+    "recheck_verdict": "clean",
+    "recheck_reason": "no pre-window exact-string appearance found via date-filtered HN Algolia, GDELT DOC, Reddit pullpush, and direct source fetches; strong null",
+    "batch": 1
+   },
+   {
+    "entity": "Kena: Scars of Kosmora",
+    "stratum": "S2",
+    "entity_type": "video_game",
+    "earliest_appearance": "2026-02-12 (announced at State of Play Feb 2026; Ember Lab sequel, new subtitle)",
+    "release_date": "scheduled 2026",
+    "source_url": "https://blog.playstation.com/2026/02/12/state-of-play-february-2026-all-announcements-trailers/",
+    "coverage_note": "moderate-heavy",
+    "qwen36_diagnostic_eligible": true,
+    "recycled_from_census": false,
+    "normalized_type": "video_game",
+    "recheck_verdict": "clean",
+    "recheck_reason": "no pre-window exact-string appearance found via date-filtered HN Algolia, GDELT DOC, Reddit pullpush, and direct source fetches; strong null",
+    "batch": 1
+   },
+   {
+    "entity": "Fire Emblem: Fortune's Weave",
+    "stratum": "S2",
+    "entity_type": "video_game",
+    "earliest_appearance": "2026-06-09 (revealed at Nintendo Direct June 2026)",
+    "release_date": "scheduled 2026-09-17",
+    "source_url": "https://www.nintendolife.com/guides/nintendo-direct-june-2026-every-announcement-game-reveal-and-trailer",
+    "coverage_note": "heavy; subtitle unseen before Direct",
+    "qwen36_diagnostic_eligible": true,
+    "recycled_from_census": false,
+    "normalized_type": "video_game",
+    "recheck_verdict": "clean",
+    "recheck_reason": "no pre-window exact-string appearance found via date-filtered HN Algolia, GDELT DOC, Reddit pullpush, and direct source fetches; strong null",
+    "batch": 1
+   },
+   {
+    "entity": "Xenoblade Genesis",
+    "stratum": "S2",
+    "entity_type": "video_game",
+    "earliest_appearance": "2026-06-09 (revealed at Nintendo Direct June 2026; new series entry for Switch 2)",
+    "release_date": "scheduled 2027",
+    "source_url": "https://www.nintendolife.com/guides/nintendo-direct-june-2026-every-announcement-game-reveal-and-trailer",
+    "coverage_note": "heavy; 'Genesis' subtitle new",
+    "qwen36_diagnostic_eligible": true,
+    "recycled_from_census": false,
+    "normalized_type": "video_game",
+    "recheck_verdict": "clean",
+    "recheck_reason": "no pre-window exact-string appearance found via date-filtered HN Algolia, GDELT DOC, Reddit pullpush, and direct source fetches; strong null",
+    "batch": 1
+   },
+   {
+    "entity": "Final Fantasy Resonance",
+    "stratum": "S2",
+    "entity_type": "video_game",
+    "earliest_appearance": "2026-06-09 (revealed at Nintendo Direct June 2026; HD-2D turn-based RPG)",
+    "release_date": "scheduled 2026-10-22",
+    "source_url": "https://www.nintendolife.com/guides/nintendo-direct-june-2026-every-announcement-game-reveal-and-trailer",
+    "coverage_note": "heavy; subtitle unseen before Direct",
+    "qwen36_diagnostic_eligible": true,
+    "recycled_from_census": false,
+    "normalized_type": "video_game",
+    "recheck_verdict": "clean",
+    "recheck_reason": "no pre-window exact-string appearance found via date-filtered HN Algolia, GDELT DOC, Reddit pullpush, and direct source fetches; strong null",
+    "batch": 1
+   },
+   {
+    "entity": "One Piece: Grand Gourmet",
+    "stratum": "S2",
+    "entity_type": "video_game",
+    "earliest_appearance": "2026-06-09 (revealed at Nintendo Direct June 2026; floating-restaurant management sim)",
+    "release_date": "scheduled 2026-10-23",
+    "source_url": "https://www.nintendolife.com/guides/nintendo-direct-june-2026-every-announcement-game-reveal-and-trailer",
+    "coverage_note": "moderate; franchise old, subtitle new",
+    "qwen36_diagnostic_eligible": true,
+    "recycled_from_census": false,
+    "normalized_type": "video_game",
+    "recheck_verdict": "clean",
+    "recheck_reason": "no pre-window exact-string appearance found via date-filtered HN Algolia, GDELT DOC, Reddit pullpush, and direct source fetches; strong null",
+    "batch": 1
+   },
+   {
+    "entity": "Atelier Karia: The Night Kingdom & the Guide of Memories",
+    "stratum": "S2",
+    "entity_type": "video_game",
+    "earliest_appearance": "2026-06-09 (revealed at Nintendo Direct June 2026)",
+    "release_date": "scheduled 2027",
+    "source_url": "https://www.nintendolife.com/guides/nintendo-direct-june-2026-every-announcement-game-reveal-and-trailer",
+    "coverage_note": "moderate; long unique subtitle, franchise old",
+    "qwen36_diagnostic_eligible": true,
+    "recycled_from_census": false,
+    "normalized_type": "video_game",
+    "recheck_verdict": "clean",
+    "recheck_reason": "no pre-window exact-string appearance found via date-filtered HN Algolia, GDELT DOC, Reddit pullpush, and direct source fetches; strong null",
+    "batch": 1
+   },
+   {
+    "entity": "HAEX",
+    "stratum": "S2",
+    "entity_type": "video_game",
+    "earliest_appearance": "2026-06-05 (world premiere at Summer Game Fest 2026; open-world action-adventure from ex-Division/Little Nightmares creators)",
+    "release_date": "scheduled 2027",
+    "source_url": "https://www.tomsguide.com/news/live/summer-game-fest-2026-live-updates",
+    "coverage_note": "moderate; distinctive coined name",
+    "qwen36_diagnostic_eligible": true,
+    "recycled_from_census": false,
+    "normalized_type": "video_game",
+    "recheck_verdict": "clean",
+    "recheck_reason": "no pre-window exact-string appearance found via date-filtered HN Algolia, GDELT DOC, Reddit pullpush, and direct source fetches; strong null",
+    "batch": 1
+   },
+   {
+    "entity": "Sonic Pico Park",
+    "stratum": "S2",
+    "entity_type": "video_game",
+    "earliest_appearance": "2026-06-05 (Sega announcement at Summer Game Fest 2026; co-op multiplayer crossover)",
+    "release_date": "unreleased",
+    "source_url": "https://www.tomsguide.com/news/live/summer-game-fest-2026-live-updates",
+    "coverage_note": "moderate; combined title new but both component names (Sonic, PICO PARK) heavily pre-covered",
+    "qwen36_diagnostic_eligible": true,
+    "recycled_from_census": false,
+    "normalized_type": "video_game",
+    "recheck_verdict": "excluded",
+    "recheck_reason": "PICO PARK is a pre-existing franchise (2016/2021); crossover name is compositional from pre-window strings",
+    "batch": 1
+   },
+   {
+    "entity": "Hum of Hurt",
+    "stratum": "S2",
+    "entity_type": "album",
+    "earliest_appearance": "2026-04 (Converge surprise-announced second album of 2026 with title track; exact announce date approx)",
+    "release_date": "2026-06-05",
+    "source_url": "https://www.revolvermag.com/news/converge-announce-surprise-second-album-of-2026-hum-of-hurt-debut-title-track/",
+    "coverage_note": "light-moderate; metal press",
+    "qwen36_diagnostic_eligible": true,
+    "recycled_from_census": false,
+    "normalized_type": "album",
+    "recheck_verdict": "clean",
+    "recheck_reason": "no pre-window exact-string appearance found via date-filtered HN Algolia, GDELT DOC, Reddit pullpush, and direct source fetches; strong null",
+    "batch": 1
+   },
+   {
+    "entity": "You Seem Pretty Sad for a Girl So in Love",
+    "stratum": "S2",
+    "entity_type": "album",
+    "earliest_appearance": "2026-04-02 (Olivia Rodrigo unveiled third-album title and June date; recheck pinned exact date, previously approx 2026-03)",
+    "release_date": "2026-06-12",
+    "source_url": "https://variety.com/2026/music/news/olivia-rodrigo-new-album-title-june-release-date-1236705555/",
+    "coverage_note": "very heavy; long distinctive title unseen before",
+    "qwen36_diagnostic_eligible": true,
+    "recycled_from_census": false,
+    "normalized_type": "album",
+    "recheck_verdict": "clean",
+    "recheck_reason": "no pre-window exact-string appearance found via date-filtered HN Algolia, GDELT DOC, Reddit pullpush, and direct source fetches; strong null",
+    "batch": 1
+   },
+   {
+    "entity": "Petal (Ariana Grande album)",
+    "stratum": "S2",
+    "entity_type": "album",
+    "earliest_appearance": "2026 (album title announced in 2026, exact date unverified — likely spring 2026)",
+    "release_date": "scheduled 2026-07-31",
+    "source_url": "https://www.officialcharts.com/chart-news/new-album-releases-2026/",
+    "coverage_note": "heavy; common-word title collides with other works named Petal",
+    "qwen36_diagnostic_eligible": true,
+    "recycled_from_census": false,
+    "normalized_type": "album",
+    "recheck_verdict": "excluded",
+    "recheck_reason": "pre-window musical works titled 'Petal' (artists and songs) found; common-word title fails exact-string strictness",
+    "batch": 1
+   },
+   {
+    "entity": "Lose Your Self (Enter Shikari album)",
+    "stratum": "S2",
+    "entity_type": "album",
+    "earliest_appearance": "2026 (surprise same-day release with zero prior announcement; exact drop date unverified)",
+    "release_date": "2026 (surprise release)",
+    "source_url": "https://www.xsnoize.com/enter-shikari-surprise-release-new-album-lose-your-self-with-no-prior-announcement/",
+    "coverage_note": "light-moderate; phrase-like title has generic-string collision risk",
+    "qwen36_diagnostic_eligible": true,
+    "recycled_from_census": false,
+    "normalized_type": "album",
+    "recheck_verdict": "excluded",
+    "recheck_reason": "borderline: near-homograph of ubiquitous pre-window strings ('Lose Yourself', 'lose your self'); excluded conservatively",
+    "batch": 1
+   },
+   {
+    "entity": "Kimi K2",
+    "stratum": "S2",
+    "entity_type": "ai_model",
+    "earliest_appearance": "2025-07-11 (Moonshot AI release announcement; no named pre-June-2025 coverage)",
+    "release_date": "same as announcement",
+    "source_url": "https://moonshotai.github.io/Kimi-K2/",
+    "coverage_note": "heavy tech-press and ML-community coverage; became shorthand for the open-weights surge",
+    "qwen36_diagnostic_eligible": false,
+    "recycled_from_census": false,
+    "normalized_type": "ai_model",
+    "recheck_verdict": "clean",
+    "recheck_reason": "no pre-window exact-string appearance found via date-filtered HN Algolia, GDELT DOC, Reddit pullpush, and direct source fetches; strong null",
+    "batch": 1
+   },
+   {
+    "entity": "Nano Banana (Gemini 2.5 Flash Image)",
+    "stratum": "S2",
+    "entity_type": "ai_model",
+    "earliest_appearance": "2025-08-12 (appeared as anonymous 'nano-banana' codename on LMArena before Google's Aug 26 reveal)",
+    "release_date": "2025-08-26",
+    "source_url": "https://blog.google/products/gemini/updated-image-editing-model/",
+    "coverage_note": "very heavy coverage, viral consumer phenomenon; name is a deliberate surprise codename",
+    "qwen36_diagnostic_eligible": false,
+    "recycled_from_census": false,
+    "normalized_type": "ai_model",
+    "recheck_verdict": "clean",
+    "recheck_reason": "no pre-window exact-string appearance found via date-filtered HN Algolia, GDELT DOC, Reddit pullpush, and direct source fetches; strong null",
+    "batch": 1
+   },
+   {
+    "entity": "Magistral (Mistral AI)",
+    "stratum": "S2",
+    "entity_type": "ai_model",
+    "earliest_appearance": "2025-06-04 (name leaked in press days before the 2025-06-10 announcement; reasoning model rumored unnamed earlier)",
+    "release_date": "2025-06-10",
+    "source_url": "https://mistral.ai/news/magistral",
+    "coverage_note": "heavy tech-press coverage at launch",
+    "qwen36_diagnostic_eligible": false,
+    "recycled_from_census": false,
+    "normalized_type": "ai_model",
+    "recheck_verdict": "excluded",
+    "recheck_reason": "borderline: announced 2025-06-10, ~3-day margin to credible pre-window leak chatter, and 'magistral' is a common French/Spanish word; excluded conservatively",
+    "batch": 1
+   },
+   {
+    "entity": "MiniMax-M1",
+    "stratum": "S2",
+    "entity_type": "ai_model",
+    "earliest_appearance": "2025-06-16 (open-weights release announcement, no prior named coverage)",
+    "release_date": "same as announcement",
+    "source_url": "https://github.com/MiniMax-AI/MiniMax-M1",
+    "coverage_note": "modest-to-heavy ML-press coverage (first large open hybrid-attention reasoning model)",
+    "qwen36_diagnostic_eligible": false,
+    "recycled_from_census": false,
+    "normalized_type": "ai_model",
+    "recheck_verdict": "clean",
+    "recheck_reason": "no pre-window exact-string appearance found via date-filtered HN Algolia, GDELT DOC, Reddit pullpush, and direct source fetches; strong null",
+    "batch": 1
+   },
+   {
+    "entity": "Gemini 3.0 Pro",
+    "entity_type": "AI model",
+    "earliest_appearance": "2025-11-18 (announcement)",
+    "release_date": "2025-11-18",
+    "source_url": "https://blog.google/products/gemini/gemini-3/",
+    "recycled_from_census": true,
+    "census_id": "temp_postcutoff_1",
+    "stratum": "S2",
+    "coverage_note": "recycled from old census (evidence-verified post-window first appearance); coverage moderate-to-heavy tech press",
+    "qwen36_diagnostic_eligible": false,
+    "normalized_type": "ai_model",
+    "recheck_verdict": "excluded",
+    "recheck_reason": "exact phrase appears in an April-2025 news headline and in May-2025 r/Bard speculation threads (pre-window)",
+    "batch": 1
+   },
+   {
+    "entity": "Tinker (Thinking Machines Lab)",
+    "stratum": "S2",
+    "entity_type": "software",
+    "earliest_appearance": "2025-10-01 (product announcement; company predates window but product name did not exist publicly before)",
+    "release_date": "2025-10-01 (waitlist beta)",
+    "source_url": "https://thinkingmachines.ai/tinker/",
+    "coverage_note": "heavy ML-community and tech-press coverage (first product of Murati's lab); minor collision with generic word 'tinker'",
+    "qwen36_diagnostic_eligible": false,
+    "recycled_from_census": false,
+    "normalized_type": "software",
+    "recheck_verdict": "excluded",
+    "recheck_reason": "'Tinker' collides with ASUS Tinker Board and Laravel Tinker, both heavily documented pre-window",
+    "batch": 1
+   },
+   {
+    "entity": "Google Antigravity",
+    "stratum": "S2",
+    "entity_type": "software",
+    "earliest_appearance": "2025-11-18 (announced alongside Gemini 3 as agentic IDE)",
+    "release_date": "same as announcement (public preview)",
+    "source_url": "https://antigravity.google/",
+    "coverage_note": "heavy tech-press coverage; playful collision with Python's 'import antigravity' easter egg (widely remarked)",
+    "qwen36_diagnostic_eligible": false,
+    "recycled_from_census": false,
+    "normalized_type": "software",
+    "recheck_verdict": "excluded",
+    "recheck_reason": "phrase 'google antigravity' dates to a 2019 meme and the Python 'import antigravity' easter egg redirect; long pre-window string history",
+    "batch": 1
+   },
+   {
+    "entity": "OpenAI AgentKit",
+    "stratum": "S2",
+    "entity_type": "software",
+    "earliest_appearance": "2025-10-06 (DevDay 2025 announcement)",
+    "release_date": "same as announcement",
+    "source_url": "https://openai.com/index/introducing-agentkit/",
+    "coverage_note": "heavy developer-press coverage",
+    "qwen36_diagnostic_eligible": false,
+    "recycled_from_census": false,
+    "normalized_type": "software",
+    "recheck_verdict": "excluded",
+    "recheck_reason": "'agentkit' string public since coinbase/agentkit (2024-10); heavy pre-window collision on the distinctive token",
+    "batch": 1
+   },
+   {
+    "entity": "Aardvark (OpenAI security agent)",
+    "stratum": "S2",
+    "entity_type": "software",
+    "earliest_appearance": "2025-10-30 (private-beta announcement of GPT-5-based security researcher agent)",
+    "release_date": "2025-10-30 (private beta)",
+    "source_url": "https://openai.com/index/introducing-aardvark/",
+    "coverage_note": "modest coverage, ~dozens of articles; name collides with older unrelated projects (Ubuntu 17.10 'Artful Aardvark', misc tools)",
+    "qwen36_diagnostic_eligible": false,
+    "recycled_from_census": false,
+    "normalized_type": "software",
+    "recheck_verdict": "excluded",
+    "recheck_reason": "'Aardvark' collides with Aardvark Weather (2024 Nature paper coverage) and Google's Aardvark Q&A (2010); name not strictly unseen",
+    "batch": 1
+   },
+   {
+    "entity": "NVIDIA Rubin CPX",
+    "stratum": "S2",
+    "entity_type": "chip",
+    "earliest_appearance": "2025-09-09 (announcement of new context-processing GPU variant; parent 'Rubin' brand predates window but the CPX product/name did not)",
+    "release_date": "scheduled end of 2026",
+    "source_url": "https://nvidianews.nvidia.com/news/nvidia-rubin-cpx-accelerates-inference-performance-and-profitability-for-long-context-workloads",
+    "coverage_note": "heavy tech-press coverage",
+    "qwen36_diagnostic_eligible": false,
+    "recycled_from_census": false,
+    "normalized_type": "chip",
+    "recheck_verdict": "clean",
+    "recheck_reason": "no pre-window exact-string appearance found via date-filtered HN Algolia, GDELT DOC, Reddit pullpush, and direct source fetches; strong null",
+    "batch": 1
+   },
+   {
+    "entity": "Qualcomm AI200",
+    "stratum": "S2",
+    "entity_type": "chip",
+    "earliest_appearance": "2025-10-27 (announcement of rack-scale inference accelerators AI200/AI250; no prior named coverage)",
+    "release_date": "scheduled 2026 (AI200) / 2027 (AI250)",
+    "source_url": "https://www.qualcomm.com/news/releases/2025/10/qualcomm-unveils-ai200-and-ai250-redefining-rack-scale-data-cent",
+    "coverage_note": "heavy financial + tech coverage (stock moved sharply on announcement)",
+    "qwen36_diagnostic_eligible": false,
+    "recycled_from_census": false,
+    "normalized_type": "chip",
+    "recheck_verdict": "clean",
+    "recheck_reason": "no pre-window exact-string appearance found via date-filtered HN Algolia, GDELT DOC, Reddit pullpush, and direct source fetches; strong null",
+    "batch": 1
+   },
+   {
+    "entity": "Intel Crescent Island",
+    "stratum": "S2",
+    "entity_type": "chip",
+    "earliest_appearance": "2025-10-14 (announced at OCP Global Summit; new inference GPU codename)",
+    "release_date": "scheduled sampling H2 2026",
+    "source_url": "https://newsroom.intel.com/artificial-intelligence/intel-to-expand-ai-accelerator-portfolio-with-new-gpu",
+    "coverage_note": "modest-to-heavy tech-press coverage",
+    "qwen36_diagnostic_eligible": false,
+    "recycled_from_census": false,
+    "normalized_type": "chip",
+    "recheck_verdict": "clean",
+    "recheck_reason": "no pre-window exact-string appearance found via date-filtered HN Algolia, GDELT DOC, Reddit pullpush, and direct source fetches; strong null",
+    "batch": 1
+   },
+   {
+    "entity": "Periodic Labs",
+    "stratum": "S2",
+    "entity_type": "startup",
+    "earliest_appearance": "2025-09-30 (emerged from stealth with ~$300M seed; ex-OpenAI/DeepMind founders, AI-for-physical-sciences)",
+    "release_date": "same as announcement",
+    "source_url": "https://techcrunch.com/2025/09/30/periodic-labs-launches-with-300m-seed/",
+    "coverage_note": "heavy tech/VC-press coverage",
+    "qwen36_diagnostic_eligible": false,
+    "recycled_from_census": false,
+    "normalized_type": "startup",
+    "recheck_verdict": "excluded",
+    "recheck_reason": "named on Techmeme 2025-05-06 (pre-window coverage of the startup)",
+    "batch": 1
+   },
+   {
+    "entity": "General Intuition",
+    "stratum": "S2",
+    "entity_type": "startup",
+    "earliest_appearance": "2025-10-09 (emerged from stealth with $134M seed; agents from video-game clips, Medal spinout)",
+    "release_date": "same as announcement",
+    "source_url": "https://techcrunch.com/2025/10/09/general-intuition-launches-with-134m-seed/",
+    "coverage_note": "modest coverage, ~dozens of articles",
+    "qwen36_diagnostic_eligible": false,
+    "recycled_from_census": false,
+    "normalized_type": "startup",
+    "recheck_verdict": "clean",
+    "recheck_reason": "no pre-window exact-string appearance found via date-filtered HN Algolia, GDELT DOC, Reddit pullpush, and direct source fetches; strong null",
+    "batch": 1
+   },
+   {
+    "entity": "Ekterly (sebetralstat)",
+    "stratum": "S2",
+    "entity_type": "drug",
+    "earliest_appearance": "2025-07-07 (FDA approval; brand name first publicized at approval — generic sebetralstat known earlier)",
+    "release_date": "same as announcement",
+    "source_url": "https://www.drugs.com/history/ekterly.html",
+    "coverage_note": "modest pharma-press coverage (first oral on-demand HAE treatment)",
+    "qwen36_diagnostic_eligible": false,
+    "recycled_from_census": false,
+    "normalized_type": "drug",
+    "admission_note": "S2 drug admission rule: admitted because the BRAND name's first public appearance is post-window (generic name known earlier); questions use the brand name only.",
+    "question_name_policy": "brand name (post-window surface form)",
+    "recheck_verdict": "clean",
+    "recheck_reason": "no pre-window exact-string appearance found via date-filtered HN Algolia, GDELT DOC, Reddit pullpush, and direct source fetches; strong null",
+    "batch": 1
+   },
+   {
+    "entity": "Modeyso (dordaviprone)",
+    "stratum": "S2",
+    "entity_type": "drug",
+    "earliest_appearance": "2025-08-06 (FDA accelerated approval for diffuse midline glioma; brand name first at approval)",
+    "release_date": "same as announcement",
+    "source_url": "https://www.drugs.com/history/modeyso.html",
+    "coverage_note": "modest pharma/oncology-press coverage",
+    "qwen36_diagnostic_eligible": false,
+    "recycled_from_census": false,
+    "normalized_type": "drug",
+    "admission_note": "S2 drug admission rule: admitted because the BRAND name's first public appearance is post-window (generic name known earlier); questions use the brand name only.",
+    "question_name_policy": "brand name (post-window surface form)",
+    "recheck_verdict": "clean",
+    "recheck_reason": "no pre-window exact-string appearance found via date-filtered HN Algolia, GDELT DOC, Reddit pullpush, and direct source fetches; strong null",
+    "batch": 1
+   },
+   {
+    "entity": "Zycubo (copper histidinate)",
+    "stratum": "S2",
+    "entity_type": "drug",
+    "earliest_appearance": "2026-01-12 (FDA approval; first-ever Menkes disease treatment; brand name first at approval)",
+    "release_date": "same as announcement",
+    "source_url": "https://www.drugs.com/history/zycubo.html",
+    "coverage_note": "modest pharma-press coverage, ~dozens of articles",
+    "qwen36_diagnostic_eligible": false,
+    "recycled_from_census": false,
+    "normalized_type": "drug",
+    "admission_note": "S2 drug admission rule: admitted because the BRAND name's first public appearance is post-window (generic name known earlier); questions use the brand name only.",
+    "question_name_policy": "brand name (post-window surface form)",
+    "recheck_verdict": "clean",
+    "recheck_reason": "no pre-window exact-string appearance found via date-filtered HN Algolia, GDELT DOC, Reddit pullpush, and direct source fetches; strong null",
+    "batch": 1
+   },
+   {
+    "entity": "AGENTS.md",
+    "stratum": "S2",
+    "entity_type": "standard",
+    "earliest_appearance": "2025-08-15 (OpenAI-led cross-vendor convention site/spec for agent-readable repo instructions; predecessor files existed but the named standard did not)",
+    "release_date": "same as announcement",
+    "source_url": "https://agents.md/",
+    "coverage_note": "modest but persistent developer-press coverage; rapidly adopted across tools",
+    "qwen36_diagnostic_eligible": false,
+    "recycled_from_census": false,
+    "normalized_type": "standard",
+    "recheck_verdict": "excluded",
+    "recheck_reason": "exact string 'AGENTS.md' public in openai/codex repo since 2025-05-11 (pre-window); spec filename circulated before the window",
+    "batch": 1
+   },
+   {
+    "entity": "The Social Reckoning",
+    "stratum": "S2",
+    "entity_type": "film",
+    "earliest_appearance": "2025-09-26 (Sony announced official title and release date; project previously reported only as untitled 'Social Network' follow-up)",
+    "release_date": "scheduled 2026-10-09",
+    "source_url": "https://variety.com/2025/film/news/the-social-network-sequel-2026-release-date-official-title-the-social-reckoning-1236530356/",
+    "coverage_note": "heavy trade coverage of title from Sept 2025; name itself unseen before",
+    "qwen36_diagnostic_eligible": false,
+    "recycled_from_census": false,
+    "normalized_type": "film",
+    "recheck_verdict": "clean",
+    "recheck_reason": "no pre-window exact-string appearance found via date-filtered HN Algolia, GDELT DOC, Reddit pullpush, and direct source fetches; strong null",
+    "batch": 1
+   },
+   {
+    "entity": "Resident Evil Requiem",
+    "stratum": "S2",
+    "entity_type": "video_game",
+    "earliest_appearance": "2025-06-06 (title world premiere at SGF 2025; 'RE9' rumors existed earlier but not the name 'Requiem')",
+    "release_date": "2026-02-27",
+    "source_url": "https://www.gamespot.com/gallery/summer-game-fest-live-2025-all-the-biggest-announcements-and-games/2900-6648/",
+    "coverage_note": "very heavy coverage post-reveal; subtitle unseen before 2025-06",
+    "qwen36_diagnostic_eligible": false,
+    "recycled_from_census": false,
+    "normalized_type": "video_game",
+    "recheck_verdict": "excluded",
+    "recheck_reason": "borderline: announced 2025-06-06, only ~5 days after the 2025-06-01 window edge; margin too thin, excluded conservatively",
+    "batch": 1
+   },
+   {
+    "entity": "Control Resonant",
+    "stratum": "S2",
+    "batch": 2,
+    "entity_type": "video_game",
+    "earliest_appearance": "2025-12-11 (world premiere at The Game Awards 2025; Remedy Entertainment, staged reveal with live theatrical elements)",
+    "release_date": "unreleased (announced)",
+    "source_url": "https://en.wikipedia.org/wiki/The_Game_Awards_2025",
+    "coverage_note": "heavy games-press coverage after the reveal (~16,000 Steam wishlist followers in the first days); 'Control' franchise predates, the 'Resonant' title did not",
+    "qwen36_diagnostic_eligible": false,
+    "recycled_from_census": false,
+    "normalized_type": "video_game",
+    "recheck_verdict": "clean",
+    "recheck_reason": "string-level null verified at creation: zero pre-2025-07-01 exact-string hits on HN Algolia (date-filtered), GDELT DOC (2017-01..2025-06), Reddit pullpush (before=2025-07-01), GitHub repo search (created<2025-07-01) and a general web probe",
+    "string_checks": {
+     "hn_algolia": {
+      "query": "HN Algolia \"Control Resonant\" created_at_i<2025-07-01",
+      "pre_window_hits": 0,
+      "fuzzy_nb_hits": 0
+     },
+     "gdelt_doc": {
+      "query": "GDELT DOC \"Control Resonant\" 2017-01-01..2025-06-30",
+      "pre_window_hits": 0,
+      "articles_scanned": 0
+     },
+     "reddit_pullpush": {
+      "query": "pullpush submission \"Control Resonant\" before=2025-07-01",
+      "pre_window_hits": 0,
+      "note": null
+     },
+     "github": {
+      "query": "GitHub repo search \"Control Resonant\" in:name,description; created<2025-07-01",
+      "pre_window_repos": 0,
+      "repos_scanned": 8,
+      "note": null
+     },
+     "web_probe": {
+      "engine": "DuckDuckGo html",
+      "query": "DuckDuckGo html \"Control Resonant\" (undated probe)",
+      "results_returned": 11,
+      "top_titles": [
+       "Official site",
+       "CONTROL Resonant - Remedy Entertainment",
+       "Control Resonant - Wikipedia",
+       "Pre-purchase CONTROL Resonant on Steam",
+       "CONTROL Resonant - Official PlayStation™Store US"
+      ],
+      "note": "undated probe; results inspected for pre-window referents, none found"
+     },
+     "verdict": "strong null (no pre-2025-07 exact-string appearance on any checked surface); not proof of absence"
+    }
+   },
+   {
+    "entity": "Tomb Raider: Legacy of Atlantis",
+    "stratum": "S2",
+    "batch": 2,
+    "entity_type": "video_game",
+    "earliest_appearance": "2025-12-11 (revealed at The Game Awards 2025, one of two Tomb Raider trailers shown)",
+    "release_date": "unreleased (announced)",
+    "source_url": "https://en.wikipedia.org/wiki/The_Game_Awards_2025",
+    "coverage_note": "heavy; ~20,000 Steam followers within days, second-most social interaction of the show's announcements; franchise old, subtitle new",
+    "qwen36_diagnostic_eligible": false,
+    "recycled_from_census": false,
+    "normalized_type": "video_game",
+    "recheck_verdict": "clean",
+    "recheck_reason": "string-level null verified at creation: zero pre-2025-07-01 exact-string hits on HN Algolia (date-filtered), GDELT DOC (2017-01..2025-06), Reddit pullpush (before=2025-07-01), GitHub repo search (created<2025-07-01) and a general web probe",
+    "string_checks": {
+     "hn_algolia": {
+      "query": "HN Algolia \"Tomb Raider: Legacy of Atlantis\" created_at_i<2025-07-01",
+      "pre_window_hits": 0,
+      "fuzzy_nb_hits": 0
+     },
+     "gdelt_doc": {
+      "query": "GDELT DOC \"Tomb Raider: Legacy of Atlantis\" 2017-01-01..2025-06-30",
+      "pre_window_hits": 0,
+      "articles_scanned": 0
+     },
+     "reddit_pullpush": {
+      "query": "pullpush submission \"Tomb Raider: Legacy of Atlantis\" before=2025-07-01",
+      "pre_window_hits": 0,
+      "note": null
+     },
+     "github": {
+      "query": "GitHub repo search \"Tomb Raider: Legacy of Atlantis\" in:name,description; created<2025-07-01",
+      "pre_window_repos": 0,
+      "repos_scanned": 1,
+      "note": null
+     },
+     "web_probe": {
+      "engine": "DuckDuckGo html / Mojeek",
+      "query": "\"Tomb Raider: Legacy of Atlantis\"",
+      "results_returned": null,
+      "note": "attempted on both engines; html endpoints returned CAPTCHA/403 rate-limit pages during this session, so no general-web probe result is recorded for this entity; the four dated channels (HN, GDELT, Reddit, GitHub) are clean"
+     },
+     "verdict": "strong null (no pre-2025-07 exact-string appearance on any checked surface); not proof of absence"
+    }
+   },
+   {
+    "entity": "Ace Combat 8: Wings of Theve",
+    "stratum": "S2",
+    "batch": 2,
+    "entity_type": "video_game",
+    "earliest_appearance": "2025-12-11 (revealed at The Game Awards 2025)",
+    "release_date": "unreleased (announced)",
+    "source_url": "https://en.wikipedia.org/wiki/The_Game_Awards_2025",
+    "coverage_note": "moderate-heavy; ~18,000 Steam followers within days; coined subtitle",
+    "qwen36_diagnostic_eligible": false,
+    "recycled_from_census": false,
+    "normalized_type": "video_game",
+    "recheck_verdict": "clean",
+    "recheck_reason": "string-level null verified at creation: zero pre-2025-07-01 exact-string hits on HN Algolia (date-filtered), GDELT DOC (2017-01..2025-06), Reddit pullpush (before=2025-07-01), GitHub repo search (created<2025-07-01) and a general web probe",
+    "string_checks": {
+     "hn_algolia": {
+      "query": "HN Algolia \"Ace Combat 8: Wings of Theve\" created_at_i<2025-07-01",
+      "pre_window_hits": 0,
+      "fuzzy_nb_hits": 0
+     },
+     "gdelt_doc": {
+      "query": "GDELT DOC \"Ace Combat 8: Wings of Theve\" 2017-01-01..2025-06-30",
+      "pre_window_hits": 0,
+      "articles_scanned": 0
+     },
+     "reddit_pullpush": {
+      "query": "pullpush submission \"Ace Combat 8: Wings of Theve\" before=2025-07-01",
+      "pre_window_hits": 0,
+      "note": null
+     },
+     "github": {
+      "query": "GitHub repo search \"Ace Combat 8: Wings of Theve\" in:name,description; created<2025-07-01",
+      "pre_window_repos": 0,
+      "repos_scanned": 1,
+      "note": null
+     },
+     "web_probe": {
+      "engine": "DuckDuckGo html / Mojeek",
+      "query": "\"Ace Combat 8: Wings of Theve\"",
+      "results_returned": null,
+      "note": "attempted on both engines; html endpoints returned CAPTCHA/403 rate-limit pages during this session, so no general-web probe result is recorded for this entity; the four dated channels (HN, GDELT, Reddit, GitHub) are clean"
+     },
+     "verdict": "strong null (no pre-2025-07 exact-string appearance on any checked surface); not proof of absence"
+    }
+   },
+   {
+    "entity": "Mega Man: Dual Override",
+    "stratum": "S2",
+    "batch": 2,
+    "entity_type": "video_game",
+    "earliest_appearance": "2025-12-11 (announced at The Game Awards 2025, listed among the show's new game announcements)",
+    "release_date": "unreleased (announced)",
+    "source_url": "https://en.wikipedia.org/wiki/The_Game_Awards_2025",
+    "coverage_note": "moderate; franchise old, subtitle new",
+    "qwen36_diagnostic_eligible": false,
+    "recycled_from_census": false,
+    "normalized_type": "video_game",
+    "recheck_verdict": "clean",
+    "recheck_reason": "string-level null verified at creation: zero pre-2025-07-01 exact-string hits on HN Algolia (date-filtered), GDELT DOC (2017-01..2025-06), Reddit pullpush (before=2025-07-01), GitHub repo search (created<2025-07-01) and a general web probe",
+    "string_checks": {
+     "hn_algolia": {
+      "query": "HN Algolia \"Mega Man: Dual Override\" created_at_i<2025-07-01",
+      "pre_window_hits": 0,
+      "fuzzy_nb_hits": 0
+     },
+     "gdelt_doc": {
+      "query": "GDELT DOC \"Mega Man: Dual Override\" 2017-01-01..2025-06-30",
+      "pre_window_hits": 0,
+      "articles_scanned": 0
+     },
+     "reddit_pullpush": {
+      "query": "pullpush submission \"Mega Man: Dual Override\" before=2025-07-01",
+      "pre_window_hits": 0,
+      "note": null
+     },
+     "github": {
+      "query": "GitHub repo search \"Mega Man: Dual Override\" in:name,description; created<2025-07-01",
+      "pre_window_repos": 0,
+      "repos_scanned": 0,
+      "note": null
+     },
+     "web_probe": {
+      "engine": "DuckDuckGo html / Mojeek",
+      "query": "\"Mega Man: Dual Override\"",
+      "results_returned": null,
+      "note": "attempted on both engines; html endpoints returned CAPTCHA/403 rate-limit pages during this session, so no general-web probe result is recorded for this entity; the four dated channels (HN, GDELT, Reddit, GitHub) are clean"
+     },
+     "verdict": "strong null (no pre-2025-07 exact-string appearance on any checked surface); not proof of absence"
+    }
+   },
+   {
+    "entity": "Coven of the Chicken Foot",
+    "stratum": "S2",
+    "batch": 2,
+    "entity_type": "video_game",
+    "earliest_appearance": "2025-12-11 (independent game announced at The Game Awards 2025; named by critics among the show's highlights)",
+    "release_date": "unreleased (announced)",
+    "source_url": "https://en.wikipedia.org/wiki/The_Game_Awards_2025",
+    "coverage_note": "light-moderate; indie coverage; fully coined title",
+    "qwen36_diagnostic_eligible": false,
+    "recycled_from_census": false,
+    "normalized_type": "video_game",
+    "recheck_verdict": "clean",
+    "recheck_reason": "string-level null verified at creation: zero pre-2025-07-01 exact-string hits on HN Algolia (date-filtered), GDELT DOC (2017-01..2025-06), Reddit pullpush (before=2025-07-01), GitHub repo search (created<2025-07-01) and a general web probe",
+    "string_checks": {
+     "hn_algolia": {
+      "query": "HN Algolia \"Coven of the Chicken Foot\" created_at_i<2025-07-01",
+      "pre_window_hits": 0,
+      "fuzzy_nb_hits": 0
+     },
+     "gdelt_doc": {
+      "query": "GDELT DOC \"Coven of the Chicken Foot\" 2017-01-01..2025-06-30",
+      "pre_window_hits": 0,
+      "articles_scanned": 0
+     },
+     "reddit_pullpush": {
+      "query": "pullpush submission \"Coven of the Chicken Foot\" before=2025-07-01",
+      "pre_window_hits": 0,
+      "note": null
+     },
+     "github": {
+      "query": "GitHub repo search \"Coven of the Chicken Foot\" in:name,description; created<2025-07-01",
+      "pre_window_repos": 0,
+      "repos_scanned": 0,
+      "note": null
+     },
+     "web_probe": {
+      "engine": "DuckDuckGo html / Mojeek",
+      "query": "\"Coven of the Chicken Foot\"",
+      "results_returned": null,
+      "note": "attempted on both engines; html endpoints returned CAPTCHA/403 rate-limit pages during this session, so no general-web probe result is recorded for this entity; the four dated channels (HN, GDELT, Reddit, GitHub) are clean"
+     },
+     "verdict": "strong null (no pre-2025-07 exact-string appearance on any checked surface); not proof of absence"
+    }
+   },
+   {
+    "entity": "Muramasa: Revenant Blades",
+    "stratum": "S2",
+    "batch": 2,
+    "entity_type": "video_game",
+    "earliest_appearance": "2026-06-09 (revealed at Nintendo Direct June 2026; Switch 2 title)",
+    "release_date": "scheduled 2027",
+    "source_url": "https://www.nintendolife.com/guides/nintendo-direct-june-2026-every-announcement-game-reveal-and-trailer",
+    "coverage_note": "moderate; subtitle unseen before the Direct",
+    "qwen36_diagnostic_eligible": false,
+    "recycled_from_census": false,
+    "normalized_type": "video_game",
+    "recheck_verdict": "clean",
+    "recheck_reason": "string-level null verified at creation: zero pre-2025-07-01 exact-string hits on HN Algolia (date-filtered), GDELT DOC (2017-01..2025-06), Reddit pullpush (before=2025-07-01), GitHub repo search (created<2025-07-01) and a general web probe",
+    "string_checks": {
+     "hn_algolia": {
+      "query": "HN Algolia \"Muramasa: Revenant Blades\" created_at_i<2025-07-01",
+      "pre_window_hits": 0,
+      "fuzzy_nb_hits": 0
+     },
+     "gdelt_doc": {
+      "query": "GDELT DOC \"Muramasa: Revenant Blades\" 2017-01-01..2025-06-30",
+      "pre_window_hits": 0,
+      "articles_scanned": 0
+     },
+     "reddit_pullpush": {
+      "query": "pullpush submission \"Muramasa: Revenant Blades\" before=2025-07-01",
+      "pre_window_hits": 0,
+      "note": null
+     },
+     "github": {
+      "query": "GitHub repo search \"Muramasa: Revenant Blades\" in:name,description; created<2025-07-01",
+      "pre_window_repos": 0,
+      "repos_scanned": 0,
+      "note": null
+     },
+     "web_probe": {
+      "engine": "DuckDuckGo html",
+      "query": "DuckDuckGo html \"Muramasa: Revenant Blades\" (undated probe)",
+      "results_returned": 10,
+      "top_titles": [
+       "Muramasa: Revenant Blades | Marvelous USA",
+       "Muramasa: Revenant Blades | Marvelous Games",
+       "Muramasa: Revenant Blades on Steam",
+       "Muramasa: Revenant Blades",
+       "Muramasa: Revenant Blades, a Reforged Vision of the Classic Vanillaware ..."
+      ],
+      "note": "undated probe; results inspected for pre-window referents, none found"
+     },
+     "verdict": "strong null (no pre-2025-07 exact-string appearance on any checked surface); not proof of absence"
+    }
+   },
+   {
+    "entity": "Ninjala 2: The Uncharted Planet",
+    "stratum": "S2",
+    "batch": 2,
+    "entity_type": "video_game",
+    "earliest_appearance": "2026-06-09 (revealed at Nintendo Direct June 2026)",
+    "release_date": "scheduled spring 2027",
+    "source_url": "https://www.nintendolife.com/guides/nintendo-direct-june-2026-every-announcement-game-reveal-and-trailer",
+    "coverage_note": "moderate; long distinctive subtitle",
+    "qwen36_diagnostic_eligible": false,
+    "recycled_from_census": false,
+    "normalized_type": "video_game",
+    "recheck_verdict": "clean",
+    "recheck_reason": "string-level null verified at creation: zero pre-2025-07-01 exact-string hits on HN Algolia (date-filtered), GDELT DOC (2017-01..2025-06), Reddit pullpush (before=2025-07-01), GitHub repo search (created<2025-07-01) and a general web probe",
+    "string_checks": {
+     "hn_algolia": {
+      "query": "HN Algolia \"Ninjala 2: The Uncharted Planet\" created_at_i<2025-07-01",
+      "pre_window_hits": 0,
+      "fuzzy_nb_hits": 0
+     },
+     "gdelt_doc": {
+      "query": "GDELT DOC \"Ninjala 2: The Uncharted Planet\" 2017-01-01..2025-06-30",
+      "pre_window_hits": 0,
+      "articles_scanned": 0
+     },
+     "reddit_pullpush": {
+      "query": "pullpush submission \"Ninjala 2: The Uncharted Planet\" before=2025-07-01",
+      "pre_window_hits": 0,
+      "note": null
+     },
+     "github": {
+      "query": "GitHub repo search \"Ninjala 2: The Uncharted Planet\" in:name,description; created<2025-07-01",
+      "pre_window_repos": 0,
+      "repos_scanned": 0,
+      "note": null
+     },
+     "web_probe": {
+      "engine": "DuckDuckGo html",
+      "query": "DuckDuckGo html \"Ninjala 2: The Uncharted Planet\" (undated probe)",
+      "results_returned": 10,
+      "top_titles": [
+       "Ninjala 2: The Uncharted Planet - Nintendo Switch 2 Release",
+       "News | Ninjala 2: The Uncharted Planet -Official Website-",
+       "Ninjala 2: The Uncharted Planet Reveal Campaign!",
+       "Ninjala 2: The Uncharted Planet (Switch 2) - Nintendo Life",
+       "Experience Ninjala 2: The Uncharted Planet at Anime Expo 2026"
+      ],
+      "note": "undated probe; results inspected for pre-window referents, none found"
+     },
+     "verdict": "strong null (no pre-2025-07 exact-string appearance on any checked surface); not proof of absence"
+    }
+   },
+   {
+    "entity": "Dragon Quest Monsters: The Withered World",
+    "stratum": "S2",
+    "batch": 2,
+    "entity_type": "video_game",
+    "earliest_appearance": "2026-06-09 (revealed at Nintendo Direct June 2026)",
+    "release_date": "scheduled 2026-12-03",
+    "source_url": "https://www.nintendolife.com/guides/nintendo-direct-june-2026-every-announcement-game-reveal-and-trailer",
+    "coverage_note": "moderate; franchise old, subtitle new",
+    "qwen36_diagnostic_eligible": false,
+    "recycled_from_census": false,
+    "normalized_type": "video_game",
+    "recheck_verdict": "clean",
+    "recheck_reason": "string-level null verified at creation: zero pre-2025-07-01 exact-string hits on HN Algolia (date-filtered), GDELT DOC (2017-01..2025-06), Reddit pullpush (before=2025-07-01), GitHub repo search (created<2025-07-01) and a general web probe",
+    "string_checks": {
+     "hn_algolia": {
+      "query": "HN Algolia \"Dragon Quest Monsters: The Withered World\" created_at_i<2025-07-01",
+      "pre_window_hits": 0,
+      "fuzzy_nb_hits": 0
+     },
+     "gdelt_doc": {
+      "query": "GDELT DOC \"Dragon Quest Monsters: The Withered World\" 2017-01-01..2025-06-30",
+      "pre_window_hits": 0,
+      "articles_scanned": 0
+     },
+     "reddit_pullpush": {
+      "query": "pullpush submission \"Dragon Quest Monsters: The Withered World\" before=2025-07-01",
+      "pre_window_hits": 0,
+      "note": null
+     },
+     "github": {
+      "query": "GitHub repo search \"Dragon Quest Monsters: The Withered World\" in:name,description; created<2025-07-01",
+      "pre_window_repos": 0,
+      "repos_scanned": 0,
+      "note": null
+     },
+     "web_probe": {
+      "engine": "DuckDuckGo html",
+      "query": "DuckDuckGo html \"Dragon Quest Monsters: The Withered World\" (undated probe)",
+      "results_returned": 10,
+      "top_titles": [
+       "DRAGON QUEST MONSTERS: The Withered World",
+       "DRAGON QUEST MONSTERS: The Withered World",
+       "DRAGON QUEST MONSTERS: The Withered World | SQUARE ENIX Store",
+       "Dragon Quest Monsters: The Withered World",
+       "Dragon Quest Monsters: The Withered World"
+      ],
+      "note": "undated probe; results inspected for pre-window referents, none found"
+     },
+     "verdict": "strong null (no pre-2025-07 exact-string appearance on any checked surface); not proof of absence"
+    }
+   },
+   {
+    "entity": "Krushers of the World",
+    "stratum": "S2",
+    "batch": 2,
+    "entity_type": "album",
+    "earliest_appearance": "2025-09-24 (Kreator announced the album alongside a European tour)",
+    "release_date": "2026-01 (per the 2026 album release list)",
+    "source_url": "https://blabbermouth.net/news/kreator-announces-krushers-of-the-world-album-european-tour-with-exodus-and-carcass-to-launch-in-march",
+    "coverage_note": "light-moderate; metal press",
+    "qwen36_diagnostic_eligible": false,
+    "recycled_from_census": false,
+    "normalized_type": "album",
+    "recheck_verdict": "clean",
+    "recheck_reason": "string-level null verified at creation: zero pre-2025-07-01 exact-string hits on HN Algolia (date-filtered), GDELT DOC (2017-01..2025-06), Reddit pullpush (before=2025-07-01), GitHub repo search (created<2025-07-01) and a general web probe",
+    "string_checks": {
+     "hn_algolia": {
+      "query": "HN Algolia \"Krushers of the World\" created_at_i<2025-07-01",
+      "pre_window_hits": 0,
+      "fuzzy_nb_hits": 0
+     },
+     "gdelt_doc": {
+      "query": "GDELT DOC \"Krushers of the World\" 2017-01-01..2025-06-30",
+      "pre_window_hits": 0,
+      "articles_scanned": 0
+     },
+     "reddit_pullpush": {
+      "query": "pullpush submission \"Krushers of the World\" before=2025-07-01",
+      "pre_window_hits": 0,
+      "note": null
+     },
+     "github": {
+      "query": "GitHub repo search \"Krushers of the World\" in:name,description; created<2025-07-01",
+      "pre_window_repos": 0,
+      "repos_scanned": 0,
+      "note": null
+     },
+     "web_probe": {
+      "engine": "DuckDuckGo html / Mojeek",
+      "query": "\"Krushers of the World\"",
+      "results_returned": null,
+      "note": "attempted on both engines; html endpoints returned CAPTCHA/403 rate-limit pages during this session, so no general-web probe result is recorded for this entity; the four dated channels (HN, GDELT, Reddit, GitHub) are clean"
+     },
+     "verdict": "strong null (no pre-2025-07 exact-string appearance on any checked surface); not proof of absence"
+    }
+   },
+   {
+    "entity": "Tales of a Failed Shapeshifter",
+    "stratum": "S2",
+    "batch": 2,
+    "entity_type": "album",
+    "earliest_appearance": "2026-01-08 (Em Beihold announced her debut album with a February release date)",
+    "release_date": "2026-02-27",
+    "source_url": "https://www.melodicmag.com/news/em-beihold-announces-debut-album-tales-of-a-failed-shapeshifter-out-february-27th",
+    "coverage_note": "light-moderate; music press",
+    "qwen36_diagnostic_eligible": false,
+    "recycled_from_census": false,
+    "normalized_type": "album",
+    "recheck_verdict": "clean",
+    "recheck_reason": "string-level null verified at creation: zero pre-2025-07-01 exact-string hits on HN Algolia (date-filtered), GDELT DOC (2017-01..2025-06), Reddit pullpush (before=2025-07-01), GitHub repo search (created<2025-07-01) and a general web probe",
+    "string_checks": {
+     "hn_algolia": {
+      "query": "HN Algolia \"Tales of a Failed Shapeshifter\" created_at_i<2025-07-01",
+      "pre_window_hits": 0,
+      "fuzzy_nb_hits": 0
+     },
+     "gdelt_doc": {
+      "query": "GDELT DOC \"Tales of a Failed Shapeshifter\" 2017-01-01..2025-06-30",
+      "pre_window_hits": 0,
+      "articles_scanned": 0
+     },
+     "reddit_pullpush": {
+      "query": "pullpush submission \"Tales of a Failed Shapeshifter\" before=2025-07-01",
+      "pre_window_hits": 0,
+      "note": null
+     },
+     "github": {
+      "query": "GitHub repo search \"Tales of a Failed Shapeshifter\" in:name,description; created<2025-07-01",
+      "pre_window_repos": 0,
+      "repos_scanned": 0,
+      "note": null
+     },
+     "web_probe": {
+      "engine": "DuckDuckGo html / Mojeek",
+      "query": "\"Tales of a Failed Shapeshifter\"",
+      "results_returned": null,
+      "note": "attempted on both engines; html endpoints returned CAPTCHA/403 rate-limit pages during this session, so no general-web probe result is recorded for this entity; the four dated channels (HN, GDELT, Reddit, GitHub) are clean"
+     },
+     "verdict": "strong null (no pre-2025-07 exact-string appearance on any checked surface); not proof of absence"
+    }
+   },
+   {
+    "entity": "Grand Serpent Rising",
+    "stratum": "S2",
+    "batch": 2,
+    "entity_type": "album",
+    "earliest_appearance": "2026-03-26 (Dimmu Borgir announced the album and shared the single 'Ulvgjeld & Blodsodel')",
+    "release_date": "2026-05 (per the 2026 album release list)",
+    "source_url": "https://blabbermouth.net/news/dimmu-borgir-announces-new-album-grand-serpent-rising-shares-ulvgjeld-blodsodel-single",
+    "coverage_note": "light-moderate; metal press",
+    "qwen36_diagnostic_eligible": false,
+    "recycled_from_census": false,
+    "normalized_type": "album",
+    "recheck_verdict": "clean",
+    "recheck_reason": "string-level null verified at creation: zero pre-2025-07-01 exact-string hits on HN Algolia (date-filtered), GDELT DOC (2017-01..2025-06), Reddit pullpush (before=2025-07-01), GitHub repo search (created<2025-07-01) and a general web probe",
+    "string_checks": {
+     "hn_algolia": {
+      "query": "HN Algolia \"Grand Serpent Rising\" created_at_i<2025-07-01",
+      "pre_window_hits": 0,
+      "fuzzy_nb_hits": 0
+     },
+     "gdelt_doc": {
+      "query": "GDELT DOC \"Grand Serpent Rising\" 2017-01-01..2025-06-30",
+      "pre_window_hits": 0,
+      "articles_scanned": 0
+     },
+     "reddit_pullpush": {
+      "query": "pullpush submission \"Grand Serpent Rising\" before=2025-07-01",
+      "pre_window_hits": 0,
+      "note": null
+     },
+     "github": {
+      "query": "GitHub repo search \"Grand Serpent Rising\" in:name,description; created<2025-07-01",
+      "pre_window_repos": 0,
+      "repos_scanned": 0,
+      "note": null
+     },
+     "web_probe": {
+      "engine": "DuckDuckGo html / Mojeek",
+      "query": "\"Grand Serpent Rising\"",
+      "results_returned": null,
+      "note": "attempted on both engines; html endpoints returned CAPTCHA/403 rate-limit pages during this session, so no general-web probe result is recorded for this entity; the four dated channels (HN, GDELT, Reddit, GitHub) are clean"
+     },
+     "verdict": "strong null (no pre-2025-07 exact-string appearance on any checked surface); not proof of absence"
+    }
+   },
+   {
+    "entity": "Scenes from a Velvet Room",
+    "stratum": "S2",
+    "batch": 2,
+    "entity_type": "album",
+    "earliest_appearance": "2026-04-10 (Stephan Moccio announced the album)",
+    "release_date": "2026-06 (per the 2026 album release list)",
+    "source_url": "https://www.thelineofbestfit.com/news/stephan-moccio-announces-new-album-scenes-from-a-velvet-room",
+    "coverage_note": "light; music press",
+    "qwen36_diagnostic_eligible": false,
+    "recycled_from_census": false,
+    "normalized_type": "album",
+    "recheck_verdict": "clean",
+    "recheck_reason": "string-level null verified at creation: zero pre-2025-07-01 exact-string hits on HN Algolia (date-filtered), GDELT DOC (2017-01..2025-06), Reddit pullpush (before=2025-07-01), GitHub repo search (created<2025-07-01) and a general web probe",
+    "string_checks": {
+     "hn_algolia": {
+      "query": "HN Algolia \"Scenes from a Velvet Room\" created_at_i<2025-07-01",
+      "pre_window_hits": 0,
+      "fuzzy_nb_hits": 0
+     },
+     "gdelt_doc": {
+      "query": "GDELT DOC \"Scenes from a Velvet Room\" 2017-01-01..2025-06-30",
+      "pre_window_hits": 0,
+      "articles_scanned": 0
+     },
+     "reddit_pullpush": {
+      "query": "pullpush submission \"Scenes from a Velvet Room\" before=2025-07-01",
+      "pre_window_hits": 0,
+      "note": null
+     },
+     "github": {
+      "query": "GitHub repo search \"Scenes from a Velvet Room\" in:name,description; created<2025-07-01",
+      "pre_window_repos": 0,
+      "repos_scanned": 0,
+      "note": null
+     },
+     "web_probe": {
+      "engine": "DuckDuckGo html / Mojeek",
+      "query": "\"Scenes from a Velvet Room\"",
+      "results_returned": null,
+      "note": "attempted on both engines; html endpoints returned CAPTCHA/403 rate-limit pages during this session, so no general-web probe result is recorded for this entity; the four dated channels (HN, GDELT, Reddit, GitHub) are clean"
+     },
+     "verdict": "strong null (no pre-2025-07 exact-string appearance on any checked surface); not proof of absence"
+    }
+   },
+   {
+    "entity": "Of Earth & Wires",
+    "stratum": "S2",
+    "batch": 2,
+    "entity_type": "album",
+    "earliest_appearance": "2026 (Dua Saleh album listed for May 2026 release on Ghostly International; title first public in 2026)",
+    "release_date": "2026-05 (per the 2026 album release list)",
+    "source_url": "https://en.wikipedia.org/wiki/List_of_2026_albums",
+    "coverage_note": "light; indie/pop press",
+    "qwen36_diagnostic_eligible": false,
+    "recycled_from_census": false,
+    "normalized_type": "album",
+    "recheck_verdict": "clean",
+    "recheck_reason": "string-level null verified at creation: zero pre-2025-07-01 exact-string hits on HN Algolia (date-filtered), GDELT DOC (2017-01..2025-06), Reddit pullpush (before=2025-07-01), GitHub repo search (created<2025-07-01) and a general web probe",
+    "string_checks": {
+     "hn_algolia": {
+      "query": "HN Algolia \"Of Earth & Wires\" created_at_i<2025-07-01",
+      "pre_window_hits": 0,
+      "fuzzy_nb_hits": 0
+     },
+     "gdelt_doc": {
+      "query": "GDELT DOC \"Of Earth & Wires\" 2017-01-01..2025-06-30",
+      "pre_window_hits": 0,
+      "articles_scanned": 0
+     },
+     "reddit_pullpush": {
+      "query": "pullpush submission \"Of Earth & Wires\" before=2025-07-01",
+      "pre_window_hits": 0,
+      "note": null
+     },
+     "github": {
+      "query": "GitHub repo search \"Of Earth & Wires\" in:name,description; created<2025-07-01",
+      "pre_window_repos": 0,
+      "repos_scanned": 0,
+      "note": null
+     },
+     "web_probe": {
+      "engine": "DuckDuckGo html / Mojeek",
+      "query": "\"Of Earth & Wires\"",
+      "results_returned": null,
+      "note": "attempted on both engines; html endpoints returned CAPTCHA/403 rate-limit pages during this session, so no general-web probe result is recorded for this entity; the four dated channels (HN, GDELT, Reddit, GitHub) are clean"
+     },
+     "verdict": "strong null (no pre-2025-07 exact-string appearance on any checked surface); not proof of absence"
+    }
+   },
+   {
+    "entity": "Jideytro",
+    "stratum": "S2",
+    "batch": 2,
+    "entity_type": "drug",
+    "earliest_appearance": "2026-07-22 (FDA approval; GSK/Nuvalent ROS1-positive lung cancer drug — brand name first public at approval)",
+    "release_date": "same as approval",
+    "source_url": "https://www.biopharmadive.com/news/gsk-nuvalent-jideytro-fda-approve-ros1-lung-cancer/825967/",
+    "coverage_note": "modest pharma/oncology-press coverage",
+    "qwen36_diagnostic_eligible": false,
+    "recycled_from_census": false,
+    "normalized_type": "drug",
+    "recheck_verdict": "clean",
+    "recheck_reason": "string-level null verified at creation: zero pre-2025-07-01 exact-string hits on HN Algolia (date-filtered), GDELT DOC (2017-01..2025-06), Reddit pullpush (before=2025-07-01), GitHub repo search (created<2025-07-01) and a general web probe",
+    "string_checks": {
+     "hn_algolia": {
+      "query": "HN Algolia \"Jideytro\" created_at_i<2025-07-01",
+      "pre_window_hits": 0,
+      "fuzzy_nb_hits": 0
+     },
+     "gdelt_doc": {
+      "query": "GDELT DOC \"Jideytro\" 2017-01-01..2025-06-30",
+      "pre_window_hits": 0,
+      "articles_scanned": 0
+     },
+     "reddit_pullpush": {
+      "query": "pullpush submission \"Jideytro\" before=2025-07-01",
+      "pre_window_hits": 0,
+      "note": null
+     },
+     "github": {
+      "query": "GitHub repo search \"Jideytro\" in:name,description; created<2025-07-01",
+      "pre_window_repos": 0,
+      "repos_scanned": 0,
+      "note": null
+     },
+     "web_probe": {
+      "engine": "DuckDuckGo html / Mojeek",
+      "query": "\"Jideytro\"",
+      "results_returned": null,
+      "note": "attempted on both engines; html endpoints returned CAPTCHA/403 rate-limit pages during this session, so no general-web probe result is recorded for this entity; the four dated channels (HN, GDELT, Reddit, GitHub) are clean"
+     },
+     "verdict": "strong null (no pre-2025-07 exact-string appearance on any checked surface); not proof of absence"
+    },
+    "admission_note": "S2 drug admission rule: the BRAND name's first public appearance is post-window (generic name known earlier); questions use the brand name only.",
+    "question_name_policy": "brand name (post-window surface form)"
+   },
+   {
+    "entity": "Lipfendra",
+    "stratum": "S2",
+    "batch": 2,
+    "entity_type": "drug",
+    "earliest_appearance": "2026-07-16 (FDA approval of Merck's enlicitide, the first oral PCSK9 inhibitor — brand name first public at approval)",
+    "release_date": "same as approval",
+    "source_url": "https://www.biopharmadive.com/news/merck-lipfrendra-enlicitide-fda-approve-voucher-pcsk9/825377/",
+    "coverage_note": "moderate pharma and financial-press coverage (first PCSK9 pill)",
+    "qwen36_diagnostic_eligible": false,
+    "recycled_from_census": false,
+    "normalized_type": "drug",
+    "recheck_verdict": "clean",
+    "recheck_reason": "string-level null verified at creation: zero pre-2025-07-01 exact-string hits on HN Algolia (date-filtered), GDELT DOC (2017-01..2025-06), Reddit pullpush (before=2025-07-01), GitHub repo search (created<2025-07-01) and a general web probe",
+    "string_checks": {
+     "hn_algolia": {
+      "query": "HN Algolia \"Lipfendra\" created_at_i<2025-07-01",
+      "pre_window_hits": 0,
+      "fuzzy_nb_hits": 0
+     },
+     "gdelt_doc": {
+      "query": "GDELT DOC \"Lipfendra\" 2017-01-01..2025-06-30",
+      "pre_window_hits": 0,
+      "articles_scanned": 0
+     },
+     "reddit_pullpush": {
+      "query": "pullpush submission \"Lipfendra\" before=2025-07-01",
+      "pre_window_hits": 0,
+      "note": null
+     },
+     "github": {
+      "query": "GitHub repo search \"Lipfendra\" in:name,description; created<2025-07-01",
+      "pre_window_repos": 0,
+      "repos_scanned": 0,
+      "note": null
+     },
+     "web_probe": {
+      "engine": "DuckDuckGo html / Mojeek",
+      "query": "\"Lipfendra\"",
+      "results_returned": null,
+      "note": "attempted on both engines; html endpoints returned CAPTCHA/403 rate-limit pages during this session, so no general-web probe result is recorded for this entity; the four dated channels (HN, GDELT, Reddit, GitHub) are clean"
+     },
+     "verdict": "strong null (no pre-2025-07 exact-string appearance on any checked surface); not proof of absence"
+    },
+    "admission_note": "S2 drug admission rule: the BRAND name's first public appearance is post-window (generic enlicitide known earlier); questions use the brand name only.",
+    "question_name_policy": "brand name (post-window surface form)"
+   },
+   {
+    "entity": "Revtorpyk",
+    "stratum": "S2",
+    "batch": 2,
+    "entity_type": "drug",
+    "earliest_appearance": "2026-07-15 (FDA approval of Celcuity's breast cancer drug — brand name first public at approval)",
+    "release_date": "same as approval",
+    "source_url": "https://www.biopharmadive.com/news/celcuity-fda-approve-revtorpyk-breast-cancer/825280/",
+    "coverage_note": "modest pharma-press coverage",
+    "qwen36_diagnostic_eligible": false,
+    "recycled_from_census": false,
+    "normalized_type": "drug",
+    "recheck_verdict": "clean",
+    "recheck_reason": "string-level null verified at creation: zero pre-2025-07-01 exact-string hits on HN Algolia (date-filtered), GDELT DOC (2017-01..2025-06), Reddit pullpush (before=2025-07-01), GitHub repo search (created<2025-07-01) and a general web probe",
+    "string_checks": {
+     "hn_algolia": {
+      "query": "HN Algolia \"Revtorpyk\" created_at_i<2025-07-01",
+      "pre_window_hits": 0,
+      "fuzzy_nb_hits": 0
+     },
+     "gdelt_doc": {
+      "query": "GDELT DOC \"Revtorpyk\" 2017-01-01..2025-06-30",
+      "pre_window_hits": 0,
+      "articles_scanned": 0
+     },
+     "reddit_pullpush": {
+      "query": "pullpush submission \"Revtorpyk\" before=2025-07-01",
+      "pre_window_hits": 0,
+      "note": null
+     },
+     "github": {
+      "query": "GitHub repo search \"Revtorpyk\" in:name,description; created<2025-07-01",
+      "pre_window_repos": 0,
+      "repos_scanned": 0,
+      "note": null
+     },
+     "web_probe": {
+      "engine": "DuckDuckGo html / Mojeek",
+      "query": "\"Revtorpyk\"",
+      "results_returned": null,
+      "note": "attempted on both engines; html endpoints returned CAPTCHA/403 rate-limit pages during this session, so no general-web probe result is recorded for this entity; the four dated channels (HN, GDELT, Reddit, GitHub) are clean"
+     },
+     "verdict": "strong null (no pre-2025-07 exact-string appearance on any checked surface); not proof of absence"
+    },
+    "admission_note": "S2 drug admission rule: the BRAND name's first public appearance is post-window; questions use the brand name only.",
+    "question_name_policy": "brand name (post-window surface form)"
+   },
+   {
+    "entity": "Trutakna",
+    "stratum": "S2",
+    "batch": 2,
+    "entity_type": "drug",
+    "earliest_appearance": "2026-07-07 (FDA approval of Vera Therapeutics' atacicept for IgA nephropathy — brand name first public at approval)",
+    "release_date": "same as approval",
+    "source_url": "https://www.biopharmadive.com/news/vera-fda-approve-trutakna-IgAN-kidney-disease-atacicept/824620/",
+    "coverage_note": "modest pharma-press coverage",
+    "qwen36_diagnostic_eligible": false,
+    "recycled_from_census": false,
+    "normalized_type": "drug",
+    "recheck_verdict": "clean",
+    "recheck_reason": "string-level null verified at creation: zero pre-2025-07-01 exact-string hits on HN Algolia (date-filtered), GDELT DOC (2017-01..2025-06), Reddit pullpush (before=2025-07-01), GitHub repo search (created<2025-07-01) and a general web probe",
+    "string_checks": {
+     "hn_algolia": {
+      "query": "HN Algolia \"Trutakna\" created_at_i<2025-07-01",
+      "pre_window_hits": 0,
+      "fuzzy_nb_hits": 0
+     },
+     "gdelt_doc": {
+      "query": "GDELT DOC \"Trutakna\" 2017-01-01..2025-06-30",
+      "pre_window_hits": 0,
+      "articles_scanned": 0
+     },
+     "reddit_pullpush": {
+      "query": "pullpush submission \"Trutakna\" before=2025-07-01",
+      "pre_window_hits": 0,
+      "note": null
+     },
+     "github": {
+      "query": "GitHub repo search \"Trutakna\" in:name,description; created<2025-07-01",
+      "pre_window_repos": 0,
+      "repos_scanned": 0,
+      "note": null
+     },
+     "web_probe": {
+      "engine": "DuckDuckGo html / Mojeek",
+      "query": "\"Trutakna\"",
+      "results_returned": null,
+      "note": "attempted on both engines; html endpoints returned CAPTCHA/403 rate-limit pages during this session, so no general-web probe result is recorded for this entity; the four dated channels (HN, GDELT, Reddit, GitHub) are clean"
+     },
+     "verdict": "strong null (no pre-2025-07 exact-string appearance on any checked surface); not proof of absence"
+    },
+    "admission_note": "S2 drug admission rule: the BRAND name's first public appearance is post-window (generic atacicept known earlier); questions use the brand name only.",
+    "question_name_policy": "brand name (post-window surface form)"
+   },
+   {
+    "entity": "Robostral Navigate",
+    "stratum": "S2",
+    "batch": 2,
+    "entity_type": "ai_model",
+    "earliest_appearance": "2026-07-08 (Mistral AI announced the robotics navigation model)",
+    "release_date": "same as announcement",
+    "source_url": "https://mistral.ai/news/robostral-navigate/",
+    "coverage_note": "moderate ML/tech-press coverage",
+    "qwen36_diagnostic_eligible": false,
+    "recycled_from_census": false,
+    "normalized_type": "ai_model",
+    "recheck_verdict": "clean",
+    "recheck_reason": "string-level null verified at creation: zero pre-2025-07-01 exact-string hits on HN Algolia (date-filtered), GDELT DOC (2017-01..2025-06), Reddit pullpush (before=2025-07-01), GitHub repo search (created<2025-07-01) and a general web probe",
+    "string_checks": {
+     "hn_algolia": {
+      "query": "HN Algolia \"Robostral Navigate\" created_at_i<2025-07-01",
+      "pre_window_hits": 0,
+      "fuzzy_nb_hits": 0
+     },
+     "gdelt_doc": {
+      "query": "GDELT DOC \"Robostral Navigate\" 2017-01-01..2025-06-30",
+      "pre_window_hits": 0,
+      "articles_scanned": 0
+     },
+     "reddit_pullpush": {
+      "query": "pullpush submission \"Robostral Navigate\" before=2025-07-01",
+      "pre_window_hits": 0,
+      "note": null
+     },
+     "github": {
+      "query": "GitHub repo search \"Robostral Navigate\" in:name,description; created<2025-07-01",
+      "pre_window_repos": 0,
+      "repos_scanned": 0,
+      "note": null
+     },
+     "web_probe": {
+      "engine": "DuckDuckGo html / Mojeek",
+      "query": "\"Robostral Navigate\"",
+      "results_returned": null,
+      "note": "attempted on both engines; html endpoints returned CAPTCHA/403 rate-limit pages during this session, so no general-web probe result is recorded for this entity; the four dated channels (HN, GDELT, Reddit, GitHub) are clean"
+     },
+     "verdict": "strong null (no pre-2025-07 exact-string appearance on any checked surface); not proof of absence"
+    }
+   },
+   {
+    "entity": "VibeThinker",
+    "stratum": "S2",
+    "batch": 2,
+    "entity_type": "ai_model",
+    "earliest_appearance": "2026-06-23 (public release with an accompanying arXiv report; 3B reasoning model)",
+    "release_date": "same as announcement",
+    "source_url": "https://arxiv.org/abs/2606.16140",
+    "coverage_note": "moderate ML-community coverage",
+    "qwen36_diagnostic_eligible": false,
+    "recycled_from_census": false,
+    "normalized_type": "ai_model",
+    "recheck_verdict": "clean",
+    "recheck_reason": "string-level null verified at creation: zero pre-2025-07-01 exact-string hits on HN Algolia (date-filtered), GDELT DOC (2017-01..2025-06), Reddit pullpush (before=2025-07-01), GitHub repo search (created<2025-07-01) and a general web probe",
+    "string_checks": {
+     "hn_algolia": {
+      "query": "HN Algolia \"VibeThinker\" created_at_i<2025-07-01",
+      "pre_window_hits": 0,
+      "fuzzy_nb_hits": 0
+     },
+     "gdelt_doc": {
+      "query": "GDELT DOC \"VibeThinker\" 2017-01-01..2025-06-30",
+      "pre_window_hits": 0,
+      "articles_scanned": 0
+     },
+     "reddit_pullpush": {
+      "query": "pullpush submission \"VibeThinker\" before=2025-07-01",
+      "pre_window_hits": 0,
+      "note": null
+     },
+     "github": {
+      "query": "GitHub repo search \"VibeThinker\" in:name,description; created<2025-07-01",
+      "pre_window_repos": 0,
+      "repos_scanned": 30,
+      "note": null
+     },
+     "web_probe": {
+      "engine": "DuckDuckGo html / Mojeek",
+      "query": "\"VibeThinker\"",
+      "results_returned": null,
+      "note": "attempted on both engines; html endpoints returned CAPTCHA/403 rate-limit pages during this session, so no general-web probe result is recorded for this entity; the four dated channels (HN, GDELT, Reddit, GitHub) are clean"
+     },
+     "verdict": "strong null (no pre-2025-07 exact-string appearance on any checked surface); not proof of absence"
+    }
+   },
+   {
+    "entity": "MiMo-v2.5-Pro-UltraSpeed",
+    "stratum": "S2",
+    "batch": 2,
+    "entity_type": "ai_model",
+    "earliest_appearance": "2026-06-08 (Xiaomi MiMo blog post announcing the 1T-parameter high-throughput model)",
+    "release_date": "same as announcement",
+    "source_url": "https://mimo.xiaomi.com/blog/mimo-tilert-1000tps",
+    "coverage_note": "moderate ML-press coverage",
+    "qwen36_diagnostic_eligible": false,
+    "recycled_from_census": false,
+    "normalized_type": "ai_model",
+    "recheck_verdict": "clean",
+    "recheck_reason": "string-level null verified at creation: zero pre-2025-07-01 exact-string hits on HN Algolia (date-filtered), GDELT DOC (2017-01..2025-06), Reddit pullpush (before=2025-07-01), GitHub repo search (created<2025-07-01) and a general web probe",
+    "string_checks": {
+     "hn_algolia": {
+      "query": "HN Algolia \"MiMo-v2.5-Pro-UltraSpeed\" created_at_i<2025-07-01",
+      "pre_window_hits": 0,
+      "fuzzy_nb_hits": 0
+     },
+     "gdelt_doc": {
+      "query": "GDELT DOC \"MiMo-v2.5-Pro-UltraSpeed\" 2017-01-01..2025-06-30",
+      "pre_window_hits": 0,
+      "articles_scanned": 0
+     },
+     "reddit_pullpush": {
+      "query": "pullpush submission \"MiMo v2.5 Pro\" before=2025-07-01",
+      "pre_window_hits": 0,
+      "note": "pullpush rejected the punctuated string (HTTP 400); queried \"MiMo v2.5 Pro\""
+     },
+     "github": {
+      "query": "GitHub repo search \"MiMo-v2.5-Pro-UltraSpeed\" in:name,description; created<2025-07-01",
+      "pre_window_repos": 0,
+      "repos_scanned": 7,
+      "note": null
+     },
+     "web_probe": {
+      "engine": "DuckDuckGo html / Mojeek",
+      "query": "\"MiMo-v2.5-Pro-UltraSpeed\"",
+      "results_returned": null,
+      "note": "attempted on both engines; html endpoints returned CAPTCHA/403 rate-limit pages during this session, so no general-web probe result is recorded for this entity; the four dated channels (HN, GDELT, Reddit, GitHub) are clean"
+     },
+     "verdict": "strong null (no pre-2025-07 exact-string appearance on any checked surface); not proof of absence"
+    }
+   },
+   {
+    "entity": "Bonsai 27B",
+    "stratum": "S2",
+    "batch": 2,
+    "entity_type": "ai_model",
+    "earliest_appearance": "2026-07-14 (PrismML announcement of a 27B-class model that runs on a phone)",
+    "release_date": "same as announcement",
+    "source_url": "https://prismml.com/news/bonsai-27b",
+    "coverage_note": "moderate ML-community coverage",
+    "qwen36_diagnostic_eligible": false,
+    "recycled_from_census": false,
+    "normalized_type": "ai_model",
+    "recheck_verdict": "clean",
+    "recheck_reason": "string-level null verified at creation: zero pre-2025-07-01 exact-string hits on HN Algolia (date-filtered), GDELT DOC (2017-01..2025-06), Reddit pullpush (before=2025-07-01), GitHub repo search (created<2025-07-01) and a general web probe",
+    "string_checks": {
+     "hn_algolia": {
+      "query": "HN Algolia \"Bonsai 27B\" created_at_i<2025-07-01",
+      "pre_window_hits": 0,
+      "fuzzy_nb_hits": 0
+     },
+     "gdelt_doc": {
+      "query": "GDELT DOC \"Bonsai 27B\" 2017-01-01..2025-06-30",
+      "pre_window_hits": 0,
+      "articles_scanned": 0
+     },
+     "reddit_pullpush": {
+      "query": "pullpush submission \"Bonsai 27B\" before=2025-07-01",
+      "pre_window_hits": 0,
+      "note": null
+     },
+     "github": {
+      "query": "GitHub repo search \"Bonsai 27B\" in:name,description; created<2025-07-01",
+      "pre_window_repos": 0,
+      "repos_scanned": 30,
+      "note": null
+     },
+     "web_probe": {
+      "engine": "DuckDuckGo html / Mojeek",
+      "query": "\"Bonsai 27B\"",
+      "results_returned": null,
+      "note": "attempted on both engines; html endpoints returned CAPTCHA/403 rate-limit pages during this session, so no general-web probe result is recorded for this entity; the four dated channels (HN, GDELT, Reddit, GitHub) are clean"
+     },
+     "verdict": "strong null (no pre-2025-07 exact-string appearance on any checked surface); not proof of absence"
+    }
+   },
+   {
+    "entity": "MAI-Code-1-Flash",
+    "stratum": "S2",
+    "batch": 2,
+    "entity_type": "ai_model",
+    "earliest_appearance": "2026-06-02 (Microsoft AI announcement of the coding model)",
+    "release_date": "same as announcement",
+    "source_url": "https://microsoft.ai/news/introducingmai-code-1-flash/",
+    "coverage_note": "moderate developer/tech-press coverage",
+    "qwen36_diagnostic_eligible": false,
+    "recycled_from_census": false,
+    "normalized_type": "ai_model",
+    "recheck_verdict": "clean",
+    "recheck_reason": "string-level null verified at creation: zero pre-2025-07-01 exact-string hits on HN Algolia (date-filtered), GDELT DOC (2017-01..2025-06), Reddit pullpush (before=2025-07-01), GitHub repo search (created<2025-07-01) and a general web probe",
+    "string_checks": {
+     "hn_algolia": {
+      "query": "HN Algolia \"MAI-Code-1-Flash\" created_at_i<2025-07-01",
+      "pre_window_hits": 0,
+      "fuzzy_nb_hits": 0
+     },
+     "gdelt_doc": {
+      "query": "GDELT DOC \"MAI-Code-1-Flash\" 2017-01-01..2025-06-30",
+      "pre_window_hits": 0,
+      "articles_scanned": 0
+     },
+     "reddit_pullpush": {
+      "query": "pullpush submission \"MAI Code 1 Flash\" before=2025-07-01",
+      "pre_window_hits": 0,
+      "note": "pullpush rejected the punctuated string (HTTP 400); queried \"MAI Code 1 Flash\""
+     },
+     "github": {
+      "query": "GitHub repo search \"MAI-Code-1-Flash\" in:name,description; created<2025-07-01",
+      "pre_window_repos": 0,
+      "repos_scanned": 4,
+      "note": null
+     },
+     "web_probe": {
+      "engine": "DuckDuckGo html / Mojeek",
+      "query": "\"MAI-Code-1-Flash\"",
+      "results_returned": null,
+      "note": "attempted on both engines; html endpoints returned CAPTCHA/403 rate-limit pages during this session, so no general-web probe result is recorded for this entity; the four dated channels (HN, GDELT, Reddit, GitHub) are clean"
+     },
+     "verdict": "strong null (no pre-2025-07 exact-string appearance on any checked surface); not proof of absence"
+    }
+   },
+   {
+    "entity": "Flux 3 X Mimic",
+    "stratum": "S2",
+    "batch": 2,
+    "entity_type": "ai_model",
+    "earliest_appearance": "2026-07-24 (Black Forest Labs announcement of a video-action model generation)",
+    "release_date": "same as announcement",
+    "source_url": "https://bfl.ai/blog/flux-3-mimic",
+    "coverage_note": "moderate ML-press coverage",
+    "qwen36_diagnostic_eligible": false,
+    "recycled_from_census": false,
+    "normalized_type": "ai_model",
+    "recheck_verdict": "clean",
+    "recheck_reason": "string-level null verified at creation: zero pre-2025-07-01 exact-string hits on HN Algolia (date-filtered), GDELT DOC (2017-01..2025-06), Reddit pullpush (before=2025-07-01), GitHub repo search (created<2025-07-01) and a general web probe",
+    "string_checks": {
+     "hn_algolia": {
+      "query": "HN Algolia \"Flux 3 X Mimic\" created_at_i<2025-07-01",
+      "pre_window_hits": 0,
+      "fuzzy_nb_hits": 0
+     },
+     "gdelt_doc": {
+      "query": "GDELT DOC \"Flux 3 X Mimic\" 2017-01-01..2025-06-30",
+      "pre_window_hits": 0,
+      "articles_scanned": 0
+     },
+     "reddit_pullpush": {
+      "query": "pullpush submission \"Flux 3 X Mimic\" before=2025-07-01",
+      "pre_window_hits": 0,
+      "note": null
+     },
+     "github": {
+      "query": "GitHub repo search \"Flux 3 X Mimic\" in:name,description; created<2025-07-01",
+      "pre_window_repos": 0,
+      "repos_scanned": 0,
+      "note": null
+     },
+     "web_probe": {
+      "engine": "DuckDuckGo html / Mojeek",
+      "query": "\"Flux 3 X Mimic\"",
+      "results_returned": null,
+      "note": "attempted on both engines; html endpoints returned CAPTCHA/403 rate-limit pages during this session, so no general-web probe result is recorded for this entity; the four dated channels (HN, GDELT, Reddit, GitHub) are clean"
+     },
+     "verdict": "strong null (no pre-2025-07 exact-string appearance on any checked surface); not proof of absence"
+    }
+   },
+   {
+    "entity": "MemPalace",
+    "stratum": "S2",
+    "batch": 2,
+    "entity_type": "software",
+    "earliest_appearance": "2026-04-05 (public repository created; open-source AI memory system)",
+    "release_date": "same as repository creation",
+    "source_url": "https://github.com/MemPalace/mempalace",
+    "coverage_note": "heavy developer-community adoption (tens of thousands of GitHub stars within months)",
+    "qwen36_diagnostic_eligible": false,
+    "recycled_from_census": false,
+    "normalized_type": "software",
+    "recheck_verdict": "clean",
+    "recheck_reason": "string-level null verified at creation: zero pre-2025-07-01 exact-string hits on HN Algolia (date-filtered), GDELT DOC (2017-01..2025-06), Reddit pullpush (before=2025-07-01), GitHub repo search (created<2025-07-01) and a general web probe",
+    "string_checks": {
+     "hn_algolia": {
+      "query": "HN Algolia \"MemPalace\" created_at_i<2025-07-01",
+      "pre_window_hits": 0,
+      "fuzzy_nb_hits": 0
+     },
+     "gdelt_doc": {
+      "query": "GDELT DOC \"MemPalace\" 2017-01-01..2025-06-30",
+      "pre_window_hits": 0,
+      "articles_scanned": 0
+     },
+     "reddit_pullpush": {
+      "query": "pullpush submission \"MemPalace\" before=2025-07-01",
+      "pre_window_hits": 0,
+      "note": null
+     },
+     "github": {
+      "query": "GitHub repo search \"MemPalace\" in:name,description; created<2025-07-01",
+      "pre_window_repos": 0,
+      "repos_scanned": 30,
+      "note": null
+     },
+     "web_probe": {
+      "engine": "DuckDuckGo html / Mojeek",
+      "query": "\"MemPalace\"",
+      "results_returned": null,
+      "note": "attempted on both engines; html endpoints returned CAPTCHA/403 rate-limit pages during this session, so no general-web probe result is recorded for this entity; the four dated channels (HN, GDELT, Reddit, GitHub) are clean"
+     },
+     "verdict": "strong null (no pre-2025-07 exact-string appearance on any checked surface); not proof of absence"
+    }
+   },
+   {
+    "entity": "OpenMontage",
+    "stratum": "S2",
+    "batch": 2,
+    "entity_type": "software",
+    "earliest_appearance": "2026-03-29 (public repository created; agentic video-production system)",
+    "release_date": "same as repository creation",
+    "source_url": "https://github.com/calesthio/OpenMontage",
+    "coverage_note": "heavy developer-community adoption (tens of thousands of GitHub stars within months)",
+    "qwen36_diagnostic_eligible": false,
+    "recycled_from_census": false,
+    "normalized_type": "software",
+    "recheck_verdict": "clean",
+    "recheck_reason": "string-level null verified at creation: zero pre-2025-07-01 exact-string hits on HN Algolia (date-filtered), GDELT DOC (2017-01..2025-06), Reddit pullpush (before=2025-07-01), GitHub repo search (created<2025-07-01) and a general web probe",
+    "string_checks": {
+     "hn_algolia": {
+      "query": "HN Algolia \"OpenMontage\" created_at_i<2025-07-01",
+      "pre_window_hits": 0,
+      "fuzzy_nb_hits": 0
+     },
+     "gdelt_doc": {
+      "query": "GDELT DOC \"OpenMontage\" 2017-01-01..2025-06-30",
+      "pre_window_hits": 0,
+      "articles_scanned": 0
+     },
+     "reddit_pullpush": {
+      "query": "pullpush submission \"OpenMontage\" before=2025-07-01",
+      "pre_window_hits": 0,
+      "note": null
+     },
+     "github": {
+      "query": "GitHub repo search \"OpenMontage\" in:name,description; created<2025-07-01",
+      "pre_window_repos": 0,
+      "repos_scanned": 30,
+      "note": null
+     },
+     "web_probe": {
+      "engine": "DuckDuckGo html / Mojeek",
+      "query": "\"OpenMontage\"",
+      "results_returned": null,
+      "note": "attempted on both engines; html endpoints returned CAPTCHA/403 rate-limit pages during this session, so no general-web probe result is recorded for this entity; the four dated channels (HN, GDELT, Reddit, GitHub) are clean"
+     },
+     "verdict": "strong null (no pre-2025-07 exact-string appearance on any checked surface); not proof of absence"
+    }
+   },
+   {
+    "entity": "ZeroClaw",
+    "stratum": "S2",
+    "batch": 2,
+    "entity_type": "software",
+    "earliest_appearance": "2026-02-13 (public repository created; autonomous personal-assistant infrastructure)",
+    "release_date": "same as repository creation",
+    "source_url": "https://github.com/zeroclaw-labs/zeroclaw",
+    "coverage_note": "heavy developer-community adoption (tens of thousands of GitHub stars within months)",
+    "qwen36_diagnostic_eligible": false,
+    "recycled_from_census": false,
+    "normalized_type": "software",
+    "recheck_verdict": "clean",
+    "recheck_reason": "string-level null verified at creation: zero pre-2025-07-01 exact-string hits on HN Algolia (date-filtered), GDELT DOC (2017-01..2025-06), Reddit pullpush (before=2025-07-01), GitHub repo search (created<2025-07-01) and a general web probe",
+    "string_checks": {
+     "hn_algolia": {
+      "query": "HN Algolia \"ZeroClaw\" created_at_i<2025-07-01",
+      "pre_window_hits": 0,
+      "fuzzy_nb_hits": 0
+     },
+     "gdelt_doc": {
+      "query": "GDELT DOC \"ZeroClaw\" 2017-01-01..2025-06-30",
+      "pre_window_hits": 0,
+      "articles_scanned": 0
+     },
+     "reddit_pullpush": {
+      "query": "pullpush submission \"ZeroClaw\" before=2025-07-01",
+      "pre_window_hits": 0,
+      "note": null
+     },
+     "github": {
+      "query": "GitHub repo search \"ZeroClaw\" in:name,description; created<2025-07-01",
+      "pre_window_repos": 0,
+      "repos_scanned": 30,
+      "note": null
+     },
+     "web_probe": {
+      "engine": "DuckDuckGo html / Mojeek",
+      "query": "\"ZeroClaw\"",
+      "results_returned": null,
+      "note": "attempted on both engines; html endpoints returned CAPTCHA/403 rate-limit pages during this session, so no general-web probe result is recorded for this entity; the four dated channels (HN, GDELT, Reddit, GitHub) are clean"
+     },
+     "verdict": "strong null (no pre-2025-07 exact-string appearance on any checked surface); not proof of absence"
+    }
+   },
+   {
+    "entity": "LM Studio Bionic",
+    "stratum": "S2",
+    "batch": 2,
+    "entity_type": "software",
+    "earliest_appearance": "2026-07-16 (LM Studio announcement of its agent for open models)",
+    "release_date": "same as announcement",
+    "source_url": "https://lmstudio.ai/blog/introducing-lm-studio-bionic",
+    "coverage_note": "moderate developer-press coverage",
+    "qwen36_diagnostic_eligible": false,
+    "recycled_from_census": false,
+    "normalized_type": "software",
+    "recheck_verdict": "clean",
+    "recheck_reason": "string-level null verified at creation: zero pre-2025-07-01 exact-string hits on HN Algolia (date-filtered), GDELT DOC (2017-01..2025-06), Reddit pullpush (before=2025-07-01), GitHub repo search (created<2025-07-01) and a general web probe",
+    "string_checks": {
+     "hn_algolia": {
+      "query": "HN Algolia \"LM Studio Bionic\" created_at_i<2025-07-01",
+      "pre_window_hits": 0,
+      "fuzzy_nb_hits": 0
+     },
+     "gdelt_doc": {
+      "query": "GDELT DOC \"LM Studio Bionic\" 2017-01-01..2025-06-30",
+      "pre_window_hits": 0,
+      "articles_scanned": 0
+     },
+     "reddit_pullpush": {
+      "query": "pullpush submission \"LM Studio Bionic\" before=2025-07-01",
+      "pre_window_hits": 0,
+      "note": null
+     },
+     "github": {
+      "query": "GitHub repo search \"LM Studio Bionic\" in:name,description; created<2025-07-01",
+      "pre_window_repos": 0,
+      "repos_scanned": 2,
+      "note": null
+     },
+     "web_probe": {
+      "engine": "DuckDuckGo html / Mojeek",
+      "query": "\"LM Studio Bionic\"",
+      "results_returned": null,
+      "note": "attempted on both engines; html endpoints returned CAPTCHA/403 rate-limit pages during this session, so no general-web probe result is recorded for this entity; the four dated channels (HN, GDELT, Reddit, GitHub) are clean"
+     },
+     "verdict": "strong null (no pre-2025-07 exact-string appearance on any checked surface); not proof of absence"
+    }
+   }
+  ],
+  "S3": [
+   {
+    "entity": "GPT-5",
+    "entity_type": "AI model",
+    "earliest_appearance": "2025-02-12 (named in OpenAI/Altman public roadmap)",
+    "release_date": "2025-08-07",
+    "source_url": "https://en.wikipedia.org/wiki/GPT-5",
+    "recycled_from_census": true,
+    "census_id": "temp_postcutoff_0",
+    "stratum": "S3",
+    "coverage_note": "recycled from old census; named pre-window with substantial coverage, released post-window",
+    "qwen36_diagnostic_eligible": false,
+    "normalized_type": "ai_model"
+   },
+   {
+    "entity": "xAI Grok 4",
+    "entity_type": "AI model",
+    "earliest_appearance": "2025-04-10 (Musk publicly hinted at Grok 4 in a livestream)",
+    "release_date": "2025-07-09/10",
+    "source_url": "https://en.wikipedia.org/wiki/Grok_(chatbot)",
+    "recycled_from_census": true,
+    "census_id": "temp_postcutoff_38",
+    "stratum": "S3",
+    "coverage_note": "recycled from old census; named pre-window with substantial coverage, released post-window",
+    "qwen36_diagnostic_eligible": false,
+    "normalized_type": "ai_model"
+   },
+   {
+    "entity": "Apple M5",
+    "entity_type": "chip",
+    "earliest_appearance": "2025-02-05 (mass-production coverage naming M5; supply-chain rumors from 2024)",
+    "release_date": "2025-10-15 (announced; on sale 2025-10-22)",
+    "source_url": "https://www.macrumors.com/2025/02/05/apple-silicon-m5-chip-enters-mass-production/",
+    "recycled_from_census": true,
+    "census_id": "temp_postcutoff_4",
+    "stratum": "S3",
+    "coverage_note": "recycled from old census; named pre-window with substantial coverage, released post-window",
+    "qwen36_diagnostic_eligible": false,
+    "normalized_type": "chip"
+   },
+   {
+    "entity": "Intel Panther Lake",
+    "entity_type": "CPU platform (codename)",
+    "earliest_appearance": "public on Intel roadmaps since 2023; 18A Panther Lake sample publicly handed to Lenovo 2024-10",
+    "release_date": "2026-01 (launched at CES as Core Ultra Series 3)",
+    "source_url": "https://www.electropages.com/blog/2024/10/intel-ceo-pat-gelsinger-hands-over-first-18a-panther-lake-sample-lenovo",
+    "recycled_from_census": true,
+    "census_id": "temp_postcutoff_53",
+    "stratum": "S3",
+    "coverage_note": "recycled from old census; named pre-window with substantial coverage, released post-window",
+    "qwen36_diagnostic_eligible": false,
+    "normalized_type": "cpu_platform"
+   },
+   {
+    "entity": "Nvidia Vera Rubin (VR200 platform)",
+    "stratum": "S3",
+    "entity_type": "chip/AI hardware",
+    "earliest_appearance": "2025-03-18 (Jensen Huang unveiled Vera Rubin at GTC 2025 keynote)",
+    "release_date": "scheduled 2026-H2 (full production announced CES 2026)",
+    "source_url": "https://www.cnbc.com/2025/03/18/nvidia-announces-blackwell-ultra-and-vera-rubin-ai-chips-.html",
+    "coverage_note": "high — heavy financial and tech press coverage",
+    "qwen36_diagnostic_eligible": false,
+    "recycled_from_census": false,
+    "normalized_type": "chip/ai_hardware"
+   },
+   {
+    "entity": "Android 16",
+    "entity_type": "operating system",
+    "earliest_appearance": "2024-11-19 (first Developer Preview)",
+    "release_date": "2025-06-10",
+    "source_url": "https://android-developers.googleblog.com/2024/11/the-first-developer-preview-android16.html",
+    "recycled_from_census": true,
+    "census_id": "temp_postcutoff_6",
+    "stratum": "S3",
+    "coverage_note": "recycled from old census; named pre-window with substantial coverage, released post-window",
+    "qwen36_diagnostic_eligible": false,
+    "normalized_type": "operating_system"
+   },
+   {
+    "entity": "Nintendo Switch 2",
+    "entity_type": "game console",
+    "earliest_appearance": "2025-01-16 (official announcement)",
+    "release_date": "2025-06-05",
+    "source_url": "https://www.nintendo.co.jp/corporate/release/en/2025/250116.html",
+    "recycled_from_census": true,
+    "census_id": "temp_postcutoff_22",
+    "stratum": "S3",
+    "coverage_note": "recycled from old census; named pre-window with substantial coverage, released post-window",
+    "qwen36_diagnostic_eligible": false,
+    "normalized_type": "game_console"
+   },
+   {
+    "entity": "Apple iPhone 17 Pro",
+    "entity_type": "smartphone",
+    "earliest_appearance": "2024 (widespread named rumor coverage, e.g. MacRumors iPhone 17 Pro roundup)",
+    "release_date": "2025-09-09 (announced; on sale 2025-09-19)",
+    "source_url": "https://www.macrumors.com/roundup/iphone-17-pro/",
+    "recycled_from_census": true,
+    "census_id": "temp_postcutoff_51",
+    "stratum": "S3",
+    "coverage_note": "recycled from old census; named pre-window with substantial coverage, released post-window",
+    "qwen36_diagnostic_eligible": false,
+    "normalized_type": "smartphone"
+   },
+   {
+    "entity": "Samsung Galaxy Z Fold 7",
+    "entity_type": "smartphone",
+    "earliest_appearance": "2025-05 (CAD render leaks; model numbers leaked in One UI 7 beta in late 2024)",
+    "release_date": "2025-07-09 (Unpacked; on sale 2025-07-25)",
+    "source_url": "https://www.theshortcut.com/p/samsung-galaxy-z-fold-7-cad-renders-thickness-leak",
+    "recycled_from_census": true,
+    "census_id": "temp_postcutoff_54",
+    "stratum": "S3",
+    "coverage_note": "recycled from old census; named pre-window with substantial coverage, released post-window",
+    "qwen36_diagnostic_eligible": false,
+    "normalized_type": "smartphone"
+   },
+   {
+    "entity": "Death Stranding 2: On the Beach",
+    "entity_type": "video game",
+    "earliest_appearance": "2022-12 (announced at The Game Awards 2022; subtitle revealed early 2025)",
+    "release_date": "2025-06-26",
+    "source_url": "https://www.kojimaproductions.jp/en/deathstranding2_otb_new_trailer",
+    "recycled_from_census": true,
+    "census_id": "temp_postcutoff_11",
+    "stratum": "S3",
+    "coverage_note": "recycled from old census; named pre-window with substantial coverage, released post-window",
+    "qwen36_diagnostic_eligible": false,
+    "normalized_type": "video_game"
+   },
+   {
+    "entity": "Mario Kart World",
+    "entity_type": "video game",
+    "earliest_appearance": "2025-04-02 (Nintendo Direct announcement and trailer)",
+    "release_date": "2025-06-05",
+    "source_url": "https://www.nintendo.com/us/whatsnew/mario-kart-world-direct-revs-up-new-details-on-the-biggest-mario-kart-ever-coming-to-nintendo-switch-2-at-launch/",
+    "recycled_from_census": true,
+    "census_id": "temp_postcutoff_12",
+    "stratum": "S3",
+    "coverage_note": "recycled from old census; named pre-window with substantial coverage, released post-window",
+    "qwen36_diagnostic_eligible": false,
+    "normalized_type": "video_game"
+   },
+   {
+    "entity": "Ghost of Yotei",
+    "entity_type": "video game",
+    "earliest_appearance": "2024-09-24 (State of Play announcement)",
+    "release_date": "2025-10-02",
+    "source_url": "https://www.gamespot.com/articles/ghost-of-yotei-release-date-trailer-news/1100-6526691/",
+    "recycled_from_census": true,
+    "census_id": "temp_postcutoff_13",
+    "stratum": "S3",
+    "coverage_note": "recycled from old census; named pre-window with substantial coverage, released post-window",
+    "qwen36_diagnostic_eligible": false,
+    "normalized_type": "video_game"
+   },
+   {
+    "entity": "Hollow Knight: Silksong",
+    "entity_type": "video game",
+    "earliest_appearance": "2019-02 (announcement)",
+    "release_date": "2025-09-04",
+    "source_url": "https://www.rollingstone.com/culture/rs-gaming/hollow-knight-silksong-game-release-date-1235402646/",
+    "recycled_from_census": true,
+    "census_id": "temp_postcutoff_19",
+    "stratum": "S3",
+    "coverage_note": "recycled from old census; named pre-window with substantial coverage, released post-window",
+    "qwen36_diagnostic_eligible": false,
+    "normalized_type": "video_game"
+   },
+   {
+    "entity": "Grand Theft Auto VI",
+    "entity_type": "video game",
+    "earliest_appearance": "2023-12-04 (first trailer; development confirmed February 2022)",
+    "release_date": "2026 (scheduled)",
+    "source_url": "https://www.axios.com/2023/12/05/grand-theft-auto-vi-trailer-early",
+    "recycled_from_census": true,
+    "census_id": "temp_postcutoff_23",
+    "stratum": "S3",
+    "coverage_note": "recycled from old census; named pre-window with substantial coverage, released post-window",
+    "qwen36_diagnostic_eligible": false,
+    "normalized_type": "video_game"
+   },
+   {
+    "entity": "Pokémon Legends: Z-A",
+    "entity_type": "video game",
+    "earliest_appearance": "2024-02-27 (Pokémon Day announcement)",
+    "release_date": "2025-10-16",
+    "source_url": "https://press.pokemon.com/en/Release-Date-for-Pokemon-Legends-Z-A-Revealed-and-Pokemon-Presents-Vid",
+    "recycled_from_census": true,
+    "census_id": "temp_postcutoff_24",
+    "stratum": "S3",
+    "coverage_note": "recycled from old census; named pre-window with substantial coverage, released post-window",
+    "qwen36_diagnostic_eligible": false,
+    "normalized_type": "video_game"
+   },
+   {
+    "entity": "Borderlands 4",
+    "entity_type": "video game",
+    "earliest_appearance": "2024-08-20 (gamescom reveal)",
+    "release_date": "2025-09-12",
+    "source_url": "https://newsroom.2k.com/news/borderlandsr-4-coming-in-2025",
+    "recycled_from_census": true,
+    "census_id": "temp_postcutoff_46",
+    "stratum": "S3",
+    "coverage_note": "recycled from old census; named pre-window with substantial coverage, released post-window",
+    "qwen36_diagnostic_eligible": false,
+    "normalized_type": "video_game"
+   },
+   {
+    "entity": "Onimusha: Way of the Sword",
+    "entity_type": "video game",
+    "earliest_appearance": "2024-12-12 (revealed at The Game Awards 2024)",
+    "release_date": "2026-09 (scheduled)",
+    "source_url": "https://blog.playstation.com/2024/12/12/capcoms-onimusha-series-reawakens-with-onimusha-way-of-the-sword-in-2026/",
+    "recycled_from_census": true,
+    "census_id": "temp_postcutoff_41",
+    "stratum": "S3",
+    "coverage_note": "recycled from old census; named pre-window with substantial coverage, released post-window",
+    "qwen36_diagnostic_eligible": false,
+    "normalized_type": "video_game"
+   },
+   {
+    "entity": "Wicked: For Good",
+    "entity_type": "film",
+    "earliest_appearance": "2024-12-16 (title announced; two-part project public since April 2022)",
+    "release_date": "2025-11-21",
+    "source_url": "https://variety.com/2024/film/news/wicked-2-title-for-good-1236250920/",
+    "recycled_from_census": true,
+    "census_id": "temp_postcutoff_14",
+    "stratum": "S3",
+    "coverage_note": "recycled from old census; named pre-window with substantial coverage, released post-window",
+    "qwen36_diagnostic_eligible": false,
+    "normalized_type": "film"
+   },
+   {
+    "entity": "Avengers: Doomsday",
+    "entity_type": "film",
+    "earliest_appearance": "2024-07-27 (title announced at San Diego Comic-Con)",
+    "release_date": "2026-12 (scheduled)",
+    "source_url": "https://www.marvel.com/articles/live-events/sdcc-2024-robert-downey-jr-doom-avengers-doomsday-marvel-studios-hall-h-panel",
+    "recycled_from_census": true,
+    "census_id": "temp_postcutoff_16",
+    "stratum": "S3",
+    "coverage_note": "recycled from old census; named pre-window with substantial coverage, released post-window",
+    "qwen36_diagnostic_eligible": false,
+    "normalized_type": "film"
+   },
+   {
+    "entity": "Avatar: Fire and Ash",
+    "entity_type": "film",
+    "earliest_appearance": "2024-08-09 (title announced at D23)",
+    "release_date": "2025-12-19",
+    "source_url": "https://variety.com/2024/film/news/avatar-3-fire-and-ash-title-1236102226",
+    "recycled_from_census": true,
+    "census_id": "temp_postcutoff_17",
+    "stratum": "S3",
+    "coverage_note": "recycled from old census; named pre-window with substantial coverage, released post-window",
+    "qwen36_diagnostic_eligible": false,
+    "normalized_type": "film"
+   },
+   {
+    "entity": "Jurassic World Rebirth",
+    "entity_type": "film",
+    "earliest_appearance": "2024-08-29 (title and logo revealed)",
+    "release_date": "2025-07-02",
+    "source_url": "https://screenrant.com/jurassic-world-4-news-release-date-cast-story/",
+    "recycled_from_census": true,
+    "census_id": "temp_postcutoff_45",
+    "stratum": "S3",
+    "coverage_note": "recycled from old census; named pre-window with substantial coverage, released post-window",
+    "qwen36_diagnostic_eligible": false,
+    "normalized_type": "film"
+   },
+   {
+    "entity": "Project Hail Mary",
+    "entity_type": "film (adaptation of 2021 novel)",
+    "earliest_appearance": "2021 (source novel; film adaptation publicly in development since ~2020, first trailer 2025-06-30)",
+    "release_date": "2026-03-20",
+    "source_url": "https://www.space.com/entertainment/space-movies-shows/project-hail-mary-release-date-plot-cast-and-everything-we-know-about-ryan-goslings-mission-to-save-the-world",
+    "recycled_from_census": true,
+    "census_id": "temp_postcutoff_15",
+    "stratum": "S3",
+    "coverage_note": "recycled from old census; named pre-window with substantial coverage, released post-window",
+    "qwen36_diagnostic_eligible": false,
+    "normalized_type": "film"
+   },
+   {
+    "entity": "PCIe 7.0 specification",
+    "stratum": "S3",
+    "entity_type": "standard",
+    "earliest_appearance": "2022-06-21 (PCI-SIG announced PCIe 7.0 development targeting 128 GT/s)",
+    "release_date": "2025-06-11",
+    "source_url": "https://www.businesswire.com/news/home/20250611299049/en/PCI-SIG-Releases-PCIe-7.0-Specification-to-Support-the-Bandwidth-Demands-of-Artificial-Intelligence-at-128.0-GTs-Transfer-Rates",
+    "coverage_note": "medium — trade/tech press (Tom's Hardware, HPCwire), not mainstream",
+    "qwen36_diagnostic_eligible": false,
+    "recycled_from_census": false,
+    "normalized_type": "standard"
+   },
+   {
+    "entity": "Wi-Fi 8 (IEEE 802.11bn Ultra High Reliability)",
+    "stratum": "S3",
+    "entity_type": "standard",
+    "earliest_appearance": "2023-07-01 (IEEE 802.11 UHR study group formed; 'Wi-Fi 8' named in vendor whitepapers/press well before 2025)",
+    "release_date": "scheduled 2028 (IEEE final approval ~mid/late 2028; Wi-Fi Alliance certification targeted January 2028)",
+    "source_url": "https://wifinowglobal.com/news-blog/wi-fi-8-standard-on-track-for-completion-in-1h2028-with-certification-scheduled-for-january-2028/",
+    "coverage_note": "medium — networking trade press plus periodic mainstream tech explainers",
+    "qwen36_diagnostic_eligible": false,
+    "recycled_from_census": false,
+    "normalized_type": "standard"
+   },
+   {
+    "entity": "EU AI Act general-purpose AI (GPAI) obligations",
+    "stratum": "S3",
+    "entity_type": "regulation",
+    "earliest_appearance": "2024-03-13 (European Parliament adopted the AI Act; GPAI chapter and 2 Aug 2025 date fixed in the text)",
+    "release_date": "2025-08-02",
+    "source_url": "https://artificialintelligenceact.eu/implementation-timeline/",
+    "coverage_note": "high — broad policy, legal and tech press",
+    "qwen36_diagnostic_eligible": false,
+    "recycled_from_census": false,
+    "normalized_type": "regulation"
+   },
+   {
+    "entity": "Windows 10 end of support",
+    "stratum": "S3",
+    "entity_type": "software lifecycle event",
+    "earliest_appearance": "2021-07-01 (Microsoft formally published the 14 October 2025 end-of-support date)",
+    "release_date": "2025-10-14",
+    "source_url": "https://learn.microsoft.com/en-us/lifecycle/announcements/october-14-2025-products-end-of-support",
+    "coverage_note": "high — sustained mainstream and enterprise IT coverage",
+    "qwen36_diagnostic_eligible": false,
+    "recycled_from_census": false,
+    "normalized_type": "software_lifecycle_event"
+   },
+   {
+    "entity": "Stranger Things season 5",
+    "stratum": "S3",
+    "entity_type": "TV series",
+    "earliest_appearance": "2022-02-17 (Netflix announced season 5 as the final season)",
+    "release_date": "2025-11-26 (Vol. 1; Vol. 2 2025-12-25, finale 2025-12-31)",
+    "source_url": "https://en.wikipedia.org/wiki/Stranger_Things_season_5",
+    "coverage_note": "very high — global entertainment press",
+    "qwen36_diagnostic_eligible": false,
+    "recycled_from_census": false,
+    "normalized_type": "tv_series"
+   },
+   {
+    "entity": "Grand Egyptian Museum (full opening)",
+    "stratum": "S3",
+    "entity_type": "venue",
+    "earliest_appearance": "2002-02-05 (foundation stone laid; project announced and covered for two decades, partial trial opening 2023)",
+    "release_date": "2025-11-01 (grand opening ceremony; full public opening 2025-11-04)",
+    "source_url": "https://www.archdaily.com/1035595/the-grand-egyptian-museum-fully-opens-completing-gizas-new-cultural-landmark",
+    "coverage_note": "very high; global press over 20+ years of delays",
+    "qwen36_diagnostic_eligible": false,
+    "recycled_from_census": false,
+    "normalized_type": "venue"
+   },
+   {
+    "entity": "2026 Winter Olympics (Milano Cortina)",
+    "stratum": "S3",
+    "entity_type": "sports event",
+    "earliest_appearance": "2019-06-24 (IOC awarded Games to Milan-Cortina)",
+    "release_date": "2026-02-06 (opening ceremony; Games ran 6-22 Feb 2026)",
+    "source_url": "https://en.wikipedia.org/wiki/2026_Winter_Olympics",
+    "coverage_note": "very high; global coverage since 2019 award",
+    "qwen36_diagnostic_eligible": false,
+    "recycled_from_census": false,
+    "normalized_type": "sports_event"
+   },
+   {
+    "entity": "Tesla Cybercab",
+    "stratum": "S3",
+    "entity_type": "vehicle",
+    "earliest_appearance": "2024-10-10 (unveiled as two-seat autonomous robotaxi at Tesla 'We, Robot' event, prototypes gave rides)",
+    "release_date": "2026-04 (continuous production began at Giga Texas; first production unit built February 2026)",
+    "source_url": "https://insideevs.com/news/778232/tesla-cybercab-production-april-2026/",
+    "coverage_note": "very heavy global coverage at Oct 2024 unveil and at each production-timeline update",
+    "qwen36_diagnostic_eligible": false,
+    "recycled_from_census": false,
+    "normalized_type": "vehicle"
+   },
+   {
+    "entity": "Rivian R2",
+    "stratum": "S3",
+    "entity_type": "vehicle",
+    "earliest_appearance": "2024-03-07 (unveiled at Rivian event in Laguna Beach, CA)",
+    "release_date": "2026-06-09 (first customer deliveries; series production began April 2026 in Normal, IL)",
+    "source_url": "https://www.electrive.com/2026/06/10/rivian-begins-deliveries-of-its-highly-anticipated-r2/",
+    "coverage_note": "heavy coverage (68k reservations in first day at unveil; CNBC/major outlets at 2026 launch)",
+    "qwen36_diagnostic_eligible": false,
+    "recycled_from_census": false,
+    "normalized_type": "vehicle"
+   },
+   {
+    "entity": "Star of the Seas (Royal Caribbean)",
+    "stratum": "S3",
+    "entity_type": "ship",
+    "earliest_appearance": "2023-10-05 (name announced for second Icon-class ship; keel laid 2023-12-15)",
+    "release_date": "2025-07-10 (delivered by Meyer Turku; first revenue cruise 2025-08-16, official maiden voyage 2025-08-31)",
+    "source_url": "https://www.royalcaribbeanblog.com/2025/07/10/royal-caribbean-takes-delivery-of-new-cruise-ship-star-of-the-seas",
+    "coverage_note": "heavy cruise/travel press coverage ('world's largest cruise ship' framing)",
+    "qwen36_diagnostic_eligible": false,
+    "recycled_from_census": false,
+    "normalized_type": "ship"
+   },
+   {
+    "entity": "Fujian (Chinese aircraft carrier, Type 003)",
+    "stratum": "S3",
+    "entity_type": "ship",
+    "earliest_appearance": "2022-06-17 (launched and named at Jiangnan Shipyard, Shanghai)",
+    "release_date": "2025-11-05 (commissioned into PLAN at Sanya, Hainan)",
+    "source_url": "https://news.usni.org/2025/11/07/china-comissions-3rd-aircraft-carrier-fujian",
+    "coverage_note": "heavy defense and mainstream coverage at both launch and commissioning",
+    "qwen36_diagnostic_eligible": false,
+    "recycled_from_census": false,
+    "normalized_type": "ship"
+   },
+   {
+    "entity": "orforglipron",
+    "stratum": "S3",
+    "entity_type": "drug",
+    "earliest_appearance": "2023-06-01 (phase 2 results published; 39 PubMed-indexed publications naming orforglipron predate 2025-06-01; ACHIEVE-1 phase 3 topline April 2025 heavily covered)",
+    "release_date": "2026-04-01",
+    "source_url": "https://investor.lilly.com/news-releases/news-release-details/fda-approves-lillys-foundayotm-orforglipron-only-glp-1-pill",
+    "coverage_note": "very high — sustained financial + mainstream coverage as first oral small-molecule GLP-1",
+    "qwen36_diagnostic_eligible": false,
+    "recycled_from_census": false,
+    "normalized_type": "drug",
+    "admission_note": "S3 drug: generic name was the pre-window public surface; questions use the generic name.",
+    "question_name_policy": "generic name (pre-window surface form)"
+   },
+   {
+    "entity": "lenacapavir (Yeztugo)",
+    "stratum": "S3",
+    "entity_type": "drug",
+    "earliest_appearance": "2025-02-18 (Gilead: FDA accepts NDAs for twice-yearly lenacapavir for HIV prevention, priority review, PDUFA 2025-06-19; PURPOSE 1/2 phase 3 results public since mid-2024)",
+    "release_date": "2025-06-18",
+    "source_url": "https://www.gilead.com/news/news-details/2025/us-fda-accepts-gileads-new-drug-applications-for-twice-yearly-lenacapavir-for-hiv-prevention-under-priority-review",
+    "coverage_note": "very high — global mainstream + medical press; Science 2024 Breakthrough of the Year; generic name public pre-cutoff, brand at approval",
+    "qwen36_diagnostic_eligible": false,
+    "recycled_from_census": false,
+    "normalized_type": "drug",
+    "admission_note": "S3 drug: generic name was the pre-window public surface; questions use the generic name.",
+    "question_name_policy": "generic name (pre-window surface form)"
+   },
+   {
+    "entity": "elinzanetant (Lynkuet)",
+    "stratum": "S3",
+    "entity_type": "drug",
+    "earliest_appearance": "2024-12-01 (peer-reviewed commentary on OASIS phase 3 program in Med; OASIS-1/2 results and Bayer FDA filing covered through 2024)",
+    "release_date": "2025-10-24",
+    "source_url": "https://www.bayer.com/en/us/news-stories/lynkuet",
+    "coverage_note": "moderate-high — women's health/menopause press plus general health media",
+    "qwen36_diagnostic_eligible": false,
+    "recycled_from_census": false,
+    "normalized_type": "drug",
+    "admission_note": "S3 drug: generic name was the pre-window public surface; questions use the generic name.",
+    "question_name_policy": "generic name (pre-window surface form)"
+   },
+   {
+    "entity": "NISAR",
+    "entity_type": "space_mission",
+    "earliest_appearance": "2014 (NASA-ISRO joint mission agreement/first appearance)",
+    "release_date": "2025-07-30 (launched)",
+    "source_url": "coordinator verification sub-agent 2026-07-24 (evidence URLs in its transcript)",
+    "coverage_note": "verified S3: named 2014, launched 2025-07-30; sustained space-press coverage",
+    "qwen36_diagnostic_eligible": false,
+    "recycled_from_census": false,
+    "stratum": "S3",
+    "normalized_type": "space_mission"
+   },
+   {
+    "entity": "IMAP (Interstellar Mapping and Acceleration Probe)",
+    "entity_type": "space_mission",
+    "earliest_appearance": "2018 (NASA mission selection)",
+    "release_date": "2025-09-24 (launched)",
+    "source_url": "coordinator verification sub-agent 2026-07-24 (evidence URLs in its transcript)",
+    "coverage_note": "verified S3; acronym collides with the IMAP email protocol - questions must spell out the full mission name",
+    "qwen36_diagnostic_eligible": false,
+    "recycled_from_census": false,
+    "stratum": "S3",
+    "name_qualification": "always use full name 'Interstellar Mapping and Acceleration Probe (IMAP)'",
+    "normalized_type": "space_mission"
+   },
+   {
+    "entity": "ESCAPADE",
+    "entity_type": "space_mission",
+    "earliest_appearance": "2019 (NASA SIMPLEx selection)",
+    "release_date": "2025-11-13 (launched)",
+    "source_url": "coordinator verification sub-agent 2026-07-24 (evidence URLs in its transcript)",
+    "coverage_note": "verified S3: selected 2019, launched 2025-11-13",
+    "qwen36_diagnostic_eligible": false,
+    "recycled_from_census": false,
+    "stratum": "S3",
+    "normalized_type": "space_mission"
+   },
+   {
+    "entity": "Artemis II",
+    "entity_type": "space_mission",
+    "earliest_appearance": "2019 (mission naming)",
+    "release_date": "2026-04 (crewed flight)",
+    "source_url": "coordinator verification sub-agent 2026-07-24 (evidence URLs in its transcript)",
+    "coverage_note": "verified S3: named 2019, flew 2026-04; heavy mainstream coverage",
+    "qwen36_diagnostic_eligible": false,
+    "recycled_from_census": false,
+    "stratum": "S3",
+    "normalized_type": "space_mission"
+   }
+  ],
+  "S4": [
+   {
+    "entity": "Shippeo",
+    "stratum": "S4",
+    "entity_type": "company",
+    "earliest_appearance": "2014",
+    "release_date": "2014",
+    "source_url": "https://www.shippeo.com/company/about-us",
+    "coverage_note": "niche: B2B logistics trade press (FreightWaves, Supply Chain Digital) and funding coverage; unknown to general audience",
+    "qwen36_diagnostic_eligible": false,
+    "recycled_from_census": false,
+    "normalized_type": "company"
+   },
+   {
+    "entity": "Fero Labs",
+    "stratum": "S4",
+    "entity_type": "company",
+    "earliest_appearance": "2016",
+    "release_date": "2016",
+    "source_url": "https://www.ferolabs.com/",
+    "coverage_note": "niche: industrial-AI trade press and funding announcements; occasional climate-tech feature (Quartz); small footprint",
+    "qwen36_diagnostic_eligible": false,
+    "recycled_from_census": false,
+    "normalized_type": "company"
+   },
+   {
+    "entity": "Optimal Dynamics",
+    "stratum": "S4",
+    "entity_type": "company",
+    "earliest_appearance": "2017",
+    "release_date": "2017",
+    "source_url": "https://innovation.princeton.edu/news/2020/startup-focus-optimal-dynamics-drives-logistical-decisions-ai",
+    "coverage_note": "niche: trucking/freight trade press and VC coverage only; Princeton spin-out story",
+    "qwen36_diagnostic_eligible": false,
+    "recycled_from_census": false,
+    "normalized_type": "company"
+   },
+   {
+    "entity": "Verusen",
+    "stratum": "S4",
+    "entity_type": "company",
+    "earliest_appearance": "2015",
+    "release_date": "2015",
+    "source_url": "https://verusen.com/",
+    "coverage_note": "niche: MRO/materials-management trade press and Atlanta startup press; a few hundred meaningful results",
+    "qwen36_diagnostic_eligible": false,
+    "recycled_from_census": false,
+    "normalized_type": "company"
+   },
+   {
+    "entity": "Leaf Logistics",
+    "stratum": "S4",
+    "entity_type": "company",
+    "earliest_appearance": "2017",
+    "release_date": "2017",
+    "source_url": "https://www.freightwaves.com/news/leaf-logistics-looks-forward-in-freight-contracting",
+    "coverage_note": "niche: freight trade press (FreightWaves, MMH) only; no mainstream coverage",
+    "qwen36_diagnostic_eligible": false,
+    "recycled_from_census": false,
+    "normalized_type": "company"
+   },
+   {
+    "entity": "Tive",
+    "stratum": "S4",
+    "entity_type": "company",
+    "earliest_appearance": "2015",
+    "release_date": "2015",
+    "source_url": "https://www.tive.com/",
+    "coverage_note": "niche: shipment-visibility trade press plus one TechCrunch funding story; well known inside logistics only",
+    "qwen36_diagnostic_eligible": false,
+    "recycled_from_census": false,
+    "normalized_type": "company"
+   },
+   {
+    "entity": "Forto",
+    "stratum": "S4",
+    "entity_type": "company",
+    "earliest_appearance": "2016-07",
+    "release_date": "2016-07",
+    "source_url": "https://forto.com/en/about-us/",
+    "coverage_note": "modest: European logistics-tech unicorn (ex-FreightHub), trade + VC press; no general-audience recognition; borderline-high within stratum",
+    "qwen36_diagnostic_eligible": false,
+    "recycled_from_census": false,
+    "normalized_type": "company"
+   },
+   {
+    "entity": "openTCS",
+    "stratum": "S4",
+    "entity_type": "software",
+    "earliest_appearance": "2006",
+    "release_date": "2006",
+    "source_url": "https://opentcs.org/",
+    "coverage_note": "niche: Fraunhofer IML open-source AGV fleet controller; known only in intralogistics/AGV engineering circles",
+    "qwen36_diagnostic_eligible": false,
+    "recycled_from_census": false,
+    "normalized_type": "software"
+   },
+   {
+    "entity": "frePPLe",
+    "stratum": "S4",
+    "entity_type": "software",
+    "earliest_appearance": "2007",
+    "release_date": "2010",
+    "source_url": "https://frepple.com/",
+    "coverage_note": "niche: open-source APS/production-planning tool; small vendor site, GitHub, ERP-integrator blogs only",
+    "qwen36_diagnostic_eligible": false,
+    "recycled_from_census": false,
+    "normalized_type": "software"
+   },
+   {
+    "entity": "OpenBoxes",
+    "stratum": "S4",
+    "entity_type": "software",
+    "earliest_appearance": "2010",
+    "release_date": "2012",
+    "source_url": "https://openboxes.com/about/",
+    "coverage_note": "niche: open-source health supply-chain WMS born from Partners In Health Haiti response; NGO/global-health circles only",
+    "qwen36_diagnostic_eligible": false,
+    "recycled_from_census": false,
+    "normalized_type": "software"
+   },
+   {
+    "entity": "Stockpyl",
+    "stratum": "S4",
+    "entity_type": "software",
+    "earliest_appearance": "2022",
+    "release_date": "2022",
+    "source_url": "https://github.com/LarrySnyder/stockpyl",
+    "coverage_note": "very niche: academic Python inventory-optimization package (L. Snyder, Lehigh); PyPI + one INFORMS tutorial paper; borderline-obscure",
+    "qwen36_diagnostic_eligible": false,
+    "recycled_from_census": false,
+    "normalized_type": "software"
+   },
+   {
+    "entity": "Steampipe",
+    "stratum": "S4",
+    "entity_type": "software",
+    "earliest_appearance": "2021-01-21",
+    "release_date": "2021-01-21",
+    "source_url": "https://turbot.com/pipes/blog/2021/01/introducing-steampipe",
+    "coverage_note": "niche: SQL-over-cloud-APIs CLI from Turbot; devops/security-engineer audience, vendor blog + GitHub",
+    "qwen36_diagnostic_eligible": false,
+    "recycled_from_census": false,
+    "normalized_type": "software"
+   },
+   {
+    "entity": "Zellij",
+    "stratum": "S4",
+    "entity_type": "software",
+    "earliest_appearance": "2021-01",
+    "release_date": "2021-04",
+    "source_url": "https://zellij.dev/news/beta/",
+    "coverage_note": "niche-to-modest: Rust terminal multiplexer, healthy HN/GitHub following but purely developer-audience; borderline-high within stratum",
+    "qwen36_diagnostic_eligible": false,
+    "recycled_from_census": false,
+    "normalized_type": "software"
+   },
+   {
+    "entity": "QLever",
+    "stratum": "S4",
+    "entity_type": "software",
+    "earliest_appearance": "2017",
+    "release_date": "2017",
+    "source_url": "https://github.com/ad-freiburg/qlever",
+    "coverage_note": "very niche: U. Freiburg SPARQL engine; academic papers, Wikidata community pages, small Wikipedia article",
+    "qwen36_diagnostic_eligible": false,
+    "recycled_from_census": false,
+    "normalized_type": "software"
+   },
+   {
+    "entity": "GS1 EPCIS 2.0",
+    "stratum": "S4",
+    "entity_type": "standard",
+    "earliest_appearance": "2022-06",
+    "release_date": "2022-06",
+    "source_url": "https://www.gs1.org/standards/epcis",
+    "coverage_note": "niche: supply-chain traceability event standard (ratified June 2022, later ISO/IEC 19987:2024); GS1 docs and traceability-vendor blogs only",
+    "qwen36_diagnostic_eligible": false,
+    "recycled_from_census": false,
+    "normalized_type": "standard"
+   },
+   {
+    "entity": "VDA 5050",
+    "stratum": "S4",
+    "entity_type": "standard",
+    "earliest_appearance": "2019-08",
+    "release_date": "2019-08",
+    "source_url": "https://www.vda.de/en/topics/automotive-industry/vda-5050",
+    "coverage_note": "niche: German AGV/AMR-to-fleet-manager interface standard (v2.0 Jan 2022); intralogistics trade press and vendor explainers only",
+    "qwen36_diagnostic_eligible": false,
+    "recycled_from_census": false,
+    "normalized_type": "standard"
+   },
+   {
+    "entity": "Eclipse Sparkplug B",
+    "stratum": "S4",
+    "entity_type": "standard",
+    "earliest_appearance": "2016",
+    "release_date": "2019",
+    "source_url": "https://www.hivemq.com/blog/iiot-milestone-as-sparkplug-becomes-international-standard/",
+    "coverage_note": "niche: MQTT payload/state spec for industrial IoT (ISO/IEC 20237:2023); IIoT vendor blogs and Eclipse Foundation press",
+    "qwen36_diagnostic_eligible": false,
+    "recycled_from_census": false,
+    "normalized_type": "standard"
+   },
+   {
+    "entity": "DCSA Track & Trace standard",
+    "stratum": "S4",
+    "entity_type": "standard",
+    "earliest_appearance": "2020",
+    "release_date": "2020",
+    "source_url": "https://dcsa.org/standards/track-and-trace",
+    "coverage_note": "niche: container-shipping API/data standard from the Digital Container Shipping Association; maritime trade press only",
+    "qwen36_diagnostic_eligible": false,
+    "recycled_from_census": false,
+    "normalized_type": "standard"
+   },
+   {
+    "entity": "Asset Administration Shell (IEC 63278-1)",
+    "stratum": "S4",
+    "entity_type": "standard",
+    "earliest_appearance": "2016",
+    "release_date": "2023",
+    "source_url": "https://webstore.iec.ch/en/publication/65628",
+    "coverage_note": "niche: Industrie 4.0 digital-twin structure standard (IEC 63278-1:2023); industrial-automation trade press and Plattform I4.0/IDTA documents",
+    "qwen36_diagnostic_eligible": false,
+    "recycled_from_census": false,
+    "normalized_type": "standard"
+   },
+   {
+    "entity": "GS1 Digital Link",
+    "stratum": "S4",
+    "entity_type": "standard",
+    "earliest_appearance": "2018",
+    "release_date": "2018",
+    "source_url": "https://ref.gs1.org/standards/digital-link/uri-syntax/",
+    "coverage_note": "niche: web-URI barcode standard (v1.3 Nov 2022); GS1 documentation and packaging/traceability vendor blogs",
+    "qwen36_diagnostic_eligible": false,
+    "recycled_from_census": false,
+    "normalized_type": "standard"
+   },
+   {
+    "entity": "Rail Route",
+    "stratum": "S4",
+    "entity_type": "game",
+    "earliest_appearance": "2021-06-23",
+    "release_date": "2021-06-23",
+    "source_url": "https://store.steampowered.com/app/1124180/Rail_Route/",
+    "coverage_note": "niche: train-dispatcher sim by tiny Czech studio (EA June 2021, 1.0 in 2024); small Steam following, coverage in niche sim outlets",
+    "qwen36_diagnostic_eligible": false,
+    "recycled_from_census": false,
+    "normalized_type": "game"
+   },
+   {
+    "entity": "NIMBY Rails",
+    "stratum": "S4",
+    "entity_type": "game",
+    "earliest_appearance": "2021-01-26",
+    "release_date": "2021-01-26",
+    "source_url": "https://store.steampowered.com/app/1134710/NIMBY_Rails/",
+    "coverage_note": "niche: OpenStreetMap-based railway sandbox by one-person studio Weird and Wry; devoted transit-nerd following, tiny Wikipedia page",
+    "qwen36_diagnostic_eligible": false,
+    "recycled_from_census": false,
+    "normalized_type": "game"
+   },
+   {
+    "entity": "Captain of Industry",
+    "stratum": "S4",
+    "entity_type": "game",
+    "earliest_appearance": "2021",
+    "release_date": "2022-05-31",
+    "source_url": "https://store.steampowered.com/app/1594320/Captain_of_Industry/",
+    "coverage_note": "niche-to-modest: factory/colony sim (EA May 2022, ~5.6k reviews); solid genre following but no mainstream games press; borderline-high within stratum",
+    "qwen36_diagnostic_eligible": false,
+    "recycled_from_census": false,
+    "normalized_type": "game"
+   },
+   {
+    "entity": "Sweet Transit",
+    "stratum": "S4",
+    "entity_type": "game",
+    "earliest_appearance": "2021-12-15",
+    "release_date": "2022-07-28",
+    "source_url": "https://www.team17.com/games/sweet-transit",
+    "coverage_note": "niche: train-led city builder by solo ex-Factorio artist, Team17-published (EA July 2022, 1.0 May 2024); modest launch coverage then quiet",
+    "qwen36_diagnostic_eligible": false,
+    "recycled_from_census": false,
+    "normalized_type": "game"
+   },
+   {
+    "entity": "Plan B: Terraform",
+    "stratum": "S4",
+    "entity_type": "game",
+    "earliest_appearance": "2022",
+    "release_date": "2023-02-15",
+    "source_url": "https://store.steampowered.com/app/1894430/Plan_B_Terraform/",
+    "coverage_note": "niche: solo-dev terraforming/logistics sim (EA Feb 2023); ~1.4k Steam reviews, minimal press",
+    "qwen36_diagnostic_eligible": false,
+    "recycled_from_census": false,
+    "normalized_type": "game"
+   },
+   {
+    "entity": "Mashinky",
+    "stratum": "S4",
+    "entity_type": "game",
+    "earliest_appearance": "2016-12",
+    "release_date": "2017-10-06",
+    "source_url": "https://mashinky.com/",
+    "coverage_note": "niche: one-man Czech train tycoon (EA Oct 2017); small Wikipedia page, genre-blog coverage only",
+    "qwen36_diagnostic_eligible": false,
+    "recycled_from_census": false,
+    "normalized_type": "game"
+   },
+   {
+    "entity": "Sailwind",
+    "stratum": "S4",
+    "entity_type": "game",
+    "earliest_appearance": "2021-10-18",
+    "release_date": "2021-10-18",
+    "source_url": "https://store.steampowered.com/app/1764530/Sailwind/",
+    "coverage_note": "niche: realistic age-of-sail cargo/navigation sim by Raw Lion Workshop (EA Oct 2021); ~1.8k reviews, cult following, near-zero press",
+    "qwen36_diagnostic_eligible": false,
+    "recycled_from_census": false,
+    "normalized_type": "game"
+   },
+   {
+    "entity": "Milk-V Duo",
+    "stratum": "S4",
+    "entity_type": "hardware",
+    "earliest_appearance": "2023-05",
+    "release_date": "2023-06",
+    "source_url": "https://milkv.io/duo",
+    "coverage_note": "niche: $9 RISC-V Linux board (SOPHGO CV1800B); hobbyist press (Hackster, CNX Software) and forums only",
+    "qwen36_diagnostic_eligible": false,
+    "recycled_from_census": false,
+    "normalized_type": "hardware"
+   },
+   {
+    "entity": "Banana Pi BPI-F3",
+    "stratum": "S4",
+    "entity_type": "hardware",
+    "earliest_appearance": "2023-11",
+    "release_date": "2024-05",
+    "source_url": "https://docs.banana-pi.org/en/BPI-F3/BananaPi_BPI-F3",
+    "coverage_note": "niche: octa-core SpacemiT K1 RISC-V SBC (2024); SBC-hobbyist press and vendor forum only",
+    "qwen36_diagnostic_eligible": false,
+    "recycled_from_census": false,
+    "normalized_type": "hardware"
+   },
+   {
+    "entity": "Sipeed Tang Nano 20K",
+    "stratum": "S4",
+    "entity_type": "hardware",
+    "earliest_appearance": "2023-02-27",
+    "release_date": "2023-02-27",
+    "source_url": "https://wiki.sipeed.com/hardware/en/tang/tang-nano-20k/nano-20k.html",
+    "coverage_note": "niche: $30-class Gowin FPGA dev board popular for retro-console cores; hobbyist blogs and vendor wiki only",
+    "qwen36_diagnostic_eligible": false,
+    "recycled_from_census": false,
+    "normalized_type": "hardware"
+   },
+   {
+    "entity": "Turing Pi 2",
+    "stratum": "S4",
+    "entity_type": "hardware",
+    "earliest_appearance": "2021",
+    "release_date": "2023",
+    "source_url": "https://turingpi.com/product/turing-pi-2/",
+    "coverage_note": "niche: 4-node compute-module cluster board (Kickstarter May 2022, shipped 2023); homelab/self-hosting community coverage (Jeff Geerling et al.)",
+    "qwen36_diagnostic_eligible": false,
+    "recycled_from_census": false,
+    "normalized_type": "hardware"
+   },
+   {
+    "entity": "Pine64 Ox64",
+    "stratum": "S4",
+    "entity_type": "hardware",
+    "earliest_appearance": "2022-10",
+    "release_date": "2023-01",
+    "source_url": "https://pine64.org/devices/ox64/",
+    "coverage_note": "very niche: BL808-based RISC-V SBC announced late 2022, on sale early 2023; Pine64 community and a few hobbyist articles",
+    "qwen36_diagnostic_eligible": false,
+    "recycled_from_census": false,
+    "normalized_type": "hardware"
+   },
+   {
+    "entity": "StarFive VisionFive 2",
+    "stratum": "S4",
+    "entity_type": "hardware",
+    "earliest_appearance": "2022-08",
+    "release_date": "2022-12",
+    "source_url": "https://www.kickstarter.com/projects/starfive/visionfive-2",
+    "coverage_note": "modest: best-known affordable RISC-V SBC (JH7110; Kickstarter Aug 2022, first units Dec 2022); heavy within SBC hobbyist circles, unknown outside — borderline-high within stratum",
+    "qwen36_diagnostic_eligible": false,
+    "recycled_from_census": false,
+    "normalized_type": "hardware"
+   },
+   {
+    "entity": "Follo Line (Blixtunnelen)",
+    "stratum": "S4",
+    "entity_type": "other",
+    "earliest_appearance": "2015",
+    "release_date": "2022-12-11",
+    "source_url": "https://en.wikipedia.org/wiki/Follo_Line",
+    "coverage_note": "niche: Norwegian high-speed rail link Oslo-Ski with 20 km Blix Tunnel, opened Dec 2022; Norwegian press + rail trade press, small English Wikipedia page",
+    "qwen36_diagnostic_eligible": false,
+    "recycled_from_census": false,
+    "normalized_type": "other"
+   },
+   {
+    "entity": "Randselva Bridge",
+    "stratum": "S4",
+    "entity_type": "other",
+    "earliest_appearance": "2018",
+    "release_date": "2022",
+    "source_url": "https://structurae.net/en/structures/randselva-bridge",
+    "coverage_note": "very niche: 634 m Norwegian E16 bridge built entirely from BIM models without paper drawings (opened 2022, Tekla BIM award); AEC trade press only; no English Wikipedia page — borderline-obscure",
+    "qwen36_diagnostic_eligible": false,
+    "recycled_from_census": false,
+    "normalized_type": "other"
+   },
+   {
+    "entity": "EIRSAT-1",
+    "stratum": "S4",
+    "entity_type": "other",
+    "earliest_appearance": "2017",
+    "release_date": "2023-12-01",
+    "source_url": "https://en.wikipedia.org/wiki/EIRSAT-1",
+    "coverage_note": "niche: Ireland's first satellite (UCD 2U CubeSat, launched Dec 2023); Irish national press burst + ESA education pages, then quiet",
+    "qwen36_diagnostic_eligible": false,
+    "recycled_from_census": false,
+    "normalized_type": "other"
+   },
+   {
+    "entity": "SuperBIT",
+    "stratum": "S4",
+    "entity_type": "other",
+    "earliest_appearance": "2015",
+    "release_date": "2023-04-16",
+    "source_url": "https://en.wikipedia.org/wiki/SuperBIT",
+    "coverage_note": "niche: balloon-borne stratospheric telescope for weak-lensing; science-press coverage around April 2023 flight and crash landing, then quiet",
+    "qwen36_diagnostic_eligible": false,
+    "recycled_from_census": false,
+    "normalized_type": "other"
+   },
+   {
+    "entity": "Tanager-1",
+    "stratum": "S4",
+    "entity_type": "other",
+    "earliest_appearance": "2023",
+    "release_date": "2024-08-16",
+    "source_url": "https://en.wikipedia.org/wiki/Tanager-1",
+    "coverage_note": "niche: Planet/Carbon Mapper methane-detection hyperspectral satellite (launched Aug 2024); climate/space trade press only",
+    "qwen36_diagnostic_eligible": false,
+    "recycled_from_census": false,
+    "normalized_type": "other"
+   },
+   {
+    "entity": "NorSat-TD",
+    "stratum": "S4",
+    "entity_type": "other",
+    "earliest_appearance": "2020",
+    "release_date": "2023-04-15",
+    "source_url": "https://www.eoportal.org/satellite-missions/norsat-td",
+    "coverage_note": "very niche: Norwegian tech-demo microsatellite (SFL-built, laser comms + iodine propulsion, Transporter-7 Apr 2023); eoPortal and Norwegian space pages; no Wikipedia article",
+    "qwen36_diagnostic_eligible": false,
+    "recycled_from_census": false,
+    "normalized_type": "other"
+   },
+   {
+    "entity": "The Gullspång Miracle",
+    "stratum": "S4",
+    "entity_type": "other",
+    "earliest_appearance": "2023-06-11",
+    "release_date": "2023-06-11",
+    "source_url": "https://en.wikipedia.org/wiki/The_Gullsp%C3%A5ng_Miracle",
+    "coverage_note": "niche: Swedish documentary (Tribeca premiere June 2023); festival-circuit reviews and Nordic press, small Wikipedia page",
+    "qwen36_diagnostic_eligible": false,
+    "recycled_from_census": false,
+    "normalized_type": "other"
+   }
+  ]
+ },
+ "recheck_methods": "S2 contamination recheck (2026-07-25): per-entity verification via date-filtered HN Algolia search, GDELT DOC API, Reddit pullpush, and direct fetches of candidate pre-window pages. Verdicts are a strong null (no pre-window exact-string appearance found by these methods), not proof of absence. Contamination is defined at the exact-string level: an entity is excluded if its exact surface string (or a near-homograph) appears publicly before the 2025-06 window, regardless of referent."
+}

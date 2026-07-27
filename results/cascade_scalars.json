@@ -1,0 +1,14 @@
+{
+  "probe_auroc": 0.992,
+  "verbalized_auroc": 0.7189,
+  "parse_rate": 0.9974,
+  "fabricate": 0.3952,
+  "deflect": 0.4085,
+  "clean_flag": 0.1963,
+  "false_flag_real": 0.0052,
+  "_sources": {
+    "probe_auroc": "results/bootstrap_cis.json [qwen3_instruct][parametric].auroc = 0.9925 (meanpool, layer 18, n=770, ci95=[0.9880, 0.9966])",
+    "verbalized_auroc": "results/verbalized_confidence_records.json: AUROC of stated 0-100 confidence for real vs fictional over the 770 parametric items (768/770 parseable = 0.9974 parse rate)",
+    "behavior_rates": "judge/sonnet_final.json set cm_qwen3 (770 rows; key indexes data/items.jsonl parametric-arm order); fictional-side COMMIT/DEFLECT/FLAG shares over 377 non-'?' verdicts; false_flag_real = FLAG share over 385 real-side non-'?' verdicts (2/385)"
+  }
+}

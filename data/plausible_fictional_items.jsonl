@@ -1,0 +1,400 @@
+{"id": "plaus_0_ans", "arm": "plausible", "label": "answerable", "question": "When was Kuehne + Nagel founded?", "entity": "Kuehne + Nagel"}
+{"id": "plaus_0_abs", "arm": "plausible", "label": "should_abstain", "question": "When was Hartwell Logistics founded?", "entity": "Hartwell Logistics"}
+{"id": "plaus_1_ans", "arm": "plausible", "label": "answerable", "question": "Where is the headquarters of Flexport located?", "entity": "Flexport"}
+{"id": "plaus_1_abs", "arm": "plausible", "label": "should_abstain", "question": "Where is the headquarters of Brandt & Mayer Components located?", "entity": "Brandt & Mayer Components"}
+{"id": "plaus_2_ans", "arm": "plausible", "label": "answerable", "question": "What is the primary commodity handled at the Port of Rotterdam?", "entity": "Port of Rotterdam"}
+{"id": "plaus_2_abs", "arm": "plausible", "label": "should_abstain", "question": "What is the primary commodity handled at the Port of Ashford?", "entity": "Port of Ashford"}
+{"id": "plaus_3_ans", "arm": "plausible", "label": "answerable", "question": "Who is the current CEO of C.H. Robinson?", "entity": "C.H. Robinson"}
+{"id": "plaus_3_abs", "arm": "plausible", "label": "should_abstain", "question": "Who is the current CEO of Castlewood Freight Group?", "entity": "Castlewood Freight Group"}
+{"id": "plaus_4_ans", "arm": "plausible", "label": "answerable", "question": "What is the maximum draft depth at the Port of Singapore?", "entity": "Port of Singapore"}
+{"id": "plaus_4_abs", "arm": "plausible", "label": "should_abstain", "question": "What is the maximum draft depth at the Port of Westbrook?", "entity": "Port of Westbrook"}
+{"id": "plaus_5_ans", "arm": "plausible", "label": "answerable", "question": "What are the main requirements of ISO 9001?", "entity": "ISO 9001"}
+{"id": "plaus_5_abs", "arm": "plausible", "label": "should_abstain", "question": "What are the main requirements of DIN 4271?", "entity": "DIN 4271"}
+{"id": "plaus_6_ans", "arm": "plausible", "label": "answerable", "question": "Which company manufactures the Intel Core i7-12700K?", "entity": "Intel Core i7-12700K"}
+{"id": "plaus_6_abs", "arm": "plausible", "label": "should_abstain", "question": "Which company manufactures the BD-8842-A valve assembly?", "entity": "BD-8842-A valve assembly"}
+{"id": "plaus_7_ans", "arm": "plausible", "label": "answerable", "question": "What is the annual container throughput of the Port of Shanghai?", "entity": "Port of Shanghai"}
+{"id": "plaus_7_abs", "arm": "plausible", "label": "should_abstain", "question": "What is the annual container throughput of the Port of Briarwood?", "entity": "Port of Briarwood"}
+{"id": "plaus_8_ans", "arm": "plausible", "label": "answerable", "question": "What is the minimum order quantity for the Texas Instruments LM324 op-amp?", "entity": "Texas Instruments LM324 op-amp"}
+{"id": "plaus_8_abs", "arm": "plausible", "label": "should_abstain", "question": "What is the minimum order quantity for the ST-450-X mounting bracket?", "entity": "ST-450-X mounting bracket"}
+{"id": "plaus_9_ans", "arm": "plausible", "label": "answerable", "question": "Where is the main manufacturing facility for Foxconn located?", "entity": "Foxconn"}
+{"id": "plaus_9_abs", "arm": "plausible", "label": "should_abstain", "question": "Where is the main manufacturing facility for Riverton Manufacturing located?", "entity": "Riverton Manufacturing"}
+{"id": "plaus_10_ans", "arm": "plausible", "label": "answerable", "question": "What is the tensile strength rating of the 3M Scotch-Weld DP100 Plus?", "entity": "3M Scotch-Weld DP100 Plus"}
+{"id": "plaus_10_abs", "arm": "plausible", "label": "should_abstain", "question": "What is the tensile strength rating of the Weston Polymer 440 adhesive?", "entity": "Weston Polymer 440 adhesive"}
+{"id": "plaus_11_ans", "arm": "plausible", "label": "answerable", "question": "What is the safety stock level for the 3M N95 8511 respirator?", "entity": "3M N95 8511 respirator"}
+{"id": "plaus_11_abs", "arm": "plausible", "label": "should_abstain", "question": "What is the safety stock level for the ACME P/N 55821 gasket?", "entity": "ACME P/N 55821 gasket"}
+{"id": "plaus_12_ans", "arm": "plausible", "label": "answerable", "question": "What is the lead time for the Texas Instruments LM35 temperature sensor?", "entity": "Texas Instruments LM35 temperature sensor"}
+{"id": "plaus_12_abs", "arm": "plausible", "label": "should_abstain", "question": "What is the lead time for the TR-7720 thermal sensor?", "entity": "TR-7720 thermal sensor"}
+{"id": "plaus_13_ans", "arm": "plausible", "label": "answerable", "question": "What is the operating temperature range for the 3M VHB Tape 5952?", "entity": "3M VHB Tape 5952"}
+{"id": "plaus_13_abs", "arm": "plausible", "label": "should_abstain", "question": "What is the operating temperature range for the AS-9080 industrial sealant?", "entity": "AS-9080 industrial sealant"}
+{"id": "plaus_14_ans", "arm": "plausible", "label": "answerable", "question": "What is the primary distribution hub for DHL Supply Chain?", "entity": "DHL Supply Chain"}
+{"id": "plaus_14_abs", "arm": "plausible", "label": "should_abstain", "question": "What is the primary distribution hub for Meridian Distribution Partners?", "entity": "Meridian Distribution Partners"}
+{"id": "plaus_15_ans", "arm": "plausible", "label": "answerable", "question": "What is the annual revenue of DSV Panalpina?", "entity": "DSV Panalpina"}
+{"id": "plaus_15_abs", "arm": "plausible", "label": "should_abstain", "question": "What is the annual revenue of Summit Freight Lines?", "entity": "Summit Freight Lines"}
+{"id": "plaus_16_ans", "arm": "plausible", "label": "answerable", "question": "What is the main material used in the Boeing 747-8 fuselage?", "entity": "Boeing 747-8 fuselage"}
+{"id": "plaus_16_abs", "arm": "plausible", "label": "should_abstain", "question": "What is the main material used in the 4140 steel drive shaft?", "entity": "4140 steel drive shaft"}
+{"id": "plaus_17_ans", "arm": "plausible", "label": "answerable", "question": "What is the standard delivery time for the Caterpillar D6 bulldozer?", "entity": "Caterpillar D6 bulldozer"}
+{"id": "plaus_17_abs", "arm": "plausible", "label": "should_abstain", "question": "What is the standard delivery time for the M-1045 industrial forklift?", "entity": "M-1045 industrial forklift"}
+{"id": "plaus_18_ans", "arm": "plausible", "label": "answerable", "question": "What is the weight specification for the Cummins QSK60 diesel engine?", "entity": "Cummins QSK60 diesel engine"}
+{"id": "plaus_18_abs", "arm": "plausible", "label": "should_abstain", "question": "What is the weight specification for the R-2230 hydraulic pump?", "entity": "R-2230 hydraulic pump"}
+{"id": "plaus_19_ans", "arm": "plausible", "label": "answerable", "question": "What is the primary focus of ISO 14001?", "entity": "ISO 14001"}
+{"id": "plaus_19_abs", "arm": "plausible", "label": "should_abstain", "question": "What is the primary focus of ANSI B74.2?", "entity": "ANSI B74.2"}
+{"id": "plaus_20_ans", "arm": "plausible", "label": "answerable", "question": "What is the primary hub port for Maersk?", "entity": "Maersk"}
+{"id": "plaus_20_abs", "arm": "plausible", "label": "should_abstain", "question": "What is the primary hub port for Hartwell Logistics?", "entity": "Hartwell Logistics"}
+{"id": "plaus_21_ans", "arm": "plausible", "label": "answerable", "question": "Which ERP system does Foxconn use for its manufacturing operations?", "entity": "Foxconn"}
+{"id": "plaus_21_abs", "arm": "plausible", "label": "should_abstain", "question": "Which ERP system does Riverton Manufacturing use for its manufacturing operations?", "entity": "Riverton Manufacturing"}
+{"id": "plaus_22_ans", "arm": "plausible", "label": "answerable", "question": "What is the scope of ISO 9001 certification regarding quality management systems?", "entity": "ISO 9001"}
+{"id": "plaus_22_abs", "arm": "plausible", "label": "should_abstain", "question": "What is the scope of DIN 4271 certification regarding quality management systems?", "entity": "DIN 4271"}
+{"id": "plaus_23_ans", "arm": "plausible", "label": "answerable", "question": "What is the maximum draft depth for container vessels at Port of Rotterdam?", "entity": "Port of Rotterdam"}
+{"id": "plaus_23_abs", "arm": "plausible", "label": "should_abstain", "question": "What is the maximum draft depth for container vessels at Port of Ashton?", "entity": "Port of Ashton"}
+{"id": "plaus_24_ans", "arm": "plausible", "label": "answerable", "question": "What are the standard lead times for automotive parts ordered from Bosch?", "entity": "Bosch"}
+{"id": "plaus_24_abs", "arm": "plausible", "label": "should_abstain", "question": "What are the standard lead times for automotive parts ordered from Brandt & Mayer Components?", "entity": "Brandt & Mayer Components"}
+{"id": "plaus_25_ans", "arm": "plausible", "label": "answerable", "question": "What is the volumetric capacity of a standard pallet in the DHL shipping program?", "entity": "DHL"}
+{"id": "plaus_25_abs", "arm": "plausible", "label": "should_abstain", "question": "What is the volumetric capacity of a standard pallet in the Castlewood Freight Group shipping program?", "entity": "Castlewood Freight Group"}
+{"id": "plaus_26_ans", "arm": "plausible", "label": "answerable", "question": "What is the specific chemical resistance rating for the polymer specified in ASTM D2000?", "entity": "ASTM D2000"}
+{"id": "plaus_26_abs", "arm": "plausible", "label": "should_abstain", "question": "What is the specific chemical resistance rating for the polymer specified in BS 8450?", "entity": "BS 8450"}
+{"id": "plaus_27_ans", "arm": "plausible", "label": "answerable", "question": "What is the total annual cargo tonnage handled by Port of Singapore?", "entity": "Port of Singapore"}
+{"id": "plaus_27_abs", "arm": "plausible", "label": "should_abstain", "question": "What is the total annual cargo tonnage handled by Port of Meridian?", "entity": "Port of Meridian"}
+{"id": "plaus_28_ans", "arm": "plausible", "label": "answerable", "question": "What is the minimum order quantity for custom injection molding services at Flex?", "entity": "Flex"}
+{"id": "plaus_28_abs", "arm": "plausible", "label": "should_abstain", "question": "What is the minimum order quantity for custom injection molding services at Ashdale Plastics?", "entity": "Ashdale Plastics"}
+{"id": "plaus_29_ans", "arm": "plausible", "label": "answerable", "question": "What are the exact dimensions and tolerance levels specified for a metric bolt in DIN 933?", "entity": "DIN 933"}
+{"id": "plaus_29_abs", "arm": "plausible", "label": "should_abstain", "question": "What are the exact dimensions and tolerance levels specified for a metric bolt in DIN 4271?", "entity": "DIN 4271"}
+{"id": "plaus_30_ans", "arm": "plausible", "label": "answerable", "question": "What is the base tariff rate for Less-than-Truckload shipments within Zone 2 operated by XPO Logistics?", "entity": "XPO Logistics"}
+{"id": "plaus_30_abs", "arm": "plausible", "label": "should_abstain", "question": "What is the base tariff rate for Less-than-Truckload shipments within Zone 2 operated by Trenton Freight Lines?", "entity": "Trenton Freight Lines"}
+{"id": "plaus_31_ans", "arm": "plausible", "label": "answerable", "question": "What are the temperature control specifications for the cold storage warehouses operated by Lineage Logistics?", "entity": "Lineage Logistics"}
+{"id": "plaus_31_abs", "arm": "plausible", "label": "should_abstain", "question": "What are the temperature control specifications for the cold storage warehouses operated by Northgate Cold Storage?", "entity": "Northgate Cold Storage"}
+{"id": "plaus_32_ans", "arm": "plausible", "label": "answerable", "question": "What is the tensile strength requirement for carbon steel piping outlined in ASME B31.3?", "entity": "ASME B31.3"}
+{"id": "plaus_32_abs", "arm": "plausible", "label": "should_abstain", "question": "What is the tensile strength requirement for carbon steel piping outlined in ASME C840?", "entity": "ASME C840"}
+{"id": "plaus_33_ans", "arm": "plausible", "label": "answerable", "question": "What is the standard transit time for priority express parcels shipped via FedEx between major domestic hubs?", "entity": "FedEx"}
+{"id": "plaus_33_abs", "arm": "plausible", "label": "should_abstain", "question": "What is the standard transit time for priority express parcels shipped via Summit Express Couriers between major domestic hubs?", "entity": "Summit Express Couriers"}
+{"id": "plaus_34_ans", "arm": "plausible", "label": "answerable", "question": "What is the heat treatment specification required for aerospace grade aluminum alloys supplied by Alcoa?", "entity": "Alcoa"}
+{"id": "plaus_34_abs", "arm": "plausible", "label": "should_abstain", "question": "What is the heat treatment specification required for aerospace grade aluminum alloys supplied by Clarkson Aerospace Metals?", "entity": "Clarkson Aerospace Metals"}
+{"id": "plaus_35_ans", "arm": "plausible", "label": "answerable", "question": "What are the pallet exchange and return policies for shipments processed through the Kuehne+Nagel distribution network?", "entity": "Kuehne+Nagel"}
+{"id": "plaus_35_abs", "arm": "plausible", "label": "should_abstain", "question": "What are the pallet exchange and return policies for shipments processed through the Barrowby Distribution Network distribution network?", "entity": "Barrowby Distribution Network"}
+{"id": "plaus_36_ans", "arm": "plausible", "label": "answerable", "question": "What are the required packaging guidelines for Class 9 hazardous materials outlined in IATA Dangerous Goods Regulations?", "entity": "IATA Dangerous Goods Regulations"}
+{"id": "plaus_36_abs", "arm": "plausible", "label": "should_abstain", "question": "What are the required packaging guidelines for Class 9 hazardous materials outlined in ADR Schedule 8?", "entity": "ADR Schedule 8"}
+{"id": "plaus_37_ans", "arm": "plausible", "label": "answerable", "question": "What is the payload capacity of the standard electric forklift fleet utilized at Port of Long Beach?", "entity": "Port of Long Beach"}
+{"id": "plaus_37_abs", "arm": "plausible", "label": "should_abstain", "question": "What is the payload capacity of the standard electric forklift fleet utilized at Port of Westbrook?", "entity": "Port of Westbrook"}
+{"id": "plaus_38_ans", "arm": "plausible", "label": "answerable", "question": "What is the bond requirement for customs clearance processing handled by Expeditors?", "entity": "Expeditors"}
+{"id": "plaus_38_abs", "arm": "plausible", "label": "should_abstain", "question": "What is the bond requirement for customs clearance processing handled by Pinehurst Customs Brokers?", "entity": "Pinehurst Customs Brokers"}
+{"id": "plaus_39_ans", "arm": "plausible", "label": "answerable", "question": "What is the defect tolerance threshold for silicon wafers delivered by Shin-Etsu Chemical?", "entity": "Shin-Etsu Chemical"}
+{"id": "plaus_39_abs", "arm": "plausible", "label": "should_abstain", "question": "What is the defect tolerance threshold for silicon wafers delivered by Stratton Semiconductors?", "entity": "Stratton Semiconductors"}
+{"id": "plaus_40_ans", "arm": "plausible", "label": "answerable", "question": "What is the primary hub port for Hapag-Lloyd?", "entity": "Hapag-Lloyd"}
+{"id": "plaus_40_abs", "arm": "plausible", "label": "should_abstain", "question": "What is the primary hub port for Ardmore Shipping Lines?", "entity": "Ardmore Shipping Lines"}
+{"id": "plaus_41_ans", "arm": "plausible", "label": "answerable", "question": "What is the minimum order quantity for SKU 100-W5021?", "entity": "SKU 100-W5021"}
+{"id": "plaus_41_abs", "arm": "plausible", "label": "should_abstain", "question": "What is the minimum order quantity for SKU 450-T8832?", "entity": "SKU 450-T8832"}
+{"id": "plaus_42_ans", "arm": "plausible", "label": "answerable", "question": "What is the standard lead time for ASME B18.2.1?", "entity": "ASME B18.2.1"}
+{"id": "plaus_42_abs", "arm": "plausible", "label": "should_abstain", "question": "What is the standard lead time for DIN 4771?", "entity": "DIN 4771"}
+{"id": "plaus_43_ans", "arm": "plausible", "label": "answerable", "question": "Where is the headquarters of Kuehne+Nagel located?", "entity": "Kuehne+Nagel"}
+{"id": "plaus_43_abs", "arm": "plausible", "label": "should_abstain", "question": "Where is the headquarters of Halloway & Reed Distribution located?", "entity": "Halloway & Reed Distribution"}
+{"id": "plaus_44_ans", "arm": "plausible", "label": "answerable", "question": "What is the annual cargo handling capacity of Port of Singapore?", "entity": "Port of Singapore"}
+{"id": "plaus_44_abs", "arm": "plausible", "label": "should_abstain", "question": "What is the annual cargo handling capacity of Port of Brindon Bay?", "entity": "Port of Brindon Bay"}
+{"id": "plaus_45_ans", "arm": "plausible", "label": "answerable", "question": "Who is the primary contract manufacturer used by Apple?", "entity": "Apple"}
+{"id": "plaus_45_abs", "arm": "plausible", "label": "should_abstain", "question": "Who is the primary contract manufacturer used by Vancewell Consumer Electronics?", "entity": "Vancewell Consumer Electronics"}
+{"id": "plaus_46_ans", "arm": "plausible", "label": "answerable", "question": "What is the current freight rate per TEU for Mediterranean Shipping Company?", "entity": "Mediterranean Shipping Company"}
+{"id": "plaus_46_abs", "arm": "plausible", "label": "should_abstain", "question": "What is the current freight rate per TEU for Pemberton Marine Freight?", "entity": "Pemberton Marine Freight"}
+{"id": "plaus_47_ans", "arm": "plausible", "label": "answerable", "question": "What is the shelf life of Part Number 74HC595 in standard warehouse conditions?", "entity": "Part Number 74HC595"}
+{"id": "plaus_47_abs", "arm": "plausible", "label": "should_abstain", "question": "What is the shelf life of Part Number 82-B1140 in standard warehouse conditions?", "entity": "Part Number 82-B1140"}
+{"id": "plaus_48_ans", "arm": "plausible", "label": "answerable", "question": "What is the quality management standard certified for Ford Motor Company?", "entity": "Ford Motor Company"}
+{"id": "plaus_48_abs", "arm": "plausible", "label": "should_abstain", "question": "What is the quality management standard certified for Crestline Assembly Systems?", "entity": "Crestline Assembly Systems"}
+{"id": "plaus_49_ans", "arm": "plausible", "label": "answerable", "question": "What is the required storage temperature for ASTM D4169?", "entity": "ASTM D4169"}
+{"id": "plaus_49_abs", "arm": "plausible", "label": "should_abstain", "question": "What is the required storage temperature for BS 6092?", "entity": "BS 6092"}
+{"id": "plaus_50_ans", "arm": "plausible", "label": "answerable", "question": "What is the transit time guarantee offered by FedEx Freight?", "entity": "FedEx Freight"}
+{"id": "plaus_50_abs", "arm": "plausible", "label": "should_abstain", "question": "What is the transit time guarantee offered by Brookstone Trucking?", "entity": "Brookstone Trucking"}
+{"id": "plaus_51_ans", "arm": "plausible", "label": "answerable", "question": "What is the accepted tolerance range for ISO 2768-mK?", "entity": "ISO 2768-mK"}
+{"id": "plaus_51_abs", "arm": "plausible", "label": "should_abstain", "question": "What is the accepted tolerance range for JIS B 0405?", "entity": "JIS B 0405"}
+{"id": "plaus_52_ans", "arm": "plausible", "label": "answerable", "question": "What is the tare weight of the standard shipping container used by Evergreen Marine Corporation?", "entity": "Evergreen Marine Corporation"}
+{"id": "plaus_52_abs", "arm": "plausible", "label": "should_abstain", "question": "What is the tare weight of the standard shipping container used by Caldera Shipping Group?", "entity": "Caldera Shipping Group"}
+{"id": "plaus_53_ans", "arm": "plausible", "label": "answerable", "question": "What is the primary commodity handled by Union Pacific Railroad?", "entity": "Union Pacific Railroad"}
+{"id": "plaus_53_abs", "arm": "plausible", "label": "should_abstain", "question": "What is the primary commodity handled by Great Lakes & Western Railway?", "entity": "Great Lakes & Western Railway"}
+{"id": "plaus_54_ans", "arm": "plausible", "label": "answerable", "question": "What is the carbon emissions target for DHL Supply Chain?", "entity": "DHL Supply Chain"}
+{"id": "plaus_54_abs", "arm": "plausible", "label": "should_abstain", "question": "What is the carbon emissions target for Marlowe Logistics Group?", "entity": "Marlowe Logistics Group"}
+{"id": "plaus_55_ans", "arm": "plausible", "label": "answerable", "question": "What is the standard pallet configuration for ASTM D1185?", "entity": "ASTM D1185"}
+{"id": "plaus_55_abs", "arm": "plausible", "label": "should_abstain", "question": "What is the standard pallet configuration for AS/NZS 4536?", "entity": "AS/NZS 4536"}
+{"id": "plaus_56_ans", "arm": "plausible", "label": "answerable", "question": "What is the maximum payload capacity for the Boeing 747-8F?", "entity": "Boeing 747-8F"}
+{"id": "plaus_56_abs", "arm": "plausible", "label": "should_abstain", "question": "What is the maximum payload capacity for the Fairchild C-88 Freighter?", "entity": "Fairchild C-88 Freighter"}
+{"id": "plaus_57_ans", "arm": "plausible", "label": "answerable", "question": "What is the standard packaging material specified in ISTA 3A?", "entity": "ISTA 3A"}
+{"id": "plaus_57_abs", "arm": "plausible", "label": "should_abstain", "question": "What is the standard packaging material specified in EN 13428?", "entity": "EN 13428"}
+{"id": "plaus_58_ans", "arm": "plausible", "label": "answerable", "question": "What is the required hazard classification for shipping UN 1950?", "entity": "UN 1950"}
+{"id": "plaus_58_abs", "arm": "plausible", "label": "should_abstain", "question": "What is the required hazard classification for shipping UN 3496?", "entity": "UN 3496"}
+{"id": "plaus_59_ans", "arm": "plausible", "label": "answerable", "question": "What is the inventory turnover rate for Walmart?", "entity": "Walmart"}
+{"id": "plaus_59_abs", "arm": "plausible", "label": "should_abstain", "question": "What is the inventory turnover rate for Hartfield & Cook Retail Group?", "entity": "Hartfield & Cook Retail Group"}
+{"id": "plaus_60_ans", "arm": "plausible", "label": "answerable", "question": "What is the primary warehouse capacity of DHL Supply Chain?", "entity": "DHL Supply Chain"}
+{"id": "plaus_60_abs", "arm": "plausible", "label": "should_abstain", "question": "What is the primary warehouse capacity of Hartwell Logistics?", "entity": "Hartwell Logistics"}
+{"id": "plaus_61_ans", "arm": "plausible", "label": "answerable", "question": "Which classification standard does IATA fall under for hazardous materials handling?", "entity": "IATA"}
+{"id": "plaus_61_abs", "arm": "plausible", "label": "should_abstain", "question": "Which classification standard does DIN 4271 fall under for hazardous materials handling?", "entity": "DIN 4271"}
+{"id": "plaus_62_ans", "arm": "plausible", "label": "answerable", "question": "What is the average annual container throughput of Port of Rotterdam?", "entity": "Port of Rotterdam"}
+{"id": "plaus_62_abs", "arm": "plausible", "label": "should_abstain", "question": "What is the average annual container throughput of Port of Ashbrook?", "entity": "Port of Ashbrook"}
+{"id": "plaus_63_ans", "arm": "plausible", "label": "answerable", "question": "Who is the designated Tier 1 chassis supplier for Ford Motor Company?", "entity": "Ford Motor Company"}
+{"id": "plaus_63_abs", "arm": "plausible", "label": "should_abstain", "question": "Who is the designated Tier 1 chassis supplier for Brandt & Mayer Components?", "entity": "Brandt & Mayer Components"}
+{"id": "plaus_64_ans", "arm": "plausible", "label": "answerable", "question": "What is the standard lead time for a bulk order of part SKU 1005-AB?", "entity": "SKU 1005-AB"}
+{"id": "plaus_64_abs", "arm": "plausible", "label": "should_abstain", "question": "What is the standard lead time for a bulk order of part SKU 8820-CX?", "entity": "SKU 8820-CX"}
+{"id": "plaus_65_ans", "arm": "plausible", "label": "answerable", "question": "Which ERP system is currently implemented across the global operations of Unilever?", "entity": "Unilever"}
+{"id": "plaus_65_abs", "arm": "plausible", "label": "should_abstain", "question": "Which ERP system is currently implemented across the global operations of Castlewood Freight Group?", "entity": "Castlewood Freight Group"}
+{"id": "plaus_66_ans", "arm": "plausible", "label": "answerable", "question": "What is the accepted minimum tensile strength requirement specified in ISO 9001?", "entity": "ISO 9001"}
+{"id": "plaus_66_abs", "arm": "plausible", "label": "should_abstain", "question": "What is the accepted minimum tensile strength requirement specified in BS 8450?", "entity": "BS 8450"}
+{"id": "plaus_67_ans", "arm": "plausible", "label": "answerable", "question": "How many regional distribution centers are currently operated by Amazon in North America?", "entity": "Amazon"}
+{"id": "plaus_67_abs", "arm": "plausible", "label": "should_abstain", "question": "How many regional distribution centers are currently operated by Riverton Manufacturing in North America?", "entity": "Riverton Manufacturing"}
+{"id": "plaus_68_ans", "arm": "plausible", "label": "answerable", "question": "What is the maximum payload capacity for the standard fleet vehicles used by FedEx Ground?", "entity": "FedEx Ground"}
+{"id": "plaus_68_abs", "arm": "plausible", "label": "should_abstain", "question": "What is the maximum payload capacity for the standard fleet vehicles used by Westbound Carrier Network?", "entity": "Westbound Carrier Network"}
+{"id": "plaus_69_ans", "arm": "plausible", "label": "answerable", "question": "What is the required cold chain temperature range for shipping vaccines under WHO PQS?", "entity": "WHO PQS"}
+{"id": "plaus_69_abs", "arm": "plausible", "label": "should_abstain", "question": "What is the required cold chain temperature range for shipping vaccines under EN 15243?", "entity": "EN 15243"}
+{"id": "plaus_70_ans", "arm": "plausible", "label": "answerable", "question": "Which specific commercial harbor serves as the main import hub for Walmart in Europe?", "entity": "Walmart"}
+{"id": "plaus_70_abs", "arm": "plausible", "label": "should_abstain", "question": "Which specific commercial harbor serves as the main import hub for Ashford Distribution Partners in Europe?", "entity": "Ashford Distribution Partners"}
+{"id": "plaus_71_ans", "arm": "plausible", "label": "answerable", "question": "What is the exact alloy composition percentage mandated by ASTM F568M for aerospace fasteners?", "entity": "ASTM F568M"}
+{"id": "plaus_71_abs", "arm": "plausible", "label": "should_abstain", "question": "What is the exact alloy composition percentage mandated by SAE J1297 for aerospace fasteners?", "entity": "SAE J1297"}
+{"id": "plaus_72_ans", "arm": "plausible", "label": "answerable", "question": "What is the total number of suppliers actively listed in the approved vendor directory of Boeing?", "entity": "Boeing"}
+{"id": "plaus_72_abs", "arm": "plausible", "label": "should_abstain", "question": "What is the total number of suppliers actively listed in the approved vendor directory of Northbridge Industrial?", "entity": "Northbridge Industrial"}
+{"id": "plaus_73_ans", "arm": "plausible", "label": "answerable", "question": "What is the standard transit time for a full truckload shipment from the main plant of Caterpillar to the West Coast?", "entity": "Caterpillar"}
+{"id": "plaus_73_abs", "arm": "plausible", "label": "should_abstain", "question": "What is the standard transit time for a full truckload shipment from the main plant of Gable & Stone Machinery to the West Coast?", "entity": "Gable & Stone Machinery"}
+{"id": "plaus_74_ans", "arm": "plausible", "label": "answerable", "question": "Which port authority regulates the pilotage and docking fees for vessels arriving at Port of Singapore?", "entity": "Port of Singapore"}
+{"id": "plaus_74_abs", "arm": "plausible", "label": "should_abstain", "question": "Which port authority regulates the pilotage and docking fees for vessels arriving at Port of Meridian Bay?", "entity": "Port of Meridian Bay"}
+{"id": "plaus_75_ans", "arm": "plausible", "label": "answerable", "question": "What is the allowed dimensional tolerance for machined cylindrical parts specified in ASME B46.1?", "entity": "ASME B46.1"}
+{"id": "plaus_75_abs", "arm": "plausible", "label": "should_abstain", "question": "What is the allowed dimensional tolerance for machined cylindrical parts specified in DIN 69871?", "entity": "DIN 69871"}
+{"id": "plaus_76_ans", "arm": "plausible", "label": "answerable", "question": "What is the annual procurement spend on raw aluminum for Tesla?", "entity": "Tesla"}
+{"id": "plaus_76_abs", "arm": "plausible", "label": "should_abstain", "question": "What is the annual procurement spend on raw aluminum for Beacon Metals & Alloys?", "entity": "Beacon Metals & Alloys"}
+{"id": "plaus_77_ans", "arm": "plausible", "label": "answerable", "question": "What is the required minimum order quantity for custom injection molding services contracted through Jabil?", "entity": "Jabil"}
+{"id": "plaus_77_abs", "arm": "plausible", "label": "should_abstain", "question": "What is the required minimum order quantity for custom injection molding services contracted through Whitfield Plastics?", "entity": "Whitfield Plastics"}
+{"id": "plaus_78_ans", "arm": "plausible", "label": "answerable", "question": "What is the precise turnaround time for quality assurance inspections mandated by ANSI/ASQ Z1.4?", "entity": "ANSI/ASQ Z1.4"}
+{"id": "plaus_78_abs", "arm": "plausible", "label": "should_abstain", "question": "What is the precise turnaround time for quality assurance inspections mandated by JIS Z 9031?", "entity": "JIS Z 9031"}
+{"id": "plaus_79_ans", "arm": "plausible", "label": "answerable", "question": "What is the maximum allowable defect rate per million units for components sourced from Foxconn?", "entity": "Foxconn"}
+{"id": "plaus_79_abs", "arm": "plausible", "label": "should_abstain", "question": "What is the maximum allowable defect rate per million units for components sourced from Marlowe Electronics?", "entity": "Marlowe Electronics"}
+{"id": "plaus_80_ans", "arm": "plausible", "label": "answerable", "question": "What is the corporate headquarters location of Kuehne+Nagel?", "entity": "Kuehne+Nagel"}
+{"id": "plaus_80_abs", "arm": "plausible", "label": "should_abstain", "question": "What is the corporate headquarters location of Pendleton Freight Services?", "entity": "Pendleton Freight Services"}
+{"id": "plaus_81_ans", "arm": "plausible", "label": "answerable", "question": "What type of cargo is primarily handled at Port of Long Beach?", "entity": "Port of Long Beach"}
+{"id": "plaus_81_abs", "arm": "plausible", "label": "should_abstain", "question": "What type of cargo is primarily handled at Port of Ashbury?", "entity": "Port of Ashbury"}
+{"id": "plaus_82_ans", "arm": "plausible", "label": "answerable", "question": "What industry sector does Flex specialize in?", "entity": "Flex"}
+{"id": "plaus_82_abs", "arm": "plausible", "label": "should_abstain", "question": "What industry sector does Whitfield Manufacturing specialize in?", "entity": "Whitfield Manufacturing"}
+{"id": "plaus_83_ans", "arm": "plausible", "label": "answerable", "question": "Under which governing body is the ISO 14001 standard published?", "entity": "ISO 14001"}
+{"id": "plaus_83_abs", "arm": "plausible", "label": "should_abstain", "question": "Under which governing body is the DIN 8452 standard published?", "entity": "DIN 8452"}
+{"id": "plaus_84_ans", "arm": "plausible", "label": "answerable", "question": "What is the primary product category manufactured by Goodyear?", "entity": "Goodyear"}
+{"id": "plaus_84_abs", "arm": "plausible", "label": "should_abstain", "question": "What is the primary product category manufactured by Ashbury Rubber & Belting?", "entity": "Ashbury Rubber & Belting"}
+{"id": "plaus_85_ans", "arm": "plausible", "label": "answerable", "question": "What is the standard gauge specification for the Union Pacific railway network?", "entity": "Union Pacific"}
+{"id": "plaus_85_abs", "arm": "plausible", "label": "should_abstain", "question": "What is the standard gauge specification for the Midland & Coastal Railway network?", "entity": "Midland & Coastal Railway"}
+{"id": "plaus_86_ans", "arm": "plausible", "label": "answerable", "question": "What services are provided by the freight forwarder Expeditors International?", "entity": "Expeditors International"}
+{"id": "plaus_86_abs", "arm": "plausible", "label": "should_abstain", "question": "What services are provided by the freight forwarder Barrow & Sons Logistics?", "entity": "Barrow & Sons Logistics"}
+{"id": "plaus_87_ans", "arm": "plausible", "label": "answerable", "question": "What is the tensile strength requirement specified in the ASTM A36 testing method?", "entity": "ASTM A36"}
+{"id": "plaus_87_abs", "arm": "plausible", "label": "should_abstain", "question": "What is the tensile strength requirement specified in the BS 4489 testing method?", "entity": "BS 4489"}
+{"id": "plaus_88_ans", "arm": "plausible", "label": "answerable", "question": "What is the maximum vessel draft allowed at Port of Singapore?", "entity": "Port of Singapore"}
+{"id": "plaus_88_abs", "arm": "plausible", "label": "should_abstain", "question": "What is the maximum vessel draft allowed at Port of Westbrook?", "entity": "Port of Westbrook"}
+{"id": "plaus_89_ans", "arm": "plausible", "label": "answerable", "question": "What is the fleet size of the trucking company Knight-Swift Transportation?", "entity": "Knight-Swift Transportation"}
+{"id": "plaus_89_abs", "arm": "plausible", "label": "should_abstain", "question": "What is the fleet size of the trucking company Crestwood Haulage?", "entity": "Crestwood Haulage"}
+{"id": "plaus_90_ans", "arm": "plausible", "label": "answerable", "question": "What is the primary material used in the A36 steel component?", "entity": "A36 steel"}
+{"id": "plaus_90_abs", "arm": "plausible", "label": "should_abstain", "question": "What is the primary material used in the Grade 8 bolt component?", "entity": "Grade 8 bolt"}
+{"id": "plaus_91_ans", "arm": "plausible", "label": "answerable", "question": "What are the temperature control parameters for the FedEx Cold Chain supply chain process?", "entity": "FedEx Cold Chain"}
+{"id": "plaus_91_abs", "arm": "plausible", "label": "should_abstain", "question": "What are the temperature control parameters for the Hartwell Refrigerated Transport supply chain process?", "entity": "Hartwell Refrigerated Transport"}
+{"id": "plaus_92_ans", "arm": "plausible", "label": "answerable", "question": "What packaging requirements are outlined in the ISTA 3A standard?", "entity": "ISTA 3A"}
+{"id": "plaus_92_abs", "arm": "plausible", "label": "should_abstain", "question": "What packaging requirements are outlined in the JIS Z 0302 standard?", "entity": "JIS Z 0302"}
+{"id": "plaus_93_ans", "arm": "plausible", "label": "answerable", "question": "What is the lead time for ordering part number 74HC595?", "entity": "74HC595"}
+{"id": "plaus_93_abs", "arm": "plausible", "label": "should_abstain", "question": "What is the lead time for ordering part number 84021-T?", "entity": "84021-T"}
+{"id": "plaus_94_ans", "arm": "plausible", "label": "answerable", "question": "What is the warehouse capacity of the distribution center operated by DHL Supply Chain?", "entity": "DHL Supply Chain"}
+{"id": "plaus_94_abs", "arm": "plausible", "label": "should_abstain", "question": "What is the warehouse capacity of the distribution center operated by Oakridge Warehousing?", "entity": "Oakridge Warehousing"}
+{"id": "plaus_95_ans", "arm": "plausible", "label": "answerable", "question": "What is the standard pallet size recommended by Grocery Manufacturers Association?", "entity": "Grocery Manufacturers Association"}
+{"id": "plaus_95_abs", "arm": "plausible", "label": "should_abstain", "question": "What is the standard pallet size recommended by National Industrial Shipping Council?", "entity": "National Industrial Shipping Council"}
+{"id": "plaus_96_ans", "arm": "plausible", "label": "answerable", "question": "What is the primary export commodity associated with Port of Hamburg?", "entity": "Port of Hamburg"}
+{"id": "plaus_96_abs", "arm": "plausible", "label": "should_abstain", "question": "What is the primary export commodity associated with Port of Millbrook?", "entity": "Port of Millbrook"}
+{"id": "plaus_97_ans", "arm": "plausible", "label": "answerable", "question": "What is the tracking system used by UPS for shipments?", "entity": "UPS"}
+{"id": "plaus_97_abs", "arm": "plausible", "label": "should_abstain", "question": "What is the tracking system used by Selby Freight Group for shipments?", "entity": "Selby Freight Group"}
+{"id": "plaus_98_ans", "arm": "plausible", "label": "answerable", "question": "What is the standard payload capacity for the ISO 668 cargo container?", "entity": "ISO 668"}
+{"id": "plaus_98_abs", "arm": "plausible", "label": "should_abstain", "question": "What is the standard payload capacity for the EN 1243 cargo container?", "entity": "EN 1243"}
+{"id": "plaus_99_ans", "arm": "plausible", "label": "answerable", "question": "What regions are served by the 3PL provider C.H. Robinson?", "entity": "C.H. Robinson"}
+{"id": "plaus_99_abs", "arm": "plausible", "label": "should_abstain", "question": "What regions are served by the 3PL provider Calder & Vance Logistics?", "entity": "Calder & Vance Logistics"}
+{"id": "plaus_100_ans", "arm": "plausible", "label": "answerable", "question": "Where is the global headquarters of Kuehne + Nagel located?", "entity": "Kuehne + Nagel"}
+{"id": "plaus_100_abs", "arm": "plausible", "label": "should_abstain", "question": "Where is the global headquarters of Hartwell Logistics located?", "entity": "Hartwell Logistics"}
+{"id": "plaus_101_ans", "arm": "plausible", "label": "answerable", "question": "What are the primary commodities handled at Port of Rotterdam?", "entity": "Port of Rotterdam"}
+{"id": "plaus_101_abs", "arm": "plausible", "label": "should_abstain", "question": "What are the primary commodities handled at Port of Ridgemont?", "entity": "Port of Ridgemont"}
+{"id": "plaus_102_ans", "arm": "plausible", "label": "answerable", "question": "What is the scope of the ISO 9001 standard?", "entity": "ISO 9001"}
+{"id": "plaus_102_abs", "arm": "plausible", "label": "should_abstain", "question": "What is the scope of the DIN 4271 standard?", "entity": "DIN 4271"}
+{"id": "plaus_103_ans", "arm": "plausible", "label": "answerable", "question": "Which company is the primary contract manufacturer for Apple?", "entity": "Apple"}
+{"id": "plaus_103_abs", "arm": "plausible", "label": "should_abstain", "question": "Which company is the primary contract manufacturer for Riverton Manufacturing?", "entity": "Riverton Manufacturing"}
+{"id": "plaus_104_ans", "arm": "plausible", "label": "answerable", "question": "What is the main air freight hub for FedEx?", "entity": "FedEx"}
+{"id": "plaus_104_abs", "arm": "plausible", "label": "should_abstain", "question": "What is the main air freight hub for Castlewood Freight Group?", "entity": "Castlewood Freight Group"}
+{"id": "plaus_105_ans", "arm": "plausible", "label": "answerable", "question": "What is the typical lead time for a bulk order of Texas Instruments LM324?", "entity": "Texas Instruments LM324"}
+{"id": "plaus_105_abs", "arm": "plausible", "label": "should_abstain", "question": "What is the typical lead time for a bulk order of Brandt & Mayer Components K-440?", "entity": "Brandt & Mayer Components K-440"}
+{"id": "plaus_106_ans", "arm": "plausible", "label": "answerable", "question": "What services are provided by DHL Supply Chain?", "entity": "DHL Supply Chain"}
+{"id": "plaus_106_abs", "arm": "plausible", "label": "should_abstain", "question": "What services are provided by Mercer & Cole Distribution?", "entity": "Mercer & Cole Distribution"}
+{"id": "plaus_107_ans", "arm": "plausible", "label": "answerable", "question": "What is the maximum vessel draft allowed at Port of Singapore?", "entity": "Port of Singapore"}
+{"id": "plaus_107_abs", "arm": "plausible", "label": "should_abstain", "question": "What is the maximum vessel draft allowed at Port of Ashwick?", "entity": "Port of Ashwick"}
+{"id": "plaus_108_ans", "arm": "plausible", "label": "answerable", "question": "What is the certification process for AS9100?", "entity": "AS9100"}
+{"id": "plaus_108_abs", "arm": "plausible", "label": "should_abstain", "question": "What is the certification process for BS 8842?", "entity": "BS 8842"}
+{"id": "plaus_109_ans", "arm": "plausible", "label": "answerable", "question": "What are the main export products of Foxconn?", "entity": "Foxconn"}
+{"id": "plaus_109_abs", "arm": "plausible", "label": "should_abstain", "question": "What are the main export products of Stanfield Industrial?", "entity": "Stanfield Industrial"}
+{"id": "plaus_110_ans", "arm": "plausible", "label": "answerable", "question": "What is the standard transit time for a pallet shipped via XPO Logistics?", "entity": "XPO Logistics"}
+{"id": "plaus_110_abs", "arm": "plausible", "label": "should_abstain", "question": "What is the standard transit time for a pallet shipped via Brentwood Transport Services?", "entity": "Brentwood Transport Services"}
+{"id": "plaus_111_ans", "arm": "plausible", "label": "answerable", "question": "What is the Harmonized System (HS) code for Intel Core i7-12700K?", "entity": "Intel Core i7-12700K"}
+{"id": "plaus_111_abs", "arm": "plausible", "label": "should_abstain", "question": "What is the Harmonized System (HS) code for Blackwood Electrical Series 14?", "entity": "Blackwood Electrical Series 14"}
+{"id": "plaus_112_ans", "arm": "plausible", "label": "answerable", "question": "What is the primary warehouse management system utilized by GXO Logistics?", "entity": "GXO Logistics"}
+{"id": "plaus_112_abs", "arm": "plausible", "label": "should_abstain", "question": "What is the primary warehouse management system utilized by Sutton Container Group?", "entity": "Sutton Container Group"}
+{"id": "plaus_113_ans", "arm": "plausible", "label": "answerable", "question": "What is the nominal voltage rating of IEC 60320?", "entity": "IEC 60320"}
+{"id": "plaus_113_abs", "arm": "plausible", "label": "should_abstain", "question": "What is the nominal voltage rating of JIS C 8821?", "entity": "JIS C 8821"}
+{"id": "plaus_114_ans", "arm": "plausible", "label": "answerable", "question": "What is the minimum order quantity for custom packaging from Amcor?", "entity": "Amcor"}
+{"id": "plaus_114_abs", "arm": "plausible", "label": "should_abstain", "question": "What is the minimum order quantity for custom packaging from Pemberton Packaging Solutions?", "entity": "Pemberton Packaging Solutions"}
+{"id": "plaus_115_ans", "arm": "plausible", "label": "answerable", "question": "What is the annual container throughput capacity of Port of Shanghai?", "entity": "Port of Shanghai"}
+{"id": "plaus_115_abs", "arm": "plausible", "label": "should_abstain", "question": "What is the annual container throughput capacity of Port of Brookside?", "entity": "Port of Brookside"}
+{"id": "plaus_116_ans", "arm": "plausible", "label": "answerable", "question": "What are the specific requirements for packaging compliance under ISTA 3A?", "entity": "ISTA 3A"}
+{"id": "plaus_116_abs", "arm": "plausible", "label": "should_abstain", "question": "What are the specific requirements for packaging compliance under ASTM F1198?", "entity": "ASTM F1198"}
+{"id": "plaus_117_ans", "arm": "plausible", "label": "answerable", "question": "What is the tensile strength specification of Caterpillar D6 Dozer Track Link?", "entity": "Caterpillar D6 Dozer Track Link"}
+{"id": "plaus_117_abs", "arm": "plausible", "label": "should_abstain", "question": "What is the tensile strength specification of Kingsley Hardware Part 880-T?", "entity": "Kingsley Hardware Part 880-T"}
+{"id": "plaus_118_ans", "arm": "plausible", "label": "answerable", "question": "What are the primary geographical lanes serviced by Hapag-Lloyd?", "entity": "Hapag-Lloyd"}
+{"id": "plaus_118_abs", "arm": "plausible", "label": "should_abstain", "question": "What are the primary geographical lanes serviced by Ashford & Stein Shipping?", "entity": "Ashford & Stein Shipping"}
+{"id": "plaus_119_ans", "arm": "plausible", "label": "answerable", "question": "What are the hazard classification codes associated with UN 1203?", "entity": "UN 1203"}
+{"id": "plaus_119_abs", "arm": "plausible", "label": "should_abstain", "question": "What are the hazard classification codes associated with UN 3419?", "entity": "UN 3419"}
+{"id": "plaus_120_ans", "arm": "plausible", "label": "answerable", "question": "What is the primary hub airport for FedEx Express?", "entity": "FedEx Express"}
+{"id": "plaus_120_abs", "arm": "plausible", "label": "should_abstain", "question": "What is the primary hub airport for Bateson Air Cargo?", "entity": "Bateson Air Cargo"}
+{"id": "plaus_121_ans", "arm": "plausible", "label": "answerable", "question": "What type of vessel is primarily operated by Wallenius Wilhelmsen?", "entity": "Wallenius Wilhelmsen"}
+{"id": "plaus_121_abs", "arm": "plausible", "label": "should_abstain", "question": "What type of vessel is primarily operated by Tidewater Ro-Ro Services?", "entity": "Tidewater Ro-Ro Services"}
+{"id": "plaus_122_ans", "arm": "plausible", "label": "answerable", "question": "What does the ASME B16.9 standard specify?", "entity": "ASME B16.9"}
+{"id": "plaus_122_abs", "arm": "plausible", "label": "should_abstain", "question": "What does the BS 4982 standard specify?", "entity": "BS 4982"}
+{"id": "plaus_123_ans", "arm": "plausible", "label": "answerable", "question": "Where is the headquarters of J.B. Hunt Transport Services located?", "entity": "J.B. Hunt Transport Services"}
+{"id": "plaus_123_abs", "arm": "plausible", "label": "should_abstain", "question": "Where is the headquarters of Whitfield Transport Solutions located?", "entity": "Whitfield Transport Solutions"}
+{"id": "plaus_124_ans", "arm": "plausible", "label": "answerable", "question": "What is the maximum payload capacity of the Wingcopter 198 drone?", "entity": "Wingcopter 198"}
+{"id": "plaus_124_abs", "arm": "plausible", "label": "should_abstain", "question": "What is the maximum payload capacity of the Marston AVL-4 drone?", "entity": "Marston AVL-4"}
+{"id": "plaus_125_ans", "arm": "plausible", "label": "answerable", "question": "What specific component does ZF Friedrichshafen manufacture for the automotive industry?", "entity": "ZF Friedrichshafen"}
+{"id": "plaus_125_abs", "arm": "plausible", "label": "should_abstain", "question": "What specific component does Stanhope Precision Engineering manufacture for the automotive industry?", "entity": "Stanhope Precision Engineering"}
+{"id": "plaus_126_ans", "arm": "plausible", "label": "answerable", "question": "What is the main export commodity handled at the Port of Hamburg?", "entity": "Port of Hamburg"}
+{"id": "plaus_126_abs", "arm": "plausible", "label": "should_abstain", "question": "What is the main export commodity handled at the Port of Westbrook?", "entity": "Port of Westbrook"}
+{"id": "plaus_127_ans", "arm": "plausible", "label": "answerable", "question": "What is the standard lead time for McMaster-Carr?", "entity": "McMaster-Carr"}
+{"id": "plaus_127_abs", "arm": "plausible", "label": "should_abstain", "question": "What is the standard lead time for Caldwell Industrial Supply?", "entity": "Caldwell Industrial Supply"}
+{"id": "plaus_128_ans", "arm": "plausible", "label": "answerable", "question": "What is the tensile strength rating of the Bosch 0281002744 component?", "entity": "Bosch 0281002744"}
+{"id": "plaus_128_abs", "arm": "plausible", "label": "should_abstain", "question": "What is the tensile strength rating of the Truetemp 84420-A component?", "entity": "Truetemp 84420-A"}
+{"id": "plaus_129_ans", "arm": "plausible", "label": "answerable", "question": "Which certification body accredits companies to the ISO 14001 standard?", "entity": "ISO 14001"}
+{"id": "plaus_129_abs", "arm": "plausible", "label": "should_abstain", "question": "Which certification body accredits companies to the EN 4823 standard?", "entity": "EN 4823"}
+{"id": "plaus_130_ans", "arm": "plausible", "label": "answerable", "question": "What is the geographic delivery radius for Southeastern Freight Lines?", "entity": "Southeastern Freight Lines"}
+{"id": "plaus_130_abs", "arm": "plausible", "label": "should_abstain", "question": "What is the geographic delivery radius for Coastal Express Logistics?", "entity": "Coastal Express Logistics"}
+{"id": "plaus_131_ans", "arm": "plausible", "label": "answerable", "question": "What is the primary material used in the ASTM A992 standard?", "entity": "ASTM A992"}
+{"id": "plaus_131_abs", "arm": "plausible", "label": "should_abstain", "question": "What is the primary material used in the DIN 9881 standard?", "entity": "DIN 9881"}
+{"id": "plaus_132_ans", "arm": "plausible", "label": "answerable", "question": "What is the typical TEU capacity of vessels chartered by Hapag-Lloyd?", "entity": "Hapag-Lloyd"}
+{"id": "plaus_132_abs", "arm": "plausible", "label": "should_abstain", "question": "What is the typical TEU capacity of vessels chartered by Northwind Shipping Lines?", "entity": "Northwind Shipping Lines"}
+{"id": "plaus_133_ans", "arm": "plausible", "label": "answerable", "question": "What are the required calibration intervals for the Fluke 754 testing equipment?", "entity": "Fluke 754"}
+{"id": "plaus_133_abs", "arm": "plausible", "label": "should_abstain", "question": "What are the required calibration intervals for the Apex DA-22 testing equipment?", "entity": "Apex DA-22"}
+{"id": "plaus_134_ans", "arm": "plausible", "label": "answerable", "question": "What temperature range is maintained in the Lineage Logistics warehouse?", "entity": "Lineage Logistics"}
+{"id": "plaus_134_abs", "arm": "plausible", "label": "should_abstain", "question": "What temperature range is maintained in the Penn Cold Storage warehouse?", "entity": "Penn Cold Storage"}
+{"id": "plaus_135_ans", "arm": "plausible", "label": "answerable", "question": "What is the operating voltage for the Siemens 1LE1001 motor?", "entity": "Siemens 1LE1001"}
+{"id": "plaus_135_abs", "arm": "plausible", "label": "should_abstain", "question": "What is the operating voltage for the Bradshaw EM-400 motor?", "entity": "Bradshaw EM-400"}
+{"id": "plaus_136_ans", "arm": "plausible", "label": "answerable", "question": "What is the minimum order quantity for the Parker 10-32 fastener?", "entity": "Parker 10-32"}
+{"id": "plaus_136_abs", "arm": "plausible", "label": "should_abstain", "question": "What is the minimum order quantity for the Ridgeway FR-15 fastener?", "entity": "Ridgeway FR-15"}
+{"id": "plaus_137_ans", "arm": "plausible", "label": "answerable", "question": "What is the maximum gross weight allowed for pallets by Lufthansa Cargo?", "entity": "Lufthansa Cargo"}
+{"id": "plaus_137_abs", "arm": "plausible", "label": "should_abstain", "question": "What is the maximum gross weight allowed for pallets by Meridian Air Freight?", "entity": "Meridian Air Freight"}
+{"id": "plaus_138_ans", "arm": "plausible", "label": "answerable", "question": "What is the primary freight classification system used by Union Pacific Railroad?", "entity": "Union Pacific Railroad"}
+{"id": "plaus_138_abs", "arm": "plausible", "label": "should_abstain", "question": "What is the primary freight classification system used by Great Lakes & Western Railway?", "entity": "Great Lakes & Western Railway"}
+{"id": "plaus_139_ans", "arm": "plausible", "label": "answerable", "question": "What is the specific heat treatment process required for the Carpenter 455 alloy?", "entity": "Carpenter 455"}
+{"id": "plaus_139_abs", "arm": "plausible", "label": "should_abstain", "question": "What is the specific heat treatment process required for the Sterling 330-B alloy?", "entity": "Sterling 330-B"}
+{"id": "plaus_140_ans", "arm": "plausible", "label": "answerable", "question": "What is the primary regional warehouse hub for DHL Supply Chain?", "entity": "DHL Supply Chain"}
+{"id": "plaus_140_abs", "arm": "plausible", "label": "should_abstain", "question": "What is the primary regional warehouse hub for Hartwell Logistics?", "entity": "Hartwell Logistics"}
+{"id": "plaus_141_ans", "arm": "plausible", "label": "answerable", "question": "Which classification society issued the statutory certificates for Maersk's bulk carrier fleet?", "entity": "Maersk"}
+{"id": "plaus_141_abs", "arm": "plausible", "label": "should_abstain", "question": "Which classification society issued the statutory certificates for Brandt & Mayer Shipping's bulk carrier fleet?", "entity": "Brandt & Mayer Shipping"}
+{"id": "plaus_142_ans", "arm": "plausible", "label": "answerable", "question": "What are the specific calibration requirements for torque tools under ISO 6789?", "entity": "ISO 6789"}
+{"id": "plaus_142_abs", "arm": "plausible", "label": "should_abstain", "question": "What are the specific calibration requirements for torque tools under DIN 4271?", "entity": "DIN 4271"}
+{"id": "plaus_143_ans", "arm": "plausible", "label": "answerable", "question": "What is the annual container throughput capacity of Port of Rotterdam?", "entity": "Port of Rotterdam"}
+{"id": "plaus_143_abs", "arm": "plausible", "label": "should_abstain", "question": "What is the annual container throughput capacity of Port of Ashbrook?", "entity": "Port of Ashbrook"}
+{"id": "plaus_144_ans", "arm": "plausible", "label": "answerable", "question": "Where is the main contract manufacturing facility located for Foxconn?", "entity": "Foxconn"}
+{"id": "plaus_144_abs", "arm": "plausible", "label": "should_abstain", "question": "Where is the main contract manufacturing facility located for Castlewood Manufacturing Group?", "entity": "Castlewood Manufacturing Group"}
+{"id": "plaus_145_ans", "arm": "plausible", "label": "answerable", "question": "What is the standard lead time for domestic freight forwarding services provided by C.H. Robinson?", "entity": "C.H. Robinson"}
+{"id": "plaus_145_abs", "arm": "plausible", "label": "should_abstain", "question": "What is the standard lead time for domestic freight forwarding services provided by Tideway Freight Systems?", "entity": "Tideway Freight Systems"}
+{"id": "plaus_146_ans", "arm": "plausible", "label": "answerable", "question": "What are the general material requirements for aerospace structural forgings under AMS 2759?", "entity": "AMS 2759"}
+{"id": "plaus_146_abs", "arm": "plausible", "label": "should_abstain", "question": "What are the general material requirements for aerospace structural forgings under AMS 4210?", "entity": "AMS 4210"}
+{"id": "plaus_147_ans", "arm": "plausible", "label": "answerable", "question": "What are the temperature control tolerances for perishable goods transit on Maersk Line?", "entity": "Maersk Line"}
+{"id": "plaus_147_abs", "arm": "plausible", "label": "should_abstain", "question": "What are the temperature control tolerances for perishable goods transit on Seaboard Transport Group?", "entity": "Seaboard Transport Group"}
+{"id": "plaus_148_ans", "arm": "plausible", "label": "answerable", "question": "What is the minimum order quantity for custom injection molding services from Proto Labs?", "entity": "Proto Labs"}
+{"id": "plaus_148_abs", "arm": "plausible", "label": "should_abstain", "question": "What is the minimum order quantity for custom injection molding services from Riverton Plastics?", "entity": "Riverton Plastics"}
+{"id": "plaus_149_ans", "arm": "plausible", "label": "answerable", "question": "What are the packaging requirements for hazardous materials outlined in IATA Dangerous Goods Regulations?", "entity": "IATA Dangerous Goods Regulations"}
+{"id": "plaus_149_abs", "arm": "plausible", "label": "should_abstain", "question": "What are the packaging requirements for hazardous materials outlined in BS 5839?", "entity": "BS 5839"}
+{"id": "plaus_150_ans", "arm": "plausible", "label": "answerable", "question": "What is the maximum payload capacity of the standard dry van trailers operated by Werner Enterprises?", "entity": "Werner Enterprises"}
+{"id": "plaus_150_abs", "arm": "plausible", "label": "should_abstain", "question": "What is the maximum payload capacity of the standard dry van trailers operated by Northbridge Freight Lines?", "entity": "Northbridge Freight Lines"}
+{"id": "plaus_151_ans", "arm": "plausible", "label": "answerable", "question": "What are the minimum inspection criteria for heat-treated steel parts according to ASTM A370?", "entity": "ASTM A370"}
+{"id": "plaus_151_abs", "arm": "plausible", "label": "should_abstain", "question": "What are the minimum inspection criteria for heat-treated steel parts according to JIS Z 2340?", "entity": "JIS Z 2340"}
+{"id": "plaus_152_ans", "arm": "plausible", "label": "answerable", "question": "What is the standard transit time for cross-border road freight between the US and Mexico with Old Dominion Freight Line?", "entity": "Old Dominion Freight Line"}
+{"id": "plaus_152_abs", "arm": "plausible", "label": "should_abstain", "question": "What is the standard transit time for cross-border road freight between the US and Mexico with Crestwood Transport Solutions?", "entity": "Crestwood Transport Solutions"}
+{"id": "plaus_153_ans", "arm": "plausible", "label": "answerable", "question": "What are the specific supplier quality audit requirements mandated by Toyota?", "entity": "Toyota"}
+{"id": "plaus_153_abs", "arm": "plausible", "label": "should_abstain", "question": "What are the specific supplier quality audit requirements mandated by Calloway Automotive Components?", "entity": "Calloway Automotive Components"}
+{"id": "plaus_154_ans", "arm": "plausible", "label": "answerable", "question": "What is the track gauge and electrification standard used in the main rail freight corridor operated by Union Pacific Railroad?", "entity": "Union Pacific Railroad"}
+{"id": "plaus_154_abs", "arm": "plausible", "label": "should_abstain", "question": "What is the track gauge and electrification standard used in the main rail freight corridor operated by Midland & Eastern Rail Freight?", "entity": "Midland & Eastern Rail Freight"}
+{"id": "plaus_155_ans", "arm": "plausible", "label": "answerable", "question": "What are the standard dimensional tolerances specified in ASME B46.1?", "entity": "ASME B46.1"}
+{"id": "plaus_155_abs", "arm": "plausible", "label": "should_abstain", "question": "What are the standard dimensional tolerances specified in SAE J1440?", "entity": "SAE J1440"}
+{"id": "plaus_156_ans", "arm": "plausible", "label": "answerable", "question": "What is the vendor-managed inventory replenishment window for tier-2 suppliers working with Magna International?", "entity": "Magna International"}
+{"id": "plaus_156_abs", "arm": "plausible", "label": "should_abstain", "question": "What is the vendor-managed inventory replenishment window for tier-2 suppliers working with Ashford Manufacturing Partners?", "entity": "Ashford Manufacturing Partners"}
+{"id": "plaus_157_ans", "arm": "plausible", "label": "answerable", "question": "What are the required dimensions and load ratings for wooden pallets exchanged under the CHEP pallet pool?", "entity": "CHEP pallet pool"}
+{"id": "plaus_157_abs", "arm": "plausible", "label": "should_abstain", "question": "What are the required dimensions and load ratings for wooden pallets exchanged under the Lindenwood Packaging pool?", "entity": "Lindenwood Packaging"}
+{"id": "plaus_158_ans", "arm": "plausible", "label": "answerable", "question": "What is the accepted variance for dimension and weight measurements in air cargo tendered to Lufthansa Cargo?", "entity": "Lufthansa Cargo"}
+{"id": "plaus_158_abs", "arm": "plausible", "label": "should_abstain", "question": "What is the accepted variance for dimension and weight measurements in air cargo tendered to Westfield Air Charter?", "entity": "Westfield Air Charter"}
+{"id": "plaus_159_ans", "arm": "plausible", "label": "answerable", "question": "What are the cold chain compliance protocols for pharmaceutical distribution set by McKesson?", "entity": "McKesson"}
+{"id": "plaus_159_abs", "arm": "plausible", "label": "should_abstain", "question": "What are the cold chain compliance protocols for pharmaceutical distribution set by Medline Distribution Services?", "entity": "Medline Distribution Services"}
+{"id": "plaus_160_ans", "arm": "plausible", "label": "answerable", "question": "What is the primary cargo handling capacity of Port of Rotterdam?", "entity": "Port of Rotterdam"}
+{"id": "plaus_160_abs", "arm": "plausible", "label": "should_abstain", "question": "What is the primary cargo handling capacity of Port of Ashbury?", "entity": "Port of Ashbury"}
+{"id": "plaus_161_ans", "arm": "plausible", "label": "answerable", "question": "Which company is the designated primary freight forwarder for Foxconn?", "entity": "Foxconn"}
+{"id": "plaus_161_abs", "arm": "plausible", "label": "should_abstain", "question": "Which company is the designated primary freight forwarder for Hargrove Manufacturing?", "entity": "Hargrove Manufacturing"}
+{"id": "plaus_162_ans", "arm": "plausible", "label": "answerable", "question": "What is the current standard renewal cycle for ISO 9001?", "entity": "ISO 9001"}
+{"id": "plaus_162_abs", "arm": "plausible", "label": "should_abstain", "question": "What is the current standard renewal cycle for DIN 8452?", "entity": "DIN 8452"}
+{"id": "plaus_163_ans", "arm": "plausible", "label": "answerable", "question": "What is the primary commodity shipped via Port of Singapore?", "entity": "Port of Singapore"}
+{"id": "plaus_163_abs", "arm": "plausible", "label": "should_abstain", "question": "What is the primary commodity shipped via Port of Westbrook?", "entity": "Port of Westbrook"}
+{"id": "plaus_164_ans", "arm": "plausible", "label": "answerable", "question": "Where is the central distribution hub for DHL Supply Chain located?", "entity": "DHL Supply Chain"}
+{"id": "plaus_164_abs", "arm": "plausible", "label": "should_abstain", "question": "Where is the central distribution hub for Trenton Freight Services located?", "entity": "Trenton Freight Services"}
+{"id": "plaus_165_ans", "arm": "plausible", "label": "answerable", "question": "What is the specified minimum tensile strength for parts compliant with ASTM A36?", "entity": "ASTM A36"}
+{"id": "plaus_165_abs", "arm": "plausible", "label": "should_abstain", "question": "What is the specified minimum tensile strength for parts compliant with BS 7284?", "entity": "BS 7284"}
+{"id": "plaus_166_ans", "arm": "plausible", "label": "answerable", "question": "Which supplier provides the primary chassis components for Volvo Trucks?", "entity": "Volvo Trucks"}
+{"id": "plaus_166_abs", "arm": "plausible", "label": "should_abstain", "question": "Which supplier provides the primary chassis components for Calderwood Commercial Vehicles?", "entity": "Calderwood Commercial Vehicles"}
+{"id": "plaus_167_ans", "arm": "plausible", "label": "answerable", "question": "What is the average vessel turnaround time at Port of Shanghai?", "entity": "Port of Shanghai"}
+{"id": "plaus_167_abs", "arm": "plausible", "label": "should_abstain", "question": "What is the average vessel turnaround time at Port of Millbrook?", "entity": "Port of Millbrook"}
+{"id": "plaus_168_ans", "arm": "plausible", "label": "answerable", "question": "What is the standard lead time for orders of Texas Instruments?", "entity": "Texas Instruments"}
+{"id": "plaus_168_abs", "arm": "plausible", "label": "should_abstain", "question": "What is the standard lead time for orders of Pemberton Microelectronics?", "entity": "Pemberton Microelectronics"}
+{"id": "plaus_169_ans", "arm": "plausible", "label": "answerable", "question": "What is the required documentation for customs clearance under ATA Carnet?", "entity": "ATA Carnet"}
+{"id": "plaus_169_abs", "arm": "plausible", "label": "should_abstain", "question": "What is the required documentation for customs clearance under TIR 2024-B?", "entity": "TIR 2024-B"}
+{"id": "plaus_170_ans", "arm": "plausible", "label": "answerable", "question": "Which logistics provider manages the primary cold chain network for Pfizer?", "entity": "Pfizer"}
+{"id": "plaus_170_abs", "arm": "plausible", "label": "should_abstain", "question": "Which logistics provider manages the primary cold chain network for Sterling Biopharma?", "entity": "Sterling Biopharma"}
+{"id": "plaus_171_ans", "arm": "plausible", "label": "answerable", "question": "What is the maximum payload capacity for the standard container specified by ISO 668?", "entity": "ISO 668"}
+{"id": "plaus_171_abs", "arm": "plausible", "label": "should_abstain", "question": "What is the maximum payload capacity for the standard container specified by JIS Z 1615?", "entity": "JIS Z 1615"}
+{"id": "plaus_172_ans", "arm": "plausible", "label": "answerable", "question": "What is the annual freight volume handled by Union Pacific Railroad?", "entity": "Union Pacific Railroad"}
+{"id": "plaus_172_abs", "arm": "plausible", "label": "should_abstain", "question": "What is the annual freight volume handled by Midland & Northern Rail?", "entity": "Midland & Northern Rail"}
+{"id": "plaus_173_ans", "arm": "plausible", "label": "answerable", "question": "What is the required temperature range for transporting Moderna COVID-19 Vaccine?", "entity": "Moderna COVID-19 Vaccine"}
+{"id": "plaus_173_abs", "arm": "plausible", "label": "should_abstain", "question": "What is the required temperature range for transporting Theravex Solution?", "entity": "Theravex Solution"}
+{"id": "plaus_174_ans", "arm": "plausible", "label": "answerable", "question": "Which procurement software platform is utilized by Procter & Gamble?", "entity": "Procter & Gamble"}
+{"id": "plaus_174_abs", "arm": "plausible", "label": "should_abstain", "question": "Which procurement software platform is utilized by Hawthorne Consumer Goods?", "entity": "Hawthorne Consumer Goods"}
+{"id": "plaus_175_ans", "arm": "plausible", "label": "answerable", "question": "What is the tolerance limit for dimensional variance in parts certified by AS9100?", "entity": "AS9100"}
+{"id": "plaus_175_abs", "arm": "plausible", "label": "should_abstain", "question": "What is the tolerance limit for dimensional variance in parts certified by EN 4401?", "entity": "EN 4401"}
+{"id": "plaus_176_ans", "arm": "plausible", "label": "answerable", "question": "What is the primary export classification code for F-35 Lightning II components?", "entity": "F-35 Lightning II components"}
+{"id": "plaus_176_abs", "arm": "plausible", "label": "should_abstain", "question": "What is the primary export classification code for VC-10 Avionics Module?", "entity": "VC-10 Avionics Module"}
+{"id": "plaus_177_ans", "arm": "plausible", "label": "answerable", "question": "Which ocean carrier has a dedicated terminal agreement with Port of Los Angeles?", "entity": "Port of Los Angeles"}
+{"id": "plaus_177_abs", "arm": "plausible", "label": "should_abstain", "question": "Which ocean carrier has a dedicated terminal agreement with Port of Kingsbridge?", "entity": "Port of Kingsbridge"}
+{"id": "plaus_178_ans", "arm": "plausible", "label": "answerable", "question": "What is the standard packaging requirement for shipments of Siemens industrial turbines?", "entity": "Siemens industrial turbines"}
+{"id": "plaus_178_abs", "arm": "plausible", "label": "should_abstain", "question": "What is the standard packaging requirement for shipments of Ault & Waverly industrial pumps?", "entity": "Ault & Waverly industrial pumps"}
+{"id": "plaus_179_ans", "arm": "plausible", "label": "answerable", "question": "What is the primary raw material sourced by Nucor Corporation for its production line?", "entity": "Nucor Corporation"}
+{"id": "plaus_179_abs", "arm": "plausible", "label": "should_abstain", "question": "What is the primary raw material sourced by Crestline Steelworks for its production line?", "entity": "Crestline Steelworks"}
+{"id": "plaus_180_ans", "arm": "plausible", "label": "answerable", "question": "Who is the current CEO of Maersk?", "entity": "Maersk"}
+{"id": "plaus_180_abs", "arm": "plausible", "label": "should_abstain", "question": "Who is the current CEO of Hartwell Logistics?", "entity": "Hartwell Logistics"}
+{"id": "plaus_181_ans", "arm": "plausible", "label": "answerable", "question": "What is the primary commodity handled at Port of Rotterdam?", "entity": "Port of Rotterdam"}
+{"id": "plaus_181_abs", "arm": "plausible", "label": "should_abstain", "question": "What is the primary commodity handled at Port of Ashbrook?", "entity": "Port of Ashbrook"}
+{"id": "plaus_182_ans", "arm": "plausible", "label": "answerable", "question": "What is the scope of ISO 9001?", "entity": "ISO 9001"}
+{"id": "plaus_182_abs", "arm": "plausible", "label": "should_abstain", "question": "What is the scope of DIN 4271?", "entity": "DIN 4271"}
+{"id": "plaus_183_ans", "arm": "plausible", "label": "answerable", "question": "Where is the global headquarters of Foxconn located?", "entity": "Foxconn"}
+{"id": "plaus_183_abs", "arm": "plausible", "label": "should_abstain", "question": "Where is the global headquarters of Brandt & Mayer Components located?", "entity": "Brandt & Mayer Components"}
+{"id": "plaus_184_ans", "arm": "plausible", "label": "answerable", "question": "What was the annual revenue of DHL in the last fiscal year?", "entity": "DHL"}
+{"id": "plaus_184_abs", "arm": "plausible", "label": "should_abstain", "question": "What was the annual revenue of Castlewood Freight Group in the last fiscal year?", "entity": "Castlewood Freight Group"}
+{"id": "plaus_185_ans", "arm": "plausible", "label": "answerable", "question": "Which company is the primary manufacturer of Caterpillar 320?", "entity": "Caterpillar 320"}
+{"id": "plaus_185_abs", "arm": "plausible", "label": "should_abstain", "question": "Which company is the primary manufacturer of Hudson HX-820?", "entity": "Hudson HX-820"}
+{"id": "plaus_186_ans", "arm": "plausible", "label": "answerable", "question": "What is the maximum vessel draft allowed at Port of Singapore?", "entity": "Port of Singapore"}
+{"id": "plaus_186_abs", "arm": "plausible", "label": "should_abstain", "question": "What is the maximum vessel draft allowed at Port of Cedar Creek?", "entity": "Port of Cedar Creek"}
+{"id": "plaus_187_ans", "arm": "plausible", "label": "answerable", "question": "What industry standard is maintained by the specifications in ASME B16.5?", "entity": "ASME B16.5"}
+{"id": "plaus_187_abs", "arm": "plausible", "label": "should_abstain", "question": "What industry standard is maintained by the specifications in BS 8842?", "entity": "BS 8842"}
+{"id": "plaus_188_ans", "arm": "plausible", "label": "answerable", "question": "Where is the main production facility for Siemens located?", "entity": "Siemens"}
+{"id": "plaus_188_abs", "arm": "plausible", "label": "should_abstain", "question": "Where is the main production facility for Riverton Manufacturing located?", "entity": "Riverton Manufacturing"}
+{"id": "plaus_189_ans", "arm": "plausible", "label": "answerable", "question": "What is the lead time specified for delivery under Incoterms 2020?", "entity": "Incoterms 2020"}
+{"id": "plaus_189_abs", "arm": "plausible", "label": "should_abstain", "question": "What is the lead time specified for delivery under ASTM F1190?", "entity": "ASTM F1190"}
+{"id": "plaus_190_ans", "arm": "plausible", "label": "answerable", "question": "How many shipping lanes are currently operated by MSC?", "entity": "MSC"}
+{"id": "plaus_190_abs", "arm": "plausible", "label": "should_abstain", "question": "How many shipping lanes are currently operated by Westbrook Shipping Lines?", "entity": "Westbrook Shipping Lines"}
+{"id": "plaus_191_ans", "arm": "plausible", "label": "answerable", "question": "What materials are required for compliance testing under ISO 14001?", "entity": "ISO 14001"}
+{"id": "plaus_191_abs", "arm": "plausible", "label": "should_abstain", "question": "What materials are required for compliance testing under ANSI B74.2?", "entity": "ANSI B74.2"}
+{"id": "plaus_192_ans", "arm": "plausible", "label": "answerable", "question": "What is the total warehouse square footage managed by XPO Logistics?", "entity": "XPO Logistics"}
+{"id": "plaus_192_abs", "arm": "plausible", "label": "should_abstain", "question": "What is the total warehouse square footage managed by Pemberton Distribution Services?", "entity": "Pemberton Distribution Services"}
+{"id": "plaus_193_ans", "arm": "plausible", "label": "answerable", "question": "What is the tensile strength rating for the cable specified in JIS C 3005?", "entity": "JIS C 3005"}
+{"id": "plaus_193_abs", "arm": "plausible", "label": "should_abstain", "question": "What is the tensile strength rating for the cable specified in JIS C 4811?", "entity": "JIS C 4811"}
+{"id": "plaus_194_ans", "arm": "plausible", "label": "answerable", "question": "Who are the primary tier-one suppliers for Toyota?", "entity": "Toyota"}
+{"id": "plaus_194_abs", "arm": "plausible", "label": "should_abstain", "question": "Who are the primary tier-one suppliers for Calder Industrial Holdings?", "entity": "Calder Industrial Holdings"}
+{"id": "plaus_195_ans", "arm": "plausible", "label": "answerable", "question": "What is the standard pallet size defined by ISO 6780?", "entity": "ISO 6780"}
+{"id": "plaus_195_abs", "arm": "plausible", "label": "should_abstain", "question": "What is the standard pallet size defined by DIN 15146?", "entity": "DIN 15146"}
+{"id": "plaus_196_ans", "arm": "plausible", "label": "answerable", "question": "Which ports are included in the primary Asian trade loop of CMA CGM?", "entity": "CMA CGM"}
+{"id": "plaus_196_abs", "arm": "plausible", "label": "should_abstain", "question": "Which ports are included in the primary Asian trade loop of Ashford & Knight Maritime?", "entity": "Ashford & Knight Maritime"}
+{"id": "plaus_197_ans", "arm": "plausible", "label": "answerable", "question": "What is the tolerance range for dimensional variance allowed under ISO 2768?", "entity": "ISO 2768"}
+{"id": "plaus_197_abs", "arm": "plausible", "label": "should_abstain", "question": "What is the tolerance range for dimensional variance allowed under DIN 7168?", "entity": "DIN 7168"}
+{"id": "plaus_198_ans", "arm": "plausible", "label": "answerable", "question": "What is the current fleet size of DSV?", "entity": "DSV"}
+{"id": "plaus_198_abs", "arm": "plausible", "label": "should_abstain", "question": "What is the current fleet size of Sutton Transport Partners?", "entity": "Sutton Transport Partners"}
+{"id": "plaus_199_ans", "arm": "plausible", "label": "answerable", "question": "What is the maximum payload capacity for the flatbed trailer model Great Dane GP?", "entity": "Great Dane GP"}
+{"id": "plaus_199_abs", "arm": "plausible", "label": "should_abstain", "question": "What is the maximum payload capacity for the flatbed trailer model Trent 4800?", "entity": "Trent 4800"}

@@ -1,0 +1,20 @@
+{
+  "all": {
+    "n_pairs_dropped": 0,
+    "n_items": 400,
+    "fresh_auc": 0.9863,
+    "transfer_auc": 0.9472
+  },
+  "excl_confirmed": {
+    "n_pairs_dropped": 49,
+    "n_items": 302,
+    "fresh_auc": 0.994,
+    "transfer_auc": 0.9789
+  },
+  "excl_any_flag": {
+    "n_pairs_dropped": 57,
+    "n_items": 286,
+    "fresh_auc": 0.9929,
+    "transfer_auc": 0.9775
+  }
+}

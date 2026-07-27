@@ -1,0 +1,14 @@
+{
+  "L_V": 18,
+  "opt_v_norm": 49.744102478027344,
+  "meandiff_L18_norm": 27.880895614624023,
+  "meandiff_layer": 18,
+  "meandiff_alpha": 18,
+  "cast_gate": "logreg_probe_L18_pooled",
+  "cast_threshold": 0.5033798750785742,
+  "cast_train_youdenJ": 0.9655172413793104,
+  "cast_train_gate_on_rate_fic": 0.9655172413793104,
+  "cast_train_gate_on_rate_real": 0.0,
+  "cast_test_gate_on_rate_fic": 0.9263157894736842,
+  "cast_test_gate_on_rate_real": 0.015151515151515152
+}

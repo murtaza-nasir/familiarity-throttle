@@ -1,0 +1,101 @@
+{
+  "model": "meta-llama-Llama-3.1-8B-Instruct",
+  "layer_index": 16,
+  "layer_of": "16 of 32",
+  "probe": "StandardScaler+LogReg(C=0.3)",
+  "leak_cleaning": "crossdomain_leak_verdicts_census.jsonl verdict=='leaked' pairs dropped",
+  "n_leaked_pairs_total": 95,
+  "transfer": {
+    "matrix_train_rows_test_cols": {
+      "scm": {
+        "scm": 0.9921909259571597,
+        "biomed": 0.96844482421875,
+        "people": 0.999375260308205,
+        "academic": 0.924608
+      },
+      "biomed": {
+        "scm": 0.9117119244391971,
+        "biomed": 0.9698486328125,
+        "people": 0.9997917534360683,
+        "academic": 0.9582080000000001
+      },
+      "people": {
+        "scm": 0.8772103221453871,
+        "biomed": 0.966064453125,
+        "people": 1.0,
+        "academic": 0.961728
+      },
+      "academic": {
+        "scm": 0.8606915162759319,
+        "biomed": 0.968017578125,
+        "people": 1.0,
+        "academic": 0.97312
+      }
+    },
+    "diagonal_within_domain": {
+      "scm": 0.9921909259571597,
+      "biomed": 0.9698486328125,
+      "people": 1.0,
+      "academic": 0.97312
+    },
+    "mean_within": 0.9837898896924149,
+    "mean_cross_offdiag": 0.9496543026727949,
+    "lodo_train3_test_heldout": {
+      "scm": 0.8906156181480859,
+      "biomed": 0.97314453125,
+      "people": 0.9997917534360683,
+      "academic": 0.952384
+    },
+    "mean_lodo": 0.9539839757085385,
+    "counts": {
+      "scm": {
+        "pairs_used": 385,
+        "leak_dropped_pairs": 0,
+        "pairs_generated": 385
+      },
+      "biomed": {
+        "pairs_used": 128,
+        "leak_dropped_pairs": 21,
+        "pairs_generated": 149
+      },
+      "people": {
+        "pairs_used": 98,
+        "leak_dropped_pairs": 45,
+        "pairs_generated": 143
+      },
+      "academic": {
+        "pairs_used": 125,
+        "leak_dropped_pairs": 25,
+        "pairs_generated": 150
+      }
+    }
+  },
+  "familiarity": {
+    "tiers": {
+      "wellknown": {
+        "mean": 0.002307495102286339,
+        "median": 2.7790636522695422e-05,
+        "std": 0.007299801334738731,
+        "n": 71
+      },
+      "postcutoff": {
+        "mean": 0.6057206392288208,
+        "median": 0.7608855962753296,
+        "std": 0.40676644444465637,
+        "n": 71
+      },
+      "fictional": {
+        "mean": 0.9534981846809387,
+        "median": 0.9998769760131836,
+        "std": 0.15427841246128082,
+        "n": 71
+      }
+    },
+    "postcutoff_fraction_toward_fictional": 0.6343766293165158,
+    "note": "Llama-3.1 documented training cutoff Dec 2023; post-2025 entities are post-cutoff."
+  },
+  "verdicts": {
+    "transfer": "DOMAIN-GENERAL: mean cross-domain AUROC=0.950 (within=0.984, LODO=0.954) -- domain-general on Llama (>=0.9 cross)",
+    "familiarity": "FAMILIARITY: post-cutoff P(fic) mean=0.606 between wellknown=0.002 and fictional=0.953 -> intermediate/fictional-ward (frac=63%)"
+  }
+}

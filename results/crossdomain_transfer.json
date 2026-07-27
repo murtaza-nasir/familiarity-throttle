@@ -1,0 +1,76 @@
+{
+ "layer": 18,
+ "probe": "StandardScaler+LogReg(C=0.3)",
+ "within_domain_cv": "GroupKFold(5) by pair id",
+ "cross_domain": "train on all of A, test on all of B",
+ "matrix_train_rows_test_cols": {
+  "scm": {
+   "scm": 0.9940529600269861,
+   "biomed": 0.965644423195137,
+   "people": 0.9993896484375,
+   "academic": 0.9471244289169578
+  },
+  "biomed": {
+   "scm": 0.8800202395007589,
+   "biomed": 0.9723379550577147,
+   "people": 0.99639892578125,
+   "academic": 0.9365090029561945
+  },
+  "people": {
+   "scm": 0.9111519649181987,
+   "biomed": 0.9744552967693464,
+   "people": 1.0,
+   "academic": 0.9730583176565439
+  },
+  "academic": {
+   "scm": 0.8939011637712937,
+   "biomed": 0.9708353254559116,
+   "people": 0.99981689453125,
+   "academic": 0.9773582370330557
+  }
+ },
+ "diagonal_within_domain": {
+  "scm": 0.9940529600269861,
+  "biomed": 0.9723379550577147,
+  "people": 1.0,
+  "academic": 0.9773582370330557
+ },
+ "mean_diagonal_within": 0.9859372880294391,
+ "mean_offdiagonal_cross": 0.9540254693241952,
+ "lodo_train3_test_heldout": {
+  "scm": 0.9167009613762863,
+  "biomed": 0.9784850761560003,
+  "people": 0.99932861328125,
+  "academic": 0.9642905133028755
+ },
+ "mean_lodo": 0.964701291029103,
+ "counts": {
+  "scm": {
+   "pairs_used": 385,
+   "leak_dropped_pairs": 0,
+   "pairs_generated": 385
+  },
+  "biomed": {
+   "pairs_used": 121,
+   "leak_dropped_pairs": 28,
+   "pairs_generated": 149
+  },
+  "people": {
+   "pairs_used": 128,
+   "leak_dropped_pairs": 15,
+   "pairs_generated": 143
+  },
+  "academic": {
+   "pairs_used": 122,
+   "leak_dropped_pairs": 28,
+   "pairs_generated": 150
+  }
+ },
+ "caveat_leak_screen": {
+  "biomed": 28,
+  "people": 15,
+  "academic": 28,
+  "_note": "corrected 2026-07-26: field was stale (12) vs authoritative counts.people.leak_dropped_pairs (15)"
+ },
+ "note": "SCM fictional entities not leak-screened (no screen file); biomed/people/academic exclude GLM-flagged real 'fictional' entities."
+}

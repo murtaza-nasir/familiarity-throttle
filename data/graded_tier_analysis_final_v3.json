@@ -1,0 +1,104 @@
+{
+ "design": "expanded ladder v3: S2 = 53 clean entities (26 batch-1 + 27 batch-2, string-level rule at admission for batch 2), 106 items; S1/S5 restyled; S3/S4 original; Sonnet judge, hedge=commit",
+ "strata": {
+  "S1": {
+   "n_items": 71,
+   "n_entities": 70,
+   "probe_mean": 0.933,
+   "probe_median": 1.0,
+   "commit": 0.451,
+   "deflect": 0.141,
+   "flag": 0.408
+  },
+  "S2": {
+   "n_items": 106,
+   "n_entities": 53,
+   "probe_mean": 0.736,
+   "probe_median": 0.964,
+   "commit": 0.736,
+   "commit_ci": [
+    0.64,
+    0.82
+   ],
+   "deflect": 0.0,
+   "flag": 0.264,
+   "by_batch": {
+    "batch1": {
+     "n_items": 52,
+     "n_entities": 26,
+     "probe_mean": 0.562,
+     "commit": 0.808,
+     "flag": 0.192
+    },
+    "batch2": {
+     "n_items": 54,
+     "n_entities": 27,
+     "probe_mean": 0.904,
+     "commit": 0.667,
+     "flag": 0.333
+    }
+   }
+  },
+  "S3": {
+   "n_items": 80,
+   "n_entities": 40,
+   "probe_mean": 0.167,
+   "probe_median": 0.005,
+   "commit": 0.813,
+   "deflect": 0.013,
+   "flag": 0.175
+  },
+  "S4": {
+   "n_items": 80,
+   "n_entities": 40,
+   "probe_mean": 0.623,
+   "probe_median": 0.898,
+   "commit": 0.913,
+   "deflect": 0.0,
+   "flag": 0.088
+  },
+  "S5": {
+   "n_items": 71,
+   "n_entities": 58,
+   "probe_mean": 0.015,
+   "probe_median": 0.0,
+   "commit": 0.944,
+   "deflect": 0.042,
+   "flag": 0.014
+  }
+ },
+ "tests_entity_level": {
+  "S2_vs_S1_probe_MW_p": 4.2e-08,
+  "S2_vs_S5_probe_MW_p": 4.1e-19,
+  "S3_vs_S4_probe_MW_p": 2e-07,
+  "flag_monotonicity_spearman": {
+   "rho": -0.369,
+   "p": 7.9e-10,
+   "n_entities": 261
+  },
+  "S1_vs_S2_commit_fisher_item_p": 0.00015
+ },
+ "matched_probe_gt0.5": {
+  "S2": {
+   "n": 77,
+   "commit": 0.662,
+   "probe_mean": 0.941
+  },
+  "S4": {
+   "n": 52,
+   "commit": 0.865,
+   "probe_mean": 0.927
+  },
+  "fisher_item_p": 0.013,
+  "MW_entity_p": 0.052,
+  "note": "item-level significant, entity-level marginal; report with both units"
+ },
+ "cross_model_S2_pooled_means": {
+  "llama31_8b": 0.951,
+  "gemma3_27b": 0.802,
+  "qwen3_32b": 0.805,
+  "qwen36_27b": 0.788,
+  "_note": "qwen36 pooled corrected 2026-07-28: earlier 0.817 used the pre-cleaning 80-item batch-1 mean; correct clean-pooled = (52x0.6256+54x0.9439)/106"
+ },
+ "within_S2_note": "batch-1 (mid-2025 launches, some heavily covered) probe 0.562 vs batch-2 (2026-sparse) 0.904: within-stratum spread tracks coverage volume, the paper's own claim; disclosed as two sourcing waves"
+}

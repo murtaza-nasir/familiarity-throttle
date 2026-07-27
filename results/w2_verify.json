@@ -1,0 +1,75 @@
+{
+ "all_passed": true,
+ "failed": [],
+ "checks": {
+  "V1_erlangC_two_impls": {
+   "ok": true,
+   "detail": {
+    "max_abs_err": 4.440892098500626e-16
+   }
+  },
+  "V2_Lq_monotone_convex_Wq_monotone": {
+   "ok": true,
+   "detail": {
+    "failed_s": null
+   }
+  },
+  "V3_pi_star_nondecreasing": {
+   "ok": true,
+   "detail": {
+    "n_points": 60
+   }
+  },
+  "V4_rho_star_closed_forms": {
+   "ok": true,
+   "detail": {
+    "escalation_free": 12.166666666666666,
+    "escalation_free_dC_ub": 12.166666666666666,
+    "one_over_fC": 12.166666666666668,
+    "small_c0": [
+     "inf",
+     "inf",
+     "inf"
+    ],
+    "note": "empirical axis: answer region below the unanswerable support absorbs the d_C term, so the escalation-free frontier is 1/fC for BOTH d_C values; the two-atom CP-gate variant moves it to (1-dC)/fC as reported in w2_numerics.json"
+   }
+  },
+  "V5_cp_closed_form": {
+   "ok": true,
+   "detail": {
+    "closed_form": 0.04927706089585926,
+    "scipy": 0.04927706089585927
+   }
+  },
+  "V6_desk_brute_force_match": {
+   "ok": true,
+   "detail": {
+    "n_cells_checked": 8,
+    "worst_rel_diff": 0.0
+   }
+  },
+  "V7_wedge_qed_signs": {
+   "ok": true,
+   "detail": {
+    "param_wedges_nonneg": true,
+    "qed_gaps_nonneg": true,
+    "grounded_wedges_nonneg": true,
+    "grounded_under_escalation_cells": 6,
+    "note": "under-escalation cells on the grounded ROC are expected: the grounded ROC violates MLR, so Cor. 1's sign is not guaranteed there"
+   }
+  },
+  "V8_lambda_dagger_crossings": {
+   "ok": true,
+   "detail": {
+    "all": "verified"
+   }
+  },
+  "V9_mlr_summaries": {
+   "ok": true,
+   "detail": {
+    "param_block_auroc": 1.0,
+    "grounded_violation_mass_recomputed": 0.30092592592592593
+   }
+  }
+ }
+}
