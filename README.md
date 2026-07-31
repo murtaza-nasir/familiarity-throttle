@@ -1,6 +1,6 @@
 # Replication Package: "Decodable but Not Actionable"
 
-Replication materials for the companion mechanism paper (arXiv posting) and the
+Replication materials for the mechanism paper ([PDF in this repository](paper.pdf); arXiv posting pending moderation) and the
 applied manuscript sharing the same testbed. The papers study the
 represent–express gap in large language models: a linear probe on mid-layer
 residual activations recovers a familiarity signal that the model's own
@@ -282,7 +282,8 @@ Code is MIT-licensed (see LICENSE). Dataset files are released for research
 use; please cite the paper:
 
 > Murtaza Nasir. Decodable but Not Actionable: Localizing and Releasing the
-> Familiarity Throttle in Language Models. arXiv preprint, 2026.
+> Familiarity Throttle in Language Models. Preprint, 2026.
+> https://github.com/murtaza-nasir/familiarity-throttle (arXiv ID to follow).
 > (arXiv ID to be added on announcement.)
 
 
