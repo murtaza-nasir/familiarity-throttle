@@ -1,0 +1,126 @@
+{
+ "n": 3000,
+ "spearman_probe_vs_logpop": {
+  "rho": -0.5843441118367164,
+  "p": 2.8387947873289016e-274
+ },
+ "auroc_probe_lowpop_vs_highpop_tertiles": 0.8596501996007982,
+ "auroc_probe_predicts_incorrect": 0.6781911784499444,
+ "auroc_probe_predicts_regex_flag": 0.7286625949416647,
+ "overall_accuracy": 0.22766666666666666,
+ "overall_flag": 0.054,
+ "by_probe_quintile": [
+  {
+   "probe_quintile": 0,
+   "n": 600,
+   "flag_rate": 0.008333333333333333,
+   "mean_log_pop": 4.222937295687781
+  },
+  {
+   "probe_quintile": 1,
+   "n": 600,
+   "flag_rate": 0.018333333333333333,
+   "mean_log_pop": 3.2717512318515762
+  },
+  {
+   "probe_quintile": 2,
+   "n": 600,
+   "flag_rate": 0.045,
+   "mean_log_pop": 2.9135937578018147
+  },
+  {
+   "probe_quintile": 3,
+   "n": 600,
+   "flag_rate": 0.08166666666666667,
+   "mean_log_pop": 2.727386277995326
+  },
+  {
+   "probe_quintile": 4,
+   "n": 600,
+   "flag_rate": 0.11666666666666667,
+   "mean_log_pop": 2.4872996512063574
+  }
+ ],
+ "by_pop_decile": [
+  {
+   "pop_decile": 0,
+   "n": 300,
+   "mean_probe": 0.5787147425929455,
+   "flag_rate": 0.08
+  },
+  {
+   "pop_decile": 1,
+   "n": 300,
+   "mean_probe": 0.5224106684029539,
+   "flag_rate": 0.08666666666666667
+  },
+  {
+   "pop_decile": 2,
+   "n": 300,
+   "mean_probe": 0.4561728172207571,
+   "flag_rate": 0.09333333333333334
+  },
+  {
+   "pop_decile": 3,
+   "n": 300,
+   "mean_probe": 0.38339882207529324,
+   "flag_rate": 0.09
+  },
+  {
+   "pop_decile": 4,
+   "n": 300,
+   "mean_probe": 0.34973420194751575,
+   "flag_rate": 0.07333333333333333
+  },
+  {
+   "pop_decile": 5,
+   "n": 300,
+   "mean_probe": 0.31807656917154264,
+   "flag_rate": 0.03666666666666667
+  },
+  {
+   "pop_decile": 6,
+   "n": 300,
+   "mean_probe": 0.287071424595368,
+   "flag_rate": 0.03
+  },
+  {
+   "pop_decile": 7,
+   "n": 300,
+   "mean_probe": 0.17164492733742615,
+   "flag_rate": 0.023333333333333334
+  },
+  {
+   "pop_decile": 8,
+   "n": 300,
+   "mean_probe": 0.0662696746655816,
+   "flag_rate": 0.02
+  },
+  {
+   "pop_decile": 9,
+   "n": 300,
+   "mean_probe": 0.010355236578305522,
+   "flag_rate": 0.006666666666666667
+  }
+ ],
+ "protocol": "Qwen3-8B; probe = lora_train mean-pooled hidden_states[18], StandardScaler+LogReg(C=0.3); PopQA test split, 10-bin popularity-stratified sample, seed 0; greedy 64 tokens; correctness = whole-word alias match after normalization",
+ "by_probe_quintile_accuracy": [
+  0.495,
+  0.225,
+  0.11666666666666667,
+  0.12666666666666668,
+  0.175
+ ],
+ "by_pop_decile_accuracy": [
+  0.25333333333333335,
+  0.15333333333333332,
+  0.12666666666666668,
+  0.12333333333333334,
+  0.11666666666666667,
+  0.11333333333333333,
+  0.15,
+  0.22333333333333333,
+  0.36,
+  0.6566666666666666
+ ]
+}

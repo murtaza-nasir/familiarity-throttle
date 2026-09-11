@@ -293,3 +293,23 @@ including evaluation arms from earlier testbed designs that the paper does not
 use; the corpus-wide judge-triangulation numbers recompute from the verdict
 files alone. Dataset files in `data/` are the paper's final instruments; the
 candidates and exclusion records are retained as construction provenance.
+
+## Revision (TMLR round 1, September 2026)
+
+`scripts/tmlr_revision/` and `results/tmlr_revision/` hold everything added for the revision. Table/figure map:
+
+| Paper element | Script | Result file |
+|---|---|---|
+| Table 1, Table 6 (ladder statistics, judge sensitivity) | `audit_section4.py` | `audit_section4.json`, `ladder_items.csv` |
+| Figure 1 (ladder with intervals) | `fig_familiarity_ci.py` | (reads `ladder_items.csv`) |
+| Section 4 name-shape control, Appendix C | `name_shape.py` | `name_shape.json`, `name_shape_entities.csv` |
+| Section 5 PopQA transfer, Appendix F | `popqa_external.py` | `popqa_external.json`, `popqa_external.jsonl` |
+| Section 5 transfer intervals, Figure 5 | `transfer_cis.py`, `grounding_cis.py`, `fig_generalization_ci.py` | `transfer_cis.json` |
+| Appendix E probe ablation (Table 7) | `probe_ablation.py` | `probe_ablation.json` |
+| Figures 2 and 4 (intervals) | `fig_throttle_ci.py`, `fig_dose_ci.py` | (read `results/mechanism/`) |
+| Table 2, Appendix H (circuit replication) | `component_throttle_multi.py` (env `MODEL`, `TAG`), `circuit_table.py` | `component_throttle_{gemma4_12b,qwen35_9b,aya_tiny}.json` |
+| Section 7 geometry, canned baseline, decomposed and reverse-sign arms (Table 8) | `steer_geometry.py`, `fill_steer_ft.py` | `steer_geometry.json`, `steer_geometry_gens*.jsonl` |
+| Appendix G fine-tuning sweep (Table 9) | `ft_sweep.py` | `ft_sweep_gens*.jsonl`, `ft_sweep_meta.json` |
+| Judges for new generations | `judge_jsonl.py` (open-weights), `sonnet_judge_new.py` (primary) | `*_judged*.jsonl` |
+
+Scripts read model and data locations from `$MODEL_ROOT`, `$HN_ROOT`, and `$HF_HOME`; set them to local paths. `component_throttle_multi.py` locates decoder layers generically and treats linear-attention layers (Qwen3.5) as single components.

@@ -1,0 +1,29 @@
+\renewcommand{\STEERJUDGE}{primary judge}
+\renewcommand{\STEERGEOROWS}{\begin{tabular}{lccccc}\toprule
+arm & flags fictional & false-flags real & deflects real & commits fictional & flag-gap \\\midrule
+untouched model (re-run) & 0.226 [0.15,0.32] & 0.023 [0.00,0.06] & 0.477 & 0.312 & 0.203 \\
+gated $v$ (re-run) & 0.895 [0.81,0.95] & 0.015 [0.00,0.05] & 0.515 & 0.084 & 0.880 \\
+$v_\parallel$ (probe direction, rescaled), always-on & 0.064 [0.02,0.13] & 0.023 [0.00,0.06] & 0.864 & 0.043 & 0.041 \\
+$v_\parallel$, gated & 0.074 [0.03,0.15] & 0.015 [0.00,0.05] & 0.515 & 0.117 & 0.059 \\
+$v_\perp$ (orthogonal part, rescaled), always-on & 0.895 [0.81,0.95] & 0.159 [0.10,0.23] & 0.409 & 0.084 & 0.736 \\
+$v_\perp$, gated & 0.895 [0.81,0.95] & 0.023 [0.00,0.06] & 0.523 & 0.084 & 0.872 \\
+$-v$, always-on & 0.011 [0.00,0.06] & 0.008 [0.00,0.04] & 0.341 & 0.758 & 0.003 \\
+$-0.5\,v$, always-on & 0.086 [0.04,0.16] & 0.008 [0.00,0.04] & 0.492 & 0.538 & 0.078 \\
+\bottomrule\end{tabular}}
+\renewcommand{\STEERGEO}{the probe direction alone, rescaled to the trained norm, suppresses flagging (0.226 to 0.064) and commitment (0.312 to 0.043) alike in favor of hedged deflections on both classes, while the orthogonal component alone reproduces the full vector's flagging (0.895); the reverse-sign vector raises commits on fictional entities from 0.312 to 0.758}
+\renewcommand{\STEERGEOTABLE}{the probe direction rescaled to the trained norm suppresses flagging on fictional items (0.226 to 0.064 always-on) and commitment (0.312 to 0.043) alike, converting both classes to hedged deflections (deflections on real entities 0.48 to 0.86); the orthogonal component reproduces the full vector (0.895 always-on, 0.895 gated, 0.023 false-flags); and $-v$ drives the model toward committing on fictional entities (0.758 against 0.312; at half norm 0.538)}
+\renewcommand{\REVSIGN}{at the trained norm it raises the commit rate on fictional entities from 0.312 to 0.758 and lowers flagging from 0.226 to 0.011, so the direction can be driven toward more fabrication as well as less}
+\renewcommand{\FTJUDGE}{primary judge}
+\renewcommand{\FTSWEEPROWS}{\begin{tabular}{llccccc}\toprule
+arm & lr / epochs / quantile & pseudo-abstain rate (real, train) & flags fictional & false-flags real & flag-gap \\\midrule
+rtuning & 0.0001 / 1 / 0.5 & -- & 0.768 & 0.455 & 0.314 \\
+rtuning & 0.0002 / 3 / 0.5 & -- & 0.789 & 0.727 & 0.062 \\
+rtuning & 5e-05 / 1 / 0.5 & -- & 0.758 & 0.250 & 0.508 \\
+se & 0.0001 / 3 / 0.85 & 0.23 & 0.355 & 0.167 & 0.188 \\
+se & 0.0002 / 3 / 0.5 & 0.48 & 0.726 & 0.553 & 0.173 \\
+se & 0.0002 / 3 / 0.7 & 0.34 & 0.570 & 0.341 & 0.229 \\
+se & 5e-05 / 1 / 0.5 & 0.48 & 0.798 & 0.242 & 0.555 \\
+se & 5e-05 / 1 / 0.7 & 0.34 & 0.553 & 0.083 & 0.470 \\
+\bottomrule\end{tabular}}
+\renewcommand{\FTSWEEP}{across eight configurations the best output-supervised flag-gap is 0.555 (0.798 flagging at 0.242 false-flags), and the lowest false-flag rate any configuration reaches is 0.083, at 0.553 flagging; no configuration approaches the internal-signal fine-tune ($0.751$) or the gated vector ($0.890$)}
+\renewcommand{\FTSWEEPTABLE}{the configurations trace a single trade-off curve: raising the pseudo-label quantile or shortening training lowers false-flags (to 0.083 at quantile $0.7$, one epoch) at the cost of flagging on fictional items (0.553), and no point on the curve exceeds flag-gap 0.555, because the pseudo-labels mislabel a large share of answerable training items whatever the threshold}

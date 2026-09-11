@@ -1,0 +1,89 @@
+{
+ "rtuning_lr5e-05_ep1": {
+  "arm": "rtuning",
+  "lr": 5e-05,
+  "epochs": 1,
+  "se_quantile": 0.5,
+  "regex_flag_fic": 0.7894736842105263,
+  "regex_flag_real": 0.26515151515151514,
+  "train_loss_final": 0.48147132817436666
+ },
+ "se_lr5e-05_ep1_q0.5": {
+  "arm": "se",
+  "lr": 5e-05,
+  "epochs": 1,
+  "se_quantile": 0.5,
+  "thr": 1.4978661367709956,
+  "pseudo_abstain_rate_real": 0.48221343873517786,
+  "pseudo_abstain_rate_fic": 0.5448275862068965,
+  "regex_flag_fic": 0.7789473684210526,
+  "regex_flag_real": 0.2727272727272727,
+  "train_loss_final": 0.5305356698877671
+ },
+ "rtuning_lr0.0002_ep3": {
+  "arm": "rtuning",
+  "lr": 0.0002,
+  "epochs": 3,
+  "se_quantile": 0.5,
+  "regex_flag_fic": 0.7789473684210526,
+  "regex_flag_real": 0.7272727272727273,
+  "train_loss_final": 0.19432346610461965
+ },
+ "se_lr0.0002_ep3_q0.5": {
+  "arm": "se",
+  "lr": 0.0002,
+  "epochs": 3,
+  "se_quantile": 0.5,
+  "thr": 1.4978661367709956,
+  "pseudo_abstain_rate_real": 0.48221343873517786,
+  "pseudo_abstain_rate_fic": 0.5448275862068965,
+  "regex_flag_fic": 0.6947368421052632,
+  "regex_flag_real": 0.5454545454545454,
+  "train_loss_final": 0.20918813618082627
+ },
+ "se_lr5e-05_ep1_q0.7": {
+  "arm": "se",
+  "lr": 5e-05,
+  "epochs": 1,
+  "se_quantile": 0.7,
+  "thr": 1.834371970274624,
+  "pseudo_abstain_rate_real": 0.3359683794466403,
+  "pseudo_abstain_rate_fic": 0.30689655172413793,
+  "regex_flag_fic": 0.5894736842105263,
+  "regex_flag_real": 0.16666666666666666,
+  "train_loss_final": 0.44359926616444306
+ },
+ "se_lr0.0002_ep3_q0.7": {
+  "arm": "se",
+  "lr": 0.0002,
+  "epochs": 3,
+  "se_quantile": 0.7,
+  "thr": 1.834371970274624,
+  "pseudo_abstain_rate_real": 0.3359683794466403,
+  "pseudo_abstain_rate_fic": 0.30689655172413793,
+  "regex_flag_fic": 0.5157894736842106,
+  "regex_flag_real": 0.3333333333333333,
+  "train_loss_final": 0.1681087474320449
+ },
+ "se_lr0.0001_ep3_q0.85": {
+  "arm": "se",
+  "lr": 0.0001,
+  "epochs": 3,
+  "se_quantile": 0.85,
+  "thr": 2.0253262207620675,
+  "pseudo_abstain_rate_real": 0.22924901185770752,
+  "pseudo_abstain_rate_fic": 0.19310344827586207,
+  "regex_flag_fic": 0.30526315789473685,
+  "regex_flag_real": 0.1590909090909091,
+  "train_loss_final": 0.2138338939231985
+ },
+ "rtuning_lr0.0001_ep1": {
+  "arm": "rtuning",
+  "lr": 0.0001,
+  "epochs": 1,
+  "se_quantile": 0.5,
+  "regex_flag_fic": 0.7789473684210526,
+  "regex_flag_real": 0.45454545454545453,
+  "train_loss_final": 0.40730755469378305
+ }
+}
